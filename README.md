@@ -8,4 +8,4 @@ Multimeediumi praktika rühm 1 repositoorium
 
 [Päevik: Karl Erik](/Praktikapäevikud/Karl_Erik_Kalmus.md)
 
-[Päevik: Dave](/Praktikapäevikud/Dave_Talimaa.md)
+[Päevik: Dave]([/Praktikapäevikud/Dave_Talimaa.md](https://github.com/orgs/TLUHK-RIF22/projects/7/views/1?pane=issue&itemId=52156977)https://github.com/orgs/TLUHK-RIF22/projects/7/views/1?pane=issue&itemId=52156977)
