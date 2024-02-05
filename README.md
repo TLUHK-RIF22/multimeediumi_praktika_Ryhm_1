@@ -1,13 +1,13 @@
 # The Secret of Piggy island game
-## Praktikapäevikud
+## Praktikapäevikud, rollid
 
-[Päevik: Peeter](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/22)
+[Peeter Alliksaar (arendaja)](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/22)
 
-[Päevik: Martin](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/19)
+[Martin Kangur (projektijuht, audiodisainer, videodisainer, testija)](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/19)
 
-[Päevik: Karl Erik](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/21)
+[Karl Erik Kalmus (graafikadisainer, testija)](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/21)
 
-[Päevik: Dave](https://github.com/orgs/TLUHK-RIF22/projects/7/views/1?pane=issue&itemId=52156977)
+[Dave Talimaa (graafikadisainer, (toetav)arendaja)](https://github.com/orgs/TLUHK-RIF22/projects/7/views/1?pane=issue&itemId=52156977)
 
 ## Riskianalüüs
 [Riskianalüüsi issue](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/16)
