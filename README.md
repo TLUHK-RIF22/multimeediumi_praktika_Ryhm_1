@@ -1,5 +1,5 @@
 # The Secret of Piggy island
-## Praktikapäevikud, rollid
+## 1. Praktikapäevikud, rollid
 
 [Peeter Alliksaar (arendaja)](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/22)
 
@@ -8,7 +8,7 @@
 [Karl Erik Kalmus (graafikadisainer, testija)](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/21)
 
 [Dave Talimaa (graafikadisainer, (toetav)arendaja)](https://github.com/orgs/TLUHK-RIF22/projects/7/views/1?pane=issue&itemId=52156977)
-## Projekti kirjeldus, eesmärk ja umbkaudne tegevusplaan
+## 2. Projekti kirjeldus, eesmärk ja umbkaudne tegevusplaan
 ### Kirjeldus
 
 ### Eesmärk
@@ -22,7 +22,7 @@
 -
 -
 
-## Riskianalüüs
+## 3. Riskianalüüs
 [Riskianalüüsi issue](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/16)
 
 | Riski kirjeldus                                           | Šanss (1-5) | Kahju realiseerumisel                                   | Maandamise meetmed                                |
