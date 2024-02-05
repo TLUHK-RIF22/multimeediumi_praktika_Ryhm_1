@@ -8,6 +8,19 @@
 [Karl Erik Kalmus (graafikadisainer, testija)](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/21)
 
 [Dave Talimaa (graafikadisainer, (toetav)arendaja)](https://github.com/orgs/TLUHK-RIF22/projects/7/views/1?pane=issue&itemId=52156977)
+## Projekti kirjeldus, eesmärk ja umbkaudne tegevusplaan
+### Kirjeldus
+
+### Eesmärk
+-
+-
+-
+### Umbkaudne tegevusplaan
+-
+-
+-
+-
+-
 
 ## Riskianalüüs
 [Riskianalüüsi issue](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/16)
