@@ -1,4 +1,4 @@
-# Koosolekud ning nende sisu
+# Üldkoosolekud ning nende sisu
 ## 26.01 -Esimene loeng -4h
 - üldine arutelu 1h
 - 3h loeng
