@@ -1,4 +1,4 @@
-# The Secret of Piggy island game
+# The Secret of Piggy island
 ## Praktikapäevikud, rollid
 
 [Peeter Alliksaar (arendaja)](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/22)
