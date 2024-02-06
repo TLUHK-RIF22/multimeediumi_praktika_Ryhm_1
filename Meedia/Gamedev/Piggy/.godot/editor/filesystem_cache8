@@ -1,0 +1,28 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1707219090
+Entrance.gd::GDScript::-1::1706996498::0::1::::<>Area2D<>::
+Entrance.tscn::PackedScene::8427584822136501492::1706991417::0::1::::<><>::res://Entrance.gd
+export_presets.cfg::TextFile::-1::1706996654::0::1::::<><>::
+game_manager.gd::GDScript::-1::1706982695::0::1::::GameManager<>Node2D<>::
+game_manager.tscn::PackedScene::6124433498417832029::1706986291::0::1::::<><>::res://game_manager.gd<>uid://c2fox34yy7p53::::res://UI/paus_menu.tscn
+Global.gd::GDScript::-1::1706994631::0::1::::<>Node2D<>::
+Global.tscn::PackedScene::4778465871963767127::1707219090::0::1::::<><>::res://Global.gd
+icon.svg::CompressedTexture2D::6247225626636162537::1706958275::1706958282::1::::<><>::
+::res://Charecters/::1707217481
+Piggy Charakter Spritesheet.png::CompressedTexture2D::6617338564253179321::1706972518::1706972524::1::::<><>::
+player.gd::GDScript::-1::1706985546::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::6526308683650060957::1706993860::0::1::::<><>::res://Charecters/player.gd<>uid://c1jqum31j4tun::::res://Charecters/Piggy Charakter Spritesheet.png
+::res://Levels/::1707219090
+Level1.tscn::PackedScene::5822241239213795541::1707219090::0::1::::<><>::res://Levels/Levels.gd<>uid://cy8nl6guub54d::::res://Charecters/player.tscn<>res://Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png<>res://Sprout Lands - Sprites - Basic pack/Tilesets/Hills.png<>res://Sprout Lands - Sprites - Basic pack/Tilesets/Tilled_Dirt.png<>res://Sprout Lands - Sprites - Basic pack/Tilesets/Water.png<>res://Sprout Lands - Sprites - Basic pack/Tilesets/Wooden House.png<>res://Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png<>uid://ctiyr321gw14l::::res://game_manager.tscn<>uid://dscndc5iq3qrs::::res://Entrance.tscn<>uid://37j4civmtx4p::::res://Sprites/Grass.png
+Level2.tscn::PackedScene::4041537909177501878::1707219090::0::1::::<><>::uid://cy8nl6guub54d::::res://Charecters/player.tscn<>res://Levels/Levels.gd<>res://Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png<>res://Sprout Lands - Sprites - Basic pack/Tilesets/Hills.png<>res://Sprout Lands - Sprites - Basic pack/Tilesets/Tilled_Dirt.png<>res://Sprout Lands - Sprites - Basic pack/Tilesets/Water.png<>res://Sprout Lands - Sprites - Basic pack/Tilesets/Wooden House.png<>res://Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png<>uid://ctiyr321gw14l::::res://game_manager.tscn<>uid://dscndc5iq3qrs::::res://Entrance.tscn
+Levels.gd::GDScript::-1::1706996607::0::1::::<>Node2D<>::
+::res://Sprites/::1707219772
+Fences.png::CompressedTexture2D::3033907607807047488::1706958301::1707217784::1::::<><>::
+Grass.png::CompressedTexture2D::2031946069329049661::1706958301::1707217784::1::::<><>::
+Hills.png::CompressedTexture2D::5280528127720367840::1706958301::1707219776::1::::<><>::
+read_me.txt::TextFile::-1::1706958301::0::1::::<><>::
+Wooden House.png::CompressedTexture2D::6125625390236536476::1706958301::1707217784::1::::<><>::
+::res://UI/::1707217482
+game_theme.tres::Theme::735797890416485908::1706983131::0::1::::<><>::
+paus_menu.gd::GDScript::-1::1706982975::0::1::::<>Control<>::
+paus_menu.tscn::PackedScene::6679154662118848916::1706986291::0::1::::<><>::res://UI/paus_menu.gd<>uid://kqoqphpsnpbo::::res://UI/game_theme.tres
