@@ -17,7 +17,7 @@ Vastavalt projekti sisule https://github.com/orgs/TLUHK-RIF22/projects/7
 
 ## 3.Mängumootori valik
 
-Mängumootoriks osutus antud meeskonna poolt Godot, sest sellel on tugev ja kasvava kogukond . Tegemist on avatud lähtekoodiga ning tasuta programmiga. Puuduvad litsentsimistasud. Godot toetab mitmeid platvorme, nii windowsi, macOS kui ka Linuxit. Vastavalt tehtud otsingule ning ühise meeskonna töö tulemusena, jõudsime järeldusele, et Godot on ideaalne valik 2D graafikaga mängu tegemiseks. Lisaks on ka Godotil väga suur ja inforohke koguond.
+Mängumootoriks osutus antud meeskonna poolt Godot, sest sellel on tugev ja kasvava kogukond . Tegemist on avatud lähtekoodiga ning tasuta programmiga. Puuduvad litsentsimistasud. Godot toetab mitmeid platvorme, nii windowsi, macOS kui ka Linuxit. Vastavalt tehtud otsingule ning ühise meeskonna töö tulemusena, jõudsime järeldusele, et Godot on ideaalne valik 2D graafikaga mängu tegemiseks. Lisaks on ka Godotil väga suur ja inforohke kogukond.
 
 ## 4.Riskianalüüs
 [Riskianalüüsi issue](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/16)
