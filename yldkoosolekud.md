@@ -23,4 +23,16 @@
 - Panime paika järgmise kohtumise kuupäeva ning kellaaja (06.02- 18:30).
 - Üldiste formaalsete nõuete täitmine.
 - Kuidas lahendada animatsioone?
-## 06.02 - 18.30 - *h:
+## 06.02 - 1.5h
+- Q & A
+- Kaartide arutelu
+- Issued
+- Mängumootori lahenduste arutelu
+- Animatsioonid
+- Graafika osade jaotus: Dave- Tegelased, Karl- Mapi elemendid
+- Karl ja Peeter teevad eraldi koosoleku graafikaelemetide testimiseks
+- Mängumootori analüüs
+- GoDoti võimalused vastavalt mängu nõuetele
+- Graafikaelementide arutelu
+- Release ja selle sisu
+- Projekti kasutamine
