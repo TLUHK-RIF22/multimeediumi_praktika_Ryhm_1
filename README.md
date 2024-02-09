@@ -8,16 +8,9 @@
 | [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768) | [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768) | [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768) |
 | [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768) | [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768) | [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768) |
 
-## Praktikapäevikud, rollid
 
-[Peeter Alliksaar (arendaja)](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/22)
-
-[Martin Kangur (projektijuht, audiodisainer, videodisainer, testija)](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/19)
-
-[Karl Erik Kalmus (graafikadisainer, testija)](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/21)
-
-[Dave Talimaa (graafikadisainer, (toetav)arendaja)](https://github.com/orgs/TLUHK-RIF22/projects/7/views/1?pane=issue&itemId=52156977)
 ## Projekti kirjeldus, eesmärk ja umbkaudne tegevusplaan
+![Meie klient](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/blob/main/Meedia/Graafika/Siga.png)
 ### Kirjeldus ning eesmärk
 "The Piggy Island" mängu eesmärk on võimaldada mängijatel sukelduda põnevasse seiklusmaailma, kus nad saavad kogeda mitmekesiseid väljakutseid, lahendada loomingulisi mõistatusi ning arendada oma oskusi ja strateegilist mõtlemist. Mäng soovib pakkuda nauditavat ja mitmekülgset mängukogemust. Kuna antud meeskonna arust on liiga palju juba kaasaegseid mänge, otsutas antud meeskond luua retro mängu, mis pärineks justkui otse 90ndatest, kui mängukultuur laiemalt antud riigis levima hakkas. 
 
@@ -49,6 +42,16 @@ Mängumootoriks osutus antud meeskonna poolt Godot, sest sellel on tugev ja kasv
 | Mängu sisu lekib enne esmaesitlust | 5 | Mäng ei osutu nii menukaks | Piirata ligipääsu andmetele |
 | Intellektuaalomandi küsimused | 5 | Mängu ei saa avaldada | Meeskond loob kogu sisu ise, teenuse sisseostmise korral lahendab litsentsiküsimused |
 | Meeskonnal on omavahel suhtlusprobleemid | 5 | Meeskond ei toimi | Oleme ühenduses Discordi grupis ning peame vähemalt korra nädalas koosolekuid ja arutame progressi |
+
+## Praktikapäevikud, rollid
+
+[Peeter Alliksaar (arendaja)](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/22)
+
+[Martin Kangur (projektijuht, audiodisainer, videodisainer, testija)](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/19)
+
+[Karl Erik Kalmus (graafikadisainer, testija)](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/21)
+
+[Dave Talimaa (graafikadisainer, (toetav)arendaja)](https://github.com/orgs/TLUHK-RIF22/projects/7/views/1?pane=issue&itemId=52156977)
 | Ajaplaneerimine on liiga optimistlik  | 5 | Meeskond jookseb omadega jänni | Ajagraafik pannakse paika ühiselt |
 | Mängu kasutajaliides on arusaamatu kasutajale | 5 | Mäng ei osutu edukaks | Testimine erinevate sihtrühmadega |
 
