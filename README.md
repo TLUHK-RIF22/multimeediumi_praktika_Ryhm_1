@@ -1,5 +1,13 @@
 # [The Secret of Piggy island](https://github.com/orgs/TLUHK-RIF22/projects/7)
-## 1.Praktikapäevikud, rollid
+
+## Projekti kiirmenüü
+| [̲̅~][̲̅~][̲̅~][̲̅~] | 𝕋𝕙𝕖 𝕚𝕤𝕝𝕒𝕟𝕕 𝕒𝕨𝕒𝕚𝕥s..  | [̲̅~][̲̅~][̲̅~][̲̅~] |
+|--------|-------|--------|
+| [Süžee ja tasemed](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/blob/main/s%C3%BC%C5%BEee.md)  | [Graphics (non-asset)](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/tree/main/Meedia/Graafika) | [Assets - Sprites](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/tree/main/Meedia/Gamedev/Piggy/Sprites)  |
+| [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768)  | [Assets - Audio](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/tree/main/Meedia/Audio) | [Assets - Tiles](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/tree/main/Meedia/Gamedev/Piggy/Tiles) |
+| [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768) | [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768) | [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768) |
+
+## Praktikapäevikud, rollid
 
 [Peeter Alliksaar (arendaja)](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/22)
 
@@ -8,7 +16,7 @@
 [Karl Erik Kalmus (graafikadisainer, testija)](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/21)
 
 [Dave Talimaa (graafikadisainer, (toetav)arendaja)](https://github.com/orgs/TLUHK-RIF22/projects/7/views/1?pane=issue&itemId=52156977)
-## 2.Projekti kirjeldus, eesmärk ja umbkaudne tegevusplaan
+## Projekti kirjeldus, eesmärk ja umbkaudne tegevusplaan
 ### Kirjeldus ning eesmärk
 "The Piggy Island" mängu eesmärk on võimaldada mängijatel sukelduda põnevasse seiklusmaailma, kus nad saavad kogeda mitmekesiseid väljakutseid, lahendada loomingulisi mõistatusi ning arendada oma oskusi ja strateegilist mõtlemist. Mäng soovib pakkuda nauditavat ja mitmekülgset mängukogemust. Kuna antud meeskonna arust on liiga palju juba kaasaegseid mänge, otsutas antud meeskond luua retro mängu, mis pärineks justkui otse 90ndatest, kui mängukultuur laiemalt antud riigis levima hakkas. 
 
