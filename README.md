@@ -6,6 +6,7 @@
 | [Süžee ja tasemed](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/blob/main/s%C3%BC%C5%BEee.md)  | [Graphics (non-asset)](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/tree/main/Meedia/Graafika) | [Assets - Sprites](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/tree/main/Meedia/Gamedev/Piggy/Sprites)  |
 | [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768)  | [Assets - Audio](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/tree/main/Meedia/Audio) | [Assets - Tiles](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/tree/main/Meedia/Gamedev/Piggy/Tiles) |
 | [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768) | [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768) | [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768) |
+| [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768) | [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768) | [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768) |
 
 ## Praktikapäevikud, rollid
 
