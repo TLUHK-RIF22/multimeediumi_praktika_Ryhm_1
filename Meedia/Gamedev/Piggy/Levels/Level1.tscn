@@ -1,12 +1,14 @@
-[gd_scene load_steps=12 format=3 uid="uid://co7lpyy3vgtpl"]
+[gd_scene load_steps=14 format=3 uid="uid://co7lpyy3vgtpl"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_h4irf"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/player.tscn" id="2_fsw2p"]
 [ext_resource type="Texture2D" uid="uid://ctjkfjops0jmy" path="res://Sprites/Wooden House.png" id="4_d3u77"]
 [ext_resource type="Texture2D" uid="uid://chh6r57ebbmeq" path="res://Sprites/Hills.png" id="5_00m3f"]
 [ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://game_manager.tscn" id="8_0cu4f"]
+[ext_resource type="Texture2D" uid="uid://cnx0ei2wuthbi" path="res://Sprites/emptymap.png" id="8_h037w"]
 [ext_resource type="PackedScene" uid="uid://dscndc5iq3qrs" path="res://Entrance.tscn" id="9_6w3b2"]
 [ext_resource type="Texture2D" uid="uid://37j4civmtx4p" path="res://Sprites/Grass.png" id="9_7wwx4"]
+[ext_resource type="AudioStream" uid="uid://cu8l14cttsk3s" path="res://Audio/menüü põhi.mp3" id="9_umq5e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k4qqy"]
 texture = ExtResource("9_7wwx4")
@@ -561,6 +563,10 @@ position = Vector2(257, 92)
 [node name="Camera2D" type="Camera2D" parent="Player"]
 metadata/_edit_lock_ = true
 
+[node name="Emptymap" type="Sprite2D" parent="."]
+position = Vector2(207, 227)
+texture = ExtResource("8_h037w")
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_t7c86")
 format = 2
@@ -572,6 +578,7 @@ layer_2/name = "HighGroundWalls"
 layer_2/tile_data = PackedInt32Array(262146, 327688, 2, 262147, 327688, 2, 262148, 327688, 2, 262149, 327688, 2, 262150, 327688, 2, 262151, 327688, 2, 262152, 327688, 2, 262153, 327688, 2, 196610, 327688, 1, 196611, 327688, 1, 196612, 327688, 1, 196613, 327688, 1, 196614, 327688, 1, 196615, 327688, 1, 196616, 327688, 1, 196617, 327688, 1, 131074, 327688, 1, 131075, 327688, 1, 131076, 327688, 1, 131077, 327688, 1, 131078, 327688, 1, 131079, 327688, 1, 131080, 327688, 1, 131081, 327688, 1, 327682, 327688, 3, 327683, 327688, 3, 327684, 327688, 3, 327685, 327688, 3, 327686, 327688, 3, 327687, 327688, 3, 327688, 327688, 3, 327689, 327688, 3, 393225, 327688, 3, 393224, 327688, 3, 393223, 327688, 3, 393222, 327688, 3, 393221, 327688, 3, 393220, 327688, 3, 393219, 327688, 3, 393218, 327688, 3, 458754, 327688, 4, 458755, 327688, 4, 458756, 327688, 4, 458757, 327688, 4, 458758, 327688, 4, 458759, 327688, 4, 458760, 327688, 4, 458761, 327688, 4, 65538, 327688, 0, 65539, 327688, 0, 65540, 327688, 0, 65541, 327688, 0, 65542, 327688, 0, 65543, 327688, 0, 65544, 327688, 0, 65545, 327688, 0, 65546, 393224, 0, 131082, 393224, 1, 196618, 393224, 1, 262154, 393224, 2, 327690, 393224, 3, 393226, 393224, 3, 458762, 393224, 4, 458753, 262152, 4, 393217, 262152, 3, 327681, 262152, 3, 262145, 262152, 2, 196609, 262152, 1, 131073, 262152, 1, 65537, 262152, 0)
 
 [node name="GameManager" parent="." instance=ExtResource("8_0cu4f")]
+visible = false
 
 [node name="Level3" parent="." instance=ExtResource("9_6w3b2")]
 position = Vector2(106, 14)
@@ -592,3 +599,7 @@ scale = Vector2(4, 4)
 [node name="TunnelPos" type="Marker2D" parent="."]
 position = Vector2(352, 130)
 scale = Vector2(4, 4)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_umq5e")
+autoplay = true
