@@ -1,3 +1,4 @@
+Button
 AudioStreamPlayer
 VideoStreamPlayer
 AudioStreamPlayer2D
@@ -6,10 +7,8 @@ TileMap
 Marker2D
 CollisionShape2D
 Label
-Button
 VBoxContainer
 Panel
 Control
 CanvasLayer
 Camera2D
-AnimationTree
