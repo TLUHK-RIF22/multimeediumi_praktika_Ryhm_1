@@ -14,8 +14,8 @@ func _ready():
 func _physics_process(_delta):
 	#get input direction
 	var input_direction = Vector2(
-		Input.get_action_strength("right") - Input.get_action_strength("left"),
-		Input.get_action_strength("down") - Input.get_action_strength("up")
+		Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left"),
+		Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 	)
 	
 	update_animation_parameters(input_direction)

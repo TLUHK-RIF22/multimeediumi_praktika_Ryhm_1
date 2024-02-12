@@ -1,9 +1,9 @@
-res://UI/main.tscn
+res://Charecters/player.tscn
+res://Charecters/player.gd
 res://Global.tscn
 res://Levels/Level1.tscn
 res://Levels/Level2.tscn
 res://Levels/Level3.tscn
 res://Entrance.tscn
 res://Levels/Tunnel.tscn
-res://Charecters/player.tscn
-res://UI/main.gd
+res://UI/main.tscn
