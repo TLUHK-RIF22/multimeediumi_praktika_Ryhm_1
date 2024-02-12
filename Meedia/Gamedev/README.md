@@ -32,4 +32,11 @@ Selleks, et need töötaksid tuleb need lisada Autoload tabi kaudu. Selleks tule
 # Player Charecter
 
 `player.tscn` asub `Charecters` kaustas.
-See koosneb `CharecterBody2d`, millele on lisatud `Sprite2d`, `CollisonShape2D`, `AnimationPlayer` ja `AnimationTree`.
+See koosneb `CharecterBody2d`, millele on lisatud `Sprite2d`, `AnimatedSprite2D`, `CollisonShape2D`, `AnimationPlayer` ja `AnimationTree`.
+
+`AnimatedSprite2D` kaudu on lisatud 8 animatsiooni `SpriteFrame`. 4 idle ja 4 walk animation frame.
+Sama kogus on AnimationPlayerisse animatsioone. Igal animatsioonil on vastavad frame-id ja animation Key. Reset Animation vajab vähemalt ühte frame, et korralikult töötada, seega lisasin sellele Idle_Up 1. sprite.
+
+`AnimationTree` sees on 2 `state`, mille vahel saab animatsioon liikuda: `idle` ja `walk`. Prioteetsemaks liikumissuunaks on määratud külgsuunaline liikumine. Kui tegelane liigub nt vasakule ja ülesse samal ajal, siis animatsiooniks saab sellisel juhul vasakule liikumise animatsioon. AnimatsioonTree on aktiivseks määratud ja erinevate `state` vahel liikumine toimub scripti põhiselt. `res://Charecters/player.gd`
+
+Sea default asend on idle_down vaade. Vastavalt sea liikumissuunale ja kiirusele valib ta AnimationTree kaudu oma animatsiooni.
