@@ -28,3 +28,8 @@ Kasutusel on `WASD`, `Nooleklahvid` ja puldi Joypad `D-pad ` ja `vasak analog ju
 
 Mäng kasutab Global muutujaid. Nende laadimine toimub läbi `res://Global.tscn`.
 Selleks, et need töötaksid tuleb need lisada Autoload tabi kaudu. Selleks tuleb see lisada Path: lahtrisse. See lisab `Node Name:` välja muutuja `Global`. See tuleb lisada `Add` nuppu kasutades. Kontrolli üle, et lisandunud väli tekiks ja et seal oleks `Global Variable` all `Enable` linnuke märgitud.
+
+# Player Charecter
+
+`player.tscn` asub `Charecters` kaustas.
+See koosneb `CharecterBody2d`, millele on lisatud `Sprite2d`, `CollisonShape2D`, `AnimationPlayer` ja `AnimationTree`.
