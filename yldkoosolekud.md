@@ -36,3 +36,42 @@
 - Graafikaelementide arutelu
 - Release ja selle sisu
 - Projekti kasutamine
+## 11.02 - 18:00 -1h
+- Edasine tegevus
+- Mängumootorite analüüs
+- Mängu salvestamine?
+- New game, ilmub põrsas, lennuk kukub alla
+- Hero image - high resolution (kindlasti ei tohi unustada pilvi, puid ning ühte hard lemonade).
+- Esimene level- takistusjooks
+- Paberprototüüp? Karl joonistab ühe leveli demoks
+- Järgmine koosolek 15.02 kell 19.00 (20 tugev )
+- Peeter-  algne title screen, impordib esimese heli mängu(testiks),  video import- kõigepealt video ja siis menüü, videole skip nupp. Kaardistada tegevused (dokumentatsioon). 
+- Dave- põrsale teeb üles seljatagant kõndimise vaate, alustab edasiste tilepackide loomisega.  Kaardi keskosa detailid.  Teistsugused põrsad, maa ruudud. happy farm piirkond (B1-B2). 
+- Põrsas- 32x32, valvur 32x64
+- Mapi suurus (1 Level). 1600-1900 mõõdus ning buffer ümber.
+- 1 kaardi kasulik ala 1600x1900, millele laiuses liitub 400px, pikkuses 225px
+- Piirdeks on kiviaed
+- Karl- paberprototüübi alustamine
+- Martin- intro video, davinci
+- Esitlus davinci videona ?  Mida näitame videos ?
+- Slaidide sisu.
+## 11.02 - 19:00 - 1h - Koosolek Praktikajuhendajaga (Laura Hein)
+- Ei tohiks minna hulluks värvidega
+- Proovida kohe ära, millise värvikülluse juures mäng on normaalselt vaadeldav
+- Mängu kontseptsiooni esitlus selgituseks
+- Top down view
+- Interaktsioon teiste tegelastega- võimaldaks välja joonistada detailsuselt
+- Skaleerida pigem ei tohiks
+- Esemete skaalasuhe
+- Mis on vähim element pikslitelt, mida soovime näidata?
+- Esemete kõrvutamine
+- Värvid- lähtuda samast stiilist, mida vaja rõhutada seda rõhutada
+- Elementide piirjoonestamine- puhast musta pigem mitte
+- Kõige hullem möödapanek- resolutsioon, mitu inimest joonistab ilma suhtlemata,
+- Animeerimisel üks samm ette on 6 frame, küljele ei saa olla pikem kui 6 frame
+- Peategelase animeerimine
+- Ajastus 200ms
+- Varjud on hajusad, päike ei paista kunagi, ilm on pilves- selginemisteta!
+- Pea õõtsuma?
+- Külgvaates animeerimine?
+
