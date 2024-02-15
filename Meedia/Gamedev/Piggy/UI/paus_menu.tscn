@@ -43,11 +43,13 @@ theme = ExtResource("2_e0add")
 text = "Resume"
 
 [node name="SaveButton" type="Button" parent="Panel/VBoxContainer"]
+visible = false
 layout_mode = 2
 theme = ExtResource("2_e0add")
 text = "Save"
 
 [node name="LoadButton" type="Button" parent="Panel/VBoxContainer"]
+visible = false
 layout_mode = 2
 theme = ExtResource("2_e0add")
 text = "Load"

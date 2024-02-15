@@ -40,3 +40,37 @@ Sama kogus on AnimationPlayerisse animatsioone. Igal animatsioonil on vastavad f
 `AnimationTree` sees on 2 `state`, mille vahel saab animatsioon liikuda: `idle` ja `walk`. Prioteetsemaks liikumissuunaks on määratud külgsuunaline liikumine. Kui tegelane liigub nt vasakule ja ülesse samal ajal, siis animatsiooniks saab sellisel juhul vasakule liikumise animatsioon. AnimatsioonTree on aktiivseks määratud ja erinevate `state` vahel liikumine toimub scripti põhiselt. `res://Charecters/player.gd`
 
 Sea default asend on idle_down vaade. Vastavalt sea liikumissuunale ja kiirusele valib ta AnimationTree kaudu oma animatsiooni.
+
+# Gates
+
+Levelite vaheline laadimine toimub kasutated `Area2D` node. Area2D node küljes on CollisionShape2D, mis on ristküliku kujuline. Area2D on lisatud 2 Node'i Signaali:
+
+- body_entered
+- body_exited
+
+Area2D'le on lisatud Script: res://Gate.gd
+
+See script kontrollib, kas PLayer on isenendud CollisionShape2D alasse. Kui jah, siis käivitub script, mis laeb järgmise ala.
+
+Leveli laadimisel käivitub Levelite stseenide külge paigaldatud res://Levels/Levels.gd script. See loeb globaalsest muutujast, millisest levelist Player pärit on. Kui Player vahetab levelit, kirjutatakse ta Leveli nimi Global.from_level muutujasse. Sellest muutujast loetakse see nimi, liidetakse sellele juurde tähed `Pos`. Levelitele on lisatud `Marker2D` elemendid, millel on talle vastava Leveli nimi ja nimi lõpeb tähtedega `Pos`. `Pos` on lühend sõnast "position".
+
+# Pause menu
+
+Kui mäng on pausil, hakkab mängima `AudioStreamPlayer`. Muusikapalaks on 'menüü_põhi.mp3'. Selle seaded on:
+
+- Autoplay
+- Process - Mode - 'When Paused'
+
+Pause Menu koosneb kahest elemendist:
+
+- Resume - peidab menüü uuesti ära
+- Exit - paneb mängu kinni
+
+# World map
+
+3X3 map on loodud. Igast levelist saab minna järgmisse.
+| | | |
+|----|----|----|
+| a1 | b1 | c1 |
+| a2 | b2 | c2 |
+| a3 | b3 | c3 |
