@@ -1,5 +1,6 @@
-res://Levels/Spikes/Spikes.tscn
-res://Charecters/player_spikes.tscn
-res://Levels/Spikes/Ground.tscn
-res://Levels/Spikes/Spikes.gd
-res://Levels/LevelA1.tscn
+res://UI/Intro/Intro.tscn
+res://UI/main.tscn
+res://UI/Intro/IntroVideo.tscn
+res://UI/Intro/IntroVideo.gd
+res://UI/Intro/Intro.gd
+res://UI/Intro/Label.gd

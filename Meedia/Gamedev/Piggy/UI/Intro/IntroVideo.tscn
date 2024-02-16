@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://bexvo6j30c3ff"]
+
+[ext_resource type="Script" path="res://UI/Intro/IntroVideo.gd" id="1_cxdnc"]
+[ext_resource type="VideoStream" path="res://UI/Intro/PiggyIntro.ogv" id="1_lqrli"]
+[ext_resource type="Script" path="res://UI/Intro/Label.gd" id="3_0644p"]
+
+[node name="Introvideo" type="Node2D"]
+script = ExtResource("1_cxdnc")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+offset_right = 1920.0
+offset_bottom = 1088.0
+stream = ExtResource("1_lqrli")
+autoplay = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 266.0
+offset_top = 237.0
+offset_right = 474.0
+offset_bottom = 262.0
+horizontal_alignment = 2
+script = ExtResource("3_0644p")
+
+[connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]

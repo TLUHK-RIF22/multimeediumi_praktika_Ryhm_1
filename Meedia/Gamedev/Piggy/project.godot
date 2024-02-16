@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Piggy"
-run/main_scene="res://UI/main.tscn"
+run/main_scene="res://UI/Intro/Intro.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
