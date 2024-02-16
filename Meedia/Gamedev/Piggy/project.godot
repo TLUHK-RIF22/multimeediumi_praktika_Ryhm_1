@@ -21,10 +21,10 @@ Global="*res://Global.tscn"
 
 [display]
 
-window/size/viewport_width=1600
-window/size/viewport_height=900
+window/size/viewport_width=480
+window/size/viewport_height=270
+window/size/mode=2
 window/stretch/mode="canvas_items"
-window/stretch/scale=4.0
 
 [input]
 

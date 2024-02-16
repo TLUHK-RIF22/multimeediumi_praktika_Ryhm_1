@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://e8gdro5q81mg"
+path="res://.godot/imported/müstiline taust cduurpuukuur.mp3-42ac1d95cc02c99b3054b5e88663504b.mp3str"
+
+[deps]
+
+source_file="res://Audio/müstiline taust cduurpuukuur.mp3"
+dest_files=["res://.godot/imported/müstiline taust cduurpuukuur.mp3-42ac1d95cc02c99b3054b5e88663504b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

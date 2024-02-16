@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://cmhq455db5pq8"]
+
+[ext_resource type="Script" path="res://Levels/Spikes/Spikes.gd" id="1_1eoqm"]
+[ext_resource type="PackedScene" uid="uid://cgcxej2wnqt3m" path="res://Levels/Spikes/Ground.tscn" id="2_v0fvw"]
+[ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://game_manager.tscn" id="4_ddl8f"]
+[ext_resource type="AudioStream" uid="uid://e8gdro5q81mg" path="res://Audio/müstiline taust cduurpuukuur.mp3" id="5_gcccy"]
+[ext_resource type="PackedScene" uid="uid://bnpy81qqv4kht" path="res://Charecters/player_spikes.tscn" id="5_xp57m"]
+
+[node name="Spikes" type="Node2D"]
+script = ExtResource("1_1eoqm")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(240, 135)
+
+[node name="Ground" parent="." instance=ExtResource("2_v0fvw")]
+position = Vector2(0, 1)
+
+[node name="player_spikes" parent="." instance=ExtResource("5_xp57m")]
+position = Vector2(232, 192)
+
+[node name="GameManager" parent="." instance=ExtResource("4_ddl8f")]
+visible = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_gcccy")
+autoplay = true

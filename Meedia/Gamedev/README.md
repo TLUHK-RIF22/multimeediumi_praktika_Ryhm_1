@@ -74,3 +74,10 @@ Pause Menu koosneb kahest elemendist:
 | a1 | b1 | c1 |
 | a2 | b2 | c2 |
 | a3 | b3 | c3 |
+
+# Spikes level
+
+Spikes leveli on põgenemistase. Piggy peab jooksma alt üles. Talle satuvad ette takistused, millest ta peab mööda põikama.
+Taseme jaoks on tehtud alternatiivne Player tüüp, mis suudab liikuda vaid vasakule-paremale. Tema üles-alla liikumine on scripti poolt muudetud. Kui Player jääb takistuse taha kinni ja ta hakkab ekraanilt väljuma, siis Script sätib ta asukoha ekraani laiuse alumisse äärde. Level lõpeb, kui Player on jõudnud üle ekraani ülemise ääre 32px (kaob ekraanilt). Player laetakse scripti poolt määratud levelile, kust ta saab jätkata oma seiklusi.
+
+Kõik elemendid asuvad res://Levels/Spikes kaustas. Ground.tscn on taust, mis laetakse pidevalt uuesti. Takistused on hetkel joonistatud otse selle peale.
