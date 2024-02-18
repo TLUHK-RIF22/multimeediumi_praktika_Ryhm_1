@@ -1,5 +1,6 @@
 extends Node2D
 
+
 var screen_size :int = 270
 var scroll = 0
 var scroll_speed = 2
@@ -15,5 +16,4 @@ func _process(_delta):
 	$player_spikes.position.y -= piggy_speed
 	if $player_spikes.position.y > screen_size:
 		$player_spikes.position.y = screen_size 
-	if $player_spikes.position.y < -32:
-		get_tree().change_scene_to_file("res://Levels/LevelB2.tscn")
+	

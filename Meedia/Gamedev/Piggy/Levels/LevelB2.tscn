@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://ch8wnk4slan78"]
+[gd_scene load_steps=14 format=3 uid="uid://ch8wnk4slan78"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_jhued"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/player.tscn" id="2_fyam3"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://game_manager.tscn" id="6_88mpu"]
 [ext_resource type="AudioStream" uid="uid://cu8l14cttsk3s" path="res://Audio/menüü põhi.mp3" id="8_uerdi"]
 [ext_resource type="PackedScene" uid="uid://cxp54qdqfuvlm" path="res://Gate.tscn" id="8_valm3"]
+[ext_resource type="PackedScene" uid="uid://dscndc5iq3qrs" path="res://Entrance.tscn" id="9_hl140"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k4qqy"]
 texture = ExtResource("3_bwsj5")
@@ -606,3 +607,10 @@ scale = Vector2(4, 4)
 
 [node name="LevelC2" parent="." instance=ExtResource("8_valm3")]
 position = Vector2(1034, 301)
+
+[node name="SpikesPos" type="Marker2D" parent="."]
+position = Vector2(105, 12)
+scale = Vector2(16, 16)
+
+[node name="Spikes" parent="." instance=ExtResource("9_hl140")]
+position = Vector2(104, 138)

@@ -14,6 +14,6 @@ func _process(_delta):
 		if Input.is_action_just_pressed("ui_accept"):
 			Global.from_level = get_parent().name
 			
-			get_tree().change_scene_to_file("res://Levels/"+ self.name +".tscn")
+			get_tree().change_scene_to_file("res://Levels/"+ self.name + "/" + self.name +".tscn")
 			print(self.name)
 			
