@@ -74,4 +74,13 @@
 - Varjud on hajusad, päike ei paista kunagi, ilm on pilves- selginemisteta!
 - Pea õõtsuma?
 - Külgvaates animeerimine?
+## 15.02-2h
+- Senise progressi arutelu
+- Q / A
+- Paberprototüübi arutelu
+- Tile põhja arutelu
+- Värvikülluse küsimus, musti piirjooni ei kasuta
+- Issuede arutelu
+- Tegevusplaan
+- Süzee, slaidid, mängu olemus, prototüüp leveli joonistamine, vaimne rännak. 
 
