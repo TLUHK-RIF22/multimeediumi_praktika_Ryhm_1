@@ -19,7 +19,22 @@ Vastavalt projekti sisule https://github.com/orgs/TLUHK-RIF22/projects/7
 
 ## Mängumootori valik
 
-Mängumootoriks osutus antud meeskonna poolt Godot, sest sellel on tugev ja kasvava kogukond . Tegemist on avatud lähtekoodiga ning tasuta programmiga. Puuduvad litsentsimistasud. Godot toetab mitmeid platvorme, nii windowsi, macOS kui ka Linuxit. Vastavalt tehtud otsingule ning ühise meeskonna töö tulemusena, jõudsime järeldusele, et Godot on ideaalne valik 2D graafikaga mängu tegemiseks. Lisaks on ka Godotil väga suur ja inforohke kogukond.
+Mängumootoriks osutus antud meeskonna poolt Godot. Tegemist on avatud lähtekoodiga ning tasuta programmiga. Puuduvad litsentsimistasud. Godot toetab mitmeid platvorme, nii windowsi, macOS kui ka Linuxit. Vastavalt tehtud otsingule ning ühise meeskonna töö tulemusena, jõudsime järeldusele, et Godot on ideaalne valik 2D graafikaga mängu tegemiseks. Lisaks on ka Godotil väga suur ja inforohke kogukond, kust materjale ja lisainfot leida ideede teostamiseks. Otsus langetati Godot, Unreal ning Unity mootorite vahelt.
+
+| Omadus             | Godot Engine                                                  | Unreal Engine                                                 | Unity                                                          |
+|--------------------|---------------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------------|
+| **Programmeerimiskeel** | GDScript, C#, C++                                           | C++, Skeemid (Blueprints), C#                                 | C#, UnityScript (aegunud), C++                                 |
+| **Platvormitugi**  | Windows, macOS, Linux, Android, iOS, HTML5, teised            | Windows, macOS, Linux, Android, iOS, HTML5, konsoolid, teised | Windows, macOS, Linux, Android, iOS, WebGL, konsoolid, teised |
+| **Graafika**       | OpenGL ES 2.0, 3.0, GLES 3.1, Vulkan       | DirectX, Vulkan, OpenGL                                       | DirectX, OpenGL, Vulkan                  |
+| **Renderdamine**   | Füüsikapõhine renderdamine (PBR), 2D, 3D                      | Kõrgekvaliteetne renderdamine, PBR, Real-time ray tracing (RTX) | PBR, 2D, 3D, Real-time ray tracing (HDRP)           |
+| **Varade toru**    | Tõhus, sujuv, sisseehitatud importijad erinevatele formaatidele | Tugev vara importimine, manipuleerimine ja haldamine         | Paindlik, kohandatav, Asset Store integratsioon               |
+| **Kasutusmugavus**| Kasutajasõbralik, intuitiivne liides, visuaalne skriptimine (GDScript) | Algajatele keeruline, ulatuslik dokumentatsioon            | Algajatele sobiv, ulatuslik dokumentatsioon, visuaalne skriptimine (Bolt) |
+| **Kogukond**       | Kasvav kogukond, aktiivsed foorumid ja kogukonnapõhine arendamine | Suur, aktiivne kogukond, ulatuslikud foorumid, ametlik tugi | Hiiglaslik kogukond, Asset Store, foorumid, ametlik tugi     |
+| **Õppekõver**     | Mõõdukas, sobib algajatele ja kogenud arendajatele             | Järsem õppekõver, eriti keerukamate funktsioonide puhul         | Mõõdukast järsem, ulatuslikud õppematerjalid on saadaval     |
+| **Hind**           | Tasuta ja avatud lähtekoodiga                                  | Tasuta isiklikuks kasutamiseks, litsentsitasu kommertsprojektidele | Tasuta isiklikuks kasutamiseks, tellimusel põhinev kommertsprojektidele |
+
+
+
 
 ## Riskianalüüs
 [Riskianalüüsi issue](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/16)
