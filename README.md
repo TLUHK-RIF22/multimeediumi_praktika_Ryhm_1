@@ -5,7 +5,7 @@
 |--------|-------|--------|
 | [Süžee ja tasemed](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/blob/main/s%C3%BC%C5%BEee.md)  | [Graafika (non-live)](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/tree/main/Meedia/Graafika) | [Mängufailid - Sprited](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/tree/main/Meedia/Gamedev/Piggy/Sprites)  |
 | [Mänguarenduse dokumentatsioon](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/blob/main/Meedia/Gamedev/README.md)  | [Mängufailid - Audio](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/tree/main/Meedia/Audio) | [Mängufailid - Kaardiosad](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/tree/main/Meedia/Gamedev/Piggy/Tiles) |
-| [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768) | [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768) | [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768) |
+| [Riskianalüüs](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/16#issuecomment-1927801025) | [Mängufailid - Video](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/tree/main/Meedia/Video) | [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768) |
 | [Koosolekud - Issue 26](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/26) | [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768) | [nothing](https://podcasts.apple.com/us/podcast/beef-and-dairy-network/id1022024768) |
 
 
