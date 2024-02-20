@@ -36,6 +36,8 @@
 - Graafikaelementide arutelu
 - Release ja selle sisu
 - Projekti kasutamine
+## 09.02 - Teine loeng-  3h
+- Loeng
 ## 11.02 - 18:00 -1h
 - Edasine tegevus
 - Mängumootorite analüüs
