@@ -1,7 +1,7 @@
-# [The Secret of Piggy island](https://github.com/orgs/TLUHK-RIF22/projects/7)
+# [Escape from Piggy Island](https://github.com/orgs/TLUHK-RIF22/projects/7)
 
 ## Projekti kiirmenüü
-| [̲̅~][̲̅~][̲̅~][̲̅~] | 𝕋𝕙𝕖 𝕚𝕤𝕝𝕒𝕟𝕕 𝕒𝕨𝕒𝕚𝕥s..  | [̲̅~][̲̅~][̲̅~][̲̅~] |
+| [̲̅~][̲̅~][̲̅~][̲̅~] | 𝕋𝕙𝕖 𝕚𝕤𝕝𝕒𝕟𝕕 𝕒𝕨𝕒𝕚𝕥𝕤..  | [̲̅~][̲̅~][̲̅~][̲̅~] |
 |--------|-------|--------|
 | [Süžee ja tasemed](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/blob/main/s%C3%BC%C5%BEee.md)  | [Graafika (non-live)](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/tree/main/Meedia/Graafika) | [Mängufailid - Sprited](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/tree/main/Meedia/Gamedev/Piggy/Sprites)  |
 | [Mänguarenduse dokumentatsioon](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/blob/main/Meedia/Gamedev/README.md)  | [Mängufailid - Audio](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/tree/main/Meedia/Audio) | [Mängufailid - Kaardiosad](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/tree/main/Meedia/Gamedev/Piggy/Tiles) |
