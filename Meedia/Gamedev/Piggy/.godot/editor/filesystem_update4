@@ -1,10 +1,4 @@
-res://UI/main.tscn
-res://UI/Intro/Intro.tscn
-res://UI/Intro/IntroVideo.tscn
+res://Charecters/player_spikes.tscn
 res://Levels/LevelB2.tscn
-res://Entrance.tscn
-res://Entrance.gd
 res://Levels/Spikes/Spikes.tscn
-res://Levels/Spikes/Spikes.gd
-res://Gate2.tscn
-res://Gate.gd
+res://Levels/Spikes/Ground.tscn
