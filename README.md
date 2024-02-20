@@ -17,7 +17,7 @@
 ### Umbkaudne tegevusplaan
 Vastavalt projekti sisule https://github.com/orgs/TLUHK-RIF22/projects/7
 
-## Mängumootori valik
+## Mängumootori(te) valik
 
 Mängumootoriks osutus antud meeskonna poolt Godot. Tegemist on avatud lähtekoodiga ning tasuta programmiga. Puuduvad litsentsimistasud. Godot toetab mitmeid platvorme, nii windowsi, macOS kui ka Linuxit. Vastavalt tehtud otsingule ning ühise meeskonna töö tulemusena, jõudsime järeldusele, et Godot on ideaalne valik 2D graafikaga mängu tegemiseks. Lisaks on ka Godotil väga suur ja inforohke kogukond, kust materjale ja lisainfot leida ideede teostamiseks. Otsus langetati Godot, Unreal ning Unity mootorite vahelt.
 
