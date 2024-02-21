@@ -67,7 +67,7 @@ Mängumootoriks osutus antud meeskonna poolt Godot. Tegemist on avatud lähtekoo
 
 [Karl Erik Kalmus (graafikadisainer, testija)](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/21)
 
-[Dave Talimaa (graafikadisainer, (toetav)arendaja)](https://github.com/orgs/TLUHK-RIF22/projects/7/views/1?pane=issue&itemId=52156977)
+[Dave Talimaa (graafikadisainer, (toetav)arendaja)](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/15)
 
 
 
