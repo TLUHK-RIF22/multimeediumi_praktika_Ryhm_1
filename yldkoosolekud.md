@@ -85,7 +85,7 @@
 - Issuede arutelu
 - Tegevusplaan
 - Süzee, slaidid, mängu olemus, prototüüp leveli joonistamine, vaimne rännak. 
-## 20.02 - üldkoosolek - 2h
+## 20.02 - 2h
 Käsitletud teemad:
 - Q / A
 - Videod
