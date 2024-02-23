@@ -99,3 +99,20 @@ Käsitletud teemad:
 - Issued
 - Kaustapuud
 - Ajahaldus
+
+## 23.02 - kohtumine koolis + visioonikoosolek - 2h+4h
+- esitlesime arenguid ja saime tagasisidet
+
+koosolekul:
+- lõime kokku vajalikud assetid, mille peame joonistama
+- üleüldine arutelu sisu osas
+- arutelu disaini osas - töötasime läbi näiteid 2d mängudest Steamis
+- mõtlesime, mis muusika kirjutada vaimse rännaku levelisse
+
+
+![alt text for screen readers](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/blob/main/Meedia/Gameplan%20brainstorms/Image.jpg?raw=true "Text to show on mouseover").
+![alt text for screen readers](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/blob/main/Meedia/Gameplan%20brainstorms/Image%20(2).jpg?raw=true "Text to show on mouseover").
+![alt text for screen readers](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/blob/main/Meedia/Gameplan%20brainstorms/Image%20(3).jpg?raw=true "Text to show on mouseover").
+
+
+
