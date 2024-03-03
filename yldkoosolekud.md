@@ -114,5 +114,22 @@ koosolekul:
 ![alt text for screen readers](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/blob/main/Meedia/Gameplan%20brainstorms/Image%20(2).jpg?raw=true "Text to show on mouseover").
 ![alt text for screen readers](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/blob/main/Meedia/Gameplan%20brainstorms/Image%20(3).jpg?raw=true "Text to show on mouseover").
 
+## 03.03-19:00- 1h
+- Q / A
+- Google web designer vaheklippidele?
+- Erinevate liikmete senine ülevaade / progress
+- Dialoogsüsteem- https://www.reddit.com/r/godot/comments/m3ghec/how_to_build_a_dialog_system_without_selling_your/?rdt=37193
+- Materjali githubi laadimise intervall
+- Logo
+- Lisa levelite muusika
+- Mängu beta edasi lükkamine
+- Esialgne leveli disain
+- Karlerik esmaspäeva või teisipäeva õhtul esimene kaart assetid DAVELT
+- Random NPC?
+- Mängu menüü? FX tugevus ja Muusika tugevus
+- Inventory korjamine?
+- Lõpustatistika? Kui siis huumoriga pooleks.
+- Kas toome platformeri sisse?
+- Interaktiivsusearendus
 
 
