@@ -114,7 +114,7 @@ koosolekul:
 ![alt text for screen readers](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/blob/main/Meedia/Gameplan%20brainstorms/Image%20(2).jpg?raw=true "Text to show on mouseover").
 ![alt text for screen readers](https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/blob/main/Meedia/Gameplan%20brainstorms/Image%20(3).jpg?raw=true "Text to show on mouseover").
 
-## 03.03-19:00- 1h
+## 03.03- 1h
 - Q / A
 - Google web designer vaheklippidele?
 - Erinevate liikmete senine ülevaade / progress
