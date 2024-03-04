@@ -3,3 +3,6 @@ res://Levels/Spikes/Spikes.tscn
 res://Levels/Spikes/Ground.tscn
 res://Charecters/player_spikes.tscn
 res://Charecters/player.gd
+res://Charecters/NPC_Pig_Brown.tscn
+res://Charecters/player.tscn
+res://Levels/Test.tscn

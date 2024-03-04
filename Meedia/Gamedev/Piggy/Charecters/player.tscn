@@ -182,7 +182,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Idle_Up",
-"speed": 5.0
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -621,18 +621,19 @@ states/walk/position = Vector2(592, 100)
 transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_h4p7c"), "idle", "walk", SubResource("AnimationNodeStateMachineTransition_bxky4"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_mhfug")]
 
 [node name="Player" type="CharacterBody2D"]
+y_sort_enabled = true
 script = ExtResource("1_48kxu")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.04105, 0.761523)
 hframes = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, 5)
+position = Vector2(0, -9)
 sprite_frames = SubResource("SpriteFrames_3kbif")
 animation = &"Idle_Up"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, 12.5)
 shape = SubResource("RectangleShape2D_f6vov")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
