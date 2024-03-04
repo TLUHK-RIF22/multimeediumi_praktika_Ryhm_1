@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://ch8wnk4slan78"]
+[gd_scene load_steps=18 format=3 uid="uid://ch8wnk4slan78"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_jhued"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/player.tscn" id="2_fyam3"]
@@ -10,6 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://cxp54qdqfuvlm" path="res://Gate.tscn" id="8_valm3"]
 [ext_resource type="PackedScene" uid="uid://dscndc5iq3qrs" path="res://Entrance.tscn" id="9_hl140"]
 [ext_resource type="PackedScene" uid="uid://xhyvrvafwkbv" path="res://Charecters/NPC_Pig_Brown.tscn" id="10_b2xij"]
+[ext_resource type="Texture2D" uid="uid://b3c2dqwl74wwd" path="res://Sprites/apple.png" id="11_3ukl7"]
+[ext_resource type="Script" path="res://Levels/Apple.gd" id="11_8enjf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k4qqy"]
 texture = ExtResource("3_bwsj5")
@@ -637,6 +639,8 @@ sources/6 = SubResource("TileSetAtlasSource_k4qqy")
 sources/8 = SubResource("TileSetAtlasSource_tfp7p")
 sources/9 = SubResource("TileSetAtlasSource_q4yn4")
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_mbdkv"]
+
 [node name="LevelB2" type="Node2D"]
 process_mode = 1
 y_sort_enabled = true
@@ -705,3 +709,18 @@ position = Vector2(104, 138)
 
 [node name="NPC_Pig_Brown" parent="." instance=ExtResource("10_b2xij")]
 position = Vector2(179, -40)
+
+[node name="Apple" type="StaticBody2D" parent="."]
+position = Vector2(5, -99)
+script = ExtResource("11_8enjf")
+
+[node name="Sprite2D" type="Sprite2D" parent="Apple"]
+texture = ExtResource("11_3ukl7")
+
+[node name="AppleDetection" type="Area2D" parent="Apple"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Apple/AppleDetection"]
+shape = SubResource("CircleShape2D_mbdkv")
+
+[connection signal="body_entered" from="Apple/AppleDetection" to="Player" method="_on_apple_detection_body_entered"]
+[connection signal="body_exited" from="Apple/AppleDetection" to="Player" method="_on_apple_detection_body_exited"]
