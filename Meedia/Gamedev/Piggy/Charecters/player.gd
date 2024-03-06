@@ -8,6 +8,8 @@ extends CharacterBody2D
 @onready var animation_tree = $AnimationTree
 @onready var state_machine = animation_tree.get("parameters/playback")
 
+var apple_dec = false
+
 func _ready():
 	update_animation_parameters(starting_direction)
 
@@ -20,11 +22,18 @@ func _physics_process(_delta):
 	
 	update_animation_parameters(input_direction)
 	#update veleocity
+	velocity = velocity.normalized()
 	velocity = input_direction * move_speed
 	
 	# Move and Slide 
 	move_and_slide()
 	pick_new_state()
+	
+	if apple_dec == true:
+		if Input.is_action_just_pressed("ui_accept"):
+			Global.apple_found = true
+			
+	
 func update_animation_parameters(move_input : Vector2):
 	# Don't change animation parameters if there is on move input
 	if(move_input != Vector2.ZERO):
@@ -38,3 +47,16 @@ func pick_new_state():
 		state_machine.travel("walk")
 	else:
 		state_machine.travel("idle")
+
+func Player():
+	pass
+
+
+func _on_apple_detection_body_entered(body):
+	if body.has_method("Player"):
+		apple_dec = true
+
+
+func _on_apple_detection_body_exited(body):
+	if body.has_method("Player"):
+		apple_dec = false
