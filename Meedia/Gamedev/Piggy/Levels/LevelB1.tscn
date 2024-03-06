@@ -556,6 +556,7 @@ script = ExtResource("1_cwob6")
 
 [node name="Player" parent="." instance=ExtResource("2_bhowr")]
 top_level = true
+y_sort_enabled = true
 position = Vector2(257, 92)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
