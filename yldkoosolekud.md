@@ -132,4 +132,28 @@ koosolekul:
 - Kas toome platformeri sisse?
 - Interaktiivsusearendus
 
-
+## 06.03.- 1h
+- Suured põrsad, väiksed sead
+- Assetite arutelu
+- Vee piir?
+- Mapi suurus väiksemaks
+- Mapi koostamine
+- Mängu menüü audio reguleerimine
+- Inventory korjamine
+- Mängufüüsika
+- Frame kiirused 0.2
+- Chatboxid- jah? ei? Või mull?
+- Diagonaalne liikumiskiirus? 1.44
+- Eksperimenteerisime piiridega ning lasime Githubi repositooriumi õhku
+- Release arutelu, mis on toimunud:
+--  Mängule on tekkimas esimene päris kaart
+-- On loodud juba tõsisemad assetid
+-- On suudetud luua esimesed realistlikud mängufüüsikad
+-- Mängust on valminud digitaalne prototüüp
+-- Mängule on valminud logo 
+-- Tilepackide pack
+-- Põrsas suudab juba asju korjata
+-- Esialgne inventory versioon on tekkinud mootoris
+-- Tegelaste kiirused on läinud vihasemaks
+-- Mängu beta release date on läinud realsitlikumaks
+-- Saime proovida failide taastamist peale kogemata repositooriumi “õhku laskmist”.
