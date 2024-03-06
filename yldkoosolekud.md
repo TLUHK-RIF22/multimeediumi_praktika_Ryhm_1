@@ -146,14 +146,14 @@ koosolekul:
 - Diagonaalne liikumiskiirus? 1.44
 - Eksperimenteerisime piiridega ning lasime Githubi repositooriumi õhku
 - Release arutelu, mis on toimunud:
---  Mängule on tekkimas esimene päris kaart
--- On loodud juba tõsisemad assetid
--- On suudetud luua esimesed realistlikud mängufüüsikad
--- Mängust on valminud digitaalne prototüüp
--- Mängule on valminud logo 
--- Tilepackide pack
--- Põrsas suudab juba asju korjata
--- Esialgne inventory versioon on tekkinud mootoris
--- Tegelaste kiirused on läinud vihasemaks
--- Mängu beta release date on läinud realsitlikumaks
--- Saime proovida failide taastamist peale kogemata repositooriumi “õhku laskmist”.
+<p>--  Mängule on tekkimas esimene päris kaart
+<p>-- On loodud juba tõsisemad assetid
+<p>-- On suudetud luua esimesed realistlikud mängufüüsikad
+<p>-- Mängust on valminud digitaalne prototüüp
+<p>-- Mängule on valminud logo 
+<p>-- Tilepackide pack
+<p>-- Põrsas suudab juba asju korjata
+<p>-- Esialgne inventory versioon on tekkinud mootoris
+<p>-- Tegelaste kiirused on läinud vihasemaks
+<p>-- Mängu beta release date on läinud realsitlikumaks
+<p>-- Saime proovida failide taastamist peale kogemata repositooriumi “õhku laskmist”.
