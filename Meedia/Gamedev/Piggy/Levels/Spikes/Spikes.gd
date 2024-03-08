@@ -3,7 +3,7 @@ extends Node2D
 
 var screen_size :int = 270
 var scroll = 0
-var scroll_speed = 1
+var scroll_speed = 0.8
 var piggy_speed = 0.2
 
 
