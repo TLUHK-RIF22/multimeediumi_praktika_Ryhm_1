@@ -157,3 +157,38 @@ koosolekul:
 <p>-- Tegelaste kiirused on läinud vihasemaks
 <p>-- Mängu beta release date on läinud realsitlikumaks
 <p>-- Saime proovida failide taastamist peale kogemata repositooriumi “õhku laskmist”.
+
+## 08.03- 1h loeng, esitlus
+- loeng, esitlus
+  
+## 10.03- 1h
+- Q/A
+- Disainer Dave Tilepack esitlus ja arutlus
+- Kihtide arutelu
+- Githubi seisukord ja repositooriumi materjalide lisamine
+- Praktikapäevikute täitmine
+- Mapi loogika, storyline
+- Maailma ülesanne, et uks teise maailma avaneks
+- Kas maailma eritasandite vahel liikumine jääb avatuks?
+- Uks avaneb, siis saab edasi minna.
+- Puuhaluga autentimine
+- Interactimine ja NPC
+- Juurikad, puuriidad
+- Halud
+- Mäng on endiselt pilves ilmaga, selginemistega
+- Logimine
+- Barni tileside vajadus
+- Perspektiivid
+- Inspiratsiooni ammutamine erinevatest sama ajastu materjalidest
+- Dave tahab järgmiseks korraks teha küüni
+- Värvide tonaalsus
+- Kaevu tiles
+- Siga tuleb üle värvida
+- Silla tiles
+- Aia Tiles
+- Cutscened
+- video fail on .mp4 seda saab convertida VLC playeriga .ogg failiks. see tuleb muuta "käsitsi" .ogv failiks
+- Helid interaktsioonis
+
+- Järgmine pühapäev 17.03 uus kohtumine
+
