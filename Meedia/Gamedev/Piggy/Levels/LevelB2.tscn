@@ -1,19 +1,15 @@
-[gd_scene load_steps=15 format=3 uid="uid://ch8wnk4slan78"]
+[gd_scene load_steps=13 format=3 uid="uid://ch8wnk4slan78"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_jhued"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/player.tscn" id="2_fyam3"]
 [ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://game_manager.tscn" id="6_88mpu"]
+[ext_resource type="PackedScene" uid="uid://c5h6i1vrldhsx" path="res://Pickup/pickup.tscn" id="8_3ja8d"]
 [ext_resource type="AudioStream" uid="uid://cu8l14cttsk3s" path="res://Audio/menüü põhi.mp3" id="8_uerdi"]
 [ext_resource type="PackedScene" uid="uid://cxp54qdqfuvlm" path="res://Gate.tscn" id="8_valm3"]
 [ext_resource type="PackedScene" uid="uid://dscndc5iq3qrs" path="res://Entrance.tscn" id="9_hl140"]
 [ext_resource type="PackedScene" uid="uid://xhyvrvafwkbv" path="res://Charecters/NPC_Pig_Brown.tscn" id="10_b2xij"]
 [ext_resource type="Texture2D" uid="uid://36fx0vitw88f" path="res://Tiles/Sandmap.png" id="10_nq3gw"]
-[ext_resource type="Texture2D" uid="uid://b3c2dqwl74wwd" path="res://Sprites/apple.png" id="11_3ukl7"]
-[ext_resource type="Script" path="res://Levels/Apple.gd" id="11_8enjf"]
-
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_wrw15"]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_mbdkv"]
+[ext_resource type="Resource" uid="uid://260ntl5v26wx" path="res://Items/pear.tres" id="10_qvnir"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_roo4d"]
 texture = ExtResource("10_nq3gw")
@@ -449,20 +445,6 @@ position = Vector2(86, 144)
 [node name="NPC_Pig_Brown" parent="." instance=ExtResource("10_b2xij")]
 position = Vector2(179, -40)
 
-[node name="Apple" type="StaticBody2D" parent="."]
-y_sort_enabled = true
-position = Vector2(5, -99)
-physics_material_override = SubResource("PhysicsMaterial_wrw15")
-script = ExtResource("11_8enjf")
-
-[node name="Sprite2D" type="Sprite2D" parent="Apple"]
-texture = ExtResource("11_3ukl7")
-
-[node name="AppleDetection" type="Area2D" parent="Apple"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Apple/AppleDetection"]
-shape = SubResource("CircleShape2D_mbdkv")
-
 [node name="TileMap" type="TileMap" parent="."]
 y_sort_enabled = true
 tile_set = SubResource("TileSet_6hoou")
@@ -474,5 +456,12 @@ layer_0/tile_data = PackedInt32Array(983036, 65536, 10, 983037, 0, 7, 1048572, 3
 
 [node name="GameManager" parent="." instance=ExtResource("6_88mpu")]
 
-[connection signal="body_entered" from="Apple/AppleDetection" to="Player" method="_on_apple_detection_body_entered"]
-[connection signal="body_exited" from="Apple/AppleDetection" to="Player" method="_on_apple_detection_body_exited"]
+[node name="pickupApple" parent="." instance=ExtResource("8_3ja8d")]
+position = Vector2(30, -59)
+
+[node name="apple" parent="." instance=ExtResource("8_3ja8d")]
+position = Vector2(113, -10)
+
+[node name="pear" parent="." instance=ExtResource("8_3ja8d")]
+position = Vector2(104, -80)
+item = ExtResource("10_qvnir")

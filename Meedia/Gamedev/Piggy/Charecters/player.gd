@@ -60,3 +60,6 @@ func _on_apple_detection_body_entered(body):
 func _on_apple_detection_body_exited(body):
 	if body.has_method("Player"):
 		apple_dec = false
+
+func on_item_picked_up(item:Item):
+	print("I got a ", item.name)
