@@ -29,6 +29,11 @@ stream = ExtResource("5_gcccy")
 autoplay = true
 
 [node name="LevelB2" parent="." instance=ExtResource("6_eq840")]
-position = Vector2(238, -17)
+position = Vector2(240, 295)
+collision_layer = 2
+collision_mask = 2
+
+[node name="LevelB3" parent="." instance=ExtResource("6_eq840")]
+position = Vector2(237, 20)
 collision_layer = 2
 collision_mask = 2

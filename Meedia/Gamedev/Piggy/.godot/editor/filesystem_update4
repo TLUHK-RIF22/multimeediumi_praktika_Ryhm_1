@@ -16,3 +16,6 @@ res://Levels/LevelA3.tscn
 res://Charecters/player.gd
 res://UI/main.tscn
 res://UI/main.gd
+res://Levels/Spikes/Spikes.tscn
+res://Levels/Spikes/Spikes.gd
+res://Levels/Spikes/Ground.tscn

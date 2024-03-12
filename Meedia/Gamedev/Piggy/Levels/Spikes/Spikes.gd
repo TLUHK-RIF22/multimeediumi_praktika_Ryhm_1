@@ -10,8 +10,8 @@ var piggy_speed = 0.2
 	
 func _process(_delta):
 	scroll += scroll_speed
-	if scroll >= screen_size:
-		scroll = 0
+#	if scroll >= screen_size:
+	#	scroll = 0
 	$Ground.position.y = +scroll
 	$player_spikes.position.y -= piggy_speed
 	if $player_spikes.position.y > screen_size:
