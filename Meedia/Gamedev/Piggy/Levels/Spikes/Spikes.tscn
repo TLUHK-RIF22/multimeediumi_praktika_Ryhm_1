@@ -34,6 +34,6 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="LevelB3" parent="." instance=ExtResource("6_eq840")]
-position = Vector2(237, 20)
+position = Vector2(244, -25)
 collision_layer = 2
 collision_mask = 2
