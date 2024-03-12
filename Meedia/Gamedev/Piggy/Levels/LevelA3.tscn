@@ -556,7 +556,6 @@ script = ExtResource("1_4ci7w")
 
 [node name="Player" parent="." instance=ExtResource("2_6713m")]
 top_level = true
-y_sort_enabled = true
 position = Vector2(209, -150)
 starting_direction = Vector2(0, -1)
 

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyi6e11thp028"]
+
+[ext_resource type="Texture2D" uid="uid://dbknnf1yq2jdk" path="res://Charecters/Siga/Sleeping_siga.png" id="1_chqgu"]
+
+[node name="sleeping_pig" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_chqgu")
