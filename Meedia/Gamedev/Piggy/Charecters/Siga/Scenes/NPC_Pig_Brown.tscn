@@ -24,8 +24,9 @@ animations = [{
 "speed": 2.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_f6vov"]
-size = Vector2(12, 7)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ouao7"]
+radius = 3.5
+height = 20.0
 
 [node name="NPC_Pig_Brown" type="CharacterBody2D"]
 y_sort_enabled = true
@@ -41,4 +42,5 @@ autoplay = "Idle_Down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -0.5)
-shape = SubResource("RectangleShape2D_f6vov")
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_ouao7")
