@@ -1,8 +1,8 @@
-res://Levels/Spikes/Spikes.tscn
+res://Levels/LevelB2.tscn
 res://Levels/Apple.gd
 res://Items/apple.tres
-res://Gate.gd
-res://Levels/LevelB2.tscn
 res://Levels/Test.tscn
+res://Levels/Spikes/Spikes.tscn
 res://Levels/LevelB3.tscn
 res://Levels/Spikes/Ground.tscn
+res://Gate.gd

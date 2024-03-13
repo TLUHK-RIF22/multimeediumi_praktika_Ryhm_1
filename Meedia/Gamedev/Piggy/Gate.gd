@@ -12,7 +12,7 @@ func _on_body_exited(_body):
 func _process(_delta):
 	if entered:
 		
-			#Global.from_level = get_parent().name
+			Global.from_level = get_parent().name
 			
 			get_tree().change_scene_to_file("res://Levels/"+ self.name +".tscn")
 			entered = false

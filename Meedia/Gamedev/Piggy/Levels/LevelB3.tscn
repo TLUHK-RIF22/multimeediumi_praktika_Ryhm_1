@@ -410,6 +410,10 @@ layer_0/tile_data = PackedInt32Array(-262144, 65536, 2, -262143, 65536, 2, -2621
 position = Vector2(411, -573)
 scale = Vector2(4, 4)
 
+[node name="GroundPos" type="Marker2D" parent="."]
+position = Vector2(305, -570)
+scale = Vector2(4, 4)
+
 [node name="SpikesPos" type="Marker2D" parent="."]
 position = Vector2(422, -194)
 scale = Vector2(4, 4)
