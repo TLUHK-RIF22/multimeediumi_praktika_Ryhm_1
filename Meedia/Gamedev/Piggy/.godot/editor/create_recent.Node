@@ -1,3 +1,5 @@
+Timer
+Label
 Camera2D
 TileMap
 Marker2D
@@ -7,8 +9,6 @@ CanvasLayer
 Node2D
 Area2D
 Sprite2D
-Label
-Timer
 SubViewportContainer
 SubViewport
 VideoStreamPlayer

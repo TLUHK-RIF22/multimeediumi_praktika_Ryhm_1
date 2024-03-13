@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cgcxej2wnqt3m"]
 
 [ext_resource type="Texture2D" uid="uid://rgncvyhamgoy" path="res://Tiles/dungeon-tileset-karl-v1.png" id="3_52iw7"]
-[ext_resource type="PackedScene" uid="uid://b15owbn0t1vak" path="res://Gate2.tscn" id="4_b6q8p"]
+[ext_resource type="PackedScene" uid="uid://b15owbn0t1vak" path="res://LevelHoping/Gate2.tscn" id="4_b6q8p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_estal"]
 texture = ExtResource("3_52iw7")

@@ -1,14 +1,15 @@
 [gd_scene load_steps=16 format=3 uid="uid://bxt0sk7psgfwg"]
 
-[ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/player.tscn" id="1_dqy74"]
+[ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/Scenes/player.tscn" id="1_dqy74"]
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_v66kp"]
 [ext_resource type="Texture2D" uid="uid://37j4civmtx4p" path="res://Sprites/Grass.png" id="3_bdkia"]
 [ext_resource type="Texture2D" uid="uid://ctjkfjops0jmy" path="res://Sprites/Wooden House.png" id="4_ovb56"]
 [ext_resource type="Texture2D" uid="uid://qg86utprd17j" path="res://Tiles/Tile_DryGrass.png" id="7_cscx5"]
-[ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://game_manager.tscn" id="8_1rn0r"]
+[ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://UI/Game_manager/game_manager.tscn" id="8_1rn0r"]
 [ext_resource type="Texture2D" uid="uid://bfg70sj3xgone" path="res://Tiles/Tile_Drygrass2.png" id="8_ma3xc"]
-[ext_resource type="PackedScene" uid="uid://dscndc5iq3qrs" path="res://Entrance.tscn" id="9_7flrm"]
+[ext_resource type="PackedScene" uid="uid://dscndc5iq3qrs" path="res://LevelHoping/Entrance.tscn" id="9_7flrm"]
 [ext_resource type="Texture2D" uid="uid://dd77hmty32y5m" path="res://Tiles/Tile_Sand-Sheet.png" id="9_dfe16"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_62hnc"]
 texture = ExtResource("4_ovb56")

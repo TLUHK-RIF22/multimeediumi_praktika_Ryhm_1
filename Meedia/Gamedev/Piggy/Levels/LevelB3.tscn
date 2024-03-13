@@ -1,10 +1,10 @@
 [gd_scene load_steps=11 format=3 uid="uid://mcobavk7ibdf"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_pxv05"]
-[ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/player.tscn" id="2_lphbt"]
+[ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/Scenes/player.tscn" id="2_lphbt"]
 [ext_resource type="Texture2D" uid="uid://36fx0vitw88f" path="res://Tiles/Sandmap.png" id="5_xfud8"]
-[ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://game_manager.tscn" id="6_o5j0n"]
-[ext_resource type="PackedScene" uid="uid://cxp54qdqfuvlm" path="res://Gate.tscn" id="8_i1gph"]
+[ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://UI/Game_manager/game_manager.tscn" id="6_o5j0n"]
+[ext_resource type="PackedScene" uid="uid://cxp54qdqfuvlm" path="res://LevelHoping/Gate.tscn" id="8_i1gph"]
 [ext_resource type="PackedScene" uid="uid://c5h6i1vrldhsx" path="res://Pickup/pickup.tscn" id="9_fh2ae"]
 [ext_resource type="Resource" uid="uid://260ntl5v26wx" path="res://Items/pear.tres" id="10_63t4a"]
 [ext_resource type="Resource" uid="uid://b2y8ddbamacaj" path="res://Items/sleeping_pig.tres" id="12_rgeg5"]

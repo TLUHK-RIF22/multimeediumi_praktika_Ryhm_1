@@ -1,13 +1,13 @@
 [gd_scene load_steps=11 format=3 uid="uid://bifd1xatfd3ca"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_ixr6d"]
-[ext_resource type="PackedScene" uid="uid://xhyvrvafwkbv" path="res://Charecters/NPC_Pig_Brown.tscn" id="2_wm3ck"]
+[ext_resource type="PackedScene" uid="uid://xhyvrvafwkbv" path="res://Charecters/Siga/Scenes/NPC_Pig_Brown.tscn" id="2_wm3ck"]
 [ext_resource type="PackedScene" uid="uid://c5h6i1vrldhsx" path="res://Pickup/pickup.tscn" id="4_xsant"]
 [ext_resource type="Resource" uid="uid://260ntl5v26wx" path="res://Items/pear.tres" id="5_w7vpi"]
-[ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/player.tscn" id="6_4et51"]
+[ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/Scenes/player.tscn" id="6_4et51"]
 [ext_resource type="Texture2D" uid="uid://rgncvyhamgoy" path="res://Tiles/dungeon-tileset-karl-v1.png" id="6_15ods"]
-[ext_resource type="PackedScene" uid="uid://cxp54qdqfuvlm" path="res://Gate.tscn" id="7_knuab"]
-[ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://game_manager.tscn" id="7_w25s1"]
+[ext_resource type="PackedScene" uid="uid://cxp54qdqfuvlm" path="res://LevelHoping/Gate.tscn" id="7_knuab"]
+[ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://UI/Game_manager/game_manager.tscn" id="7_w25s1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6rje7"]
 texture = ExtResource("6_15ods")

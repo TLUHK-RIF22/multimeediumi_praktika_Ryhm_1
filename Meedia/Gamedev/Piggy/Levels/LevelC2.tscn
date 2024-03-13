@@ -1,13 +1,14 @@
 [gd_scene load_steps=13 format=3 uid="uid://pcf5mbd40567"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_h1u53"]
-[ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/player.tscn" id="2_taw7f"]
+[ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/Scenes/player.tscn" id="2_taw7f"]
 [ext_resource type="Texture2D" uid="uid://37j4civmtx4p" path="res://Sprites/Grass.png" id="3_c442p"]
 [ext_resource type="Texture2D" uid="uid://ctjkfjops0jmy" path="res://Sprites/Wooden House.png" id="4_23to0"]
 [ext_resource type="Texture2D" uid="uid://chh6r57ebbmeq" path="res://Sprites/Hills.png" id="5_d0aor"]
-[ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://game_manager.tscn" id="6_esnfp"]
+[ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://UI/Game_manager/game_manager.tscn" id="6_esnfp"]
 [ext_resource type="AudioStream" uid="uid://cu8l14cttsk3s" path="res://Audio/menüü põhi.mp3" id="7_uv07r"]
-[ext_resource type="PackedScene" uid="uid://cxp54qdqfuvlm" path="res://Gate.tscn" id="8_27bmt"]
+[ext_resource type="PackedScene" uid="uid://cxp54qdqfuvlm" path="res://LevelHoping/Gate.tscn" id="8_27bmt"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k4qqy"]
 texture = ExtResource("3_c442p")
