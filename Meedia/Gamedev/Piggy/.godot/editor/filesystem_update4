@@ -17,3 +17,14 @@ res://UI/MainMenu/Settings/Settings.tscn
 res://UI/MainMenu/main.gd
 res://UI/MainMenu/main.tscn
 res://Levels/LevelB3.tscn
+res://Inventory/Inventory.gd
+res://Charecters/Siga/Scenes/player.gd
+res://Inventory/Inventory.tscn
+res://Inventory/InventoryDialog.gd
+res://Pickup/item.gd
+res://Items/pear.tres
+res://Items/sleeping_pig.tres
+res://Inventory/item_slot/item_slot.tscn
+res://Inventory/item_slot/item_slot.gd
+res://Levels/Test.tscn
+res://Inventory/UIRoot.gd

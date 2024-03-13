@@ -6,6 +6,7 @@
 
 [node name="PausMenu" type="Control"]
 process_mode = 2
+visible = false
 layout_mode = 3
 anchors_preset = 5
 anchor_left = 0.5

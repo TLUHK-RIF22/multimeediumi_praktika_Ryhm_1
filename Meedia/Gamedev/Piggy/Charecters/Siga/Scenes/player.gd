@@ -1,3 +1,4 @@
+class_name Player
 extends CharacterBody2D
 
 @export var move_speed : float = 80
@@ -47,4 +48,8 @@ func Player():
 
 
 func on_item_picked_up(item:Item):
-	print("I got a ", item.name)
+	inventory.add_item(item)
+	
+	
+var inventory:Inventory = Inventory.new()
+

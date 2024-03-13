@@ -1,9 +1,11 @@
-[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://dl5a0noklpt8w"]
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://dl5a0noklpt8w"]
 
 [ext_resource type="PackedScene" uid="uid://clwntcc2px28d" path="res://Items/Scene/apple.tscn" id="1_2gftd"]
+[ext_resource type="Texture2D" uid="uid://b3c2dqwl74wwd" path="res://Sprites/apple.png" id="1_inxp1"]
 [ext_resource type="Script" path="res://Pickup/item.gd" id="2_xid6k"]
 
 [resource]
 script = ExtResource("2_xid6k")
 name = "apple"
 scene = ExtResource("1_2gftd")
+icon = ExtResource("1_inxp1")

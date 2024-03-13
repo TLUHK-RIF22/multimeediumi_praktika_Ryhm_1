@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://260ntl5v26wx"]
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://260ntl5v26wx"]
 
+[ext_resource type="Texture2D" uid="uid://sul2ma00v14s" path="res://Sprites/pear.png" id="1_3mhkq"]
 [ext_resource type="Script" path="res://Pickup/item.gd" id="1_j5p7v"]
 [ext_resource type="PackedScene" uid="uid://geaubyivpkpb" path="res://Items/Scene/pear.tscn" id="1_rvjk1"]
 
@@ -7,3 +8,4 @@
 script = ExtResource("1_j5p7v")
 name = "pear"
 scene = ExtResource("1_rvjk1")
+icon = ExtResource("1_3mhkq")
