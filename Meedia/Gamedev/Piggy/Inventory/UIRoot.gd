@@ -1,6 +1,7 @@
 extends CanvasLayer
-@onready var player:Player = %Player
+
 @onready var inventory_dialog:InventoryDialog = %InventoryDialog
+@onready var player:Player = $".."
 
 func _unhandled_input(event):
 	if event.is_action_released("inventory"):

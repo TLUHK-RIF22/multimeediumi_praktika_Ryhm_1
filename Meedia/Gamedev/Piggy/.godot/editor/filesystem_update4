@@ -28,3 +28,11 @@ res://Inventory/item_slot/item_slot.tscn
 res://Inventory/item_slot/item_slot.gd
 res://Levels/Test.tscn
 res://Inventory/UIRoot.gd
+res://Levels/LevelA1.tscn
+res://Levels/LevelA2.tscn
+res://Levels/LevelA3.tscn
+res://Levels/LevelB1.tscn
+res://Levels/LevelC1.tscn
+res://Levels/LevelC2.tscn
+res://Levels/LevelC3.tscn
+res://Levels/Tunnel.tscn

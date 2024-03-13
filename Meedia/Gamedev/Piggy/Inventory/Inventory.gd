@@ -1,6 +1,6 @@
 class_name Inventory
 
-var _content:Array[Item] = []
+var _content:Array[Item] = Global._content
 
 func add_item(item:Item):
 	_content.append(item)

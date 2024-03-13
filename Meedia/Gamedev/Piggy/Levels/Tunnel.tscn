@@ -9,7 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://UI/Game_manager/game_manager.tscn" id="6_3swr0"]
 [ext_resource type="PackedScene" uid="uid://dscndc5iq3qrs" path="res://LevelHoping/Entrance.tscn" id="7_0q6od"]
 
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lt687"]
 texture = ExtResource("3_s2uxa")
 0:0/0 = 0
@@ -573,11 +572,7 @@ script = ExtResource("1_tic1t")
 
 [node name="Player" parent="." instance=ExtResource("2_45x4t")]
 top_level = true
-y_sort_enabled = true
 position = Vector2(132, 52)
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-metadata/_edit_lock_ = true
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(6, 2)

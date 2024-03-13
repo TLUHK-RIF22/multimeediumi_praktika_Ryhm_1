@@ -9,7 +9,6 @@
 [ext_resource type="AudioStream" uid="uid://cu8l14cttsk3s" path="res://Audio/menüü põhi.mp3" id="7_uv07r"]
 [ext_resource type="PackedScene" uid="uid://cxp54qdqfuvlm" path="res://LevelHoping/Gate.tscn" id="8_27bmt"]
 
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k4qqy"]
 texture = ExtResource("3_c442p")
 0:0/0 = 0
@@ -557,12 +556,8 @@ script = ExtResource("1_h1u53")
 
 [node name="Player" parent="." instance=ExtResource("2_taw7f")]
 top_level = true
-y_sort_enabled = true
 position = Vector2(209, -150)
 starting_direction = Vector2(0, -1)
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-metadata/_edit_lock_ = true
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_t7c86")

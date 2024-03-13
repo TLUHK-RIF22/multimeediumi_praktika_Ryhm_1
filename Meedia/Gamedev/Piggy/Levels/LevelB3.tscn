@@ -439,6 +439,3 @@ item = ExtResource("12_rgeg5")
 
 [node name="Player" parent="." instance=ExtResource("2_lphbt")]
 position = Vector2(472, -175)
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-visible = false
