@@ -6,3 +6,11 @@ res://Levels/Spikes/Spikes.tscn
 res://Audio/AudioStreamPlayer.gd
 res://UI/Game_manager/game_manager.tscn
 res://UI/PausMenu/paus_menu.tscn
+res://UI/PausMenu/paus_menu.gd
+res://UI/MainMenu/main.tscn
+res://UI/MainMenu/main.gd
+res://Button.gd
+res://control.tscn
+res://UI/MainMenu/Button.gd
+res://UI/MainMenu/Settings/Settings.tscn
+res://UI/MainMenu/Settings/Settings.gd

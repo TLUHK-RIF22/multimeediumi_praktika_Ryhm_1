@@ -11,7 +11,5 @@ func _process(_delta):
 	%AudioStreamPlayer.set_volume_db(Global.audioLevel)
 	
 
-
-func _on_h_slider_drag_ended(_value_changed):
+func _on_h_slider_value_changed(value):
 	Global.audioLevel = %HSlider.value 
-	
