@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cmhq455db5pq8"]
+[gd_scene load_steps=8 format=3 uid="uid://cmhq455db5pq8"]
 
 [ext_resource type="Script" path="res://Levels/Spikes/Spikes.gd" id="1_1eoqm"]
 [ext_resource type="PackedScene" uid="uid://cgcxej2wnqt3m" path="res://Levels/Spikes/Ground.tscn" id="2_v0fvw"]
@@ -6,6 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://e8gdro5q81mg" path="res://Audio/müstiline taust cduurpuukuur.mp3" id="5_gcccy"]
 [ext_resource type="PackedScene" uid="uid://bnpy81qqv4kht" path="res://Charecters/Siga/Scenes/player_spikes.tscn" id="5_xp57m"]
 [ext_resource type="PackedScene" uid="uid://b15owbn0t1vak" path="res://LevelHoping/Gate2.tscn" id="6_eq840"]
+[ext_resource type="Script" path="res://Audio/AudioStreamPlayer.gd" id="6_wherr"]
 
 [node name="Spikes" type="Node2D"]
 script = ExtResource("1_1eoqm")
@@ -25,8 +26,10 @@ collision_mask = 3
 visible = false
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
 stream = ExtResource("5_gcccy")
 autoplay = true
+script = ExtResource("6_wherr")
 
 [node name="LevelB2" parent="." instance=ExtResource("6_eq840")]
 position = Vector2(240, 295)

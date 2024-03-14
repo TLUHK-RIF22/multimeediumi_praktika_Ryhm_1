@@ -78,14 +78,14 @@ offset_left = 29.0
 offset_top = -1.0
 offset_right = 114.0
 offset_bottom = 15.0
-min_value = -30.0
-max_value = 20.0
+min_value = -60.0
+max_value = 10.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Panel/VBoxContainer/MusicButton/Music"]
 unique_name_in_owner = true
 process_mode = 2
 stream = ExtResource("3_7onch")
-volume_db = 5.536
+volume_db = 10.312
 autoplay = true
 
 [node name="Settings" type="Button" parent="Panel/VBoxContainer"]
