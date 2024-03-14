@@ -65,8 +65,8 @@ script = ExtResource("1_6b44c")
 IntroVideo = ExtResource("2_uq7q1")
 
 [node name="Piggybanner2" type="Sprite2D" parent="."]
-position = Vector2(224, 133)
-scale = Vector2(1.19545, 1.19545)
+position = Vector2(248, 135)
+scale = Vector2(0.661558, 0.603123)
 texture = ExtResource("1_sx3vp")
 
 [node name="ColorRect" type="ColorRect" parent="."]

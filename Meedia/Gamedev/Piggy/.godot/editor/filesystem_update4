@@ -14,3 +14,4 @@ res://control.tscn
 res://UI/MainMenu/Button.gd
 res://UI/MainMenu/Settings/Settings.tscn
 res://UI/MainMenu/Settings/Settings.gd
+res://UI/Intro/Intro.tscn
