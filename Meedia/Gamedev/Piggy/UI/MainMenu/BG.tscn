@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://brb13itbq0yo1"]
+
+[ext_resource type="Script" path="res://UI/MainMenu/BG.gd" id="1_6xkuv"]
+[ext_resource type="Texture2D" uid="uid://cuaucfl34f8y3" path="res://Sprites/BG/red_barn.png" id="2_8vlq4"]
+[ext_resource type="Texture2D" uid="uid://cb0dpypltnu5t" path="res://Sprites/BG/Sky.png" id="2_fujt5"]
+[ext_resource type="Texture2D" uid="uid://bpvsgq4jthhox" path="res://Sprites/BG/grass.png" id="3_88ind"]
+[ext_resource type="Texture2D" uid="uid://c1wd1jf5cjjsy" path="res://Sprites/BG/Piggy.png" id="5_hmq4b"]
+
+[node name="BG" type="ParallaxBackground"]
+script = ExtResource("1_6xkuv")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(480, 0)
+
+[node name="Sky" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(483, 135)
+texture = ExtResource("2_fujt5")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(480, 0)
+
+[node name="Grass" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(484, 313)
+texture = ExtResource("3_88ind")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(600, 0)
+
+[node name="RedBarn" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(483, 145)
+texture = ExtResource("2_8vlq4")
+
+[node name="Piggy" type="Sprite2D" parent="."]
+position = Vector2(495, 180)
+texture = ExtResource("5_hmq4b")

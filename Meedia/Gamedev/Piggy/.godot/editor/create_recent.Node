@@ -1,7 +1,8 @@
+Panel
+CenterContainer
 HBoxContainer
 AudioStreamPlayer
 Camera2D
-CenterContainer
 VBoxContainer
 Button
 CanvasLayer

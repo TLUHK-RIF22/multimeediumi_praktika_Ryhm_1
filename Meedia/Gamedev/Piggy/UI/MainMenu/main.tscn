@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://pqoidl1vn4w5"]
+[gd_scene load_steps=7 format=3 uid="uid://pqoidl1vn4w5"]
 
 [ext_resource type="Script" path="res://UI/MainMenu/main.gd" id="1_qwy1y"]
 [ext_resource type="PackedScene" uid="uid://mcobavk7ibdf" path="res://Levels/LevelB3.tscn" id="2_b5r2g"]
 [ext_resource type="AudioStream" uid="uid://8kuc357fff4u" path="res://Audio/piggy_theme.mp3" id="2_k41pm"]
 [ext_resource type="PackedScene" uid="uid://dtlc4uhxxugn7" path="res://UI/MainMenu/Settings/Settings.tscn" id="3_jt0f4"]
+[ext_resource type="PackedScene" uid="uid://brb13itbq0yo1" path="res://UI/MainMenu/BG.tscn" id="4_1iuup"]
 [ext_resource type="Script" path="res://UI/MainMenu/Button.gd" id="4_ylxuc"]
 
 [node name="Main" type="Node2D"]
@@ -11,14 +12,18 @@ script = ExtResource("1_qwy1y")
 firstLevel = ExtResource("2_b5r2g")
 settings = ExtResource("3_jt0f4")
 
+[node name="BG" parent="." instance=ExtResource("4_1iuup")]
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
 stream = ExtResource("2_k41pm")
 autoplay = true
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-offset_right = 480.0
-offset_bottom = 270.0
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 476.0
+offset_bottom = 266.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
 layout_mode = 2
