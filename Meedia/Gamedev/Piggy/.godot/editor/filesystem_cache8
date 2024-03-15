@@ -1,14 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710437234
+::res://::1710485073
 control.tscn::PackedScene::3944913171574488877::1710437234::0::1::::<><>::res://UI/MainMenu/Button.gd
 export_presets.cfg::TextFile::-1::1710430622::0::1::::<><>::
 Global.gd::GDScript::-1::1710430621::0::1::::<>Node2D<>::
 Global.tscn::PackedScene::4778465871963767127::1709563424::0::1::::<><>::res://Global.gd
 icon.svg::CompressedTexture2D::6247225626636162537::1709563424::1710430755::1::::<><>::
-::res://Audio/::1710432590
+::res://Audio/::1710485149
 AudioStreamPlayer.gd::GDScript::-1::1710432590::0::1::::<>AudioStreamPlayer<>::
 menüü põhi.mp3::AudioStreamMP3::6245458550748927250::1709563424::1709563424::1::::<><>::
 müstiline taust cduurpuukuur.mp3::AudioStreamMP3::349250415684401486::1709563424::1709563424::1::::<><>::
+Piggy intro sample.mp3::AudioStreamMP3::4444625550935237733::1709563424::1710485154::1::::<><>::
 piggy_theme.mp3::AudioStreamMP3::2338095047497560570::1709563424::1709563424::1::::<><>::
 ::res://Charecters/::1710430621
 ::res://Charecters/NPC/::1709747535
@@ -38,8 +39,8 @@ UIRoot.gd::GDScript::-1::1710430621::0::1::::<>CanvasLayer<>::
 ::res://Inventory/item_slot/::1710430621
 item_slot.gd::GDScript::-1::1710430621::0::1::::<>PanelContainer<>::
 item_slot.tscn::PackedScene::6841964966308755830::1710430621::0::1::::<><>::uid://sul2ma00v14s::::res://Sprites/pear.png<>res://Inventory/item_slot/item_slot.gd
-::res://Items/::1710439116
-apple.tres::Resource/Item::7993316013467555372::1710439116::0::1::::<><>::uid://clwntcc2px28d::::res://Items/Scene/apple.tscn<>uid://b3c2dqwl74wwd::::res://Sprites/apple.png<>res://Pickup/item.gd
+::res://Items/::1710485113
+apple.tres::Resource/Item::7993316013467555372::1710485113::0::1::::<><>::uid://clwntcc2px28d::::res://Items/Scene/apple.tscn<>uid://b3c2dqwl74wwd::::res://Sprites/apple.png<>res://Pickup/item.gd
 pear.tres::Resource/Resource::1960636645071377575::1710430621::0::1::::<><>::uid://sul2ma00v14s::::res://Sprites/pear.png<>res://Pickup/item.gd<>uid://geaubyivpkpb::::res://Items/Scene/pear.tscn
 sleeping_pig.tres::Resource/Resource::4333073705291311249::1710430621::0::1::::<><>::uid://dyi6e11thp028::::res://Items/Scene/sleeping_pig.tscn<>uid://dbknnf1yq2jdk::::res://Charecters/Siga/Sprites/Sleeping_siga.png<>res://Pickup/item.gd
 ::res://Items/Scene/::1710430621
@@ -52,8 +53,8 @@ Entrance.tscn::PackedScene::8427584822136501492::1710430621::0::1::::<><>::res:/
 Gate2.tscn::PackedScene::4274151350036504254::1710430621::0::1::::<><>::res://LevelHoping/Gate.gd
 Gate.gd::GDScript::-1::1710430621::0::1::::<>Area2D<>::
 Gate.tscn::PackedScene::6420024580920554246::1710430621::0::1::::<><>::res://LevelHoping/Gate.gd
-::res://Levels/::1710437234
-Apple.gd::GDScript::-1::1710432288::0::1::::<>StaticBody2D<>::
+::res://Levels/::1710485113
+Apple.gd::GDScript::-1::1710485113::0::1::::<>StaticBody2D<>::
 Level1.tscn::PackedScene::5822241239213795541::1710430621::0::1::::<><>::res://Levels/Levels.gd<>uid://cy8nl6guub54d::::res://Charecters/Siga/Scenes/player.tscn<>uid://ctjkfjops0jmy::::res://Sprites/Wooden House.png<>uid://chh6r57ebbmeq::::res://Sprites/Hills.png<>uid://ctiyr321gw14l::::res://UI/Game_manager/game_manager.tscn<>uid://dscndc5iq3qrs::::res://LevelHoping/Entrance.tscn<>uid://37j4civmtx4p::::res://Sprites/Grass.png<>uid://cu8l14cttsk3s::::res://Audio/menüü põhi.mp3
 Level2.tscn::PackedScene::4041537909177501878::1710430621::0::1::::<><>::uid://cy8nl6guub54d::::res://Charecters/Siga/Scenes/player.tscn<>res://Levels/Levels.gd<>uid://37j4civmtx4p::::res://Sprites/Grass.png<>uid://ctjkfjops0jmy::::res://Sprites/Wooden House.png<>uid://qg86utprd17j::::res://Tiles/Tile_DryGrass.png<>uid://ctiyr321gw14l::::res://UI/Game_manager/game_manager.tscn<>uid://bfg70sj3xgone::::res://Tiles/Tile_Drygrass2.png<>uid://dscndc5iq3qrs::::res://LevelHoping/Entrance.tscn<>uid://dd77hmty32y5m::::res://Tiles/Tile_Sand-Sheet.png
 Level3.tscn::PackedScene::3189414309383884024::1710430621::0::1::::<><>::res://Levels/Levels.gd<>uid://cy8nl6guub54d::::res://Charecters/Siga/Scenes/player.tscn<>uid://ctiyr321gw14l::::res://UI/Game_manager/game_manager.tscn<>uid://dscndc5iq3qrs::::res://LevelHoping/Entrance.tscn<>uid://ctjkfjops0jmy::::res://Sprites/Wooden House.png<>uid://37j4civmtx4p::::res://Sprites/Grass.png<>uid://qg86utprd17j::::res://Tiles/Tile_DryGrass.png<>uid://bfg70sj3xgone::::res://Tiles/Tile_Drygrass2.png<>uid://dd77hmty32y5m::::res://Tiles/Tile_Sand-Sheet.png
@@ -77,7 +78,7 @@ Spikes.tscn::PackedScene::5630583017411991005::1710437234::0::1::::<><>::res://L
 item.gd::GDScript::-1::1710430622::0::1::::Item<>Resource<>::
 pickup.gd::GDScript::-1::1710262943::0::1::::<>Node2D<>::
 pickup.tscn::PackedScene::6894855232767816639::1710265684::0::1::::<><>::res://Pickup/pickup.gd<>uid://dl5a0noklpt8w::::res://Items/apple.tres
-::res://Sprites/::1710484051
+::res://Sprites/::1710484053
 apple.png::CompressedTexture2D::4357482652155554447::1710483935::1710484053::1::::<><>::
 emptymap.png::CompressedTexture2D::5734302553942360478::1709563424::1709563424::1::::<><>::
 Fences.png::CompressedTexture2D::3033907607807047488::1709563424::1709563424::1::::<><>::
@@ -100,28 +101,28 @@ Tile_Drygrass2.png::CompressedTexture2D::2751739717650493270::1709563424::170956
 Tile_DryGrass.png::CompressedTexture2D::1137467865627906809::1709563424::1709563424::1::::<><>::
 Tile_Sand-Sheet.png::CompressedTexture2D::7437844775209617472::1709563424::1709563424::1::::<><>::
 ::res://UI/::1710430622
-::res://UI/Game_manager/::1710484007
+::res://UI/Game_manager/::1710484056
 game_manager.gd::GDScript::-1::1710430622::0::1::::GameManager<>Node2D<>::
-game_manager.tscn::PackedScene::6124433498417832029::1710484007::0::1::::<><>::res://UI/Game_manager/game_manager.gd<>uid://c2fox34yy7p53::::res://UI/PausMenu/paus_menu.tscn
-::res://UI/Intro/::1710439559
+game_manager.tscn::PackedScene::6124433498417832029::1710484056::0::1::::<><>::res://UI/Game_manager/game_manager.gd<>uid://c2fox34yy7p53::::res://UI/PausMenu/paus_menu.tscn
+::res://UI/Intro/::1710485113
 Intro.gd::GDScript::-1::1710430622::0::1::::<>Node2D<>::
 Intro.tscn::PackedScene::8590256611250604733::1710439559::0::1::::<><>::res://UI/Intro/Intro.gd<>uid://brdy7xpa8bo0::::res://UI/Intro/piggybanner2.png<>uid://bexvo6j30c3ff::::res://UI/Intro/IntroVideo.tscn<>res://UI/Intro/Label.gd<>uid://pqoidl1vn4w5::::res://UI/MainMenu/main.tscn
 introPig.ogv::VideoStreamTheora::-1::1709563424::0::1::::<><>::
 IntroVideo.gd::GDScript::-1::1710430622::0::1::::<>Node2D<>::
-IntroVideo.tscn::PackedScene::2715958447984175359::1710430622::0::1::::<><>::res://UI/Intro/IntroVideo.gd<>res://UI/Intro/PiggyIntro.ogv<>uid://pqoidl1vn4w5::::res://UI/MainMenu/main.tscn<>res://UI/Intro/Label.gd
+IntroVideo.tscn::PackedScene::2715958447984175359::1710485113::0::1::::<><>::res://UI/Intro/IntroVideo.gd<>res://UI/Intro/PiggyIntro.ogv<>uid://pqoidl1vn4w5::::res://UI/MainMenu/main.tscn<>res://UI/Intro/Label.gd
 Label.gd::GDScript::-1::1710430622::0::1::::<>Label<>::
 piggybanner2.png::CompressedTexture2D::105509992449601697::1710438903::1710439071::1::::<><>::
 PiggyIntro.ogv::VideoStreamTheora::-1::1709563424::0::1::::<><>::
-::res://UI/MainMenu/::1710484007
+::res://UI/MainMenu/::1710485113
 BG.gd::GDScript::-1::1706652093::0::1::::<>ParallaxBackground<>::
-BG.tscn::PackedScene::3583324496940889214::1710484007::0::1::::<><>::res://UI/MainMenu/BG.gd<>uid://cuaucfl34f8y3::::res://Sprites/BG/red_barn.png<>uid://cb0dpypltnu5t::::res://Sprites/BG/Sky.png<>uid://bpvsgq4jthhox::::res://Sprites/BG/grass.png<>uid://c1wd1jf5cjjsy::::res://Sprites/BG/Piggy.png
+BG.tscn::PackedScene::3583324496940889214::1710484056::0::1::::<><>::res://UI/MainMenu/BG.gd<>uid://cuaucfl34f8y3::::res://Sprites/BG/red_barn.png<>uid://cb0dpypltnu5t::::res://Sprites/BG/Sky.png<>uid://bpvsgq4jthhox::::res://Sprites/BG/grass.png<>uid://c1wd1jf5cjjsy::::res://Sprites/BG/Piggy.png
 Button.gd::GDScript::-1::1710434723::0::1::::<>Button<>::
 game_theme.tres::Theme::735797890416485908::1710430622::0::1::::<><>::
 main.gd::GDScript::-1::1710434417::0::1::::<>Node2D<>::
-main.tscn::PackedScene::1086727198658240182::1710484007::0::1::::<><>::res://UI/MainMenu/main.gd<>uid://mcobavk7ibdf::::res://Levels/LevelB3.tscn<>uid://8kuc357fff4u::::res://Audio/piggy_theme.mp3<>uid://dtlc4uhxxugn7::::res://UI/MainMenu/Settings/Settings.tscn<>uid://brb13itbq0yo1::::res://UI/MainMenu/BG.tscn<>res://UI/MainMenu/Button.gd
-::res://UI/MainMenu/Settings/::1710484007
+main.tscn::PackedScene::1086727198658240182::1710485113::0::1::::<><>::res://UI/MainMenu/main.gd<>uid://mcobavk7ibdf::::res://Levels/LevelB3.tscn<>uid://8kuc357fff4u::::res://Audio/piggy_theme.mp3<>uid://dtlc4uhxxugn7::::res://UI/MainMenu/Settings/Settings.tscn<>uid://brb13itbq0yo1::::res://UI/MainMenu/BG.tscn<>res://UI/MainMenu/Button.gd
+::res://UI/MainMenu/Settings/::1710484056
 Settings.gd::GDScript::-1::1710435855::0::1::::<>Node2D<>::
-Settings.tscn::PackedScene::8515732519862528674::1710484007::0::1::::<><>::res://UI/MainMenu/Settings/Settings.gd<>uid://kqoqphpsnpbo::::res://UI/MainMenu/game_theme.tres<>uid://cu8l14cttsk3s::::res://Audio/menüü põhi.mp3<>uid://brb13itbq0yo1::::res://UI/MainMenu/BG.tscn<>res://UI/MainMenu/Button.gd
-::res://UI/PausMenu/::1710484007
+Settings.tscn::PackedScene::8515732519862528674::1710484056::0::1::::<><>::res://UI/MainMenu/Settings/Settings.gd<>uid://kqoqphpsnpbo::::res://UI/MainMenu/game_theme.tres<>uid://cu8l14cttsk3s::::res://Audio/menüü põhi.mp3<>uid://brb13itbq0yo1::::res://UI/MainMenu/BG.tscn<>res://UI/MainMenu/Button.gd
+::res://UI/PausMenu/::1710484056
 paus_menu.gd::GDScript::-1::1710436773::0::1::::<>Control<>::
-paus_menu.tscn::PackedScene::6679154662118848916::1710484007::0::1::::<><>::res://UI/PausMenu/paus_menu.gd<>uid://kqoqphpsnpbo::::res://UI/MainMenu/game_theme.tres<>uid://cu8l14cttsk3s::::res://Audio/menüü põhi.mp3<>res://UI/MainMenu/Button.gd
+paus_menu.tscn::PackedScene::6679154662118848916::1710484056::0::1::::<><>::res://UI/PausMenu/paus_menu.gd<>uid://kqoqphpsnpbo::::res://UI/MainMenu/game_theme.tres<>uid://cu8l14cttsk3s::::res://Audio/menüü põhi.mp3<>res://UI/MainMenu/Button.gd

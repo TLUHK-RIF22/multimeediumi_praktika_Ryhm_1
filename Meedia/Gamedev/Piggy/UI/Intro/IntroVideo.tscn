@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bexvo6j30c3ff"]
+[gd_scene load_steps=6 format=3 uid="uid://bexvo6j30c3ff"]
 
 [ext_resource type="Script" path="res://UI/Intro/IntroVideo.gd" id="1_cxdnc"]
 [ext_resource type="VideoStream" path="res://UI/Intro/PiggyIntro.ogv" id="1_lqrli"]
 [ext_resource type="PackedScene" uid="uid://pqoidl1vn4w5" path="res://UI/MainMenu/main.tscn" id="2_dmqkk"]
 [ext_resource type="Script" path="res://UI/Intro/Label.gd" id="3_0644p"]
+[ext_resource type="AudioStream" uid="uid://b4lallqfh85vl" path="res://Audio/Piggy intro sample.mp3" id="5_1durv"]
 
 [node name="Introvideo" type="Node2D"]
 script = ExtResource("1_cxdnc")
@@ -13,6 +14,7 @@ MainMenu = ExtResource("2_dmqkk")
 offset_right = 1920.0
 offset_bottom = 1088.0
 stream = ExtResource("1_lqrli")
+volume_db = -80.0
 autoplay = true
 
 [node name="Label" type="Label" parent="."]
@@ -23,5 +25,9 @@ offset_bottom = 262.0
 horizontal_alignment = 2
 script = ExtResource("3_0644p")
 MainMenu = ExtResource("2_dmqkk")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_1durv")
+autoplay = true
 
 [connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]

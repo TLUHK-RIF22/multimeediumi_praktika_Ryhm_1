@@ -1,7 +1,7 @@
+AudioStreamPlayer
 Panel
 CenterContainer
 HBoxContainer
-AudioStreamPlayer
 Camera2D
 VBoxContainer
 Button
@@ -12,4 +12,3 @@ GridContainer
 Label
 HSlider
 Timer
-TileMap
