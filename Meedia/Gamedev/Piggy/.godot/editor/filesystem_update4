@@ -1,5 +1,6 @@
-res://UI/Intro/IntroVideo.tscn
+res://UI/MainMenu/main.tscn
 res://Levels/Apple.gd
 res://Items/apple.tres
-res://UI/MainMenu/main.tscn
 res://UI/Intro/Intro.tscn
+res://UI/Intro/Label.gd
+res://UI/Intro/IntroVideo.tscn

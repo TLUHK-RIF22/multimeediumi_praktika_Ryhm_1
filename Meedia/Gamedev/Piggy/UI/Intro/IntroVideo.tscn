@@ -30,4 +30,10 @@ MainMenu = ExtResource("2_dmqkk")
 stream = ExtResource("5_1durv")
 autoplay = true
 
+[node name="Timer" type="Timer" parent="AudioStreamPlayer"]
+unique_name_in_owner = true
+process_callback = 0
+wait_time = 3.0
+
 [connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]
+[connection signal="timeout" from="AudioStreamPlayer/Timer" to="Label" method="_on_timer_timeout"]

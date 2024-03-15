@@ -1,11 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710485073
+::res://::1710530958
 control.tscn::PackedScene::3944913171574488877::1710437234::0::1::::<><>::res://UI/MainMenu/Button.gd
 export_presets.cfg::TextFile::-1::1710430622::0::1::::<><>::
 Global.gd::GDScript::-1::1710430621::0::1::::<>Node2D<>::
 Global.tscn::PackedScene::4778465871963767127::1709563424::0::1::::<><>::res://Global.gd
 icon.svg::CompressedTexture2D::6247225626636162537::1709563424::1710430755::1::::<><>::
-::res://Audio/::1710485149
+::res://Audio/::1710485154
 AudioStreamPlayer.gd::GDScript::-1::1710432590::0::1::::<>AudioStreamPlayer<>::
 menüü põhi.mp3::AudioStreamMP3::6245458550748927250::1709563424::1709563424::1::::<><>::
 müstiline taust cduurpuukuur.mp3::AudioStreamMP3::349250415684401486::1709563424::1709563424::1::::<><>::
@@ -104,22 +104,22 @@ Tile_Sand-Sheet.png::CompressedTexture2D::7437844775209617472::1709563424::17095
 ::res://UI/Game_manager/::1710484056
 game_manager.gd::GDScript::-1::1710430622::0::1::::GameManager<>Node2D<>::
 game_manager.tscn::PackedScene::6124433498417832029::1710484056::0::1::::<><>::res://UI/Game_manager/game_manager.gd<>uid://c2fox34yy7p53::::res://UI/PausMenu/paus_menu.tscn
-::res://UI/Intro/::1710485113
+::res://UI/Intro/::1710485304
 Intro.gd::GDScript::-1::1710430622::0::1::::<>Node2D<>::
-Intro.tscn::PackedScene::8590256611250604733::1710439559::0::1::::<><>::res://UI/Intro/Intro.gd<>uid://brdy7xpa8bo0::::res://UI/Intro/piggybanner2.png<>uid://bexvo6j30c3ff::::res://UI/Intro/IntroVideo.tscn<>res://UI/Intro/Label.gd<>uid://pqoidl1vn4w5::::res://UI/MainMenu/main.tscn
+Intro.tscn::PackedScene::8590256611250604733::1710485304::0::1::::<><>::res://UI/Intro/Intro.gd<>uid://brdy7xpa8bo0::::res://UI/Intro/piggybanner2.png<>uid://bexvo6j30c3ff::::res://UI/Intro/IntroVideo.tscn<>res://UI/Intro/Label.gd<>uid://pqoidl1vn4w5::::res://UI/MainMenu/main.tscn
 introPig.ogv::VideoStreamTheora::-1::1709563424::0::1::::<><>::
 IntroVideo.gd::GDScript::-1::1710430622::0::1::::<>Node2D<>::
-IntroVideo.tscn::PackedScene::2715958447984175359::1710485113::0::1::::<><>::res://UI/Intro/IntroVideo.gd<>res://UI/Intro/PiggyIntro.ogv<>uid://pqoidl1vn4w5::::res://UI/MainMenu/main.tscn<>res://UI/Intro/Label.gd
+IntroVideo.tscn::PackedScene::2715958447984175359::1710485304::0::1::::<><>::res://UI/Intro/IntroVideo.gd<>res://UI/Intro/PiggyIntro.ogv<>uid://pqoidl1vn4w5::::res://UI/MainMenu/main.tscn<>res://UI/Intro/Label.gd<>uid://b4lallqfh85vl::::res://Audio/Piggy intro sample.mp3
 Label.gd::GDScript::-1::1710430622::0::1::::<>Label<>::
 piggybanner2.png::CompressedTexture2D::105509992449601697::1710438903::1710439071::1::::<><>::
 PiggyIntro.ogv::VideoStreamTheora::-1::1709563424::0::1::::<><>::
-::res://UI/MainMenu/::1710485113
+::res://UI/MainMenu/::1710485304
 BG.gd::GDScript::-1::1706652093::0::1::::<>ParallaxBackground<>::
 BG.tscn::PackedScene::3583324496940889214::1710484056::0::1::::<><>::res://UI/MainMenu/BG.gd<>uid://cuaucfl34f8y3::::res://Sprites/BG/red_barn.png<>uid://cb0dpypltnu5t::::res://Sprites/BG/Sky.png<>uid://bpvsgq4jthhox::::res://Sprites/BG/grass.png<>uid://c1wd1jf5cjjsy::::res://Sprites/BG/Piggy.png
 Button.gd::GDScript::-1::1710434723::0::1::::<>Button<>::
 game_theme.tres::Theme::735797890416485908::1710430622::0::1::::<><>::
 main.gd::GDScript::-1::1710434417::0::1::::<>Node2D<>::
-main.tscn::PackedScene::1086727198658240182::1710485113::0::1::::<><>::res://UI/MainMenu/main.gd<>uid://mcobavk7ibdf::::res://Levels/LevelB3.tscn<>uid://8kuc357fff4u::::res://Audio/piggy_theme.mp3<>uid://dtlc4uhxxugn7::::res://UI/MainMenu/Settings/Settings.tscn<>uid://brb13itbq0yo1::::res://UI/MainMenu/BG.tscn<>res://UI/MainMenu/Button.gd
+main.tscn::PackedScene::1086727198658240182::1710485304::0::1::::<><>::res://UI/MainMenu/main.gd<>uid://mcobavk7ibdf::::res://Levels/LevelB3.tscn<>uid://8kuc357fff4u::::res://Audio/piggy_theme.mp3<>uid://dtlc4uhxxugn7::::res://UI/MainMenu/Settings/Settings.tscn<>uid://brb13itbq0yo1::::res://UI/MainMenu/BG.tscn<>res://UI/MainMenu/Button.gd
 ::res://UI/MainMenu/Settings/::1710484056
 Settings.gd::GDScript::-1::1710435855::0::1::::<>Node2D<>::
 Settings.tscn::PackedScene::8515732519862528674::1710484056::0::1::::<><>::res://UI/MainMenu/Settings/Settings.gd<>uid://kqoqphpsnpbo::::res://UI/MainMenu/game_theme.tres<>uid://cu8l14cttsk3s::::res://Audio/menüü põhi.mp3<>uid://brb13itbq0yo1::::res://UI/MainMenu/BG.tscn<>res://UI/MainMenu/Button.gd

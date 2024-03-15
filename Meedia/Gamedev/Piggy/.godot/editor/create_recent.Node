@@ -1,3 +1,4 @@
+Timer
 AudioStreamPlayer
 Panel
 CenterContainer
@@ -11,4 +12,3 @@ PanelContainer
 GridContainer
 Label
 HSlider
-Timer
