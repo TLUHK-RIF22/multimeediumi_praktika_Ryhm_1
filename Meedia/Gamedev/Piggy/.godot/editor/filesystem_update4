@@ -1,5 +1,12 @@
-res://UI/MainMenu/main.tscn
+res://Levels/LevelB2.tscn
 res://Pickup/pickup.gd
 res://Items/apple.tres
-res://Inventory/UIRoot.gd
+res://UI/MainMenu/main.tscn
 res://Levels/LevelB3.tscn
+res://Charecters/NPC/NPC_Pig_Brown.tscn
+res://Charecters/NPC/NPC_Pig_Brown.gd
+res://Charecters/Siga/Scenes/player.tscn
+res://Levels/Levels.gd
+res://UI/text_box/Text_box.tscn
+res://UI/text_box/Text_box.gd
+res://UI/text_box/Dialogue.gd

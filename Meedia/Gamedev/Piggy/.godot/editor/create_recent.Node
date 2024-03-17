@@ -1,4 +1,9 @@
 Timer
+Label
+MarginContainer
+NinePatchRect
+CollisionShape2D
+Area2D
 AudioStreamPlayer
 Panel
 CenterContainer
@@ -7,8 +12,3 @@ Camera2D
 VBoxContainer
 Button
 CanvasLayer
-TextureRect
-PanelContainer
-GridContainer
-Label
-HSlider

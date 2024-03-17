@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://bsc7mrn4gnf4l"
+path="res://.godot/imported/First_encounter.dialogue-26908a2fda1458bc34e5f2d6778460ab.tres"
+
+[deps]
+
+source_file="res://Charecters/NPC/First_encounter.dialogue"
+dest_files=["res://.godot/imported/First_encounter.dialogue-26908a2fda1458bc34e5f2d6778460ab.tres"]
+
+[params]
+
+defaults=true

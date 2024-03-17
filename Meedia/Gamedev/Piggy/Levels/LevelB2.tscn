@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://c5h6i1vrldhsx" path="res://Pickup/pickup.tscn" id="8_3ja8d"]
 [ext_resource type="PackedScene" uid="uid://cxp54qdqfuvlm" path="res://LevelHoping/Gate.tscn" id="8_valm3"]
 [ext_resource type="PackedScene" uid="uid://dscndc5iq3qrs" path="res://LevelHoping/Entrance.tscn" id="9_hl140"]
-[ext_resource type="PackedScene" uid="uid://xhyvrvafwkbv" path="res://Charecters/Siga/Scenes/NPC_Pig_Brown.tscn" id="10_b2xij"]
+[ext_resource type="PackedScene" uid="uid://xhyvrvafwkbv" path="res://Charecters/NPC/NPC_Pig_Brown.tscn" id="10_b2xij"]
 [ext_resource type="Texture2D" uid="uid://36fx0vitw88f" path="res://Tiles/Sandmap.png" id="10_nq3gw"]
 [ext_resource type="Resource" uid="uid://260ntl5v26wx" path="res://Items/pear.tres" id="10_qvnir"]
 [ext_resource type="Texture2D" uid="uid://dbknnf1yq2jdk" path="res://Charecters/Siga/Sprites/Sleeping_siga.png" id="11_qlosw"]

@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://xhyvrvafwkbv"]
+[gd_scene load_steps=8 format=3 uid="uid://xhyvrvafwkbv"]
 
+[ext_resource type="Script" path="res://Charecters/NPC/NPC_Pig_Brown.gd" id="1_x1qft"]
 [ext_resource type="Texture2D" uid="uid://kgyrh4ady834" path="res://Charecters/NPC/Idle_NPC_Pig_Brown_Down-Sheet.png" id="2_6ji05"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y7nsm"]
@@ -28,8 +29,12 @@ animations = [{
 radius = 3.5
 height = 20.0
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_qpq4t"]
+radius = 26.0768
+
 [node name="NPC_Pig_Brown" type="CharacterBody2D"]
 y_sort_enabled = true
+script = ExtResource("1_x1qft")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 hframes = 2
@@ -44,3 +49,11 @@ autoplay = "Idle_Down"
 position = Vector2(0, -0.5)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_ouao7")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_qpq4t")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

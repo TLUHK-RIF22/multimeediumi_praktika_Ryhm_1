@@ -1,0 +1,39 @@
+~ start
+
+
+
+Local pig: [[Halt|Stop|Freeze]], who goes there?
+Piggy: What? Uh? Where am I?
+Local pig: Stop right there!
+Piggy: What's going on? Where am I?
+~ Questions1
+Local pig: What do you mean? You are at the beach gate.
+
+- The Beach gate?
+	Local pig: Yes the Beach Gate. 
+	- Oh => Questions1
+- Why is there so much sand everywhere? => Questions1
+- I think I have something for you?
+	if Global._content:
+		- I have an apple for you.
+	
+		Piggy: Its an apple 
+		- give apple to Local pig?
+		Local pig: Where did you get that?
+		- I found it
+			Piggy: Here you go!
+			set Global.apple = false
+		
+			- Smile and give the apple to Local pig => Questions1
+		- Ignore what just happend 
+	else:
+		Piggy: I must of lost it
+		- smile nervously => Questions1
+
+
+- I must go. => END
+
+
+
+
+=> END
