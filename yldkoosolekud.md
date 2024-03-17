@@ -192,3 +192,38 @@ koosolekul:
 
 - Järgmine pühapäev 17.03 uus kohtumine
 
+## 17.03.- 2h
+- nventory korjamine, asjad liiguvad kaasa
+- lennuki tiles
+- erinev graafikavajadus
+- kas me teeme seeni?
+- kuidas aru saada et on interactive
+- piirjoone erisus
+- kui on interactive, siis teeme musta piirjoone
+- ülevaade vaadetest, kontrolleritest, nuppudest, menüüdest ja lisaelementidest
+- esimene level on spikes level
+- intro
+- piltide ikoonide pikselite suuruse ühtlustamine
+- chatbox taust hall 3x16, 9 ruutu
+- collisionid
+- üldine arutelu
+- jutumullid
+- vestluse pidamine mängus?
+- koduste ülesannete lahendused
+- esimene vaatus
+- levelite vahel väravaga liikumine, enne kui inventory on korjatud edasi ei saa,värav on täiesti kinni. Kui inventory on korjatud, siis on värav täitsa päris lahti.
+- kas inventory on kärus?
+- liiva ja vee tilesid
+- kui halg on risti, mis siis saab?
+- uus kohtumine 20.03 19.00 
+- koolis story brainstorm peale loengut 22.03
+- mängu tulevik? Läheb tasuta steami üles ja kui on menu betale, teeme tasulise täisversiooni.
+- meeskonna rahulolu olukorrast rühmas
+- kas unetunnid kui mänguprobleeme lahendad unes, lähevad arvesse?
+- erinevad helid
+## Roadmap:
+- Dave teeb lennuki tilesi, farmi, kaevu, käru ehk jätkab tilesidega
+- KarlErik teeb esimese kaardi koostamist, vaimse rännaku leveli lõpetamine (nädal kaks) Dave tileside ladumine, Peeter tegeleb dialoogiakna ja selle eripärade lahendamisega
+- release?
+
+
