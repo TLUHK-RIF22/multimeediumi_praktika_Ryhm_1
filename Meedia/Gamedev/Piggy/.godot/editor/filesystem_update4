@@ -10,3 +10,7 @@ res://Levels/Levels.gd
 res://UI/text_box/Text_box.tscn
 res://UI/text_box/Text_box.gd
 res://UI/text_box/Dialogue.gd
+res://Inventory/Inventory.gd
+res://Charecters/Siga/Scenes/player.gd
+res://Global.gd
+res://Inventory/UIRoot.gd
