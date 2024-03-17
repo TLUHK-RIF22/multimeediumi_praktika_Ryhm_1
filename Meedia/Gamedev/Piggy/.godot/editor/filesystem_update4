@@ -1,7 +1,5 @@
 res://UI/MainMenu/main.tscn
-res://Levels/Apple.gd
-res://Items/apple.tres
 res://Pickup/pickup.gd
+res://Items/apple.tres
+res://Inventory/UIRoot.gd
 res://Levels/LevelB3.tscn
-res://Levels/Levels.gd
-res://Pickup/pickup.tscn
