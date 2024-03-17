@@ -1,6 +1,7 @@
 res://UI/MainMenu/main.tscn
 res://Levels/Apple.gd
 res://Items/apple.tres
-res://UI/Intro/Intro.tscn
-res://UI/Intro/Label.gd
-res://UI/Intro/IntroVideo.tscn
+res://Pickup/pickup.gd
+res://Levels/LevelB3.tscn
+res://Levels/Levels.gd
+res://Pickup/pickup.tscn

@@ -424,17 +424,17 @@ position = Vector2(412, -624)
 [node name="GameManager" parent="." instance=ExtResource("6_o5j0n")]
 
 [node name="pickupApple" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(121, -341)
+position = Vector2(304, -418)
 
 [node name="apple" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(101, -230)
+position = Vector2(284, -307)
 
 [node name="pear" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(168, -338)
+position = Vector2(351, -415)
 item = ExtResource("10_63t4a")
 
 [node name="sleeping_pig" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(46, -370)
+position = Vector2(229, -447)
 item = ExtResource("12_rgeg5")
 
 [node name="Player" parent="." instance=ExtResource("2_lphbt")]
