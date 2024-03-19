@@ -455,7 +455,7 @@ position = Vector2(412, -624)
 
 [node name="GameManager" parent="." instance=ExtResource("6_o5j0n")]
 
-[node name="pickupApple" parent="." instance=ExtResource("9_fh2ae")]
+[node name="apple2" parent="." instance=ExtResource("9_fh2ae")]
 position = Vector2(304, -418)
 
 [node name="apple" parent="." instance=ExtResource("9_fh2ae")]
@@ -478,7 +478,7 @@ y_sort_enabled = true
 position = Vector2(489, -245)
 script = ExtResource("9_6w8sw")
 item = ExtResource("10_klerp")
-Speech = [&"Mina olen Barni", "Kes sina oled?", "Ükskord algab aega, kui kõik sead tõusevad kahele jalale ja hakkavad kirvestega maha raiuma Igimetsa!", "Vähemalt nii räägib Otso"]
+Speech = Array[String](["Mina olen Barni", "Kes sina oled?", "Ükskord algab aega, kui kõik sead tõusevad kahele jalale ja hakkavad kirvestega maha raiuma Igimetsa!", "Vähemalt nii räägib Otso"])
 SpeechHungry = Array[String](["Nälg,", "Tahan süüa!"])
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC_Pig_Brown"]
@@ -505,7 +505,7 @@ y_sort_enabled = true
 position = Vector2(612, -248)
 script = ExtResource("9_6w8sw")
 item = ExtResource("10_klerp")
-Speech = ["Ükskord algab aega, kui kõik sead tõusevad kahele jalale ja hakkavad kirvestega maha raiuma Igimetsa!", "Tere, mina olen Otso"]
+Speech = Array[String](["Ükskord algab aega, kui kõik sead tõusevad kahele jalale ja hakkavad kirvestega maha raiuma Igimetsa!", "Tere, mina olen Otso"])
 SpeechHungry = Array[String](["Tere"])
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC_Pig_Brown2"]

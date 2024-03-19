@@ -476,7 +476,7 @@ layer_0/tile_data = PackedInt32Array(983036, 65536, 10, 983037, 0, 7, 1048572, 3
 
 [node name="GameManager" parent="." instance=ExtResource("6_88mpu")]
 
-[node name="pickupApple" parent="." instance=ExtResource("8_3ja8d")]
+[node name="apple2" parent="." instance=ExtResource("8_3ja8d")]
 position = Vector2(30, -59)
 
 [node name="apple" parent="." instance=ExtResource("8_3ja8d")]
