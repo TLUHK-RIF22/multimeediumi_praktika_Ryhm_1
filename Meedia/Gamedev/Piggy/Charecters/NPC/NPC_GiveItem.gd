@@ -11,6 +11,7 @@ var itemGivenToNPC = Global.itemGivenToNPC
 
 func _process(_delta):
 	if player_in_range:
+		
 		if Input.is_action_just_pressed("Interact"):
 			if !(self.name+item.name) in itemGivenToNPC:
 				Dialogue.start_dialog(global_position, SpeechNoItem)

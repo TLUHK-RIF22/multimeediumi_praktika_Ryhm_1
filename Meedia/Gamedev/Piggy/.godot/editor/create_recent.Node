@@ -1,3 +1,5 @@
+Marker2D
+Node2D
 Timer
 Label
 MarginContainer
@@ -10,5 +12,3 @@ CenterContainer
 HBoxContainer
 Camera2D
 VBoxContainer
-Button
-CanvasLayer
