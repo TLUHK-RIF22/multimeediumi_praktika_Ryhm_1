@@ -1,16 +1,17 @@
-[gd_scene load_steps=19 format=3 uid="uid://mcobavk7ibdf"]
+[gd_scene load_steps=21 format=3 uid="uid://mcobavk7ibdf"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_pxv05"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/Scenes/player.tscn" id="2_lphbt"]
 [ext_resource type="Texture2D" uid="uid://36fx0vitw88f" path="res://Tiles/Sandmap.png" id="5_xfud8"]
 [ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://UI/Game_manager/game_manager.tscn" id="6_o5j0n"]
 [ext_resource type="PackedScene" uid="uid://cxp54qdqfuvlm" path="res://LevelHoping/Gate.tscn" id="8_i1gph"]
-[ext_resource type="Script" path="res://Charecters/NPC/NPC_Pig_Brown.gd" id="9_6w8sw"]
+[ext_resource type="Script" path="res://Charecters/NPC/NPC_GiveItem.gd" id="9_6w8sw"]
 [ext_resource type="PackedScene" uid="uid://c5h6i1vrldhsx" path="res://Pickup/pickup.tscn" id="9_fh2ae"]
 [ext_resource type="Resource" uid="uid://260ntl5v26wx" path="res://Items/pear.tres" id="10_63t4a"]
 [ext_resource type="Resource" uid="uid://dl5a0noklpt8w" path="res://Items/apple.tres" id="10_klerp"]
 [ext_resource type="Texture2D" uid="uid://kgyrh4ady834" path="res://Charecters/NPC/Idle_NPC_Pig_Brown_Down-Sheet.png" id="11_2m2bm"]
 [ext_resource type="Resource" uid="uid://b2y8ddbamacaj" path="res://Items/sleeping_pig.tres" id="12_rgeg5"]
+[ext_resource type="Script" path="res://Pickup/item.gd" id="12_w3b23"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_roo4d"]
 texture = ExtResource("5_xfud8")
@@ -423,6 +424,10 @@ height = 20.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_qpq4t"]
 radius = 26.0768
 
+[sub_resource type="Resource" id="Resource_b5arh"]
+script = ExtResource("12_w3b23")
+name = ""
+
 [node name="LevelB3" type="Node2D"]
 process_mode = 1
 y_sort_enabled = true
@@ -459,10 +464,10 @@ position = Vector2(412, -624)
 position = Vector2(304, -418)
 
 [node name="apple" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(284, -307)
+position = Vector2(483, -210)
 
 [node name="pear" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(351, -415)
+position = Vector2(607, -194)
 item = ExtResource("10_63t4a")
 
 [node name="sleeping_pig" parent="." instance=ExtResource("9_fh2ae")]
@@ -473,61 +478,98 @@ item = ExtResource("12_rgeg5")
 unique_name_in_owner = true
 position = Vector2(472, -175)
 
-[node name="NPC_Pig_Brown" type="CharacterBody2D" parent="."]
+[node name="NPC_Pig_Apple" type="CharacterBody2D" parent="."]
 y_sort_enabled = true
 position = Vector2(489, -245)
 script = ExtResource("9_6w8sw")
 item = ExtResource("10_klerp")
-Speech = Array[String](["Mina olen Barni", "Kes sina oled?", "Ükskord algab aega, kui kõik sead tõusevad kahele jalale ja hakkavad kirvestega maha raiuma Igimetsa!", "Vähemalt nii räägib Otso"])
-SpeechHungry = Array[String](["Nälg,", "Tahan süüa!"])
+SpeechNoItem = Array[String](["Food, need food", "APPLES"])
+SpeechGotItem = Array[String](["Yummy, I'm saved!"])
 
-[node name="Sprite2D" type="Sprite2D" parent="NPC_Pig_Brown"]
+[node name="Sprite2D" type="Sprite2D" parent="NPC_Pig_Apple"]
+visible = false
 hframes = 2
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="NPC_Pig_Brown"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="NPC_Pig_Apple"]
 position = Vector2(0, -10)
 sprite_frames = SubResource("SpriteFrames_3kbif")
 animation = &"Idle_Down"
 autoplay = "Idle_Down"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_Pig_Brown"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_Pig_Apple"]
+visible = false
 position = Vector2(0, -0.5)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_ouao7")
 
-[node name="Area2D" type="Area2D" parent="NPC_Pig_Brown"]
+[node name="Area2D" type="Area2D" parent="NPC_Pig_Apple"]
+visible = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_Pig_Brown/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_Pig_Apple/Area2D"]
 shape = SubResource("CircleShape2D_qpq4t")
 
-[node name="NPC_Pig_Brown2" type="CharacterBody2D" parent="."]
+[node name="NPC_Pig_Pear" type="CharacterBody2D" parent="."]
 y_sort_enabled = true
 position = Vector2(612, -248)
 script = ExtResource("9_6w8sw")
-item = ExtResource("10_klerp")
-Speech = Array[String](["Ükskord algab aega, kui kõik sead tõusevad kahele jalale ja hakkavad kirvestega maha raiuma Igimetsa!", "Tere, mina olen Otso"])
-SpeechHungry = Array[String](["Tere"])
+item = ExtResource("10_63t4a")
+SpeechNoItem = Array[String](["Pears, give me Pears!!!"])
+SpeechGotItem = Array[String](["Thanks for the Pear.", "I will not forget it,"])
 
-[node name="Sprite2D" type="Sprite2D" parent="NPC_Pig_Brown2"]
+[node name="Sprite2D" type="Sprite2D" parent="NPC_Pig_Pear"]
+visible = false
 hframes = 2
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="NPC_Pig_Brown2"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="NPC_Pig_Pear"]
 position = Vector2(0, -10)
 sprite_frames = SubResource("SpriteFrames_3kbif")
 animation = &"Idle_Down"
 autoplay = "Idle_Down"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_Pig_Brown2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_Pig_Pear"]
+visible = false
 position = Vector2(0, -0.5)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_ouao7")
 
-[node name="Area2D" type="Area2D" parent="NPC_Pig_Brown2"]
+[node name="Area2D" type="Area2D" parent="NPC_Pig_Pear"]
+visible = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_Pig_Brown2/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_Pig_Pear/Area2D"]
 shape = SubResource("CircleShape2D_qpq4t")
 
-[connection signal="body_entered" from="NPC_Pig_Brown/Area2D" to="NPC_Pig_Brown" method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="NPC_Pig_Brown/Area2D" to="NPC_Pig_Brown" method="_on_area_2d_body_exited"]
-[connection signal="body_entered" from="NPC_Pig_Brown2/Area2D" to="NPC_Pig_Brown2" method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="NPC_Pig_Brown2/Area2D" to="NPC_Pig_Brown2" method="_on_area_2d_body_exited"]
+[node name="NPC_Pig_Want_Nothing" type="CharacterBody2D" parent="."]
+y_sort_enabled = true
+position = Vector2(557, -136)
+script = ExtResource("9_6w8sw")
+item = SubResource("Resource_b5arh")
+SpeechNoItem = Array[String](["Go away"])
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC_Pig_Want_Nothing"]
+visible = false
+hframes = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="NPC_Pig_Want_Nothing"]
+position = Vector2(0, -10)
+sprite_frames = SubResource("SpriteFrames_3kbif")
+animation = &"Idle_Down"
+autoplay = "Idle_Down"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_Pig_Want_Nothing"]
+visible = false
+position = Vector2(0, -0.5)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_ouao7")
+
+[node name="Area2D" type="Area2D" parent="NPC_Pig_Want_Nothing"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_Pig_Want_Nothing/Area2D"]
+shape = SubResource("CircleShape2D_qpq4t")
+
+[connection signal="body_entered" from="NPC_Pig_Apple/Area2D" to="NPC_Pig_Apple" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="NPC_Pig_Apple/Area2D" to="NPC_Pig_Apple" method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="NPC_Pig_Pear/Area2D" to="NPC_Pig_Pear" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="NPC_Pig_Pear/Area2D" to="NPC_Pig_Pear" method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="NPC_Pig_Want_Nothing/Area2D" to="NPC_Pig_Want_Nothing" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="NPC_Pig_Want_Nothing/Area2D" to="NPC_Pig_Want_Nothing" method="_on_area_2d_body_exited"]

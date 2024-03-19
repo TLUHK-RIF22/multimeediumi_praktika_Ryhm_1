@@ -7,3 +7,6 @@ res://Levels/LevelB2.tscn
 res://Charecters/Siga/Scenes/player.tscn
 res://UI/text_box/Text_box.tscn
 res://Global.gd
+res://Levels/Levels.gd
+res://Charecters/NPC/NPC_Pig_Brown.gd
+res://Charecters/NPC/NPC_GiveItem.gd

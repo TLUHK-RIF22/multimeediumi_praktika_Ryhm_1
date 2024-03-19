@@ -3,28 +3,21 @@ extends CharacterBody2D
 var player_in_range = false
 
 @export var item:Item
-@export var gotItem:bool
-@export var Speech: Array[String]
-@export var SpeechHungry: Array[String]
-var inventory = Global._content
 
-#const lines: Array[String] = [
-#	"mees, ma ei tea?",
-#	"Mis keeles sa räägid?",
-#]
+@export var SpeechNoItem: Array[String]
+@export var SpeechGotItem: Array[String]
+var inventory = Global._content
+var itemGivenToNPC = Global.itemGivenToNPC
 
 func _process(_delta):
 	if player_in_range:
-		
 		if Input.is_action_just_pressed("Interact"):
-			if gotItem == false:
-				Dialogue.start_dialog(global_position, SpeechHungry)
-				print("ei ole õuna")
+			if !(self.name+item.name) in itemGivenToNPC:
+				Dialogue.start_dialog(global_position, SpeechNoItem)
 				check_if_got_item(item)
-				if check_if_got_item(item):
-					give_item(item)
-			elif gotItem == true:
-				Dialogue.start_dialog(global_position, Speech)
+				
+			elif (self.name+item.name) in itemGivenToNPC:
+				Dialogue.start_dialog(global_position, SpeechGotItem)
 				
 		#	#DialogueManager.show_example_dialogue_balloon(load("res://Charecters/NPC/First_encounter.dialogue"), "start")
 			
@@ -44,5 +37,6 @@ func give_item(item):
 
 func check_if_got_item(item):
 	if item in inventory :
-		gotItem = true
-		return gotItem
+		itemGivenToNPC.append(self.name+item.name)
+		print(self.name+item.name)
+		give_item(item)
