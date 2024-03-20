@@ -2,5 +2,7 @@ res://Levels/LevelB3.tscn
 res://Pickup/pickup.gd
 res://Items/apple.tres
 res://Items/pear.tres
-res://Charecters/NPC/NPC_Move.gd
-res://Charecters/NPC/NPC_GiveItem.gd
+res://Charecters/NPC/Uks.tscn
+res://Charecters/NPC/Door.tscn
+res://Charecters/Siga/Scenes/player.tscn
+res://Charecters/NPC/Door_unlock.gd

@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://mcobavk7ibdf"]
+[gd_scene load_steps=25 format=3 uid="uid://mcobavk7ibdf"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_pxv05"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/Scenes/player.tscn" id="2_lphbt"]
@@ -14,6 +14,8 @@
 [ext_resource type="Script" path="res://Pickup/item.gd" id="12_w3b23"]
 [ext_resource type="PackedScene" uid="uid://xhyvrvafwkbv" path="res://Charecters/NPC/NPC_Pig_Brown.tscn" id="13_6fa5o"]
 [ext_resource type="Script" path="res://Charecters/NPC/NPC_Move.gd" id="14_5s0rl"]
+[ext_resource type="PackedScene" uid="uid://bli3gd834l2t0" path="res://Charecters/NPC/Door.tscn" id="15_w6ost"]
+[ext_resource type="Script" path="res://Charecters/NPC/Door_unlock.gd" id="16_70ip0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_roo4d"]
 texture = ExtResource("5_xfud8")
@@ -466,7 +468,7 @@ position = Vector2(412, -624)
 position = Vector2(304, -418)
 
 [node name="apple" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(483, -210)
+position = Vector2(519, -200)
 
 [node name="pear" parent="." instance=ExtResource("9_fh2ae")]
 position = Vector2(607, -194)
@@ -584,6 +586,15 @@ posY = -128
 [node name="Marker2D" type="Marker2D" parent="NPC_Pig_Brown/Node2D"]
 unique_name_in_owner = true
 position = Vector2(-60, 29)
+
+[node name="Door" parent="." instance=ExtResource("15_w6ost")]
+position = Vector2(487, -248)
+script = ExtResource("16_70ip0")
+posX = 477
+posY = -296
+item = ExtResource("10_klerp")
+SpeechNoItem = Array[String](["Locked"])
+SpeechGotItem = Array[String](["Unlocked"])
 
 [connection signal="body_entered" from="NPC_Pig_Apple/Area2D" to="NPC_Pig_Apple" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="NPC_Pig_Apple/Area2D" to="NPC_Pig_Apple" method="_on_area_2d_body_exited"]
