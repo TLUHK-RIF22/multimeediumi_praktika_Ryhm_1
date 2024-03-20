@@ -4,10 +4,8 @@ var player_in_range = false
 @export var posX:int
 @export var posY:int
 @export var item:Item
-
 @export var SpeechNoItem: Array[String]
 @export var SpeechGotItem: Array[String]
-
 
 var inventory = Global._content
 var itemGivenToNPC = Global.itemGivenToNPC

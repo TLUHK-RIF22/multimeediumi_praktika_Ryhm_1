@@ -470,6 +470,9 @@ position = Vector2(304, -418)
 [node name="apple" parent="." instance=ExtResource("9_fh2ae")]
 position = Vector2(519, -200)
 
+[node name="apple3" parent="." instance=ExtResource("9_fh2ae")]
+position = Vector2(551, -240)
+
 [node name="pear" parent="." instance=ExtResource("9_fh2ae")]
 position = Vector2(607, -194)
 item = ExtResource("10_63t4a")
@@ -588,7 +591,7 @@ unique_name_in_owner = true
 position = Vector2(-60, 29)
 
 [node name="Door" parent="." instance=ExtResource("15_w6ost")]
-position = Vector2(487, -248)
+position = Vector2(535, -296)
 script = ExtResource("16_70ip0")
 posX = 477
 posY = -296
