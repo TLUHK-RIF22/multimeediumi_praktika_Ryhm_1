@@ -1,6 +1,6 @@
-res://Levels/LevelB3.tscn
+res://Levels/LevelB2.tscn
 res://Pickup/pickup.gd
 res://Items/apple.tres
 res://Items/pear.tres
+res://Levels/LevelB3.tscn
 res://Charecters/NPC/Door.tscn
-res://Charecters/NPC/Door_unlock.gd
