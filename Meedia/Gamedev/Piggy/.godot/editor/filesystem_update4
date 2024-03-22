@@ -1,10 +1,5 @@
-res://Levels/LevelB2.tscn
+res://maja_vb.tscn
 res://Pickup/pickup.gd
 res://Items/apple.tres
 res://Items/pear.tres
-res://Levels/LevelB3.tscn
-res://Charecters/NPC/Door.tscn
-res://maja_vb.tscn
-res://Pickup/pickup.tscn
-res://UI/Game_manager/game_manager.tscn
-res://UI/PausMenu/paus_menu.tscn
+res://Levels/LevelB2.tscn

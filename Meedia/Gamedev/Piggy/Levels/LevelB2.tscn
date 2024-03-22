@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://ch8wnk4slan78"]
+[gd_scene load_steps=15 format=3 uid="uid://ch8wnk4slan78"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_jhued"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/Scenes/player.tscn" id="2_fyam3"]
@@ -7,10 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://c5h6i1vrldhsx" path="res://Pickup/pickup.tscn" id="8_3ja8d"]
 [ext_resource type="PackedScene" uid="uid://cxp54qdqfuvlm" path="res://LevelHoping/Gate.tscn" id="8_valm3"]
 [ext_resource type="PackedScene" uid="uid://dscndc5iq3qrs" path="res://LevelHoping/Entrance.tscn" id="9_hl140"]
-[ext_resource type="PackedScene" uid="uid://xhyvrvafwkbv" path="res://Charecters/NPC/NPC_Pig_Brown.tscn" id="10_b2xij"]
 [ext_resource type="Texture2D" uid="uid://36fx0vitw88f" path="res://Tiles/Sandmap.png" id="10_nq3gw"]
 [ext_resource type="Resource" uid="uid://260ntl5v26wx" path="res://Items/pear.tres" id="10_qvnir"]
-[ext_resource type="Texture2D" uid="uid://dbknnf1yq2jdk" path="res://Charecters/Siga/Sprites/Sleeping_siga.png" id="11_qlosw"]
 [ext_resource type="Resource" uid="uid://b2y8ddbamacaj" path="res://Items/sleeping_pig.tres" id="12_efthp"]
 [ext_resource type="PackedScene" uid="uid://eoacvlw581i0" path="res://maja_vb.tscn" id="12_w3box"]
 
@@ -962,12 +960,6 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_roo4d")
 sources/1 = SubResource("TileSetAtlasSource_iwfdh")
 
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_cwmeq"]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o483b"]
-radius = 22.0
-height = 86.0
-
 [node name="LevelB2" type="Node2D"]
 process_mode = 1
 y_sort_enabled = true
@@ -985,11 +977,11 @@ scale = Vector2(4, 4)
 position = Vector2(209, -232)
 
 [node name="LevelB3Pos" type="Marker2D" parent="."]
-position = Vector2(-115, 252)
+position = Vector2(-211, 279)
 scale = Vector2(4, 4)
 
 [node name="LevelB3" parent="." instance=ExtResource("8_valm3")]
-position = Vector2(-114, 288)
+position = Vector2(-210, 315)
 
 [node name="LevelA2Pos" type="Marker2D" parent="."]
 position = Vector2(-536, 305)
@@ -1012,31 +1004,6 @@ scale = Vector2(16, 16)
 [node name="Spikes" parent="." instance=ExtResource("9_hl140")]
 position = Vector2(-25, 82)
 
-[node name="NPC_Pig_Brown" parent="." instance=ExtResource("10_b2xij")]
-position = Vector2(137, -132)
-
-[node name="NPC_Pig_Brown2" parent="." instance=ExtResource("10_b2xij")]
-position = Vector2(123, -133)
-
-[node name="NPC_Pig_Brown3" parent="." instance=ExtResource("10_b2xij")]
-position = Vector2(108, -134)
-
-[node name="NPC_Pig_Brown4" parent="." instance=ExtResource("10_b2xij")]
-position = Vector2(91, -133)
-
-[node name="NPC_Pig_Brown5" parent="." instance=ExtResource("10_b2xij")]
-position = Vector2(75, -134)
-
-[node name="Puud_vb" type="Sprite2D" parent="."]
-position = Vector2(-788, 154)
-texture = ExtResource("6_tw2mf")
-
-[node name="NPC_Pig_Brown6" parent="." instance=ExtResource("10_b2xij")]
-position = Vector2(62, -134)
-
-[node name="NPC_Pig_Brown7" parent="." instance=ExtResource("10_b2xij")]
-position = Vector2(50, -134)
-
 [node name="TileMap" type="TileMap" parent="."]
 y_sort_enabled = true
 tile_set = SubResource("TileSet_x43u6")
@@ -1058,31 +1025,9 @@ position = Vector2(113, -10)
 position = Vector2(104, -80)
 item = ExtResource("10_qvnir")
 
-[node name="SleepingSiga" type="Sprite2D" parent="."]
-position = Vector2(134, -54)
-texture = ExtResource("11_qlosw")
-
-[node name="SleepingSiga2" type="Sprite2D" parent="."]
-position = Vector2(-413, -97)
-scale = Vector2(1.90625, 3.5)
-texture = ExtResource("11_qlosw")
-
-[node name="puu" type="StaticBody2D" parent="."]
-position = Vector2(-368.648, 68.0839)
-physics_material_override = SubResource("PhysicsMaterial_cwmeq")
-
-[node name="puu" type="CollisionShape2D" parent="puu"]
-position = Vector2(-45.352, -166.084)
-shape = SubResource("CapsuleShape2D_o483b")
-
 [node name="sleeping_pig" parent="." instance=ExtResource("8_3ja8d")]
 position = Vector2(169, -29)
 item = ExtResource("12_efthp")
-
-[node name="Maja_punane_katus" parent="." instance=ExtResource("12_w3box")]
-position = Vector2(-106, 46)
-scale = Vector2(0.415, 0.415)
-skew = -0.263545
 
 [node name="Maja" parent="." instance=ExtResource("12_w3box")]
 position = Vector2(-7, 48)
