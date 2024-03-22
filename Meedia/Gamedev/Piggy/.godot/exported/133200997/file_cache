@@ -35,7 +35,7 @@ res://Levels/LevelA1.tscn::5a1d513d4b932f3490a740c6fb8e6cac::1710360164::res://.
 res://Levels/LevelA2.tscn::049c66a80f5a5bff16ae72834769c3f9::1710360175::res://.godot/exported/133200997/export-d6c617817fd0ed72fd54169b3e2883e3-LevelA2.scn
 res://Levels/LevelA3.tscn::2b6ea7fbda7736a11488ef0f619f4040::1710360181::res://.godot/exported/133200997/export-69c9edb01e11eb3a18ec128cd611f136-LevelA3.scn
 res://Levels/LevelB1.tscn::67509f98569479cbd590177135681b3f::1710360183::res://.godot/exported/133200997/export-ae896ea46f4890697d0f853743f190ee-LevelB1.scn
-res://Levels/LevelB2.tscn::70c5bc805644418e10e1a150e73fc93f::1711107039::res://.godot/exported/133200997/export-adaacfabd30ba820fb6089f0449d0644-LevelB2.scn
+res://Levels/LevelB2.tscn::8c2829b0b8c173aee1cd00e59e5e5480::1711108506::res://.godot/exported/133200997/export-adaacfabd30ba820fb6089f0449d0644-LevelB2.scn
 res://Levels/LevelB3.tscn::d5c58b7699069230a3a7c794d6e9e221::1711100879::res://.godot/exported/133200997/export-d56336adc425603b71af7727fe2ce60e-LevelB3.scn
 res://Levels/LevelC1.tscn::e52f35c7c4bc00e1b929f36d54546022::1710360186::res://.godot/exported/133200997/export-67066f6efae0091485cc18b391438e41-LevelC1.scn
 res://Levels/LevelC2.tscn::779056f979c01f563ee405547ffbc226::1710360188::res://.godot/exported/133200997/export-e7e3e4aa56d26fa64ca6bc9b0039225d-LevelC2.scn
@@ -54,4 +54,10 @@ res://UI/PausMenu/paus_menu.tscn::e2ac9e3d07ac18439502cbde8b9fef3d::1711102879::
 res://UI/text_box/Text_box.tscn::b5486377838a47b2ae1d3f8257344d7a::1710845475::res://.godot/exported/133200997/export-dc32e3ed23a19a66f3700974fd57a8c7-Text_box.scn
 res://control.tscn::4f16c3abc4164a5e444cc6227e7ce41c::1710659531::res://.godot/exported/133200997/export-e66311c87c39ec8c25379305b5ae724b-control.scn
 res://Global.tscn::b026cfc8a4683c15743e887cd3d32432::1710360007::res://.godot/exported/133200997/export-51317a643913807ac6189f441b36d553-Global.scn
-res://maja_vb.tscn::fbd21b3ba3e2fe6d95098f5b0e62c247::1711106909::res://.godot/exported/133200997/export-1df95834d99416e990aea45b844b600c-maja_vb.scn
+res://MapElements/maja_vb.tscn::fbd21b3ba3e2fe6d95098f5b0e62c247::1711106909::res://.godot/exported/133200997/export-e7814ee013a78b270a2269ca3083f990-maja_vb.scn
+res://MapElements/TreeA.tscn::ca14d901c34e2245e5a8fcf594f4ff80::1711108081::res://.godot/exported/133200997/export-649cd16bc9b0c03022f19b49c9840d25-TreeA.scn
+res://MapElements/TreeB.tscn::cd67b5192e6c6047f4ec28ba42a1b094::1711108081::res://.godot/exported/133200997/export-3993204c0ec7fb5945ff59cce5d71e73-TreeB.scn
+res://MapElements/TreeC.tscn::04ddfa9f7190dd6ffe5219e73735c78f::1711108081::res://.godot/exported/133200997/export-6f3cc1925246efcfaee54e49e1066b50-TreeC.scn
+res://MapElements/TreeD.tscn::09fd6e3d7960bf5fe4d136c662450b35::1711108122::res://.godot/exported/133200997/export-cd464582947532296907eb12822ed853-TreeD.scn
+res://MapElements/TreeE.tscn::49a13bd730c7eea32e8cd32176b41317::1711108394::res://.godot/exported/133200997/export-66c1300676b22e794cc1c343c94815cc-TreeE.scn
+res://MapElements/TreeF.tscn::9158b7bbc01f28d44312dce8562f7831::1711108249::res://.godot/exported/133200997/export-b069441d457ac456199397e4b629788e-TreeF.scn
