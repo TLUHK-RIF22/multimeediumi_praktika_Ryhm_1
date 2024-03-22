@@ -3,3 +3,10 @@ res://Pickup/pickup.gd
 res://Items/apple.tres
 res://Items/pear.tres
 res://Levels/LevelB2.tscn
+res://Tree1.tscn
+res://TreeA.tscn
+res://MapElements/TreeA.tscn
+res://MapElements/TreeB.tscn
+res://MapElements/TreeC.tscn
+res://MapElements/TreeD.tscn
+res://MapElements/TreeE.tscn

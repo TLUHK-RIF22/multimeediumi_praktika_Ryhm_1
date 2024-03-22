@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxurlx37r4xvh"]
+
+[ext_resource type="Texture2D" uid="uid://2e0wdnflvsko" path="res://Tiles/Tileset2.0.png" id="1_xj45y"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wr0ow"]
+radius = 5.0
+
+[node name="TreeD" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Tileset2_0" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(-1, -17)
+texture = ExtResource("1_xj45y")
+region_enabled = true
+region_rect = Rect2(896, 256, 64, 64)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-1, 8)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_wr0ow")

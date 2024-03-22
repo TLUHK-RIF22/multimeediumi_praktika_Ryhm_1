@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://ch8wnk4slan78"]
+[gd_scene load_steps=21 format=3 uid="uid://ch8wnk4slan78"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_jhued"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/Scenes/player.tscn" id="2_fyam3"]
@@ -10,7 +10,13 @@
 [ext_resource type="Texture2D" uid="uid://36fx0vitw88f" path="res://Tiles/Sandmap.png" id="10_nq3gw"]
 [ext_resource type="Resource" uid="uid://260ntl5v26wx" path="res://Items/pear.tres" id="10_qvnir"]
 [ext_resource type="Resource" uid="uid://b2y8ddbamacaj" path="res://Items/sleeping_pig.tres" id="12_efthp"]
-[ext_resource type="PackedScene" uid="uid://eoacvlw581i0" path="res://maja_vb.tscn" id="12_w3box"]
+[ext_resource type="PackedScene" uid="uid://dyumucr6nntlt" path="res://MapElements/TreeA.tscn" id="12_elb5v"]
+[ext_resource type="PackedScene" uid="uid://eoacvlw581i0" path="res://MapElements/maja_vb.tscn" id="12_w3box"]
+[ext_resource type="PackedScene" uid="uid://dxlhg88jqsjou" path="res://MapElements/TreeB.tscn" id="13_ems0t"]
+[ext_resource type="PackedScene" uid="uid://unwk55hw3ogw" path="res://MapElements/TreeC.tscn" id="14_grhey"]
+[ext_resource type="PackedScene" uid="uid://bxurlx37r4xvh" path="res://MapElements/TreeD.tscn" id="15_vu80l"]
+[ext_resource type="PackedScene" uid="uid://conad5o532k7b" path="res://MapElements/TreeE.tscn" id="16_8ukrc"]
+[ext_resource type="PackedScene" uid="uid://bu142qf82b4g1" path="res://MapElements/TreeF.tscn" id="17_qh1cs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_roo4d"]
 texture = ExtResource("10_nq3gw")
@@ -998,7 +1004,7 @@ scale = Vector2(4, 4)
 position = Vector2(1034, 301)
 
 [node name="SpikesPos" type="Marker2D" parent="."]
-position = Vector2(-123, 104)
+position = Vector2(1, 99)
 scale = Vector2(16, 16)
 
 [node name="Spikes" parent="." instance=ExtResource("9_hl140")]
@@ -1031,3 +1037,21 @@ item = ExtResource("12_efthp")
 
 [node name="Maja" parent="." instance=ExtResource("12_w3box")]
 position = Vector2(-7, 48)
+
+[node name="TreeA" parent="." instance=ExtResource("12_elb5v")]
+position = Vector2(-77, 165)
+
+[node name="TreeB" parent="." instance=ExtResource("13_ems0t")]
+position = Vector2(-58, 167)
+
+[node name="TreeC" parent="." instance=ExtResource("14_grhey")]
+position = Vector2(-30, 167)
+
+[node name="TreeD" parent="." instance=ExtResource("15_vu80l")]
+position = Vector2(-17, 159)
+
+[node name="TreeE" parent="." instance=ExtResource("16_8ukrc")]
+position = Vector2(196, 161)
+
+[node name="TreeF" parent="." instance=ExtResource("17_qh1cs")]
+position = Vector2(261, 163)
