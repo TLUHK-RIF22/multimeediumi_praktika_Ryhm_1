@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://eoacvlw581i0"]
+
+[ext_resource type="Texture2D" uid="uid://ci1mh2kuh5g41" path="res://Sprites/Esmane_Maja.png" id="1_gdu3x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_brulw"]
+size = Vector2(127, 54)
+
+[node name="Maja" type="Node2D"]
+
+[node name="EsmaneMaja" type="Sprite2D" parent="."]
+position = Vector2(0, -70)
+texture = ExtResource("1_gdu3x")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_brulw")

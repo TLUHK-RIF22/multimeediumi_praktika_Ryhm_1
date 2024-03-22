@@ -12,7 +12,7 @@
 [ext_resource type="Resource" uid="uid://260ntl5v26wx" path="res://Items/pear.tres" id="10_qvnir"]
 [ext_resource type="Texture2D" uid="uid://dbknnf1yq2jdk" path="res://Charecters/Siga/Sprites/Sleeping_siga.png" id="11_qlosw"]
 [ext_resource type="Resource" uid="uid://b2y8ddbamacaj" path="res://Items/sleeping_pig.tres" id="12_efthp"]
-[ext_resource type="Texture2D" uid="uid://ci1mh2kuh5g41" path="res://Tiles/Esmane_Maja.png" id="12_y4i6u"]
+[ext_resource type="PackedScene" uid="uid://eoacvlw581i0" path="res://maja_vb.tscn" id="12_w3box"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_roo4d"]
 texture = ExtResource("10_nq3gw")
@@ -1006,11 +1006,11 @@ scale = Vector2(4, 4)
 position = Vector2(1034, 301)
 
 [node name="SpikesPos" type="Marker2D" parent="."]
-position = Vector2(37, 124)
+position = Vector2(-123, 104)
 scale = Vector2(16, 16)
 
 [node name="Spikes" parent="." instance=ExtResource("9_hl140")]
-position = Vector2(79, 126)
+position = Vector2(-25, 82)
 
 [node name="NPC_Pig_Brown" parent="." instance=ExtResource("10_b2xij")]
 position = Vector2(137, -132)
@@ -1049,7 +1049,7 @@ layer_0/tile_data = PackedInt32Array(983036, 65536, 10, 983037, 0, 7, 1048572, 3
 [node name="GameManager" parent="." instance=ExtResource("6_88mpu")]
 
 [node name="apple2" parent="." instance=ExtResource("8_3ja8d")]
-position = Vector2(30, -59)
+position = Vector2(158, 13)
 
 [node name="apple" parent="." instance=ExtResource("8_3ja8d")]
 position = Vector2(113, -10)
@@ -1059,17 +1059,13 @@ position = Vector2(104, -80)
 item = ExtResource("10_qvnir")
 
 [node name="SleepingSiga" type="Sprite2D" parent="."]
-position = Vector2(-14, -50)
+position = Vector2(134, -54)
 texture = ExtResource("11_qlosw")
 
 [node name="SleepingSiga2" type="Sprite2D" parent="."]
 position = Vector2(-413, -97)
 scale = Vector2(1.90625, 3.5)
 texture = ExtResource("11_qlosw")
-
-[node name="Maja_vb" type="Sprite2D" parent="."]
-position = Vector2(-8, 30)
-texture = ExtResource("12_y4i6u")
 
 [node name="puu" type="StaticBody2D" parent="."]
 position = Vector2(-368.648, 68.0839)
@@ -1080,5 +1076,13 @@ position = Vector2(-45.352, -166.084)
 shape = SubResource("CapsuleShape2D_o483b")
 
 [node name="sleeping_pig" parent="." instance=ExtResource("8_3ja8d")]
-position = Vector2(-91, 9)
+position = Vector2(169, -29)
 item = ExtResource("12_efthp")
+
+[node name="Maja_punane_katus" parent="." instance=ExtResource("12_w3box")]
+position = Vector2(-106, 46)
+scale = Vector2(0.415, 0.415)
+skew = -0.263545
+
+[node name="Maja" parent="." instance=ExtResource("12_w3box")]
+position = Vector2(-7, 48)
