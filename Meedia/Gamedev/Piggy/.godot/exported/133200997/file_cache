@@ -20,8 +20,8 @@ res://Inventory/Inventory.tscn::3caf54bf72dc9ebc8fa84d5d9a372c76::1710854674::re
 res://Items/Scene/apple.tscn::434629957c5b03291f63b9997ac87caf::1711099369::res://.godot/exported/133200997/export-0a792ad3ae974380ea1a9b9b7134709b-apple.scn
 res://Items/Scene/pear.tscn::d18b316eab4840844969dd4fbde3e223::1710191921::res://.godot/exported/133200997/export-140a2b549ae274af082c2761a80669ff-pear.scn
 res://Items/Scene/sleeping_pig.tscn::f45ab06c4c6e8f4a6ce3924af508a299::1710334689::res://.godot/exported/133200997/export-fd7dcf12de3f983e3a0d83b43ec6a220-sleeping_pig.scn
-res://Items/apple.tres::e0f36816938297ec76c03ef8a3e91916::1711106897::res://.godot/exported/133200997/export-ee52f269357c97bfca520e4e06db8b89-apple.res
-res://Items/pear.tres::526092cfd915de77e8c127c7f02db36f::1711106897::res://.godot/exported/133200997/export-69582542b9e048f2813de415ab82a8cf-pear.res
+res://Items/apple.tres::e0f36816938297ec76c03ef8a3e91916::1711111049::res://.godot/exported/133200997/export-ee52f269357c97bfca520e4e06db8b89-apple.res
+res://Items/pear.tres::526092cfd915de77e8c127c7f02db36f::1711111049::res://.godot/exported/133200997/export-69582542b9e048f2813de415ab82a8cf-pear.res
 res://Items/sleeping_pig.tres::0e35ba8eb3bb081aae1d6e3a4b45fde5::1710357932::res://.godot/exported/133200997/export-471ca32c41919c6917737b6ea2ca1380-sleeping_pig.res
 res://LevelHoping/Entrance.tscn::5c1d321cfaacb16cdbac92c022bae703::1711106062::res://.godot/exported/133200997/export-1d8e3174c208f344e6b314fb7e464df4-Entrance.scn
 res://LevelHoping/Gate2.tscn::5cfaee8c2181cadeada59264ad378cc8::1710334369::res://.godot/exported/133200997/export-c1766dff50b1f51ddef0061f16b7631c-Gate2.scn
@@ -35,8 +35,8 @@ res://Levels/LevelA1.tscn::5a1d513d4b932f3490a740c6fb8e6cac::1710360164::res://.
 res://Levels/LevelA2.tscn::049c66a80f5a5bff16ae72834769c3f9::1710360175::res://.godot/exported/133200997/export-d6c617817fd0ed72fd54169b3e2883e3-LevelA2.scn
 res://Levels/LevelA3.tscn::2b6ea7fbda7736a11488ef0f619f4040::1710360181::res://.godot/exported/133200997/export-69c9edb01e11eb3a18ec128cd611f136-LevelA3.scn
 res://Levels/LevelB1.tscn::67509f98569479cbd590177135681b3f::1710360183::res://.godot/exported/133200997/export-ae896ea46f4890697d0f853743f190ee-LevelB1.scn
-res://Levels/LevelB2.tscn::8c2829b0b8c173aee1cd00e59e5e5480::1711108506::res://.godot/exported/133200997/export-adaacfabd30ba820fb6089f0449d0644-LevelB2.scn
-res://Levels/LevelB3.tscn::d5c58b7699069230a3a7c794d6e9e221::1711100879::res://.godot/exported/133200997/export-d56336adc425603b71af7727fe2ce60e-LevelB3.scn
+res://Levels/LevelB2.tscn::fe11ae0abe89a60e963d30025dbc8d1f::1711111323::res://.godot/exported/133200997/export-adaacfabd30ba820fb6089f0449d0644-LevelB2.scn
+res://Levels/LevelB3.tscn::d5c58b7699069230a3a7c794d6e9e221::1711110712::res://.godot/exported/133200997/export-d56336adc425603b71af7727fe2ce60e-LevelB3.scn
 res://Levels/LevelC1.tscn::e52f35c7c4bc00e1b929f36d54546022::1710360186::res://.godot/exported/133200997/export-67066f6efae0091485cc18b391438e41-LevelC1.scn
 res://Levels/LevelC2.tscn::779056f979c01f563ee405547ffbc226::1710360188::res://.godot/exported/133200997/export-e7e3e4aa56d26fa64ca6bc9b0039225d-LevelC2.scn
 res://Levels/LevelC3.tscn::02f8217e1a37b363d97dcf6b0bc5655f::1710360189::res://.godot/exported/133200997/export-649697732c5994f8505f6cc0c37a56af-LevelC3.scn
