@@ -226,4 +226,29 @@ koosolekul:
 - KarlErik teeb esimese kaardi koostamist, vaimse rännaku leveli lõpetamine (nädal kaks) Dave tileside ladumine, Peeter tegeleb dialoogiakna ja selle eripärade lahendamisega
 - release?
 
+## 20.03. - 1h
+- Karli äratamine
+- NPC reageerimine
+- esitluse arutelu
+- tegevuste arutelu
+- lennuki algkuvand
+- käru esmakuvand
+- kaevu esmakuvand
+- maja esmakuvand ja arutelu
+- levelite vaheline liikumine ja ukse lahendamine
+- ukse avamise lahendamine
+- vajalik võtme tiles
+- kas teeme x õunte arvul muutumise võtmeks?
+- levelite vaheline liikumine 
+- sea kiirus mitte vihaseks
+- bugide arutelu ja interaktiivsus
+- kasutajaliidese mock-up ja selle arutelu- inventory management, pause menu, start menu, klaviatuuri klahvid on WASD liikumiseks ning nooleklahvid, xboxil töötavad joypad buttonid. play, settings- audio-  output level, quit,  
+- inventory menu upscale? või teha ümber esemed kõik 32x32px ? 
+- inventory ikoonid tuleb teha suuremad kui on in-game ikoonid, 32x32px tühjale põhjale
+- inventory korjamiseks heli
+- demo testimine
+- kiirliikumise mõttekus ja lahendamine (sprint animatsioon), shift klahv? tundub standard.
 
+## 22.02-3h
+- üldine arutelu koolis kohapeal
+- ettekanne ja loeng
