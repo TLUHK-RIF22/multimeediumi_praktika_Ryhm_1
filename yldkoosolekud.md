@@ -252,3 +252,22 @@ koosolekul:
 ## 22.02-3h
 - üldine arutelu koolis kohapeal
 - ettekanne ja loeng
+
+## 24.03 - 1h
+- Karli äratamine
+- Üldine arutelu
+- Chatbox- musta variandiga lähme edasi, sest see pakkus head interaktiivsust.
+- Infotahvlid valge taustaga chatbox (tutorial)
+- Projekti käekäik ning tundide kasutus
+- Käru tiles ja täitumine, kärul on kaks olekut, üks on tühi ja teine on täis, kui inventory on korjatud.
+- Counter? Ei, võibolla hiljem.
+- Levelite disain ja ühine kohtumine selle jaoks.Levelite disaini eest vastutab Karl.
+- Sprites vs Tiles
+- Projekti elukaare lõpp ja tegevused
+- Edasine tegevus.
+- Lõpustatistika- taimer, 
+- Save game arendus,
+- Interaktiivne chatbox- vestlus ja ka press X klahv et teha Y asja, 
+- EXE bugi kõrvaldamine,
+- Storyline koosolek- läbi veebi, online. Aja täpsustame discordis.
+- Cutscenede peamised kohad, eesmärk ja sisu ning selle arutamise koosolek, ühendada storyline koosolekuga. Koosolek peale storyline koosolekut.
