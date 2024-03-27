@@ -271,3 +271,47 @@ koosolekul:
 - EXE bugi kõrvaldamine,
 - Storyline koosolek- läbi veebi, online. Aja täpsustame discordis.
 - Cutscenede peamised kohad, eesmärk ja sisu ning selle arutamise koosolek, ühendada storyline koosolekuga. Koosolek peale storyline koosolekut.
+
+## 27.03 - 3h
+- Exe Demo arutelu
+- Esimesed mõtted on paigas
+- Kasutame placeholdereid tulevikutarbeks
+- Progressist vahepeal ülevaated
+- Interaktiivsuse piirjooned
+- Seene sprite, musta piirjoonega ja tumedama piirjoonega
+- Karl teeb kaarti
+- Plakat ja arendusprotsess, kollaaž? 
+me saame pookida pildi davincist, me saame pookida pildi godost, me saame pookida pildi pixelardist
+- Plakat- Pealkiri, hero image, paar mängu kaadrit, 4x4 ruudustik kommentaaridega mis toimub, 19 pilti kokku protsessist, tuleb väga võimas ja esteetiline plakat.
+- Vaja on teha cutscened, kindel on see, et vaja on algusesse.
+- Kas käru liigub ainult ühes suunas? Esialgu ehk küll
+- Karli tehtud plakati eskiis
+- Karl visandab käru
+- Sea ja käru sprite- kokku tõsta?
+- Tegelikult ei pea käru liikuma
+- Käru saab täis siis tuleb cutscene
+- Suurem pilt väiksemast illuminaatide pildist
+- Õpime süžee pointi ja EKIt
+- Opacity 50% Teine siga vestluse jaoks, tutorialsiga
+https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/63
+- Tutorial chatboxi tekstid, koos storyline arendusega
+- Chatboxi võimekus 50% opacity, dialogic
+- Heliefektid- sammud eripindadel, itemi üles korjamine, chatboxi avanemine, ukse liikumine, taustmuusika, kui uks ei avane, - error sound, success sound, generic sucess, nupu heli interaktiivsust tehes, sama ka UI puhul? 
+- 02.04 uus koosolek, 19.00
+- Edaspidi kasutame ainult RAR kompressiooni ning mitte mingil juhul winzipi.
+- Grupiviisiline demo test
+- Bugi ravimine kõigile
+- Siga vajab päramootorit, selle saamiseks siga röhitseb, nuppu vajutades siga röhitseb.
+- Paadimootor, kas alla kukkus kaubalennuk ja avariipaigas oli liivas vana paadimootor. Või kasutas lennukimootorit ja tegu oli propellerlennukiga? Kaks põrsast, viisijupi mängimine õigete tileside peal.
+- Puzzlemängu variandid sisu osas
+- Ellujäämine ning astraalkeha, kuval on kaks siga aga tegelt on üks siga.
+- Laburint ja Co-Op
+- TIngimuste avanemisega seinte avamine, kui condition 1 on täidetud siis on condition 2 ja kui need on täidetud siis saab edasi.
+- Teeme valged koonused valvuritele pähe.
+- Teeme ühe tumedama või vähem nähtavama Sea
+- Valvuril ja nähtamatumal Seal ei tohi tekkida collisionit, muidu on Sea jaoks mäng läbi.
+- Valvur valvab tsooni, kus Siga ei tohiks liikuda
+- Playthrough counter mitu siga sai Sinu pärast surma
+- Mäng toimub aastal 1988 Vormsi kolhoosis
+- Tipptehnoloogia võib eksisteerida aga pigem on ladna asjaajamine
+- Tegevus võis ka olla osaliselt Noarootsis, nii palju on aega möödas, et täpselt Siga ei mäleta
