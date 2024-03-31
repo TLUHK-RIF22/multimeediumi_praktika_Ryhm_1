@@ -3,6 +3,8 @@ extends CharacterBody2D
 
 @export var move_speed : float = 80
 @export var starting_direction : Vector2 = Vector2(0,1)
+@onready var sleep_timer = %SleepTimer
+var idleTimer = false
 
 # parameters/idle/blend_position
 
@@ -40,8 +42,13 @@ func update_animation_parameters(move_input : Vector2):
 func pick_new_state():
 	if(velocity != Vector2.ZERO):
 		state_machine.travel("walk")
+		sleep_timer.start()
+		idleTimer = false
 	else:
 		state_machine.travel("idle")
+		if idleTimer:
+			state_machine.travel("sleep")
+		
 
 func Player():
 	pass
@@ -53,3 +60,7 @@ func on_item_picked_up(item:Item):
 	
 var inventory:Inventory = Inventory.new()
 
+
+
+func _on_sleep_timer_timeout():
+	idleTimer = true

@@ -2,3 +2,5 @@ res://Levels/LevelB2.tscn
 res://Pickup/pickup.gd
 res://Items/apple.tres
 res://Items/pear.tres
+res://Charecters/Siga/Scenes/player.tscn
+res://Charecters/Siga/Scenes/player.gd
