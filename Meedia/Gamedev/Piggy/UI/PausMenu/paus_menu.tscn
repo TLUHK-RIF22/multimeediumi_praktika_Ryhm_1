@@ -1,11 +1,49 @@
-[gd_scene load_steps=6 format=3 uid="uid://c2fox34yy7p53"]
+[gd_scene load_steps=15 format=3 uid="uid://c2fox34yy7p53"]
 
 [ext_resource type="Script" path="res://UI/PausMenu/paus_menu.gd" id="1_ib6dp"]
 [ext_resource type="Theme" uid="uid://kqoqphpsnpbo" path="res://UI/MainMenu/game_theme.tres" id="2_e0add"]
 [ext_resource type="AudioStream" uid="uid://cu8l14cttsk3s" path="res://Audio/menüü põhi.mp3" id="3_7onch"]
 [ext_resource type="Script" path="res://UI/MainMenu/Button.gd" id="3_mseb5"]
+[ext_resource type="Texture2D" uid="uid://s10b8h1ts20" path="res://Sprites/audio_on_and_mute.jpg" id="5_kdbv5"]
 
 [sub_resource type="Theme" id="Theme_15yrs"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m3a8y"]
+atlas = ExtResource("5_kdbv5")
+region = Rect2(4000, 0, 4000, 5334)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_grt8l"]
+atlas = ExtResource("5_kdbv5")
+region = Rect2(0, 0, 4000, 5334)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vjgov"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m3a8y")
+}],
+"loop": true,
+"name": &"muted",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_grt8l")
+}],
+"loop": true,
+"name": &"unmuted",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bheqw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_thye2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0d546"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x24ji"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d6hsd"]
 
 [node name="PausMenu" type="Control"]
 process_mode = 2
@@ -22,6 +60,7 @@ process_mode = 2
 stream = ExtResource("3_7onch")
 volume_db = 10.312
 autoplay = true
+bus = &"Music"
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -36,15 +75,11 @@ grow_horizontal = 2
 
 [node name="ColorRect" type="ColorRect" parent="Panel"]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -83.5
-offset_top = -46.5
-offset_right = 83.5
-offset_bottom = 46.5
+anchors_preset = -1
+anchor_left = 0.2
+anchor_top = 0.2
+anchor_right = 0.8
+anchor_bottom = 0.8
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_15yrs")
@@ -52,10 +87,16 @@ color = Color(0.14902, 0.392157, 0.196078, 1)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel/ColorRect"]
 layout_mode = 1
-anchors_preset = 10
+anchors_preset = -1
 anchor_right = 1.0
-offset_bottom = 80.0
+anchor_bottom = 1.0
+offset_left = -0.599998
+offset_top = 1.4
+offset_right = -0.600006
+offset_bottom = 1.39999
 grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
 
 [node name="Label" type="Label" parent="Panel/ColorRect/VBoxContainer"]
 layout_mode = 2
@@ -76,12 +117,63 @@ layout_mode = 2
 min_value = -60.0
 max_value = 10.0
 
-[node name="Settings" type="Button" parent="Panel/ColorRect/VBoxContainer"]
-visible = false
+[node name="BackgroundMusic" type="HBoxContainer" parent="Panel/ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Label2" type="Label" parent="Panel/ColorRect/VBoxContainer/BackgroundMusic"]
 layout_mode = 2
 theme = ExtResource("2_e0add")
-text = "Settings
-"
+text = "Background Music: "
+horizontal_alignment = 1
+
+[node name="MusicSprite" type="AnimatedSprite2D" parent="Panel/ColorRect/VBoxContainer/BackgroundMusic"]
+position = Vector2(86, 6)
+scale = Vector2(0.00415002, 0.00253268)
+sprite_frames = SubResource("SpriteFrames_vjgov")
+animation = &"unmuted"
+
+[node name="MusicButton" type="Button" parent="Panel/ColorRect/VBoxContainer/BackgroundMusic/MusicSprite"]
+offset_left = -1927.7
+offset_top = -2763.87
+offset_right = -1918.7
+offset_bottom = -2736.87
+scale = Vector2(454.01, 206.315)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bheqw")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_thye2")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0d546")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_x24ji")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_d6hsd")
+metadata/_edit_lock_ = true
+
+[node name="SFX" type="HBoxContainer" parent="Panel/ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Label2" type="Label" parent="Panel/ColorRect/VBoxContainer/SFX"]
+layout_mode = 2
+theme = ExtResource("2_e0add")
+text = "SFX: "
+horizontal_alignment = 1
+
+[node name="SFXSprite" type="AnimatedSprite2D" parent="Panel/ColorRect/VBoxContainer/SFX"]
+position = Vector2(57, 6)
+scale = Vector2(0.00415002, 0.00253268)
+sprite_frames = SubResource("SpriteFrames_vjgov")
+animation = &"unmuted"
+
+[node name="SFXButton" type="Button" parent="Panel/ColorRect/VBoxContainer/SFX/SFXSprite"]
+offset_left = -1927.7
+offset_top = -2763.87
+offset_right = -1918.7
+offset_bottom = -2736.87
+scale = Vector2(454.01, 206.315)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bheqw")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_thye2")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0d546")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_x24ji")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_d6hsd")
+metadata/_edit_lock_ = true
 
 [node name="ExitButton" type="Button" parent="Panel/ColorRect/VBoxContainer"]
 layout_mode = 2
@@ -90,5 +182,6 @@ text = "Exit"
 
 [connection signal="pressed" from="Panel/ColorRect/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
 [connection signal="value_changed" from="Panel/ColorRect/VBoxContainer/HSlider" to="." method="_on_h_slider_value_changed"]
-[connection signal="pressed" from="Panel/ColorRect/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Panel/ColorRect/VBoxContainer/BackgroundMusic/MusicSprite/MusicButton" to="." method="_on_music_button_pressed"]
+[connection signal="pressed" from="Panel/ColorRect/VBoxContainer/SFX/SFXSprite/SFXButton" to="." method="_on_sfx_button_pressed"]
 [connection signal="pressed" from="Panel/ColorRect/VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]

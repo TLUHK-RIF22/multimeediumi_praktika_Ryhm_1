@@ -8,3 +8,4 @@ res://Charecters/Siga/Scenes/player.gd
 res://Audio/AudioStreamPlayer.gd
 res://UI/Game_manager/game_manager.tscn
 res://UI/PausMenu/paus_menu.tscn
+res://UI/PausMenu/paus_menu.gd
