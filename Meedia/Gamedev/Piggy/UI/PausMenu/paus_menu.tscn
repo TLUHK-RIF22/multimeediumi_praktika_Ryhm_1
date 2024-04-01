@@ -111,12 +111,6 @@ theme = ExtResource("2_e0add")
 text = "Resume"
 script = ExtResource("3_mseb5")
 
-[node name="HSlider" type="HSlider" parent="Panel/ColorRect/VBoxContainer"]
-unique_name_in_owner = true
-layout_mode = 2
-min_value = -60.0
-max_value = 10.0
-
 [node name="BackgroundMusic" type="HBoxContainer" parent="Panel/ColorRect/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
@@ -145,6 +139,12 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_0d546")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_x24ji")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_d6hsd")
 metadata/_edit_lock_ = true
+
+[node name="MusicSlider" type="HSlider" parent="Panel/ColorRect/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+min_value = -60.0
+max_value = 10.0
 
 [node name="SFX" type="HBoxContainer" parent="Panel/ColorRect/VBoxContainer"]
 layout_mode = 2
@@ -175,13 +175,20 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_x24ji")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_d6hsd")
 metadata/_edit_lock_ = true
 
+[node name="SFXSlider" type="HSlider" parent="Panel/ColorRect/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+min_value = -60.0
+max_value = 10.0
+
 [node name="ExitButton" type="Button" parent="Panel/ColorRect/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("2_e0add")
 text = "Exit"
 
 [connection signal="pressed" from="Panel/ColorRect/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
-[connection signal="value_changed" from="Panel/ColorRect/VBoxContainer/HSlider" to="." method="_on_h_slider_value_changed"]
 [connection signal="pressed" from="Panel/ColorRect/VBoxContainer/BackgroundMusic/MusicSprite/MusicButton" to="." method="_on_music_button_pressed"]
+[connection signal="value_changed" from="Panel/ColorRect/VBoxContainer/MusicSlider" to="." method="_on_music_slider_value_changed"]
 [connection signal="pressed" from="Panel/ColorRect/VBoxContainer/SFX/SFXSprite/SFXButton" to="." method="_on_sfx_button_pressed"]
+[connection signal="value_changed" from="Panel/ColorRect/VBoxContainer/SFXSlider" to="." method="_on_sfx_slider_value_changed"]
 [connection signal="pressed" from="Panel/ColorRect/VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]

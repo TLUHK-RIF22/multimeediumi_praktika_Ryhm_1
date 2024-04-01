@@ -25,9 +25,10 @@ func _on_game_manager_toggle_game_paused(is_paused : bool):
 	if(is_paused):
 		show()
 		%ResumeButton.grab_focus()
-		%HSlider.set_value(Global.audioLevel)
-		%AudioStreamPlayer.play()
 		
+		%AudioStreamPlayer.play()
+		%MusicSlider.set_value(Global.audioLevelMusic)
+		%SFXSlider.set_value(Global.audioLevelSXF)
 		if isMutedMusic:
 			MusicButton.play("muted")
 		else:
@@ -48,8 +49,8 @@ func _on_exit_button_pressed():
 	get_tree().quit()
 
 
-func _on_h_slider_value_changed(value):
-	Global.audioLevel = %HSlider.value 
+#func _on_h_slider_value_changed(value):
+#	Global.audioLevel = %HSlider.value 
 
 
 func _on_sfx_button_pressed():
@@ -74,3 +75,14 @@ func _on_music_button_pressed():
 		AudioServer.set_bus_mute(MUSIC_BUS_ID, true)
 		Global.isMutedMusic = true
 		
+
+
+func _on_music_slider_value_changed(value):
+	AudioServer.set_bus_volume_db(MUSIC_BUS_ID, value)
+	Global.audioLevelMusic = value 
+
+
+func _on_sfx_slider_value_changed(value):
+	AudioServer.set_bus_volume_db(SFX_BUS_ID, value)
+	Global.audioLevelSXF = value 
+	
