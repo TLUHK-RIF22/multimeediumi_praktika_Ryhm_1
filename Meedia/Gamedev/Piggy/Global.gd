@@ -7,3 +7,5 @@ var _content: Array[Item] = []
 var itemsPickedUp: Array = []
 var itemGivenToNPC: Array = []
 
+var isMutedMusic = false
+var isMutedSFX = false

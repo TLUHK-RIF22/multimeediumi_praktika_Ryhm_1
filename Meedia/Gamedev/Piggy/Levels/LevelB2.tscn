@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://ch8wnk4slan78"]
+[gd_scene load_steps=22 format=3 uid="uid://ch8wnk4slan78"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_jhued"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/Scenes/player.tscn" id="2_fyam3"]
@@ -18,7 +18,6 @@
 [ext_resource type="PackedScene" uid="uid://conad5o532k7b" path="res://MapElements/TreeE.tscn" id="16_8ukrc"]
 [ext_resource type="PackedScene" uid="uid://bu142qf82b4g1" path="res://MapElements/TreeF.tscn" id="17_qh1cs"]
 [ext_resource type="AudioStream" uid="uid://cu8l14cttsk3s" path="res://Audio/menüü põhi.mp3" id="18_v35w4"]
-[ext_resource type="Script" path="res://Audio/AudioStreamPlayer.gd" id="19_b04xw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_roo4d"]
 texture = ExtResource("10_nq3gw")
@@ -1128,4 +1127,3 @@ unique_name_in_owner = true
 stream = ExtResource("18_v35w4")
 autoplay = true
 bus = &"Music"
-script = ExtResource("19_b04xw")
