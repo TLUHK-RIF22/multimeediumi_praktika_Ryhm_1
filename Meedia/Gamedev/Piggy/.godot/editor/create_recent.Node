@@ -1,3 +1,6 @@
+ColorRect
+AudioStreamPlayer
+AudioStreamPlayer2D
 Timer
 StaticBody2D
 RigidBody2D
@@ -8,7 +11,5 @@ Node2D
 Label
 MarginContainer
 NinePatchRect
-AudioStreamPlayer
 Panel
 CenterContainer
-HBoxContainer

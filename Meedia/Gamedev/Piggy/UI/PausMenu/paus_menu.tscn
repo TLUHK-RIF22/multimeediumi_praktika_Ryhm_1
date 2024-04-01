@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://c2fox34yy7p53"]
+[gd_scene load_steps=6 format=3 uid="uid://c2fox34yy7p53"]
 
 [ext_resource type="Script" path="res://UI/PausMenu/paus_menu.gd" id="1_ib6dp"]
 [ext_resource type="Theme" uid="uid://kqoqphpsnpbo" path="res://UI/MainMenu/game_theme.tres" id="2_e0add"]
 [ext_resource type="AudioStream" uid="uid://cu8l14cttsk3s" path="res://Audio/menüü põhi.mp3" id="3_7onch"]
 [ext_resource type="Script" path="res://UI/MainMenu/Button.gd" id="3_mseb5"]
+
+[sub_resource type="Theme" id="Theme_15yrs"]
 
 [node name="PausMenu" type="Control"]
 process_mode = 2
@@ -26,53 +28,67 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -75.0
-offset_top = 50.0
-offset_right = 75.0
-offset_bottom = 150.0
+offset_left = -239.0
+offset_top = 1.0
+offset_right = 239.0
+offset_bottom = 269.0
 grow_horizontal = 2
-scale = Vector2(0.989705, 1)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+[node name="ColorRect" type="ColorRect" parent="Panel"]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -83.5
+offset_top = -46.5
+offset_right = 83.5
+offset_bottom = 46.5
 grow_horizontal = 2
 grow_vertical = 2
+theme = SubResource("Theme_15yrs")
+color = Color(0.14902, 0.392157, 0.196078, 1)
 
-[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/ColorRect"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 80.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="Panel/ColorRect/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("2_e0add")
 text = "= Pause ="
 horizontal_alignment = 1
 
-[node name="ResumeButton" type="Button" parent="Panel/VBoxContainer"]
+[node name="ResumeButton" type="Button" parent="Panel/ColorRect/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 theme = ExtResource("2_e0add")
 text = "Resume"
 script = ExtResource("3_mseb5")
 
-[node name="HSlider" type="HSlider" parent="Panel/VBoxContainer"]
+[node name="HSlider" type="HSlider" parent="Panel/ColorRect/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 min_value = -60.0
 max_value = 10.0
 
-[node name="Settings" type="Button" parent="Panel/VBoxContainer"]
+[node name="Settings" type="Button" parent="Panel/ColorRect/VBoxContainer"]
 visible = false
 layout_mode = 2
 theme = ExtResource("2_e0add")
 text = "Settings
 "
 
-[node name="ExitButton" type="Button" parent="Panel/VBoxContainer"]
+[node name="ExitButton" type="Button" parent="Panel/ColorRect/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("2_e0add")
 text = "Exit"
 
-[connection signal="pressed" from="Panel/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
-[connection signal="value_changed" from="Panel/VBoxContainer/HSlider" to="." method="_on_h_slider_value_changed"]
-[connection signal="pressed" from="Panel/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
-[connection signal="pressed" from="Panel/VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="Panel/ColorRect/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="value_changed" from="Panel/ColorRect/VBoxContainer/HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="pressed" from="Panel/ColorRect/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Panel/ColorRect/VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]

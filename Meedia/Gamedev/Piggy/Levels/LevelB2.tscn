@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://ch8wnk4slan78"]
+[gd_scene load_steps=23 format=3 uid="uid://ch8wnk4slan78"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_jhued"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/Scenes/player.tscn" id="2_fyam3"]
@@ -17,6 +17,8 @@
 [ext_resource type="PackedScene" uid="uid://bxurlx37r4xvh" path="res://MapElements/TreeD.tscn" id="15_vu80l"]
 [ext_resource type="PackedScene" uid="uid://conad5o532k7b" path="res://MapElements/TreeE.tscn" id="16_8ukrc"]
 [ext_resource type="PackedScene" uid="uid://bu142qf82b4g1" path="res://MapElements/TreeF.tscn" id="17_qh1cs"]
+[ext_resource type="AudioStream" uid="uid://bhlcodyggruad" path="res://Audio/Kong.mp3" id="18_c381q"]
+[ext_resource type="Script" path="res://Audio/AudioStreamPlayer.gd" id="19_b04xw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_roo4d"]
 texture = ExtResource("10_nq3gw")
@@ -1120,3 +1122,10 @@ position = Vector2(-645, -192)
 
 [node name="TreeC2" parent="." instance=ExtResource("14_grhey")]
 position = Vector2(-107, 50)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("18_c381q")
+autoplay = true
+bus = &"Music"
+script = ExtResource("19_b04xw")

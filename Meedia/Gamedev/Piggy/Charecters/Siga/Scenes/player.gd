@@ -1,6 +1,7 @@
 class_name Player
 extends CharacterBody2D
 
+@onready var playerWalkingAudioStream = %AudioStreamPlayer_Walking
 @export var move_speed : float = 80
 @export var starting_direction : Vector2 = Vector2(0,1)
 @onready var sleep_timer = %SleepTimer
@@ -44,8 +45,11 @@ func pick_new_state():
 		state_machine.travel("walk")
 		sleep_timer.start()
 		idleTimer = false
+		if !playerWalkingAudioStream.playing:
+			playerWalkingAudioStream.play()
 	else:
 		state_machine.travel("idle")
+		playerWalkingAudioStream.stop()
 		if idleTimer:
 			state_machine.travel("sleep")
 		
