@@ -12,12 +12,11 @@ script = ExtResource("1_qwy1y")
 firstLevel = ExtResource("2_b5r2g")
 settings = ExtResource("3_jt0f4")
 
-[node name="BG" parent="." instance=ExtResource("4_1iuup")]
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
 stream = ExtResource("2_k41pm")
 autoplay = true
+bus = &"Music"
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 offset_left = -4.0
@@ -43,6 +42,8 @@ text = "Settings"
 layout_mode = 2
 tooltip_text = "Leaving already?"
 text = "Quit"
+
+[node name="BG" parent="." instance=ExtResource("4_1iuup")]
 
 [connection signal="pressed" from="CenterContainer/VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/SettingsButton" to="." method="_on_settings_button_pressed"]

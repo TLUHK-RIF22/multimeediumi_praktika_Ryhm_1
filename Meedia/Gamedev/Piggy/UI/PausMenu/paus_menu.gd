@@ -2,22 +2,27 @@ extends Control
 
 @export var game_manager : GameManager
 
-@onready var MusicButton = $Panel/ColorRect/VBoxContainer/BackgroundMusic/MusicSprite
-@onready var SFXButton = $Panel/ColorRect/VBoxContainer/SFX/SFXSprite
+@onready var MusicButton = %MusicSprite
+@onready var SFXButton = %SFXSprite
 
 @onready var MUSIC_BUS_ID = AudioServer.get_bus_index("Music")
 @onready var SFX_BUS_ID = AudioServer.get_bus_index("SFX")
 
-var isMutedMusic = Global.isMutedMusic
-var isMutedSFX = Global.isMutedSFX
-func _process(_delta):
-	
-	%AudioStreamPlayer.set_volume_db(Global.audioLevel)
+@onready var isMutedMusic = Global.isMutedMusic
+@onready var isMutedSFX = Global.isMutedSFX
+
 
 func _ready():
 	hide()
 	game_manager.connect("toggle_game_paused", _on_game_manager_toggle_game_paused)
-	
+	if isMutedMusic:
+		MusicButton.play("muted")
+	else:
+		MusicButton.play("unmuted")
+	if isMutedSFX:
+		SFXButton.play("muted")
+	else:
+		SFXButton.play("unmuted")
 	
 	
 	
@@ -29,14 +34,7 @@ func _on_game_manager_toggle_game_paused(is_paused : bool):
 		%AudioStreamPlayer.play()
 		%MusicSlider.set_value(Global.audioLevelMusic)
 		%SFXSlider.set_value(Global.audioLevelSXF)
-		if isMutedMusic:
-			MusicButton.play("muted")
-		else:
-			MusicButton.play("unmuted")
-		if isMutedSFX:
-			SFXButton.play("muted")
-		else:
-			SFXButton.play("unmuted")
+
 	else:
 		hide()
 		%AudioStreamPlayer.stop()

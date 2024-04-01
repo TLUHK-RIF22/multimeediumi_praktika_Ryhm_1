@@ -7,9 +7,11 @@
 [ext_resource type="Texture2D" uid="uid://c1wd1jf5cjjsy" path="res://Sprites/BG/Piggy.png" id="5_hmq4b"]
 
 [node name="BG" type="ParallaxBackground"]
+scroll_offset = Vector2(437.209, 167.308)
 script = ExtResource("1_6xkuv")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+position = Vector2(-6, -74)
 motion_scale = Vector2(0.2, 0.2)
 motion_mirroring = Vector2(480, 0)
 
@@ -18,6 +20,7 @@ position = Vector2(483, 135)
 texture = ExtResource("2_fujt5")
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+position = Vector2(-3, -74)
 motion_scale = Vector2(0.5, 0.5)
 motion_mirroring = Vector2(480, 0)
 
@@ -26,6 +29,7 @@ position = Vector2(484, 313)
 texture = ExtResource("3_88ind")
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+position = Vector2(-3, -74)
 motion_scale = Vector2(0.5, 0.5)
 motion_mirroring = Vector2(600, 0)
 
@@ -34,5 +38,5 @@ position = Vector2(483, 145)
 texture = ExtResource("2_8vlq4")
 
 [node name="Piggy" type="Sprite2D" parent="."]
-position = Vector2(495, 180)
+position = Vector2(488, 163)
 texture = ExtResource("5_hmq4b")
