@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://73jm5qjy52vq"]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_36de5"]
+[ext_resource type="Script" path="res://UI/balloon.gd" id="1_36de5"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="3_72ixx"]
 
@@ -111,6 +111,7 @@ modulate = Color(1, 1, 1, 0.501961)
 layout_mode = 2
 mouse_filter = 1
 theme = SubResource("Theme_y0fhc")
+theme_override_colors/default_color = Color(0.721569, 0.964706, 0.921569, 1)
 theme_override_font_sizes/normal_font_size = 16
 bbcode_enabled = true
 text = "Character"

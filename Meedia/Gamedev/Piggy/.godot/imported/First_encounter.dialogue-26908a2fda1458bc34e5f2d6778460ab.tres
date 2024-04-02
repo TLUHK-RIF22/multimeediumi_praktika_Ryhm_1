@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_u5u4w"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_o3uv0"]
 
 [resource]
-script = ExtResource("1_u5u4w")
+script = ExtResource("1_o3uv0")
 using_states = PackedStringArray()
 titles = {
-"Questions1": "10",
+"Questions1": "8",
 "start": "5"
 }
 character_names = PackedStringArray("Local pig", "Piggy")
@@ -19,65 +19,53 @@ lines = {
 "type": "title"
 },
 "10": {
-"character": "Local pig",
-"character_replacements": Array[Dictionary]([]),
-"id": "10",
-"next_id": "12",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "What do you mean? You are at the beach gate.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "What do you mean? You are at the beach gate.",
-"type": "dialogue"
-},
-"12": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "12",
-"next_id": "13",
-"next_id_after": "39",
+"id": "10",
+"next_id": "11",
+"next_id_after": "37",
 "notes": "",
-"responses": PackedStringArray("12", "15", "16", "34"),
+"responses": PackedStringArray("10", "13", "14", "32"),
 "tags": PackedStringArray(),
 "text": "The Beach gate?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "The Beach gate?",
 "type": "response"
 },
-"13": {
+"11": {
 "character": "Local pig",
 "character_replacements": Array[Dictionary]([]),
-"id": "13",
-"next_id": "14",
+"id": "11",
+"next_id": "12",
 "notes": "",
-"parent_id": "12",
+"parent_id": "10",
 "tags": PackedStringArray(),
 "text": "Yes the Beach Gate.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Yes the Beach Gate.",
 "type": "dialogue"
 },
-"14": {
+"12": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "14",
-"next_id": "10",
-"next_id_after": "39",
+"id": "12",
+"next_id": "8",
+"next_id_after": "37",
 "notes": "",
-"parent_id": "12",
-"responses": PackedStringArray("14"),
+"parent_id": "10",
+"responses": PackedStringArray("12"),
 "tags": PackedStringArray(),
 "text": "Oh",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Oh",
 "type": "response"
 },
-"15": {
+"13": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "15",
-"next_id": "10",
-"next_id_after": "39",
+"id": "13",
+"next_id": "8",
+"next_id_after": "37",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Why is there so much sand everywhere?",
@@ -85,12 +73,12 @@ lines = {
 "translation_key": "Why is there so much sand everywhere?",
 "type": "response"
 },
-"16": {
+"14": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "16",
-"next_id": "17",
-"next_id_after": "39",
+"id": "14",
+"next_id": "16",
+"next_id_after": "37",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "I think I have something for you?",
@@ -98,53 +86,60 @@ lines = {
 "translation_key": "I think I have something for you?",
 "type": "response"
 },
-"17": {
-"condition": {
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "Global"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "_content"
-}, {
-"type": "colon"
-}])
-},
-"id": "17",
-"next_conditional_id": "29",
-"next_id": "18",
-"next_id_after": "39",
-"parent_id": "16",
-"type": "condition"
-},
-"18": {
+"16": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "18",
-"next_id": "20",
-"next_id_after": "20",
+"id": "16",
+"next_id": "18",
+"next_id_after": "18",
 "notes": "",
-"parent_id": "17",
-"responses": PackedStringArray("18"),
+"parent_id": "14",
+"responses": PackedStringArray("16"),
 "tags": PackedStringArray(),
 "text": "I have an apple for you.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I have an apple for you.",
 "type": "response"
 },
-"20": {
+"18": {
 "character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
-"id": "20",
-"next_id": "21",
+"id": "18",
+"next_id": "19",
 "notes": "",
-"parent_id": "17",
+"parent_id": "16",
 "tags": PackedStringArray(),
 "text": "Its an apple",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Its an apple",
+"type": "dialogue"
+},
+"19": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "19",
+"next_id": "20",
+"next_id_after": "20",
+"notes": "",
+"parent_id": "16",
+"responses": PackedStringArray("19"),
+"tags": PackedStringArray(),
+"text": "give apple to Local pig?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "give apple to Local pig?",
+"type": "response"
+},
+"20": {
+"character": "Local pig",
+"character_replacements": Array[Dictionary]([]),
+"id": "20",
+"next_id": "21",
+"notes": "",
+"parent_id": "16",
+"tags": PackedStringArray(),
+"text": "Where did you get that?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Where did you get that?",
 "type": "dialogue"
 },
 "21": {
@@ -152,51 +147,23 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "id": "21",
 "next_id": "22",
-"next_id_after": "22",
+"next_id_after": "37",
 "notes": "",
-"parent_id": "17",
-"responses": PackedStringArray("21"),
-"tags": PackedStringArray(),
-"text": "give apple to Local pig?",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "give apple to Local pig?",
-"type": "response"
-},
-"22": {
-"character": "Local pig",
-"character_replacements": Array[Dictionary]([]),
-"id": "22",
-"next_id": "23",
-"notes": "",
-"parent_id": "17",
-"tags": PackedStringArray(),
-"text": "Where did you get that?",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Where did you get that?",
-"type": "dialogue"
-},
-"23": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
-"id": "23",
-"next_id": "24",
-"next_id_after": "39",
-"notes": "",
-"parent_id": "17",
-"responses": PackedStringArray("23", "28"),
+"parent_id": "16",
+"responses": PackedStringArray("21", "26"),
 "tags": PackedStringArray(),
 "text": "I found it",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I found it",
 "type": "response"
 },
-"24": {
+"22": {
 "character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
-"id": "24",
+"id": "22",
 "next_id": "25",
 "notes": "",
-"parent_id": "23",
+"parent_id": "21",
 "tags": PackedStringArray(),
 "text": "Here you go!",
 "text_replacements": Array[Dictionary]([]),
@@ -204,99 +171,76 @@ lines = {
 "type": "dialogue"
 },
 "25": {
-"id": "25",
-"mutation": {
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "Global"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "apple"
-}, {
-"type": "assignment",
-"value": "="
-}, {
-"type": "variable",
-"value": "false"
-}])
-},
-"next_id": "27",
-"parent_id": "23",
-"type": "mutation"
-},
-"27": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "27",
-"next_id": "10",
-"next_id_after": "39",
+"id": "25",
+"next_id": "8",
+"next_id_after": "37",
 "notes": "",
-"parent_id": "23",
-"responses": PackedStringArray("27"),
+"parent_id": "21",
+"responses": PackedStringArray("25"),
 "tags": PackedStringArray(),
 "text": "Smile and give the apple to Local pig",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Smile and give the apple to Local pig",
 "type": "response"
 },
-"28": {
+"26": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "28",
-"next_id": "39",
-"next_id_after": "39",
+"id": "26",
+"next_id": "37",
+"next_id_after": "37",
 "notes": "",
-"parent_id": "17",
+"parent_id": "16",
 "tags": PackedStringArray(),
 "text": "Ignore what just happend",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Ignore what just happend",
 "type": "response"
 },
-"29": {
-"id": "29",
-"next_conditional_id": "39",
-"next_id": "30",
-"next_id_after": "39",
-"parent_id": "16",
+"27": {
+"id": "27",
+"next_conditional_id": "37",
+"next_id": "28",
+"next_id_after": "37",
+"parent_id": "14",
 "type": "condition"
 },
-"30": {
+"28": {
 "character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
-"id": "30",
-"next_id": "31",
+"id": "28",
+"next_id": "29",
 "notes": "",
-"parent_id": "29",
+"parent_id": "27",
 "tags": PackedStringArray(),
 "text": "I must of lost it",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I must of lost it",
 "type": "dialogue"
 },
-"31": {
+"29": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "31",
-"next_id": "10",
-"next_id_after": "39",
+"id": "29",
+"next_id": "8",
+"next_id_after": "37",
 "notes": "",
-"parent_id": "29",
-"responses": PackedStringArray("31"),
+"parent_id": "27",
+"responses": PackedStringArray("29"),
 "tags": PackedStringArray(),
 "text": "smile nervously",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "smile nervously",
 "type": "response"
 },
-"34": {
+"32": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "34",
+"id": "32",
 "next_id": "end",
-"next_id_after": "39",
+"next_id_after": "37",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "I must go.",
@@ -304,8 +248,8 @@ lines = {
 "translation_key": "I must go.",
 "type": "response"
 },
-"39": {
-"id": "39",
+"37": {
+"id": "37",
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
@@ -326,31 +270,7 @@ lines = {
 "character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
 "id": "6",
-"next_id": "7",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "What? Uh? Where am I?",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "What? Uh? Where am I?",
-"type": "dialogue"
-},
-"7": {
-"character": "Local pig",
-"character_replacements": Array[Dictionary]([]),
-"id": "7",
 "next_id": "8",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "Stop right there!",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Stop right there!",
-"type": "dialogue"
-},
-"8": {
-"character": "Piggy",
-"character_replacements": Array[Dictionary]([]),
-"id": "8",
-"next_id": "10",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "What's going on? Where am I?",
@@ -358,11 +278,23 @@ lines = {
 "translation_key": "What's going on? Where am I?",
 "type": "dialogue"
 },
-"9": {
-"id": "9",
-"next_id": "10",
+"7": {
+"id": "7",
+"next_id": "8",
 "text": "Questions1",
 "type": "title"
+},
+"8": {
+"character": "Local pig",
+"character_replacements": Array[Dictionary]([]),
+"id": "8",
+"next_id": "10",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "What do you mean? You are at the beach gate.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "What do you mean? You are at the beach gate.",
+"type": "dialogue"
 }
 }
 raw_text = "~ start
@@ -370,8 +302,6 @@ raw_text = "~ start
 
 
 Local pig: [[Halt|Stop|Freeze]], who goes there?
-Piggy: What? Uh? Where am I?
-Local pig: Stop right there!
 Piggy: What's going on? Where am I?
 ~ Questions1
 Local pig: What do you mean? You are at the beach gate.
@@ -381,7 +311,7 @@ Local pig: What do you mean? You are at the beach gate.
 	- Oh => Questions1
 - Why is there so much sand everywhere? => Questions1
 - I think I have something for you?
-	if Global._content:
+
 		- I have an apple for you.
 	
 		Piggy: Its an apple 
@@ -389,7 +319,7 @@ Local pig: What do you mean? You are at the beach gate.
 		Local pig: Where did you get that?
 		- I found it
 			Piggy: Here you go!
-			set Global.apple = false
+			
 		
 			- Smile and give the apple to Local pig => Questions1
 		- Ignore what just happend 

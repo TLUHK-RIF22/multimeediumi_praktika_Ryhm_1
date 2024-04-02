@@ -4,23 +4,15 @@ var player_in_range = false
 
 @export var item:Item
 
-@export var SpeechNoItem: Array[String]
-@export var SpeechGotItem: Array[String]
+@export var Speech: DialogueResource
 var inventory = Global._content
 var itemGivenToNPC = Global.itemGivenToNPC
 
 func _process(_delta):
 	if player_in_range:
-		
+				
 		if Input.is_action_just_pressed("Interact"):
-			if !(self.name+item.name) in itemGivenToNPC:
-				Dialogue.start_dialog(global_position, SpeechNoItem)
-				check_if_got_item(item)
-				
-			elif (self.name+item.name) in itemGivenToNPC:
-				Dialogue.start_dialog(global_position, SpeechGotItem)
-				
-		#	#DialogueManager.show_example_dialogue_balloon(load("res://Charecters/NPC/First_encounter.dialogue"), "start")
+			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "start")
 			
 
 func _on_area_2d_body_entered(body):

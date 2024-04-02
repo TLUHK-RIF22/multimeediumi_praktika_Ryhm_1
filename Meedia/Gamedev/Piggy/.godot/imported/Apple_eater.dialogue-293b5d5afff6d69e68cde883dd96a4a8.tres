@@ -1,0 +1,87 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_72vjj"]
+
+[resource]
+script = ExtResource("1_72vjj")
+using_states = PackedStringArray()
+titles = {
+"start": "3"
+}
+character_names = PackedStringArray("Disturbed Hog", "Piggy", "DH")
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "3",
+"text": "start",
+"type": "title"
+},
+"10": {
+"id": "10",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"3": {
+"character": "Disturbed Hog",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Hungry... Need food!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hungry... Need food!",
+"type": "dialogue"
+},
+"4": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Hi there, how can I help?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hi there, how can I help?",
+"type": "dialogue"
+},
+"5": {
+"character": "DH",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "7",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Give me an apple!!!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Give me an apple!!!",
+"type": "dialogue"
+},
+"7": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "7",
+"next_id": "10",
+"next_id_after": "10",
+"notes": "",
+"responses": PackedStringArray("7"),
+"tags": PackedStringArray(),
+"text": "Wow, i have one",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Wow, i have one",
+"type": "response"
+}
+}
+raw_text = "~ start
+
+Disturbed Hog: Hungry... Need food!
+Piggy: Hi there, how can I help?
+DH: Give me an apple!!!
+
+- Wow, i have one
+
+
+=> END"
+metadata/dialogue_manager_version = "2.36.0"
