@@ -10,3 +10,10 @@ res://addons/dialogue_manager/dialogue_label.tscn
 res://Charecters/NPC/NPC_Pig_Brown.tscn
 res://UI/balloon.tscn
 res://Charecters/Siga/Scenes/player.gd
+res://Charecters/Siga/Scenes/player.tscn
+res://Global.gd
+res://Levels/Tutorial.tscn
+res://Charecters/NPC/SurvivalInstinct.tscn
+res://control.tscn
+res://Charecters/NPC/SurvivalInstinct.gd
+res://addons/dialogue_manager/test_scene.tscn

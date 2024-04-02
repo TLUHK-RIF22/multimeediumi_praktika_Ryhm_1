@@ -1,0 +1,221 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_thws5"]
+
+[resource]
+script = ExtResource("1_thws5")
+using_states = PackedStringArray()
+titles = {
+"start": "3"
+}
+character_names = PackedStringArray("Survival Instinct")
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "3",
+"text": "start",
+"type": "title"
+},
+"11": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "11",
+"next_id": "14",
+"next_id_after": "14",
+"notes": "",
+"responses": PackedStringArray("11", "12"),
+"tags": PackedStringArray(),
+"text": "I feel like I am in Spain. The S is silent.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I feel like I am in Spain. The S is silent.",
+"type": "response"
+},
+"12": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "12",
+"next_id": "14",
+"next_id_after": "14",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "I have no clue - do you?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I have no clue - do you?",
+"type": "response"
+},
+"14": {
+"character": "Survival Instinct",
+"character_replacements": Array[Dictionary]([]),
+"id": "14",
+"next_id": "16",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "So no clue, huh. Looks like a beach to me. There seems to be a farm up ahead.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "So no clue, huh. Looks like a beach to me. There seems to be a farm up ahead.",
+"type": "dialogue"
+},
+"16": {
+"character": "Survival Instinct",
+"character_replacements": Array[Dictionary]([]),
+"id": "16",
+"next_id": "18",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "How do you feel?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "How do you feel?",
+"type": "dialogue"
+},
+"18": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "18",
+"next_id": "21",
+"next_id_after": "21",
+"notes": "",
+"responses": PackedStringArray("18", "19"),
+"tags": PackedStringArray(),
+"text": "There’s quite a bit of pain in my everywhere.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "There’s quite a bit of pain in my everywhere.",
+"type": "response"
+},
+"19": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "19",
+"next_id": "end",
+"next_id_after": "21",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Get lost, Survival Instinct, Let me be.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Get lost, Survival Instinct, Let me be.",
+"type": "response"
+},
+"21": {
+"character": "Survival Instinct",
+"character_replacements": Array[Dictionary]([]),
+"id": "21",
+"next_id": "23",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Yeah, I thought as much. Can you move?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Yeah, I thought as much. Can you move?",
+"type": "dialogue"
+},
+"23": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "23",
+"next_id": "27",
+"next_id_after": "27",
+"notes": "",
+"responses": PackedStringArray("23", "24"),
+"tags": PackedStringArray(),
+"text": "I’m not sure I can. Or if I know how to?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I’m not sure I can. Or if I know how to?",
+"type": "response"
+},
+"24": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "24",
+"next_id": "27",
+"next_id_after": "27",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "I could if I knew which keys to press...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I could if I knew which keys to press...",
+"type": "response"
+},
+"27": {
+"id": "27",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"3": {
+"character": "Survival Instinct",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "5",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Hey, piggy-piggy!  Wake up!  This does not look like a safe place to be in.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hey, piggy-piggy!  Wake up!  This does not look like a safe place to be in.",
+"type": "dialogue"
+},
+"5": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "7",
+"next_id_after": "7",
+"notes": "",
+"responses": PackedStringArray("5"),
+"tags": PackedStringArray(),
+"text": "[stare at the figure menacingly]",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[stare at the figure menacingly]",
+"type": "response"
+},
+"7": {
+"character": "Survival Instinct",
+"character_replacements": Array[Dictionary]([]),
+"id": "7",
+"next_id": "9",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Yeah I know that look. Unfortunately, being angry will not get you off this beach.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Yeah I know that look. Unfortunately, being angry will not get you off this beach.",
+"type": "dialogue"
+},
+"9": {
+"character": "Survival Instinct",
+"character_replacements": Array[Dictionary]([]),
+"id": "9",
+"next_id": "11",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Look, I was out all day yesterday - what the hell happened? Where are we?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Look, I was out all day yesterday - what the hell happened? Where are we?",
+"type": "dialogue"
+}
+}
+raw_text = "~ start
+
+Survival Instinct: Hey, piggy-piggy!  Wake up!  This does not look like a safe place to be in.
+
+- [stare at the figure menacingly]
+
+Survival Instinct: Yeah I know that look. Unfortunately, being angry will not get you off this beach.
+
+Survival Instinct: Look, I was out all day yesterday - what the hell happened? Where are we?
+
+- I feel like I am in Spain. The S is silent.
+- I have no clue - do you?
+
+Survival Instinct: So no clue, huh. Looks like a beach to me. There seems to be a farm up ahead.
+
+Survival Instinct: How do you feel?
+
+- There’s quite a bit of pain in my everywhere.
+- Get lost, Survival Instinct, Let me be. => END
+
+Survival Instinct: Yeah, I thought as much. Can you move?
+
+- I’m not sure I can. Or if I know how to?
+- I could if I knew which keys to press...
+
+
+=> END"
+metadata/dialogue_manager_version = "2.36.0"

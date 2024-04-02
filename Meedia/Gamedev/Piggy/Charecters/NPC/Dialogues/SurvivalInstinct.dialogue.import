@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://c23jhiv6h82dm"
+path="res://.godot/imported/SurvivalInstinct.dialogue-fb9a832179c7b021c54aea4220ccea4e.tres"
+
+[deps]
+
+source_file="res://Charecters/NPC/Dialogues/SurvivalInstinct.dialogue"
+dest_files=["res://.godot/imported/SurvivalInstinct.dialogue-fb9a832179c7b021c54aea4220ccea4e.tres"]
+
+[params]
+
+defaults=true

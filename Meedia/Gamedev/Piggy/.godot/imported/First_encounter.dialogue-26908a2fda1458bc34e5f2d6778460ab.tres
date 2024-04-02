@@ -6,10 +6,11 @@
 script = ExtResource("1_o3uv0")
 using_states = PackedStringArray()
 titles = {
+"GetLost": "34",
 "Questions1": "8",
 "start": "5"
 }
-character_names = PackedStringArray("Local pig", "Piggy")
+character_names = PackedStringArray("Local pig", "Piggy", "Annoyed Pig")
 first_title = "5"
 lines = {
 "1": {
@@ -23,9 +24,9 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "id": "10",
 "next_id": "11",
-"next_id_after": "37",
+"next_id_after": "34",
 "notes": "",
-"responses": PackedStringArray("10", "13", "14", "32"),
+"responses": PackedStringArray("10", "13", "14", "30"),
 "tags": PackedStringArray(),
 "text": "The Beach gate?",
 "text_replacements": Array[Dictionary]([]),
@@ -50,7 +51,7 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "id": "12",
 "next_id": "8",
-"next_id_after": "37",
+"next_id_after": "34",
 "notes": "",
 "parent_id": "10",
 "responses": PackedStringArray("12"),
@@ -65,7 +66,7 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "id": "13",
 "next_id": "8",
-"next_id_after": "37",
+"next_id_after": "34",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Why is there so much sand everywhere?",
@@ -78,7 +79,7 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "id": "14",
 "next_id": "16",
-"next_id_after": "37",
+"next_id_after": "34",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "I think I have something for you?",
@@ -147,7 +148,7 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "id": "21",
 "next_id": "22",
-"next_id_after": "37",
+"next_id_after": "34",
 "notes": "",
 "parent_id": "16",
 "responses": PackedStringArray("21", "26"),
@@ -175,7 +176,7 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "id": "25",
 "next_id": "8",
-"next_id_after": "37",
+"next_id_after": "34",
 "notes": "",
 "parent_id": "21",
 "responses": PackedStringArray("25"),
@@ -189,8 +190,8 @@ lines = {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
 "id": "26",
-"next_id": "37",
-"next_id_after": "37",
+"next_id": "34",
+"next_id_after": "34",
 "notes": "",
 "parent_id": "16",
 "tags": PackedStringArray(),
@@ -201,9 +202,9 @@ lines = {
 },
 "27": {
 "id": "27",
-"next_conditional_id": "37",
+"next_conditional_id": "34",
 "next_id": "28",
-"next_id_after": "37",
+"next_id_after": "34",
 "parent_id": "14",
 "type": "condition"
 },
@@ -225,7 +226,7 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "id": "29",
 "next_id": "8",
-"next_id_after": "37",
+"next_id_after": "34",
 "notes": "",
 "parent_id": "27",
 "responses": PackedStringArray("29"),
@@ -235,18 +236,48 @@ lines = {
 "translation_key": "smile nervously",
 "type": "response"
 },
-"32": {
+"30": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "32",
+"id": "30",
 "next_id": "end",
-"next_id_after": "37",
+"next_id_after": "34",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "I must go.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I must go.",
 "type": "response"
+},
+"32": {
+"id": "32",
+"next_id": "34",
+"text": "GetLost",
+"type": "title"
+},
+"34": {
+"character": "Annoyed Pig",
+"character_replacements": Array[Dictionary]([]),
+"id": "34",
+"next_id": "35",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Still here?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Still here?",
+"type": "dialogue"
+},
+"35": {
+"character": "Annoyed Pig",
+"character_replacements": Array[Dictionary]([]),
+"id": "35",
+"next_id": "37",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "GET LOST!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "GET LOST!",
+"type": "dialogue"
 },
 "37": {
 "id": "37",
@@ -326,12 +357,14 @@ Local pig: What do you mean? You are at the beach gate.
 	else:
 		Piggy: I must of lost it
 		- smile nervously => Questions1
+- I must go. => END		
 
+~ GetLost
 
-- I must go. => END
+Annoyed Pig: Still here?
+Annoyed Pig: GET LOST!
 
-
-
-
-=> END"
+=> END 
+  
+"
 metadata/dialogue_manager_version = "2.36.0"

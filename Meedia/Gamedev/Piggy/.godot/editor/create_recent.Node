@@ -1,3 +1,5 @@
+Player
+TileMap
 ColorRect
 AnimatedSprite2D
 HBoxContainer
@@ -11,4 +13,3 @@ CollisionShape2D
 Area2D
 Marker2D
 Node2D
-Label

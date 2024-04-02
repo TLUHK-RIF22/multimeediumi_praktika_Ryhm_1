@@ -63,8 +63,8 @@ lines = {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
 "id": "7",
-"next_id": "10",
-"next_id_after": "10",
+"next_id": "8",
+"next_id_after": "8",
 "notes": "",
 "responses": PackedStringArray("7"),
 "tags": PackedStringArray(),
@@ -72,6 +72,28 @@ lines = {
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Wow, i have one",
 "type": "response"
+},
+"8": {
+"id": "8",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "canMove"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "true"
+}])
+},
+"next_id": "10",
+"type": "mutation"
 }
 }
 raw_text = "~ start
@@ -81,7 +103,7 @@ Piggy: Hi there, how can I help?
 DH: Give me an apple!!!
 
 - Wow, i have one
-
+set Global.canMove = true
 
 => END"
 metadata/dialogue_manager_version = "2.36.0"

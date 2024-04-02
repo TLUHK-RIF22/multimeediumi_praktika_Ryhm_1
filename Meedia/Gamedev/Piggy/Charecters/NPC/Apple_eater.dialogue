@@ -5,6 +5,6 @@ Piggy: Hi there, how can I help?
 DH: Give me an apple!!!
 
 - Wow, i have one
-
+set Global.canMove = true
 
 => END

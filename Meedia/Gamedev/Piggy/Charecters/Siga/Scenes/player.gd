@@ -21,11 +21,11 @@ func _physics_process(_delta):
 		Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left"),
 		Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 	)
-	
-	update_animation_parameters(input_direction)
-	#update veleocity
-	velocity = velocity.normalized()
-	velocity = input_direction * move_speed
+	if Global.canMove:
+		update_animation_parameters(input_direction)
+		#update veleocity
+		velocity = velocity.normalized()
+		velocity = input_direction * move_speed
 	
 	# Move and Slide 
 	move_and_slide()

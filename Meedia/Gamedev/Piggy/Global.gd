@@ -11,3 +11,4 @@ var itemGivenToNPC: Array = []
 
 var isMutedMusic = false
 var isMutedSFX = false
+var canMove = true

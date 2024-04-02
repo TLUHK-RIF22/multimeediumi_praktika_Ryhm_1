@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=3 uid="uid://bxm4ov0afauwc"]
+
+[ext_resource type="Texture2D" uid="uid://kgyrh4ady834" path="res://Charecters/NPC/Idle_NPC_Pig_Brown_Down-Sheet.png" id="2_e4s2m"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y7nsm"]
+atlas = ExtResource("2_e4s2m")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s5vdu"]
+atlas = ExtResource("2_e4s2m")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3kbif"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y7nsm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s5vdu")
+}],
+"loop": true,
+"name": &"Idle_Down",
+"speed": 1.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ouao7"]
+radius = 3.5
+height = 20.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qpq4t"]
+radius = 26.0768
+
+[node name="SurvivalInstinct" type="CharacterBody2D"]
+y_sort_enabled = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -10)
+sprite_frames = SubResource("SpriteFrames_3kbif")
+animation = &"Idle_Down"
+autoplay = "Idle_Down"
+frame_progress = 0.309128
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_ouao7")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_qpq4t")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

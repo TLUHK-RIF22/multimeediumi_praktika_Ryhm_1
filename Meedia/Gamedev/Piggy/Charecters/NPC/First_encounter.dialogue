@@ -27,11 +27,12 @@ Local pig: What do you mean? You are at the beach gate.
 	else:
 		Piggy: I must of lost it
 		- smile nervously => Questions1
+- I must go. => END		
 
+~ GetLost
 
-- I must go. => END
+Annoyed Pig: Still here?
+Annoyed Pig: GET LOST!
 
-
-
-
-=> END
+=> END 
+  
