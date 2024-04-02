@@ -3,6 +3,7 @@
 Survival Instinct: Hey, piggy-piggy!  Wake up!  This does not look like a safe place to be in.
 
 - [stare at the figure menacingly]
+- Kalle on siin => Hello
 
 Survival Instinct: Yeah I know that look. Unfortunately, being angry will not get you off this beach.
 
@@ -20,8 +21,12 @@ Survival Instinct: How do you feel?
 
 Survival Instinct: Yeah, I thought as much. Can you move?
 
-- I’m not sure I can. Or if I know how to?
-- I could if I knew which keys to press...
+- I’m not sure I can. Or if I know how to?  => END
+- I could if I knew which keys to press...  => END
 
+~ Hello
+
+Kalle: Ma olen tagasi
+- ooooo => END
 
 => END

@@ -7,13 +7,19 @@ var player_in_range = false
 @export var Speech: DialogueResource
 var inventory = Global._content
 var itemGivenToNPC = Global.itemGivenToNPC
-
+var kala = false
 func _unhandled_input(event):
 		
-	if player_in_range && Global.canMove:
+	if player_in_range && Global.canMove && !kala:
 		if Input.is_action_just_pressed("Interact"):
 			Global.canMove = false
 			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "start")
+			kala = true
+	if player_in_range && Global.canMove && kala:
+		if Input.is_action_just_pressed("Interact"):
+			Global.canMove = false
+			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "Hello")
+			
 	else:
 		Global.canMove = true
 				

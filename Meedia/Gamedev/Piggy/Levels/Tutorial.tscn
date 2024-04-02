@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://b30xj0a3srja6"]
+[gd_scene load_steps=12 format=3 uid="uid://b30xj0a3srja6"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_f7s78"]
 [ext_resource type="Texture2D" uid="uid://2e0wdnflvsko" path="res://Tiles/Tileset2.0.png" id="2_c6b4c"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://Charecters/NPC/SurvivalInstinct.gd" id="6_nvljj"]
 [ext_resource type="Resource" uid="uid://dl5a0noklpt8w" path="res://Items/apple.tres" id="7_h8dfc"]
 [ext_resource type="Resource" uid="uid://c23jhiv6h82dm" path="res://Charecters/NPC/Dialogues/SurvivalInstinct.dialogue" id="8_40ahu"]
+[ext_resource type="PackedScene" uid="uid://c5h6i1vrldhsx" path="res://Pickup/pickup.tscn" id="9_ud4u4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ik771"]
 texture = ExtResource("2_c6b4c")
@@ -224,3 +225,20 @@ position = Vector2(104, 96)
 script = ExtResource("6_nvljj")
 item = ExtResource("7_h8dfc")
 Speech = ExtResource("8_40ahu")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 24.0
+offset_top = 96.0
+offset_right = 71.0
+offset_bottom = 119.0
+text = "WASD"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 152.0
+offset_right = 125.0
+offset_bottom = 175.0
+text = "WALK OVER IT"
+
+[node name="apple" parent="." instance=ExtResource("9_ud4u4")]
+position = Vector2(64, 176)
