@@ -315,3 +315,12 @@ https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/63
 - Mäng toimub aastal 1988 Vormsi kolhoosis
 - Tipptehnoloogia võib eksisteerida aga pigem on ladna asjaajamine
 - Tegevus võis ka olla osaliselt Noarootsis, nii palju on aega möödas, et täpselt Siga ei mäleta
+  
+## 02.04 koosolek- 2h
+- Mõttehetk möödunule
+- Tasemete arutelu
+- Spritede arutelu
+- Kas kuuled kuis Siga astub?
+- Lennuk teeb taevas palju müra
+- Kõik loomad teevad igast asju, mida meie teeme ?
+- Heliredeli radadel   
