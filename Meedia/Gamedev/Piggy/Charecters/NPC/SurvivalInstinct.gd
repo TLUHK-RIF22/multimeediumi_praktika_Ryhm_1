@@ -10,11 +10,8 @@ var inventory = Global._content
 var itemGivenToNPC = Global.itemGivenToNPC
 @onready var guide_1 = %Guide1
 @onready var guide_2 = %Guide2
-@onready var apple = %apple
 
-
-
-func _unhandled_input(event):
+func _unhandled_input(_event):
 
 	if Global.appearMoveInstructions:
 		guide_1.visible = true
@@ -22,7 +19,7 @@ func _unhandled_input(event):
 		
 	if player_in_range && Global.canMove:
 		
-		if Input.is_action_just_pressed("Interact") && Global.timesInteracted == 0:
+		if Global.timesInteracted == 0:
 			Global.canMove = false
 			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "start")
 		elif Input.is_action_just_pressed("Interact") && Global.timesInteracted == 1 && !item in inventory:
@@ -49,10 +46,10 @@ func _on_area_2d_body_exited(body):
 		player_in_range = false
 		
 
-func give_item(item):
-	inventory.erase(item)
+func give_item(itemVar):
+	inventory.erase(itemVar)
 
-func check_if_got_item(item):
-	if item in inventory :
-		itemGivenToNPC.append(self.name+item.name)
-		give_item(item)
+func check_if_got_item(itemVar):
+	if itemVar in inventory :
+		itemGivenToNPC.append(self.name+itemVar.name)
+		give_item(itemVar)

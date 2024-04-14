@@ -7,7 +7,7 @@ script = ExtResource("1_1d5j8")
 using_states = PackedStringArray()
 titles = {
 "DoesntHaveApple": "43",
-"HasApple": "48",
+"HasApple": "52",
 "start": "3"
 }
 character_names = PackedStringArray("Survival Instinct", "Piggy")
@@ -74,8 +74,8 @@ lines = {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
 "id": "18",
-"next_id": "21",
-"next_id_after": "21",
+"next_id": "24",
+"next_id_after": "24",
 "notes": "",
 "responses": PackedStringArray("18", "20"),
 "tags": PackedStringArray(),
@@ -89,7 +89,7 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "id": "20",
 "next_id": "21",
-"next_id_after": "21",
+"next_id_after": "24",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Get lost, Survival Instinct, Let me be.",
@@ -107,23 +107,19 @@ lines = {
 "type": "assignment",
 "value": "="
 }, {
-"type": "variable",
-"value": "timesInteracted"
-}, {
-"type": "operator",
-"value": "+"
-}, {
 "type": "number",
 "value": 2
 }])
 },
 "next_id": "22",
+"parent_id": "20",
 "type": "mutation"
 },
 "22": {
 "id": "22",
 "is_snippet": false,
 "next_id": "end",
+"parent_id": "20",
 "type": "goto"
 },
 "24": {
@@ -276,12 +272,6 @@ lines = {
 "type": "assignment",
 "value": "="
 }, {
-"type": "variable",
-"value": "timesInteracted"
-}, {
-"type": "operator",
-"value": "+"
-}, {
 "type": "number",
 "value": 1
 }])
@@ -314,42 +304,62 @@ lines = {
 "type": "dialogue"
 },
 "44": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
 "id": "44",
-"is_snippet": false,
-"next_id": "end",
-"type": "goto"
+"next_id": "48",
+"next_id_after": "48",
+"notes": "",
+"responses": PackedStringArray("44", "45"),
+"tags": PackedStringArray(),
+"text": "I on it.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I on it.",
+"type": "response"
+},
+"45": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "45",
+"next_id": "46",
+"next_id_after": "48",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Get lost, Survival Instinct, Let me be.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Get lost, Survival Instinct, Let me be.",
+"type": "response"
 },
 "46": {
 "id": "46",
-"next_id": "48",
-"text": "HasApple",
-"type": "title"
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "timesInteracted"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "number",
+"value": 2
+}])
+},
+"next_id": "47",
+"parent_id": "45",
+"type": "mutation"
+},
+"47": {
+"id": "47",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "45",
+"type": "goto"
 },
 "48": {
-"character": "Survival Instinct",
-"character_replacements": Array[Dictionary]([]),
 "id": "48",
-"next_id": "49",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "You are back.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "You are back.",
-"type": "dialogue"
-},
-"49": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
-"id": "49",
-"next_id": "52",
-"next_id_after": "52",
-"notes": "",
-"responses": PackedStringArray("49", "50"),
-"tags": PackedStringArray(),
-"text": "Apple?",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Apple?",
-"type": "response"
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
 },
 "5": {
 "character": "Piggy",
@@ -364,17 +374,10 @@ lines = {
 "type": "dialogue"
 },
 "50": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
 "id": "50",
 "next_id": "52",
-"next_id_after": "52",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "Here, I got the apple. Eating it seems to make me feel better.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Here, I got the apple. Eating it seems to make me feel better.",
-"type": "response"
+"text": "HasApple",
+"type": "title"
 },
 "52": {
 "character": "Survival Instinct",
@@ -383,16 +386,55 @@ lines = {
 "next_id": "53",
 "notes": "",
 "tags": PackedStringArray(),
+"text": "You are back.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You are back.",
+"type": "dialogue"
+},
+"53": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "53",
+"next_id": "56",
+"next_id_after": "56",
+"notes": "",
+"responses": PackedStringArray("53", "54"),
+"tags": PackedStringArray(),
+"text": "Apple?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Apple?",
+"type": "response"
+},
+"54": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "54",
+"next_id": "56",
+"next_id_after": "56",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Here, I got the apple. Eating it seems to make me feel better.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Here, I got the apple. Eating it seems to make me feel better.",
+"type": "response"
+},
+"56": {
+"character": "Survival Instinct",
+"character_replacements": Array[Dictionary]([]),
+"id": "56",
+"next_id": "57",
+"notes": "",
+"tags": PackedStringArray(),
 "text": "That’s great. Congratulations on remembering some basic survival skills.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "That’s great. Congratulations on remembering some basic survival skills.",
 "type": "dialogue"
 },
-"53": {
+"57": {
 "character": "Survival Instinct",
 "character_replacements": Array[Dictionary]([]),
-"id": "53",
-"next_id": "54",
+"id": "57",
+"next_id": "58",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Now. How about you head north for some shelter?",
@@ -400,11 +442,11 @@ lines = {
 "translation_key": "Now. How about you head north for some shelter?",
 "type": "dialogue"
 },
-"54": {
+"58": {
 "character": "Survival Instinct",
 "character_replacements": Array[Dictionary]([]),
-"id": "54",
-"next_id": "55",
+"id": "58",
+"next_id": "59",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "I even smell pig dung in the air. Perhaps you can make some friends?",
@@ -412,11 +454,11 @@ lines = {
 "translation_key": "I even smell pig dung in the air. Perhaps you can make some friends?",
 "type": "dialogue"
 },
-"55": {
+"59": {
 "character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
-"id": "55",
-"next_id": "56",
+"id": "59",
+"next_id": "60",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Well if you think that’s enough for me to survive.",
@@ -424,8 +466,8 @@ lines = {
 "translation_key": "Well if you think that’s enough for me to survive.",
 "type": "dialogue"
 },
-"56": {
-"id": "56",
+"60": {
+"id": "60",
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -434,21 +476,15 @@ lines = {
 "type": "assignment",
 "value": "="
 }, {
-"type": "variable",
-"value": "timesInteracted"
-}, {
-"type": "operator",
-"value": "+"
-}, {
 "type": "number",
-"value": 1
+"value": 2
 }])
 },
-"next_id": "57",
+"next_id": "61",
 "type": "mutation"
 },
-"57": {
-"id": "57",
+"61": {
+"id": "61",
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
@@ -498,8 +534,8 @@ Survival Instinct: How do you feel?
 - There’s quite a bit of pain in my everywhere.
 
 - Get lost, Survival Instinct, Let me be. 
-do timesInteracted = timesInteracted + 2
-=> END
+	do timesInteracted = 2
+	=> END
 
 Survival Instinct: Yeah, I thought as much. Can you move?
 
@@ -514,13 +550,17 @@ Survival Instinct: Indeed. You can interact with objects by pressing [wave amp=2
 Piggy: [stare blankly]
 Survival Instinct: Anywho, since I’m not entirely sure you got that, lets see if you can at least feed yourself. 
 Survival Instinct: Enter the shack to the east and bring me [wave amp=25 freq=5]an apple[/wave].
-do timesInteracted = timesInteracted + 1
+do timesInteracted = 1
 
 => END
 
 ~ DoesntHaveApple
 
 Survival Instinct: Enter the shack to the east and bring me [wave amp=25 freq=5]an apple[/wave]. I am waiting here. 
+- I on it.
+- Get lost, Survival Instinct, Let me be. 
+	do timesInteracted = 2
+	=> END
 => END
 
 ~ HasApple
@@ -533,6 +573,6 @@ Survival Instinct: That’s great. Congratulations on remembering some basic sur
 Survival Instinct: Now. How about you head north for some shelter? 
 Survival Instinct: I even smell pig dung in the air. Perhaps you can make some friends?
 Piggy: Well if you think that’s enough for me to survive. 
-do timesInteracted = timesInteracted + 1
+do timesInteracted = 2
 => END"
 metadata/dialogue_manager_version = "2.36.0"

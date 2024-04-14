@@ -32,16 +32,16 @@ func _on_area_2d_body_exited(body):
 		player_in_range = false
 		print(player_in_range)
 
-func give_item(item):
-	inventory.erase(item)
+func give_item(itemVar):
+	inventory.erase(itemVar)
 
-func check_if_got_item(item):
-	if item in inventory :
-		itemGivenToNPC.append(self.name+item.name)
-		print(self.name+item.name)
-		give_item(item)
+func check_if_got_item(itemVar):
+	if itemVar in inventory :
+		itemGivenToNPC.append(self.name+itemVar.name)
+		print(self.name+itemVar.name)
+		give_item(itemVar)
 
-func openDoor(item):
-	if (self.name+item.name) in Global.itemGivenToNPC:
+func openDoor(itemVar):
+	if (self.name+itemVar.name) in Global.itemGivenToNPC:
 		self.position.x = self.position.x + 10
 		#self.position.y = self.position.y - 10

@@ -8,3 +8,7 @@ res://Levels/LevelB2.tscn
 res://Global.gd
 res://Levels/LevelB3.tscn
 res://Pickup/pickup.tscn
+res://Charecters/Siga/Scenes/player.gd
+res://UI/balloon.tscn
+res://Charecters/NPC/Door_unlock.gd
+res://Charecters/NPC/NPC_GiveItem.gd

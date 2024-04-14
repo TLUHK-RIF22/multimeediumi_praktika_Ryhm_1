@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://mcobavk7ibdf"]
+[gd_scene load_steps=22 format=3 uid="uid://mcobavk7ibdf"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_pxv05"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/Scenes/player.tscn" id="2_lphbt"]
@@ -14,7 +14,10 @@
 [ext_resource type="Resource" uid="uid://dmc4bl0wue724" path="res://Charecters/NPC/Apple_eater.dialogue" id="14_b7yhb"]
 [ext_resource type="PackedScene" uid="uid://bli3gd834l2t0" path="res://Charecters/NPC/Door.tscn" id="15_w6ost"]
 [ext_resource type="Script" path="res://Charecters/NPC/Door_unlock.gd" id="16_70ip0"]
+[ext_resource type="PackedScene" uid="uid://bxm4ov0afauwc" path="res://Charecters/NPC/SurvivalInstinct.tscn" id="16_kdrcx"]
+[ext_resource type="Script" path="res://Charecters/NPC/SurvivalInstinct.gd" id="17_npyo5"]
 [ext_resource type="Resource" uid="uid://bsc7mrn4gnf4l" path="res://Charecters/NPC/First_encounter.dialogue" id="17_v3hu2"]
+[ext_resource type="Resource" uid="uid://c23jhiv6h82dm" path="res://Charecters/NPC/Dialogues/SurvivalInstinct.dialogue" id="18_w5bc6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_roo4d"]
 texture = ExtResource("5_xfud8")
@@ -988,7 +991,7 @@ position = Vector2(305, -570)
 scale = Vector2(4, 4)
 
 [node name="SpikesPos" type="Marker2D" parent="."]
-position = Vector2(422, -194)
+position = Vector2(487, -386)
 scale = Vector2(4, 4)
 
 [node name="LevelB2" parent="." instance=ExtResource("8_i1gph")]
@@ -997,28 +1000,28 @@ position = Vector2(431, -624)
 [node name="GameManager" parent="." instance=ExtResource("6_o5j0n")]
 
 [node name="apple2" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(304, -418)
+position = Vector2(535, -360)
 
 [node name="apple" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(519, -200)
+position = Vector2(584, -392)
 
 [node name="apple3" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(551, -240)
+position = Vector2(616, -432)
 
 [node name="pear" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(607, -194)
+position = Vector2(672, -386)
 item = ExtResource("10_63t4a")
 
 [node name="sleeping_pig" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(405, -176)
+position = Vector2(470, -368)
 item = ExtResource("12_rgeg5")
 
 [node name="Player" parent="." instance=ExtResource("2_lphbt")]
 unique_name_in_owner = true
-position = Vector2(472, -175)
+position = Vector2(319, -168)
 
 [node name="Door" parent="." instance=ExtResource("15_w6ost")]
-position = Vector2(535, -296)
+position = Vector2(663, -464)
 script = ExtResource("16_70ip0")
 posX = 477
 posY = -296
@@ -1027,11 +1030,51 @@ SpeechNoItem = Array[String](["Locked"])
 SpeechGotItem = Array[String](["Unlocked"])
 
 [node name="NPC_Pig_Brown2" parent="." instance=ExtResource("13_6fa5o")]
-position = Vector2(407, -224)
+position = Vector2(472, -416)
 item = ExtResource("10_klerp")
 Speech = ExtResource("17_v3hu2")
 
 [node name="NPC_Pig_Brown" parent="." instance=ExtResource("13_6fa5o")]
-position = Vector2(487, -264)
+position = Vector2(552, -456)
 item = ExtResource("10_klerp")
 Speech = ExtResource("14_b7yhb")
+
+[node name="apple4" parent="." instance=ExtResource("9_fh2ae")]
+unique_name_in_owner = true
+position = Vector2(471, -136)
+
+[node name="Tutorial" type="Control" parent="."]
+y_sort_enabled = true
+layout_mode = 3
+anchors_preset = 0
+offset_left = 319.0
+offset_top = -176.0
+offset_right = 663.0
+offset_bottom = 48.0
+metadata/_edit_lock_ = true
+
+[node name="SurvivalInstinct" parent="Tutorial" instance=ExtResource("16_kdrcx")]
+unique_name_in_owner = true
+position = Vector2(-8, -8)
+script = ExtResource("17_npyo5")
+item = ExtResource("10_klerp")
+Speech = ExtResource("18_w5bc6")
+
+[node name="Guide1" type="Label" parent="Tutorial"]
+unique_name_in_owner = true
+visible = false
+offset_left = -112.0
+offset_top = -64.0
+offset_right = 78.0
+offset_bottom = -15.0
+text = "Use arrow keys or WASD
+to move"
+
+[node name="Guide2" type="Label" parent="Tutorial"]
+unique_name_in_owner = true
+visible = false
+offset_left = 48.0
+offset_right = 202.0
+offset_bottom = 49.0
+text = "Walk over the apple
+to pick it up"

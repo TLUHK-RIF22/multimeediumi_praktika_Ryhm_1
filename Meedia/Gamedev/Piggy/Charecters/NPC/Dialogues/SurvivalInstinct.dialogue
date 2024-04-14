@@ -18,8 +18,8 @@ Survival Instinct: How do you feel?
 - There’s quite a bit of pain in my everywhere.
 
 - Get lost, Survival Instinct, Let me be. 
-do timesInteracted = timesInteracted + 2
-=> END
+	do timesInteracted = 2
+	=> END
 
 Survival Instinct: Yeah, I thought as much. Can you move?
 
@@ -34,13 +34,17 @@ Survival Instinct: Indeed. You can interact with objects by pressing [wave amp=2
 Piggy: [stare blankly]
 Survival Instinct: Anywho, since I’m not entirely sure you got that, lets see if you can at least feed yourself. 
 Survival Instinct: Enter the shack to the east and bring me [wave amp=25 freq=5]an apple[/wave].
-do timesInteracted = timesInteracted + 1
+do timesInteracted = 1
 
 => END
 
 ~ DoesntHaveApple
 
 Survival Instinct: Enter the shack to the east and bring me [wave amp=25 freq=5]an apple[/wave]. I am waiting here. 
+- I on it.
+- Get lost, Survival Instinct, Let me be. 
+	do timesInteracted = 2
+	=> END
 => END
 
 ~ HasApple
@@ -53,5 +57,5 @@ Survival Instinct: That’s great. Congratulations on remembering some basic sur
 Survival Instinct: Now. How about you head north for some shelter? 
 Survival Instinct: I even smell pig dung in the air. Perhaps you can make some friends?
 Piggy: Well if you think that’s enough for me to survive. 
-do timesInteracted = timesInteracted + 1
+do timesInteracted = 2
 => END
