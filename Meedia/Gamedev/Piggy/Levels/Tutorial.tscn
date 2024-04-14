@@ -221,6 +221,7 @@ layer_0/tile_data = PackedInt32Array(0, 2, 0, 1, 65538, 0, 2, 65538, 0, 3, 65538
 position = Vector2(144, 152)
 
 [node name="SurvivalInstinct" parent="." instance=ExtResource("3_f0p54")]
+unique_name_in_owner = true
 position = Vector2(104, 96)
 script = ExtResource("6_nvljj")
 item = ExtResource("7_h8dfc")
@@ -236,7 +237,9 @@ offset_bottom = 73.0
 text = "Use arrow keys or WASD
 to move"
 
-[node name="Label2" type="Label" parent="."]
+[node name="Guide2" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
 offset_left = 16.0
 offset_top = 152.0
 offset_right = 125.0
@@ -244,4 +247,5 @@ offset_bottom = 175.0
 text = "WALK OVER IT"
 
 [node name="apple" parent="." instance=ExtResource("9_ud4u4")]
+unique_name_in_owner = true
 position = Vector2(64, 176)

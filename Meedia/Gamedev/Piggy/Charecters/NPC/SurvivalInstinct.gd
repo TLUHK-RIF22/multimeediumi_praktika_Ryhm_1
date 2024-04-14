@@ -9,19 +9,32 @@ var player_in_range = false
 var inventory = Global._content
 var itemGivenToNPC = Global.itemGivenToNPC
 @onready var guide_1 = %Guide1
+@onready var guide_2 = %Guide2
+@onready var apple = %apple
 
 
 
 func _unhandled_input(event):
-	if player_in_range && Global.appearMoveInstructions:
+
+	if Global.appearMoveInstructions:
 		guide_1.visible = true
-	
+		guide_2.visible = true
+		
 	if player_in_range && Global.canMove:
 		
-		if Input.is_action_just_pressed("Interact"):
+		if Input.is_action_just_pressed("Interact") && Global.timesInteracted == 0:
 			Global.canMove = false
 			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "start")
-			
+		elif Input.is_action_just_pressed("Interact") && Global.timesInteracted == 1 && !item in inventory:
+			Global.canMove = false
+			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "DoesntHaveApple")
+		elif Input.is_action_just_pressed("Interact") && Global.timesInteracted == 1 && item in inventory:
+			Global.canMove = false
+			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "HasApple")
+			inventory.erase(item)
+	elif Global.timesInteracted == 2:
+		%SurvivalInstinct.queue_free()
+		Global.canMove = true
 	else:
 		Global.canMove = true
 		

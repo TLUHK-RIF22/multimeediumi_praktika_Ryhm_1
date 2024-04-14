@@ -1,8 +1,8 @@
 ~ start
 
-Survival Instinct: Hey, piggy-piggy! [shake rate=20 level=10]Wake up![/shake] [speed=2]This does not look like a safe place to be in.
+Survival Instinct: Hey, piggy-piggy! [shake rate=20 level=10]Wake up![/shake] This does not look like a safe place to be in.
 
-- [stare at the figure menacingly]
+Piggy: [stare at the figure menacingly]
 
 Survival Instinct: Yeah I know that look. Unfortunately, being angry will not get you off this beach.
 
@@ -24,7 +24,32 @@ Survival Instinct: Yeah, I thought as much. Can you move?
 - I’m not sure I can. Or if I know how to?  
 - I could if I knew which keys to press...  
 
-Survival Instinct: Once you’ve caught your breath, just use WASD or arrow keys to move around.
+Survival Instinct: Once you’ve caught your breath, just use [wave amp=25 freq=5]WASD[/wave] or [wave amp=25 freq=5]arrow keys[/wave] to move around.
 do appearMoveInstructions = true
 
+Piggy: Splendid. Do I have any other superpowers?
+Survival Instinct: Indeed. You can interact with objects by pressing [wave amp=25 freq=5]E[/wave] and if you need to remember what things you have, just press [wave amp=25 freq=5]Tab[/wave].
+Piggy: [stare blankly]
+Survival Instinct: Anywho, since I’m not entirely sure you got that, lets see if you can at least feed yourself. 
+Survival Instinct: Enter the shack to the east and bring me [wave amp=25 freq=5]an apple[/wave].
+do timesInteracted = timesInteracted + 1
+
+=> END
+
+~ DoesntHaveApple
+
+Survival Instinct: Enter the shack to the east and bring me [wave amp=25 freq=5]an apple[/wave]. I am waiting here. 
+=> END
+
+~ HasApple
+
+Survival Instinct: You are back.
+- Apple?
+- Here, I got the apple. Eating it seems to make me feel better.
+
+Survival Instinct: That’s great. Congratulations on remembering some basic survival skills.
+Survival Instinct: Now. How about you head north for some shelter? 
+Survival Instinct: I even smell pig dung in the air. Perhaps you can make some friends?
+Piggy: Well if you think that’s enough for me to survive. 
+do timesInteracted = timesInteracted + 1
 => END

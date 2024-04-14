@@ -6,9 +6,11 @@
 script = ExtResource("1_1d5j8")
 using_states = PackedStringArray()
 titles = {
+"DoesntHaveApple": "41",
+"HasApple": "46",
 "start": "3"
 }
-character_names = PackedStringArray("Survival Instinct")
+character_names = PackedStringArray("Survival Instinct", "Piggy")
 first_title = "3"
 lines = {
 "1": {
@@ -141,9 +143,9 @@ lines = {
 "next_id": "28",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "Once you’ve caught your breath, just use WASD or arrow keys to move around.",
+"text": "Once you’ve caught your breath, just use [wave amp=25 freq=5]WASD[/wave] or [wave amp=25 freq=5]arrow keys[/wave] to move around.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Once you’ve caught your breath, just use WASD or arrow keys to move around.",
+"translation_key": "Once you’ve caught your breath, just use [wave amp=25 freq=5]WASD[/wave] or [wave amp=25 freq=5]arrow keys[/wave] to move around.",
 "type": "dialogue"
 },
 "28": {
@@ -170,30 +172,257 @@ lines = {
 "next_id": "5",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "Hey, piggy-piggy! [shake rate=20 level=10]Wake up![/shake] [speed=2]This does not look like a safe place to be in.",
+"text": "Hey, piggy-piggy! [shake rate=20 level=10]Wake up![/shake] This does not look like a safe place to be in.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Hey, piggy-piggy! [shake rate=20 level=10]Wake up![/shake] [speed=2]This does not look like a safe place to be in.",
+"translation_key": "Hey, piggy-piggy! [shake rate=20 level=10]Wake up![/shake] This does not look like a safe place to be in.",
 "type": "dialogue"
 },
 "30": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
 "id": "30",
+"next_id": "31",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Splendid. Do I have any other superpowers?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Splendid. Do I have any other superpowers?",
+"type": "dialogue"
+},
+"31": {
+"character": "Survival Instinct",
+"character_replacements": Array[Dictionary]([]),
+"id": "31",
+"next_id": "32",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Indeed. You can interact with objects by pressing [wave amp=25 freq=5]E[/wave] and if you need to remember what things you have, just press [wave amp=25 freq=5]Tab[/wave].",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Indeed. You can interact with objects by pressing [wave amp=25 freq=5]E[/wave] and if you need to remember what things you have, just press [wave amp=25 freq=5]Tab[/wave].",
+"type": "dialogue"
+},
+"32": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "32",
+"next_id": "33",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "[stare blankly]",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[stare blankly]",
+"type": "dialogue"
+},
+"33": {
+"character": "Survival Instinct",
+"character_replacements": Array[Dictionary]([]),
+"id": "33",
+"next_id": "34",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Anywho, since I’m not entirely sure you got that, lets see if you can at least feed yourself.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Anywho, since I’m not entirely sure you got that, lets see if you can at least feed yourself.",
+"type": "dialogue"
+},
+"34": {
+"character": "Survival Instinct",
+"character_replacements": Array[Dictionary]([]),
+"id": "34",
+"next_id": "35",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Enter the shack to the east and bring me [wave amp=25 freq=5]an apple[/wave].",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Enter the shack to the east and bring me [wave amp=25 freq=5]an apple[/wave].",
+"type": "dialogue"
+},
+"35": {
+"id": "35",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "timesInteracted"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "timesInteracted"
+}, {
+"type": "operator",
+"value": "+"
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "37",
+"type": "mutation"
+},
+"37": {
+"id": "37",
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
 },
-"5": {
+"39": {
+"id": "39",
+"next_id": "41",
+"text": "DoesntHaveApple",
+"type": "title"
+},
+"41": {
+"character": "Survival Instinct",
+"character_replacements": Array[Dictionary]([]),
+"id": "41",
+"next_id": "42",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Enter the shack to the east and bring me [wave amp=25 freq=5]an apple[/wave]. I am waiting here.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Enter the shack to the east and bring me [wave amp=25 freq=5]an apple[/wave]. I am waiting here.",
+"type": "dialogue"
+},
+"42": {
+"id": "42",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"44": {
+"id": "44",
+"next_id": "46",
+"text": "HasApple",
+"type": "title"
+},
+"46": {
+"character": "Survival Instinct",
+"character_replacements": Array[Dictionary]([]),
+"id": "46",
+"next_id": "47",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "You are back.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You are back.",
+"type": "dialogue"
+},
+"47": {
 "character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "47",
+"next_id": "50",
+"next_id_after": "50",
+"notes": "",
+"responses": PackedStringArray("47", "48"),
+"tags": PackedStringArray(),
+"text": "Apple?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Apple?",
+"type": "response"
+},
+"48": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "48",
+"next_id": "50",
+"next_id_after": "50",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Here, I got the apple. Eating it seems to make me feel better.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Here, I got the apple. Eating it seems to make me feel better.",
+"type": "response"
+},
+"5": {
+"character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
 "id": "5",
 "next_id": "7",
-"next_id_after": "7",
 "notes": "",
-"responses": PackedStringArray("5"),
 "tags": PackedStringArray(),
 "text": "[stare at the figure menacingly]",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "[stare at the figure menacingly]",
-"type": "response"
+"type": "dialogue"
+},
+"50": {
+"character": "Survival Instinct",
+"character_replacements": Array[Dictionary]([]),
+"id": "50",
+"next_id": "51",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "That’s great. Congratulations on remembering some basic survival skills.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "That’s great. Congratulations on remembering some basic survival skills.",
+"type": "dialogue"
+},
+"51": {
+"character": "Survival Instinct",
+"character_replacements": Array[Dictionary]([]),
+"id": "51",
+"next_id": "52",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Now. How about you head north for some shelter?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Now. How about you head north for some shelter?",
+"type": "dialogue"
+},
+"52": {
+"character": "Survival Instinct",
+"character_replacements": Array[Dictionary]([]),
+"id": "52",
+"next_id": "53",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "I even smell pig dung in the air. Perhaps you can make some friends?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I even smell pig dung in the air. Perhaps you can make some friends?",
+"type": "dialogue"
+},
+"53": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "53",
+"next_id": "54",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Well if you think that’s enough for me to survive.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Well if you think that’s enough for me to survive.",
+"type": "dialogue"
+},
+"54": {
+"id": "54",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "timesInteracted"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "timesInteracted"
+}, {
+"type": "operator",
+"value": "+"
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "55",
+"type": "mutation"
+},
+"55": {
+"id": "55",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
 },
 "7": {
 "character": "Survival Instinct",
@@ -222,9 +451,9 @@ lines = {
 }
 raw_text = "~ start
 
-Survival Instinct: Hey, piggy-piggy! [shake rate=20 level=10]Wake up![/shake] [speed=2]This does not look like a safe place to be in.
+Survival Instinct: Hey, piggy-piggy! [shake rate=20 level=10]Wake up![/shake] This does not look like a safe place to be in.
 
-- [stare at the figure menacingly]
+Piggy: [stare at the figure menacingly]
 
 Survival Instinct: Yeah I know that look. Unfortunately, being angry will not get you off this beach.
 
@@ -246,8 +475,33 @@ Survival Instinct: Yeah, I thought as much. Can you move?
 - I’m not sure I can. Or if I know how to?  
 - I could if I knew which keys to press...  
 
-Survival Instinct: Once you’ve caught your breath, just use WASD or arrow keys to move around.
+Survival Instinct: Once you’ve caught your breath, just use [wave amp=25 freq=5]WASD[/wave] or [wave amp=25 freq=5]arrow keys[/wave] to move around.
 do appearMoveInstructions = true
 
+Piggy: Splendid. Do I have any other superpowers?
+Survival Instinct: Indeed. You can interact with objects by pressing [wave amp=25 freq=5]E[/wave] and if you need to remember what things you have, just press [wave amp=25 freq=5]Tab[/wave].
+Piggy: [stare blankly]
+Survival Instinct: Anywho, since I’m not entirely sure you got that, lets see if you can at least feed yourself. 
+Survival Instinct: Enter the shack to the east and bring me [wave amp=25 freq=5]an apple[/wave].
+do timesInteracted = timesInteracted + 1
+
+=> END
+
+~ DoesntHaveApple
+
+Survival Instinct: Enter the shack to the east and bring me [wave amp=25 freq=5]an apple[/wave]. I am waiting here. 
+=> END
+
+~ HasApple
+
+Survival Instinct: You are back.
+- Apple?
+- Here, I got the apple. Eating it seems to make me feel better.
+
+Survival Instinct: That’s great. Congratulations on remembering some basic survival skills.
+Survival Instinct: Now. How about you head north for some shelter? 
+Survival Instinct: I even smell pig dung in the air. Perhaps you can make some friends?
+Piggy: Well if you think that’s enough for me to survive. 
+do timesInteracted = timesInteracted + 1
 => END"
 metadata/dialogue_manager_version = "2.36.0"

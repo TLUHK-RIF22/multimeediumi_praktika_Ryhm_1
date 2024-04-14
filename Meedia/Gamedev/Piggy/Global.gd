@@ -15,4 +15,5 @@ var canMove = true
 
 #Tutorial level
 var appearMoveInstructions: bool = false
+var appearPickupItemInstructions: bool = false
 var timesInteracted: int = 0
