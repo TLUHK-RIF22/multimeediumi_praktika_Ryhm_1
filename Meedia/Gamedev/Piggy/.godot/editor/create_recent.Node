@@ -1,6 +1,6 @@
+Control
 PanelContainer
 Panel
-Control
 Label
 CollisionShape2D
 Area2D
@@ -12,4 +12,3 @@ HBoxContainer
 Button
 AudioStreamPlayer
 AudioStreamPlayer2D
-Timer

@@ -1,15 +1,5 @@
-res://Levels/LevelB3.tscn
+res://Levels/LevelB2.tscn
 res://Pickup/pickup.gd
 res://Items/apple.tres
 res://Items/pear.tres
-res://Levels/Tutorial.tscn
-res://UI/PopUpInfo/PopupInfo.tscn
-res://UI/PopUpInfo/PopupInfo.gd
-res://Charecters/NPC/NPC_Pig_Brown.tscn
-res://LevelHoping/Entrance.tscn
-res://Levels/LevelB2.tscn
-res://Charecters/NPC/SurvivalInstinct.tscn
-res://Charecters/NPC/SurvivalInstinct.gd
-res://Charecters/NPC/Scenes/SurvivalInstinct.tscn
-res://Charecters/Siga/Scenes/player.tscn
-res://Charecters/Siga/Scenes/player.gd
+res://Levels/LevelB3.tscn
