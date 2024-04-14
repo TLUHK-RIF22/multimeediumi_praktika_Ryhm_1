@@ -1018,7 +1018,7 @@ item = ExtResource("12_rgeg5")
 
 [node name="Player" parent="." instance=ExtResource("2_lphbt")]
 unique_name_in_owner = true
-position = Vector2(319, -168)
+position = Vector2(335, -160)
 
 [node name="Door" parent="." instance=ExtResource("15_w6ost")]
 position = Vector2(663, -464)
@@ -1030,7 +1030,7 @@ SpeechNoItem = Array[String](["Locked"])
 SpeechGotItem = Array[String](["Unlocked"])
 
 [node name="NPC_Pig_Brown2" parent="." instance=ExtResource("13_6fa5o")]
-position = Vector2(472, -416)
+position = Vector2(447, -232)
 item = ExtResource("10_klerp")
 Speech = ExtResource("17_v3hu2")
 
@@ -1055,7 +1055,7 @@ metadata/_edit_lock_ = true
 
 [node name="SurvivalInstinct" parent="Tutorial" instance=ExtResource("16_kdrcx")]
 unique_name_in_owner = true
-position = Vector2(-8, -8)
+position = Vector2(-16, -24)
 script = ExtResource("17_npyo5")
 item = ExtResource("10_klerp")
 Speech = ExtResource("18_w5bc6")
@@ -1063,6 +1063,7 @@ Speech = ExtResource("18_w5bc6")
 [node name="Guide1" type="Label" parent="Tutorial"]
 unique_name_in_owner = true
 visible = false
+layout_mode = 0
 offset_left = -112.0
 offset_top = -64.0
 offset_right = 78.0
@@ -1073,6 +1074,7 @@ to move"
 [node name="Guide2" type="Label" parent="Tutorial"]
 unique_name_in_owner = true
 visible = false
+layout_mode = 0
 offset_left = 48.0
 offset_right = 202.0
 offset_bottom = 49.0

@@ -1,16 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://dscndc5iq3qrs"]
+[gd_scene load_steps=4 format=3 uid="uid://dscndc5iq3qrs"]
 
 [ext_resource type="Script" path="res://LevelHoping/Entrance.gd" id="1_w8l0w"]
+[ext_resource type="PackedScene" uid="uid://2qtpgse6674" path="res://UI/PopUpInfo/PopupInfo.tscn" id="2_y5ai1"]
 
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bqfll"]
-size = Vector2(33, 17)
+[sub_resource type="CircleShape2D" id="CircleShape2D_d6ej1"]
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_w8l0w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_bqfll")
+scale = Vector2(3.24, 3.16)
+shape = SubResource("CircleShape2D_d6ej1")
+
+[node name="PopupInfo" parent="." instance=ExtResource("2_y5ai1")]
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

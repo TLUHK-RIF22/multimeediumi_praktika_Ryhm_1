@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://2qtpgse6674"]
+
+[ext_resource type="Script" path="res://UI/PopUpInfo/PopupInfo.gd" id="1_fvwan"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tpmhm"]
+radius = 32.0
+
+[node name="PopupInfo" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_fvwan")
+labelText = "Enter"
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_tpmhm")
+
+[node name="PanelContainer" type="PanelContainer" parent="Area2D"]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_top = -48.0
+offset_right = 1.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="Area2D/PanelContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

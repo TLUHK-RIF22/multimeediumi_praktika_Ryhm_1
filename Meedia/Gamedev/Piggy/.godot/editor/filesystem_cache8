@@ -1,5 +1,5 @@
 3acdcc5cb6df755358dde907981ccea8
-::res://::1713097329
+::res://::1713107308
 control.tscn::PackedScene::3944913171574488877::1712065299::0::1::::<><>::res://UI/MainMenu/Button.gd
 default_bus_layout.tres::AudioBusLayout::6312041001893839027::1712036789::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1712774214::0::1::::<><>::
@@ -74,7 +74,7 @@ Piggy intro sample.mp3::AudioStreamMP3::4444625550935237733::1710663131::1712036
 piggy_theme.mp3::AudioStreamMP3::2338095047497560570::1709804048::1712036789::1::::<><>::
 Walking_sound.mp3::AudioStreamMP3::456153971356140669::1712036789::1712036789::1::::<><>::
 ::res://Charecters/::1710338330
-::res://Charecters/NPC/::1713102229
+::res://Charecters/NPC/::1713106766
 Apple_eater.dialogue::Resource::8007420126231406867::1712061316::1712061317::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 Door.tscn::PackedScene::3176723986164831859::1711104479::0::1::::<><>::res://Charecters/NPC/NPC_GiveItem.gd<>uid://coxnve85ur32p::::res://Sprites/Door.png<>uid://kgyrh4ady834::::res://Charecters/NPC/Idle_NPC_Pig_Brown_Down-Sheet.png
 Door_unlock.gd::GDScript::-1::1713102180::0::1::::<>CharacterBody2D<>::
@@ -83,7 +83,7 @@ Idle_NPC_Pig_Brown_Down-Sheet.png::CompressedTexture2D::715762681695231369::1710
 NPC_GiveItem.gd::GDScript::-1::1713102199::0::1::::<>CharacterBody2D<>::
 NPC_Move.gd::GDScript::-1::1710862827::0::1::::<>Node2D<>::
 NPC_Pig_Brown.tscn::PackedScene::1630289682796964383::1712063715::0::1::::<><>::res://Charecters/NPC/NPC_GiveItem.gd<>uid://kgyrh4ady834::::res://Charecters/NPC/Idle_NPC_Pig_Brown_Down-Sheet.png
-SurvivalInstinct.gd::GDScript::-1::1713102229::0::1::::<>CharacterBody2D<>::
+SurvivalInstinct.gd::GDScript::-1::1713106766::0::1::::<>CharacterBody2D<>::
 SurvivalInstinct.tscn::PackedScene::4027323555938628174::1712079319::0::1::::<><>::uid://kgyrh4ady834::::res://Charecters/NPC/Idle_NPC_Pig_Brown_Down-Sheet.png
 ::res://Charecters/NPC/Dialogues/::1713102809
 SurvivalInstinct.dialogue::Resource::6726302130265857398::1713102809::1713102809::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
@@ -126,7 +126,7 @@ Entrance.tscn::PackedScene::8427584822136501492::1711109662::0::1::::<><>::res:/
 Gate2.tscn::PackedScene::4274151350036504254::1710337969::0::1::::<><>::res://LevelHoping/Gate.gd
 Gate.gd::GDScript::-1::1710341810::0::1::::<>Area2D<>::
 Gate.tscn::PackedScene::6420024580920554246::1710337969::0::1::::<><>::res://LevelHoping/Gate.gd
-::res://Levels/::1713102810
+::res://Levels/::1713107270
 Level1.tscn::PackedScene::5822241239213795541::1710338330::0::1::::<><>::res://Levels/Levels.gd<>uid://cy8nl6guub54d::::res://Charecters/Siga/Scenes/player.tscn<>uid://ctjkfjops0jmy::::res://Sprites/Wooden House.png<>uid://chh6r57ebbmeq::::res://Sprites/Hills.png<>uid://ctiyr321gw14l::::res://UI/Game_manager/game_manager.tscn<>uid://dscndc5iq3qrs::::res://LevelHoping/Entrance.tscn<>uid://37j4civmtx4p::::res://Sprites/Grass.png<>uid://cu8l14cttsk3s::::res://Audio/menüü põhi.mp3
 Level2.tscn::PackedScene::4041537909177501878::1711109662::0::1::::<><>::uid://cy8nl6guub54d::::res://Charecters/Siga/Scenes/player.tscn<>res://Levels/Levels.gd<>uid://37j4civmtx4p::::res://Sprites/Grass.png<>uid://ctjkfjops0jmy::::res://Sprites/Wooden House.png<>uid://qg86utprd17j::::res://Tiles/Tile_DryGrass.png<>uid://ctiyr321gw14l::::res://UI/Game_manager/game_manager.tscn<>uid://bfg70sj3xgone::::res://Tiles/Tile_Drygrass2.png<>uid://dscndc5iq3qrs::::res://LevelHoping/Entrance.tscn<>uid://dd77hmty32y5m::::res://Tiles/Tile_Sand-Sheet.png
 Level3.tscn::PackedScene::3189414309383884024::1710338330::0::1::::<><>::res://Levels/Levels.gd<>uid://cy8nl6guub54d::::res://Charecters/Siga/Scenes/player.tscn<>uid://ctiyr321gw14l::::res://UI/Game_manager/game_manager.tscn<>uid://dscndc5iq3qrs::::res://LevelHoping/Entrance.tscn<>uid://ctjkfjops0jmy::::res://Sprites/Wooden House.png<>uid://37j4civmtx4p::::res://Sprites/Grass.png<>uid://qg86utprd17j::::res://Tiles/Tile_DryGrass.png<>uid://bfg70sj3xgone::::res://Tiles/Tile_Drygrass2.png<>uid://dd77hmty32y5m::::res://Tiles/Tile_Sand-Sheet.png
@@ -134,15 +134,15 @@ LevelA1.tscn::PackedScene::3095869109679402753::1710363764::0::1::::<><>::res://
 LevelA2.tscn::PackedScene::7701124423613355316::1710363775::0::1::::<><>::res://Levels/Levels.gd<>uid://cy8nl6guub54d::::res://Charecters/Siga/Scenes/player.tscn<>uid://37j4civmtx4p::::res://Sprites/Grass.png<>uid://ctjkfjops0jmy::::res://Sprites/Wooden House.png<>uid://chh6r57ebbmeq::::res://Sprites/Hills.png<>uid://ctiyr321gw14l::::res://UI/Game_manager/game_manager.tscn<>uid://cxp54qdqfuvlm::::res://LevelHoping/Gate.tscn<>uid://cu8l14cttsk3s::::res://Audio/menüü põhi.mp3
 LevelA3.tscn::PackedScene::4289140580599504132::1710363781::0::1::::<><>::res://Levels/Levels.gd<>uid://cy8nl6guub54d::::res://Charecters/Siga/Scenes/player.tscn<>uid://37j4civmtx4p::::res://Sprites/Grass.png<>uid://ctjkfjops0jmy::::res://Sprites/Wooden House.png<>uid://chh6r57ebbmeq::::res://Sprites/Hills.png<>uid://ctiyr321gw14l::::res://UI/Game_manager/game_manager.tscn<>uid://cu8l14cttsk3s::::res://Audio/menüü põhi.mp3<>uid://cxp54qdqfuvlm::::res://LevelHoping/Gate.tscn
 LevelB1.tscn::PackedScene::6195864626408534802::1710363783::0::1::::<><>::res://Levels/Levels.gd<>uid://cy8nl6guub54d::::res://Charecters/Siga/Scenes/player.tscn<>uid://37j4civmtx4p::::res://Sprites/Grass.png<>uid://ctjkfjops0jmy::::res://Sprites/Wooden House.png<>uid://chh6r57ebbmeq::::res://Sprites/Hills.png<>uid://ctiyr321gw14l::::res://UI/Game_manager/game_manager.tscn<>uid://cu8l14cttsk3s::::res://Audio/menüü põhi.mp3<>uid://cxp54qdqfuvlm::::res://LevelHoping/Gate.tscn
-LevelB2.tscn::PackedScene::5333647298763410245::1713100170::0::1::::<><>::res://Levels/Levels.gd<>uid://cy8nl6guub54d::::res://Charecters/Siga/Scenes/player.tscn<>uid://ctiyr321gw14l::::res://UI/Game_manager/game_manager.tscn<>uid://2e0wdnflvsko::::res://Tiles/Tileset2.0.png<>uid://rgncvyhamgoy::::res://Tiles/dungeon-tileset-karl-v1.png<>uid://c5h6i1vrldhsx::::res://Pickup/pickup.tscn<>uid://cxp54qdqfuvlm::::res://LevelHoping/Gate.tscn<>uid://dscndc5iq3qrs::::res://LevelHoping/Entrance.tscn<>uid://36fx0vitw88f::::res://Tiles/Sandmap.png<>uid://260ntl5v26wx::::res://Items/pear.tres<>uid://b2y8ddbamacaj::::res://Items/sleeping_pig.tres<>uid://dyumucr6nntlt::::res://MapElements/TreeA.tscn<>uid://eoacvlw581i0::::res://MapElements/maja_vb.tscn<>uid://dxlhg88jqsjou::::res://MapElements/TreeB.tscn<>uid://unwk55hw3ogw::::res://MapElements/TreeC.tscn<>uid://bxurlx37r4xvh::::res://MapElements/TreeD.tscn<>uid://conad5o532k7b::::res://MapElements/TreeE.tscn<>uid://bu142qf82b4g1::::res://MapElements/TreeF.tscn<>uid://cu8l14cttsk3s::::res://Audio/menüü põhi.mp3
-LevelB3.tscn::PackedScene::847246735795468975::1713102810::0::1::::<><>::res://Levels/Levels.gd<>uid://cy8nl6guub54d::::res://Charecters/Siga/Scenes/player.tscn<>uid://2e0wdnflvsko::::res://Tiles/Tileset2.0.png<>uid://36fx0vitw88f::::res://Tiles/Sandmap.png<>uid://ctiyr321gw14l::::res://UI/Game_manager/game_manager.tscn<>uid://cxp54qdqfuvlm::::res://LevelHoping/Gate.tscn<>uid://c5h6i1vrldhsx::::res://Pickup/pickup.tscn<>uid://260ntl5v26wx::::res://Items/pear.tres<>uid://dl5a0noklpt8w::::res://Items/apple.tres<>uid://b2y8ddbamacaj::::res://Items/sleeping_pig.tres<>uid://xhyvrvafwkbv::::res://Charecters/NPC/NPC_Pig_Brown.tscn<>uid://dmc4bl0wue724::::res://Charecters/NPC/Apple_eater.dialogue<>uid://bli3gd834l2t0::::res://Charecters/NPC/Door.tscn<>res://Charecters/NPC/Door_unlock.gd<>uid://bxm4ov0afauwc::::res://Charecters/NPC/SurvivalInstinct.tscn<>res://Charecters/NPC/SurvivalInstinct.gd<>uid://bsc7mrn4gnf4l::::res://Charecters/NPC/First_encounter.dialogue<>uid://c23jhiv6h82dm::::res://Charecters/NPC/Dialogues/SurvivalInstinct.dialogue
+LevelB2.tscn::PackedScene::5333647298763410245::1713105601::0::1::::<><>::res://Levels/Levels.gd<>uid://cy8nl6guub54d::::res://Charecters/Siga/Scenes/player.tscn<>uid://ctiyr321gw14l::::res://UI/Game_manager/game_manager.tscn<>uid://2e0wdnflvsko::::res://Tiles/Tileset2.0.png<>uid://rgncvyhamgoy::::res://Tiles/dungeon-tileset-karl-v1.png<>uid://c5h6i1vrldhsx::::res://Pickup/pickup.tscn<>uid://cxp54qdqfuvlm::::res://LevelHoping/Gate.tscn<>uid://dscndc5iq3qrs::::res://LevelHoping/Entrance.tscn<>uid://36fx0vitw88f::::res://Tiles/Sandmap.png<>uid://260ntl5v26wx::::res://Items/pear.tres<>uid://b2y8ddbamacaj::::res://Items/sleeping_pig.tres<>uid://dyumucr6nntlt::::res://MapElements/TreeA.tscn<>uid://eoacvlw581i0::::res://MapElements/maja_vb.tscn<>uid://dxlhg88jqsjou::::res://MapElements/TreeB.tscn<>uid://unwk55hw3ogw::::res://MapElements/TreeC.tscn<>uid://bxurlx37r4xvh::::res://MapElements/TreeD.tscn<>uid://conad5o532k7b::::res://MapElements/TreeE.tscn<>uid://bu142qf82b4g1::::res://MapElements/TreeF.tscn<>uid://cu8l14cttsk3s::::res://Audio/menüü põhi.mp3
+LevelB3.tscn::PackedScene::847246735795468975::1713107270::0::1::::<><>::res://Levels/Levels.gd<>uid://cy8nl6guub54d::::res://Charecters/Siga/Scenes/player.tscn<>uid://2e0wdnflvsko::::res://Tiles/Tileset2.0.png<>uid://36fx0vitw88f::::res://Tiles/Sandmap.png<>uid://ctiyr321gw14l::::res://UI/Game_manager/game_manager.tscn<>uid://cxp54qdqfuvlm::::res://LevelHoping/Gate.tscn<>uid://c5h6i1vrldhsx::::res://Pickup/pickup.tscn<>uid://260ntl5v26wx::::res://Items/pear.tres<>uid://dl5a0noklpt8w::::res://Items/apple.tres<>uid://b2y8ddbamacaj::::res://Items/sleeping_pig.tres<>uid://xhyvrvafwkbv::::res://Charecters/NPC/NPC_Pig_Brown.tscn<>uid://dmc4bl0wue724::::res://Charecters/NPC/Apple_eater.dialogue<>uid://bli3gd834l2t0::::res://Charecters/NPC/Door.tscn<>res://Charecters/NPC/Door_unlock.gd<>uid://bxm4ov0afauwc::::res://Charecters/NPC/SurvivalInstinct.tscn<>uid://2qtpgse6674::::res://UI/PopUpInfo/PopupInfo.tscn<>res://Charecters/NPC/SurvivalInstinct.gd<>uid://bsc7mrn4gnf4l::::res://Charecters/NPC/First_encounter.dialogue<>uid://c23jhiv6h82dm::::res://Charecters/NPC/Dialogues/SurvivalInstinct.dialogue
 LevelC1.tscn::PackedScene::5422991466893715237::1710363786::0::1::::<><>::res://Levels/Levels.gd<>uid://cy8nl6guub54d::::res://Charecters/Siga/Scenes/player.tscn<>uid://37j4civmtx4p::::res://Sprites/Grass.png<>uid://ctjkfjops0jmy::::res://Sprites/Wooden House.png<>uid://chh6r57ebbmeq::::res://Sprites/Hills.png<>uid://ctiyr321gw14l::::res://UI/Game_manager/game_manager.tscn<>uid://cu8l14cttsk3s::::res://Audio/menüü põhi.mp3<>uid://cxp54qdqfuvlm::::res://LevelHoping/Gate.tscn
 LevelC2.tscn::PackedScene::1057319200860669038::1712079320::0::1::::<><>::res://Levels/Levels.gd<>uid://cy8nl6guub54d::::res://Charecters/Siga/Scenes/player.tscn<>uid://rgncvyhamgoy::::res://Tiles/dungeon-tileset-karl-v1.png<>uid://2e0wdnflvsko::::res://Tiles/Tileset2.0.png<>uid://ctiyr321gw14l::::res://UI/Game_manager/game_manager.tscn<>uid://cu8l14cttsk3s::::res://Audio/menüü põhi.mp3<>uid://cxp54qdqfuvlm::::res://LevelHoping/Gate.tscn
 LevelC3.tscn::PackedScene::6614856370251514581::1712079321::0::1::::<><>::res://Levels/Levels.gd<>uid://cy8nl6guub54d::::res://Charecters/Siga/Scenes/player.tscn<>uid://2e0wdnflvsko::::res://Tiles/Tileset2.0.png<>uid://ctiyr321gw14l::::res://UI/Game_manager/game_manager.tscn<>uid://cu8l14cttsk3s::::res://Audio/menüü põhi.mp3<>uid://cxp54qdqfuvlm::::res://LevelHoping/Gate.tscn
 Levels.gd::GDScript::-1::1710849970::0::1::::<>Node2D<>::
 Test.tscn::PackedScene::2958483112094644092::1710675856::0::1::::<><>::res://Levels/Levels.gd<>uid://xhyvrvafwkbv::::res://Charecters/NPC/NPC_Pig_Brown.tscn<>uid://c5h6i1vrldhsx::::res://Pickup/pickup.tscn<>uid://260ntl5v26wx::::res://Items/pear.tres<>uid://cy8nl6guub54d::::res://Charecters/Siga/Scenes/player.tscn<>uid://rgncvyhamgoy::::res://Tiles/dungeon-tileset-karl-v1.png<>uid://cxp54qdqfuvlm::::res://LevelHoping/Gate.tscn<>uid://ctiyr321gw14l::::res://UI/Game_manager/game_manager.tscn
 Tunnel.tscn::PackedScene::6600504377265472412::1710363791::0::1::::<><>::res://Levels/Levels.gd<>uid://cy8nl6guub54d::::res://Charecters/Siga/Scenes/player.tscn<>uid://37j4civmtx4p::::res://Sprites/Grass.png<>uid://dd77hmty32y5m::::res://Tiles/Tile_Sand-Sheet.png<>uid://ctjkfjops0jmy::::res://Sprites/Wooden House.png<>uid://chh6r57ebbmeq::::res://Sprites/Hills.png<>uid://ctiyr321gw14l::::res://UI/Game_manager/game_manager.tscn<>uid://dscndc5iq3qrs::::res://LevelHoping/Entrance.tscn
-Tutorial.tscn::PackedScene::4404731626768953067::1713102809::0::1::::<><>::res://Levels/Levels.gd<>uid://2e0wdnflvsko::::res://Tiles/Tileset2.0.png<>uid://ctiyr321gw14l::::res://UI/Game_manager/game_manager.tscn<>uid://cy8nl6guub54d::::res://Charecters/Siga/Scenes/player.tscn<>uid://bxm4ov0afauwc::::res://Charecters/NPC/SurvivalInstinct.tscn<>res://Charecters/NPC/SurvivalInstinct.gd<>uid://dl5a0noklpt8w::::res://Items/apple.tres<>uid://c23jhiv6h82dm::::res://Charecters/NPC/Dialogues/SurvivalInstinct.dialogue<>uid://c5h6i1vrldhsx::::res://Pickup/pickup.tscn
+Tutorial.tscn::PackedScene::4404731626768953067::1713107270::0::1::::<><>::res://Levels/Levels.gd<>uid://2e0wdnflvsko::::res://Tiles/Tileset2.0.png<>uid://ctiyr321gw14l::::res://UI/Game_manager/game_manager.tscn<>uid://cy8nl6guub54d::::res://Charecters/Siga/Scenes/player.tscn<>uid://bxm4ov0afauwc::::res://Charecters/NPC/SurvivalInstinct.tscn<>res://Charecters/NPC/SurvivalInstinct.gd<>uid://dl5a0noklpt8w::::res://Items/apple.tres<>uid://c23jhiv6h82dm::::res://Charecters/NPC/Dialogues/SurvivalInstinct.dialogue<>uid://c5h6i1vrldhsx::::res://Pickup/pickup.tscn
 ::res://Levels/Maja/::1711110437
 ::res://Levels/Spikes/::1712079321
 Ground.tscn::PackedScene::5199507334169238240::1712079321::0::1::::<><>::uid://rgncvyhamgoy::::res://Tiles/dungeon-tileset-karl-v1.png<>uid://b15owbn0t1vak::::res://LevelHoping/Gate2.tscn
@@ -187,12 +187,12 @@ Tileset.png::CompressedTexture2D::1325823321923611601::1710663131::1710663131::1
 Tile_Drygrass2.png::CompressedTexture2D::2751739717650493270::1709804048::1709804048::1::::<><>::
 Tile_DryGrass.png::CompressedTexture2D::1137467865627906809::1709804048::1709804048::1::::<><>::
 Tile_Sand-Sheet.png::CompressedTexture2D::7437844775209617472::1709804048::1709804048::1::::<><>::
-::res://UI/::1713102231
+::res://UI/::1713106820
 balloon.gd::GDScript::-1::1712051283::0::1::::<>CanvasLayer<>::
 balloon.tscn::PackedScene::2304415056852043862::1713102231::0::1::::<><>::res://UI/balloon.gd<>uid://ckvgyvclnwggo::::res://addons/dialogue_manager/dialogue_label.tscn<>res://addons/dialogue_manager/dialogue_reponses_menu.gd
-::res://UI/Game_manager/::1711106526
-game_manager.gd::GDScript::-1::1709804048::0::1::::GameManager<>Node2D<>::
-game_manager.tscn::PackedScene::6124433498417832029::1711106526::0::1::::<><>::res://UI/Game_manager/game_manager.gd<>uid://c2fox34yy7p53::::res://UI/PausMenu/paus_menu.tscn
+::res://UI/Game_manager/::1713105601
+game_manager.gd::GDScript::-1::1713105600::0::1::::GameManager<>Node2D<>::
+game_manager.tscn::PackedScene::6124433498417832029::1713105601::0::1::::<><>::res://UI/Game_manager/game_manager.gd<>uid://c2fox34yy7p53::::res://UI/PausMenu/paus_menu.tscn
 ::res://UI/Intro/::1712063715
 Intro.gd::GDScript::-1::1710340053::0::1::::<>Node2D<>::
 Intro.tscn::PackedScene::8590256611250604733::1712063715::0::1::::<><>::res://UI/Intro/Intro.gd<>uid://brdy7xpa8bo0::::res://UI/Intro/piggybanner2.png<>uid://bexvo6j30c3ff::::res://UI/Intro/IntroVideo.tscn<>res://UI/Intro/Label.gd<>uid://pqoidl1vn4w5::::res://UI/MainMenu/main.tscn
@@ -213,10 +213,13 @@ main.tscn::PackedScene::1086727198658240182::1712036789::0::1::::<><>::res://UI/
 ::res://UI/MainMenu/Settings/::1712036789
 Settings.gd::GDScript::-1::1712036789::0::1::::<>Node2D<>::
 Settings.tscn::PackedScene::8515732519862528674::1712036789::0::1::::<><>::res://UI/MainMenu/Settings/Settings.gd<>uid://kqoqphpsnpbo::::res://UI/MainMenu/game_theme.tres<>uid://cu8l14cttsk3s::::res://Audio/menüü põhi.mp3<>uid://brb13itbq0yo1::::res://UI/MainMenu/BG.tscn<>res://UI/MainMenu/Button.gd<>uid://s10b8h1ts20::::res://Sprites/audio_on_and_mute.jpg
-::res://UI/PausMenu/::1713104638
+::res://UI/PausMenu/::1713105601
 Mute_Unmute.png::CompressedTexture2D::1756264399609979567::1712768949::1713104639::1::::<><>::
 paus_menu.gd::GDScript::-1::1712036789::0::1::::<>Control<>::
-paus_menu.tscn::PackedScene::6679154662118848916::1712036789::0::1::::<><>::res://UI/PausMenu/paus_menu.gd<>uid://kqoqphpsnpbo::::res://UI/MainMenu/game_theme.tres<>uid://cu8l14cttsk3s::::res://Audio/menüü põhi.mp3<>res://UI/MainMenu/Button.gd<>uid://s10b8h1ts20::::res://Sprites/audio_on_and_mute.jpg
+paus_menu.tscn::PackedScene::6679154662118848916::1713105601::0::1::::<><>::res://UI/PausMenu/paus_menu.gd<>uid://kqoqphpsnpbo::::res://UI/MainMenu/game_theme.tres<>uid://cu8l14cttsk3s::::res://Audio/menüü põhi.mp3<>res://UI/MainMenu/Button.gd<>uid://0a0ohj0rbft4::::res://UI/PausMenu/Mute_Unmute.png
+::res://UI/PopUpInfo/::1713107270
+PopupInfo.gd::GDScript::-1::1713107191::0::1::::<>Node<>::
+PopupInfo.tscn::PackedScene::56744399271587409::1713107270::0::1::::<><>::res://UI/PopUpInfo/PopupInfo.gd
 ::res://UI/text_box/::1710849075
 Dialogue.gd::GDScript::-1::1710685763::0::1::::<>Node<>::
 Text_box.gd::GDScript::-1::1710686045::0::1::::<>MarginContainer<>::

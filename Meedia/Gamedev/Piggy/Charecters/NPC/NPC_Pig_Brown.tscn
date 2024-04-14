@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://xhyvrvafwkbv"]
+[gd_scene load_steps=9 format=3 uid="uid://xhyvrvafwkbv"]
 
 [ext_resource type="Script" path="res://Charecters/NPC/NPC_GiveItem.gd" id="1_x1qft"]
 [ext_resource type="Texture2D" uid="uid://kgyrh4ady834" path="res://Charecters/NPC/Idle_NPC_Pig_Brown_Down-Sheet.png" id="2_6ji05"]
+[ext_resource type="PackedScene" uid="uid://2qtpgse6674" path="res://UI/PopUpInfo/PopupInfo.tscn" id="2_v4bgo"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y7nsm"]
 atlas = ExtResource("2_6ji05")
@@ -30,11 +31,14 @@ radius = 3.5
 height = 20.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qpq4t"]
-radius = 26.0768
+radius = 32.1403
 
 [node name="NPC_Pig_Brown" type="CharacterBody2D"]
 y_sort_enabled = true
 script = ExtResource("1_x1qft")
+
+[node name="PopupInfo" parent="." instance=ExtResource("2_v4bgo")]
+labelText = "E"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 hframes = 2

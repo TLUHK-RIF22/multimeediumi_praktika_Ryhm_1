@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://bxm4ov0afauwc"]
+[gd_scene load_steps=8 format=3 uid="uid://bxm4ov0afauwc"]
 
+[ext_resource type="PackedScene" uid="uid://2qtpgse6674" path="res://UI/PopUpInfo/PopupInfo.tscn" id="1_vnxcs"]
 [ext_resource type="Texture2D" uid="uid://kgyrh4ady834" path="res://Charecters/NPC/Idle_NPC_Pig_Brown_Down-Sheet.png" id="2_e4s2m"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y7nsm"]
@@ -29,10 +30,13 @@ radius = 3.5
 height = 20.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qpq4t"]
-radius = 26.0768
+radius = 32.0156
 
 [node name="SurvivalInstinct" type="CharacterBody2D"]
 y_sort_enabled = true
+
+[node name="PopupInfo" parent="." instance=ExtResource("1_vnxcs")]
+labelText = "Press E to Talk"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -10)
