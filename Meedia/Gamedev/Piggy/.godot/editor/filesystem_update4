@@ -12,3 +12,5 @@ res://Charecters/Siga/Scenes/player.gd
 res://UI/balloon.tscn
 res://Charecters/NPC/Door_unlock.gd
 res://Charecters/NPC/NPC_GiveItem.gd
+res://UI/Game_manager/game_manager.tscn
+res://UI/PausMenu/paus_menu.tscn
