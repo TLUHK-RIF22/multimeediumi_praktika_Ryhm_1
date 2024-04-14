@@ -14,7 +14,9 @@ var itemGivenToNPC = Global.itemGivenToNPC
 func _ready():
 	if Global.timesInteracted == 2:
 		%SurvivalInstinct.queue_free()
-
+		guide_1.queue_free()
+		guide_2.queue_free()
+		
 func _unhandled_input(_event):
 
 	if Global.appearMoveInstructions:

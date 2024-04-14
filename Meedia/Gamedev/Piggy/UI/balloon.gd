@@ -4,7 +4,7 @@ extends CanvasLayer
 const NEXT_ACTION = &"ui_accept"
 
 ## The action to use to skip typing the dialogue
-const SKIP_ACTION = &"ui_cancel"
+const SKIP_ACTION = &"Interact"
 
 
 @onready var balloon: Control = %Balloon
