@@ -3,3 +3,12 @@ res://Pickup/pickup.gd
 res://Items/apple.tres
 res://Items/pear.tres
 res://Levels/LevelB3.tscn
+res://Charecters/Siga/Scenes/player.tscn
+res://UI/MainMenu/BG.tscn
+res://UI/MainMenu/main.tscn
+res://default_bus_layout.tres
+res://control.tscn
+res://Levels/LevelC3.tscn
+res://tile_map.tscn
+res://Levels/LevelC2.tscn
+res://Pickup/pickup.tscn
