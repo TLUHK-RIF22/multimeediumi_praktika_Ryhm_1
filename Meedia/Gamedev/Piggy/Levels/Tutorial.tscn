@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://2e0wdnflvsko" path="res://Tiles/Tileset2.0.png" id="2_c6b4c"]
 [ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://UI/Game_manager/game_manager.tscn" id="2_klqjx"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/Scenes/player.tscn" id="2_unuc0"]
-[ext_resource type="PackedScene" uid="uid://bxm4ov0afauwc" path="res://Charecters/NPC/SurvivalInstinct.tscn" id="3_f0p54"]
+[ext_resource type="PackedScene" uid="uid://bxm4ov0afauwc" path="res://Charecters/NPC/Scenes/SurvivalInstinct.tscn" id="3_f0p54"]
 [ext_resource type="Script" path="res://Charecters/NPC/SurvivalInstinct.gd" id="6_nvljj"]
 [ext_resource type="Resource" uid="uid://dl5a0noklpt8w" path="res://Items/apple.tres" id="7_h8dfc"]
 [ext_resource type="Resource" uid="uid://c23jhiv6h82dm" path="res://Charecters/NPC/Dialogues/SurvivalInstinct.dialogue" id="8_40ahu"]

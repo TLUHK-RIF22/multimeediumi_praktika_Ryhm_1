@@ -3,9 +3,9 @@ extends CharacterBody2D
 
 @onready var playerWalkingAudioStream = %AudioStreamPlayer_Walking
 @export var move_speed : float = 80
-@export var starting_direction : Vector2 = Vector2(0,1)
+@export var starting_direction : Vector2 = Vector2(0,0)
 @onready var sleep_timer = %SleepTimer
-var idleTimer = false
+var idleTimer = true
 
 # parameters/idle/blend_position
 

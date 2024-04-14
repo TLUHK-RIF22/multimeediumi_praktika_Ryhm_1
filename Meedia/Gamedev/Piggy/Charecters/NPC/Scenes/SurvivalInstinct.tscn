@@ -39,6 +39,7 @@ y_sort_enabled = true
 labelText = "Press E to Talk"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.454902)
 position = Vector2(0, -10)
 sprite_frames = SubResource("SpriteFrames_3kbif")
 animation = &"Idle_Down"

@@ -10,3 +10,6 @@ res://LevelHoping/Entrance.tscn
 res://Levels/LevelB2.tscn
 res://Charecters/NPC/SurvivalInstinct.tscn
 res://Charecters/NPC/SurvivalInstinct.gd
+res://Charecters/NPC/Scenes/SurvivalInstinct.tscn
+res://Charecters/Siga/Scenes/player.tscn
+res://Charecters/Siga/Scenes/player.gd

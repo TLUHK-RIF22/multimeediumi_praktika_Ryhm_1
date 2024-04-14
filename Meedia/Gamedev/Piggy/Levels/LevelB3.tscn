@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://mcobavk7ibdf"]
+[gd_scene load_steps=15 format=3 uid="uid://mcobavk7ibdf"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_pxv05"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/Scenes/player.tscn" id="2_lphbt"]
@@ -7,16 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://UI/Game_manager/game_manager.tscn" id="6_o5j0n"]
 [ext_resource type="PackedScene" uid="uid://cxp54qdqfuvlm" path="res://LevelHoping/Gate.tscn" id="8_i1gph"]
 [ext_resource type="PackedScene" uid="uid://c5h6i1vrldhsx" path="res://Pickup/pickup.tscn" id="9_fh2ae"]
-[ext_resource type="Resource" uid="uid://260ntl5v26wx" path="res://Items/pear.tres" id="10_63t4a"]
 [ext_resource type="Resource" uid="uid://dl5a0noklpt8w" path="res://Items/apple.tres" id="10_klerp"]
-[ext_resource type="Resource" uid="uid://b2y8ddbamacaj" path="res://Items/sleeping_pig.tres" id="12_rgeg5"]
-[ext_resource type="PackedScene" uid="uid://xhyvrvafwkbv" path="res://Charecters/NPC/NPC_Pig_Brown.tscn" id="13_6fa5o"]
-[ext_resource type="Resource" uid="uid://dmc4bl0wue724" path="res://Charecters/NPC/Apple_eater.dialogue" id="14_b7yhb"]
-[ext_resource type="PackedScene" uid="uid://bli3gd834l2t0" path="res://Charecters/NPC/Door.tscn" id="15_w6ost"]
-[ext_resource type="Script" path="res://Charecters/NPC/Door_unlock.gd" id="16_70ip0"]
-[ext_resource type="PackedScene" uid="uid://bxm4ov0afauwc" path="res://Charecters/NPC/SurvivalInstinct.tscn" id="16_kdrcx"]
+[ext_resource type="PackedScene" uid="uid://bxm4ov0afauwc" path="res://Charecters/NPC/Scenes/SurvivalInstinct.tscn" id="16_kdrcx"]
 [ext_resource type="Script" path="res://Charecters/NPC/SurvivalInstinct.gd" id="17_npyo5"]
-[ext_resource type="Resource" uid="uid://bsc7mrn4gnf4l" path="res://Charecters/NPC/First_encounter.dialogue" id="17_v3hu2"]
 [ext_resource type="Resource" uid="uid://c23jhiv6h82dm" path="res://Charecters/NPC/Dialogues/SurvivalInstinct.dialogue" id="18_w5bc6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_roo4d"]
@@ -990,58 +983,18 @@ scale = Vector2(4, 4)
 position = Vector2(305, -570)
 scale = Vector2(4, 4)
 
-[node name="SpikesPos" type="Marker2D" parent="."]
-position = Vector2(487, -386)
-scale = Vector2(4, 4)
-
 [node name="LevelB2" parent="." instance=ExtResource("8_i1gph")]
 position = Vector2(431, -624)
 
 [node name="GameManager" parent="." instance=ExtResource("6_o5j0n")]
 
-[node name="apple2" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(535, -360)
-
-[node name="apple" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(584, -392)
-
-[node name="apple3" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(616, -432)
-
-[node name="pear" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(672, -386)
-item = ExtResource("10_63t4a")
-
-[node name="sleeping_pig" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(470, -368)
-item = ExtResource("12_rgeg5")
-
 [node name="Player" parent="." instance=ExtResource("2_lphbt")]
 unique_name_in_owner = true
-position = Vector2(335, -160)
-
-[node name="Door" parent="." instance=ExtResource("15_w6ost")]
-position = Vector2(663, -464)
-script = ExtResource("16_70ip0")
-posX = 477
-posY = -296
-item = ExtResource("10_klerp")
-SpeechNoItem = Array[String](["Locked"])
-SpeechGotItem = Array[String](["Unlocked"])
-
-[node name="NPC_Pig_Brown2" parent="." instance=ExtResource("13_6fa5o")]
-position = Vector2(447, -232)
-item = ExtResource("10_klerp")
-Speech = ExtResource("17_v3hu2")
-
-[node name="NPC_Pig_Brown" parent="." instance=ExtResource("13_6fa5o")]
-position = Vector2(552, -456)
-item = ExtResource("10_klerp")
-Speech = ExtResource("14_b7yhb")
+position = Vector2(319, -184)
 
 [node name="apple4" parent="." instance=ExtResource("9_fh2ae")]
 unique_name_in_owner = true
-position = Vector2(471, -136)
+position = Vector2(455, -160)
 
 [node name="Tutorial" type="Control" parent="."]
 y_sort_enabled = true

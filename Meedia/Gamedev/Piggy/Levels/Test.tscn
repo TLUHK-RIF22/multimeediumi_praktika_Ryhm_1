@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://bifd1xatfd3ca"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_ixr6d"]
-[ext_resource type="PackedScene" uid="uid://xhyvrvafwkbv" path="res://Charecters/NPC/NPC_Pig_Brown.tscn" id="2_wm3ck"]
+[ext_resource type="PackedScene" uid="uid://xhyvrvafwkbv" path="res://Charecters/NPC/Scenes/NPC_Pig_Brown.tscn" id="2_wm3ck"]
 [ext_resource type="PackedScene" uid="uid://c5h6i1vrldhsx" path="res://Pickup/pickup.tscn" id="4_xsant"]
 [ext_resource type="Resource" uid="uid://260ntl5v26wx" path="res://Items/pear.tres" id="5_w7vpi"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/Scenes/player.tscn" id="6_4et51"]

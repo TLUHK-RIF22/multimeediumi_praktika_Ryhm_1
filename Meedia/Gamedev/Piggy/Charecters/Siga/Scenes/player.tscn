@@ -688,9 +688,6 @@ blend_mode = 1
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_mhfug"]
 
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_s0l0n"]
-advance_mode = 2
-
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_6jk4b"]
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_28tvs"]
@@ -699,16 +696,19 @@ advance_mode = 2
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_kiyym"]
 
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_0e6ob"]
+advance_mode = 2
+
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_c6u87"]
 states/End/position = Vector2(903, 100)
-states/Start/position = Vector2(171, 109)
+states/Start/position = Vector2(182, 212)
 states/idle/node = SubResource("AnimationNodeBlendSpace2D_tj654")
 states/idle/position = Vector2(387, 109)
 states/sleep/node = SubResource("AnimationNodeBlendSpace2D_pn75m")
 states/sleep/position = Vector2(510, 190)
 states/walk/node = SubResource("AnimationNodeBlendSpace2D_g6v4f")
 states/walk/position = Vector2(592, 100)
-transitions = ["idle", "walk", SubResource("AnimationNodeStateMachineTransition_bxky4"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_mhfug"), "Start", "idle", SubResource("AnimationNodeStateMachineTransition_s0l0n"), "idle", "sleep", SubResource("AnimationNodeStateMachineTransition_6jk4b"), "sleep", "walk", SubResource("AnimationNodeStateMachineTransition_28tvs"), "walk", "sleep", SubResource("AnimationNodeStateMachineTransition_wpwuq"), "sleep", "idle", SubResource("AnimationNodeStateMachineTransition_kiyym")]
+transitions = ["idle", "walk", SubResource("AnimationNodeStateMachineTransition_bxky4"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_mhfug"), "idle", "sleep", SubResource("AnimationNodeStateMachineTransition_6jk4b"), "sleep", "walk", SubResource("AnimationNodeStateMachineTransition_28tvs"), "walk", "sleep", SubResource("AnimationNodeStateMachineTransition_wpwuq"), "sleep", "idle", SubResource("AnimationNodeStateMachineTransition_kiyym"), "Start", "sleep", SubResource("AnimationNodeStateMachineTransition_0e6ob")]
 
 [node name="Player" type="CharacterBody2D"]
 y_sort_enabled = true

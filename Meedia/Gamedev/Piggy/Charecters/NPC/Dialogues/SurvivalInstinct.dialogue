@@ -3,6 +3,10 @@
 Survival Instinct: Hey, piggy-piggy! [shake rate=20 level=10]Wake up![/shake] This does not look like a safe place to be in.
 
 Piggy: [stare at the figure menacingly]
+- Say hello
+- Wake up
+	do timesInteracted = 2
+	=> END
 
 Survival Instinct: Yeah I know that look. Unfortunately, being angry will not get you off this beach.
 
