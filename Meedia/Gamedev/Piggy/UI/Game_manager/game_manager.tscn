@@ -8,6 +8,7 @@ process_mode = 3
 script = ExtResource("1_qdebo")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 128
 
 [node name="PausMenu" parent="CanvasLayer" node_paths=PackedStringArray("game_manager") instance=ExtResource("3_ahwnc")]
 visible = false

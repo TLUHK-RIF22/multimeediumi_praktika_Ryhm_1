@@ -66,6 +66,7 @@ Panel/styles/panel = SubResource("StyleBoxFlat_uy0d5")
 [sub_resource type="Theme" id="Theme_y0fhc"]
 
 [node name="ExampleBalloon" type="CanvasLayer"]
+process_mode = 1
 layer = 100
 script = ExtResource("1_36de5")
 

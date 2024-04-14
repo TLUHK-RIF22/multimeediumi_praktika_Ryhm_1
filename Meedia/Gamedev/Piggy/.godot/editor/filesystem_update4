@@ -6,3 +6,13 @@ res://Levels/LevelB2.tscn
 res://LevelHoping/Gate.tscn
 res://Levels/Spikes/Ground.tscn
 res://Charecters/Siga/Scenes/player.gd
+res://Charecters/Siga/Scenes/player_spikes.gd
+res://Levels/Spikes/Spikes.tscn
+res://Charecters/Siga/Scenes/player_spikes.tscn
+res://Charecters/Siga/Scenes/player.tscn
+res://UI/balloon.tscn
+res://UI/balloon.gd
+res://UI/Game_manager/game_manager.tscn
+res://UI/Game_manager/game_manager.gd
+res://Charecters/NPC/SurvivalInstinct.gd
+res://UI/PausMenu/paus_menu.tscn
