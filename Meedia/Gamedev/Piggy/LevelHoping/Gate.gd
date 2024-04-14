@@ -16,4 +16,4 @@ func _process(_delta):
 			
 			get_tree().change_scene_to_file("res://Levels/"+ self.name +".tscn")
 			entered = false
-			print(self.name)
+			#print(self.name)

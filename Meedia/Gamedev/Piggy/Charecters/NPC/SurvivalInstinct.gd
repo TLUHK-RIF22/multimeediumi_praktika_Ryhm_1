@@ -11,7 +11,9 @@ var itemGivenToNPC = Global.itemGivenToNPC
 @onready var guide_1 = %Guide1
 @onready var guide_2 = %Guide2
 
-
+func _ready():
+	if Global.timesInteracted == 2:
+		%SurvivalInstinct.queue_free()
 
 func _unhandled_input(_event):
 

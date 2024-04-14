@@ -43,5 +43,5 @@ func give_item(itemVar):
 func check_if_got_item(itemVar):
 	if itemVar in inventory :
 		itemGivenToNPC.append(self.name+itemVar.name)
-		print(self.name+itemVar.name)
+		#print(self.name+itemVar.name)
 		give_item(itemVar)

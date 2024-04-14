@@ -5,7 +5,7 @@ extends CharacterBody2D
 @export var move_speed : float = 80
 @export var starting_direction : Vector2 = Vector2(0,0)
 @onready var sleep_timer = %SleepTimer
-var idleTimer = true
+@export var idleTimer = false
 
 # parameters/idle/blend_position
 

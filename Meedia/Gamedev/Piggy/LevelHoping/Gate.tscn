@@ -2,11 +2,12 @@
 
 [ext_resource type="Script" path="res://LevelHoping/Gate.gd" id="1_ojspy"]
 
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bqfll"]
 size = Vector2(33, 31)
 
 [node name="Area2D" type="Area2D"]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("1_ojspy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
