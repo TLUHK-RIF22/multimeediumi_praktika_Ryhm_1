@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+
 var player_in_range = false
 
 @export var item:Item
@@ -7,22 +8,24 @@ var player_in_range = false
 @export var Speech: DialogueResource
 var inventory = Global._content
 var itemGivenToNPC = Global.itemGivenToNPC
-var kala = false
+@onready var guide_1 = %Guide1
+
+
+
 func _unhandled_input(event):
+	if player_in_range && Global.appearMoveInstructions:
+		guide_1.visible = true
+	
+	if player_in_range && Global.canMove:
 		
-	if player_in_range && Global.canMove && !kala:
 		if Input.is_action_just_pressed("Interact"):
 			Global.canMove = false
 			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "start")
-			kala = true
-	if player_in_range && Global.canMove && kala:
-		if Input.is_action_just_pressed("Interact"):
-			Global.canMove = false
-			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "Hello")
 			
 	else:
 		Global.canMove = true
-				
+		
+			
 func _on_area_2d_body_entered(body):
 	if body.has_method("Player"):
 		player_in_range = true

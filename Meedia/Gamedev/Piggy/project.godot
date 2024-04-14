@@ -25,6 +25,7 @@ Dialogue="*res://UI/text_box/Dialogue.gd"
 
 general/wrap_lines=true
 general/balloon_path="res://UI/balloon.tscn"
+general/states=["Global"]
 
 [display]
 

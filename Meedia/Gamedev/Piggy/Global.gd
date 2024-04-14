@@ -12,3 +12,7 @@ var itemGivenToNPC: Array = []
 var isMutedMusic = false
 var isMutedSFX = false
 var canMove = true
+
+#Tutorial level
+var appearMoveInstructions: bool = false
+var timesInteracted: int = 0

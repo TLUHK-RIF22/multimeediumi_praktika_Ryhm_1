@@ -1,3 +1,8 @@
+res://Levels/Tutorial.tscn
 res://Pickup/pickup.gd
 res://Items/apple.tres
 res://Items/pear.tres
+res://Charecters/NPC/SurvivalInstinct.gd
+res://Charecters/Siga/Scenes/player.tscn
+res://Levels/LevelB2.tscn
+res://Global.gd

@@ -1,13 +1,12 @@
 ~ start
 
-Survival Instinct: Hey, piggy-piggy!  Wake up!  This does not look like a safe place to be in.
+Survival Instinct: Hey, piggy-piggy! [shake rate=20 level=10]Wake up![/shake] [speed=2]This does not look like a safe place to be in.
 
 - [stare at the figure menacingly]
-- Kalle on siin => Hello
 
 Survival Instinct: Yeah I know that look. Unfortunately, being angry will not get you off this beach.
 
-Survival Instinct: Look, I was out all day yesterday - what the hell happened? Where are we?
+Survival Instinct: Look, I was out all day yesterday - what the hell happened? Where are we? 
 
 - I feel like I am in Spain. The S is silent.
 - I have no clue - do you?
@@ -17,16 +16,15 @@ Survival Instinct: So no clue, huh. Looks like a beach to me. There seems to be 
 Survival Instinct: How do you feel?
 
 - There’s quite a bit of pain in my everywhere.
+
 - Get lost, Survival Instinct, Let me be. => END
 
 Survival Instinct: Yeah, I thought as much. Can you move?
 
-- I’m not sure I can. Or if I know how to?  => END
-- I could if I knew which keys to press...  => END
+- I’m not sure I can. Or if I know how to?  
+- I could if I knew which keys to press...  
 
-~ Hello
-
-Kalle: Ma olen tagasi
-- ooooo => END
+Survival Instinct: Once you’ve caught your breath, just use WASD or arrow keys to move around.
+do appearMoveInstructions = true
 
 => END
