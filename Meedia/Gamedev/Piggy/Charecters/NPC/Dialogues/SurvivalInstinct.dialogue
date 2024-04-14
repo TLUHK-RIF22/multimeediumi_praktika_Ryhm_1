@@ -17,7 +17,9 @@ Survival Instinct: How do you feel?
 
 - There’s quite a bit of pain in my everywhere.
 
-- Get lost, Survival Instinct, Let me be. => END
+- Get lost, Survival Instinct, Let me be. 
+do timesInteracted = timesInteracted + 2
+=> END
 
 Survival Instinct: Yeah, I thought as much. Can you move?
 
