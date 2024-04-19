@@ -18,3 +18,6 @@ res://MapElements/TreeC.tscn
 res://MapElements/TreeD.tscn
 res://MapElements/TreeE.tscn
 res://MapElements/TreeF.tscn
+res://Items/Scene/KeyBig.tscn
+res://Items/KeyBig.tres
+res://Items/Scene/apple.tscn

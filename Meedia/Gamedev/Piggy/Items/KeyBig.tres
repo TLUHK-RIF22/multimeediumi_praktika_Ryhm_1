@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://dsm7vwogkxt38"]
+
+[ext_resource type="Texture2D" uid="uid://cylkivjfvl13k" path="res://Sprites/key_big.png" id="1_dlisg"]
+[ext_resource type="PackedScene" uid="uid://ccikrodxesjgw" path="res://Items/Scene/KeyBig.tscn" id="2_8wc5e"]
+[ext_resource type="Script" path="res://Pickup/item.gd" id="3_f858y"]
+
+[resource]
+script = ExtResource("3_f858y")
+name = "KeyBig"
+scene = ExtResource("2_8wc5e")
+icon = ExtResource("1_dlisg")
