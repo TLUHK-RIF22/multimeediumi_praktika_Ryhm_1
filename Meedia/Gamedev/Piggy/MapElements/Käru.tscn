@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1kt6oxih286t"]
+
+[ext_resource type="Texture2D" uid="uid://70r0q7l1g8as" path="res://Sprites/Käru.png" id="1_wjfxm"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y3mbn"]
+radius = 14.0
+height = 48.0
+
+[node name="Käru" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Käru" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(-10, -16)
+texture = ExtResource("1_wjfxm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+visible = false
+position = Vector2(-2, -1)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_y3mbn")
