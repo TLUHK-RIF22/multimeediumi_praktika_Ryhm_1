@@ -1,12 +1,14 @@
 extends Area2D
 @onready var canvas_layer = %CanvasLayer
-@export var fadeOutTimer: int = 3
+@export var fadeOutTimer: int = 1
+
 var entered = false
 @onready var animation_player = %AnimationPlayer
 
 
 func _on_body_entered(_body):
 	entered = true
+	Global.canMove = false
 	canvas_layer.visible = true
 	if canvas_layer.visible:
 		animation_player.play("fade_out")
