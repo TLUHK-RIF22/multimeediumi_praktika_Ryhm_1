@@ -1,3 +1,6 @@
+Timer
+ColorRect
+CanvasLayer
 Control
 PanelContainer
 Panel
@@ -6,9 +9,7 @@ CollisionShape2D
 Area2D
 Player
 TileMap
-ColorRect
 AnimatedSprite2D
 HBoxContainer
 Button
 AudioStreamPlayer
-AudioStreamPlayer2D
