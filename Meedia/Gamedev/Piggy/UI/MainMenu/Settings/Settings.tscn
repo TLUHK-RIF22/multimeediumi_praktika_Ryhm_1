@@ -5,23 +5,23 @@
 [ext_resource type="AudioStream" uid="uid://cu8l14cttsk3s" path="res://Audio/menüü põhi.mp3" id="3_6lvkd"]
 [ext_resource type="PackedScene" uid="uid://brb13itbq0yo1" path="res://UI/MainMenu/BG.tscn" id="3_6olj3"]
 [ext_resource type="Script" path="res://UI/MainMenu/Button.gd" id="4_wcxox"]
-[ext_resource type="Texture2D" uid="uid://s10b8h1ts20" path="res://Sprites/audio_on_and_mute.jpg" id="5_q1bbk"]
+[ext_resource type="Texture2D" uid="uid://0a0ohj0rbft4" path="res://UI/PausMenu/Mute_Unmute.png" id="5_wyo7r"]
 
 [sub_resource type="Theme" id="Theme_lmmoa"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_m3a8y"]
-atlas = ExtResource("5_q1bbk")
-region = Rect2(4000, 0, 4000, 5334)
+[sub_resource type="AtlasTexture" id="AtlasTexture_chtj1"]
+atlas = ExtResource("5_wyo7r")
+region = Rect2(0, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_grt8l"]
-atlas = ExtResource("5_q1bbk")
-region = Rect2(0, 0, 4000, 5334)
+[sub_resource type="AtlasTexture" id="AtlasTexture_sul0a"]
+atlas = ExtResource("5_wyo7r")
+region = Rect2(16, 16, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fmg52"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_m3a8y")
+"texture": SubResource("AtlasTexture_chtj1")
 }],
 "loop": true,
 "name": &"muted",
@@ -29,7 +29,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_grt8l")
+"texture": SubResource("AtlasTexture_sul0a")
 }],
 "loop": true,
 "name": &"unmuted",
@@ -110,22 +110,19 @@ horizontal_alignment = 1
 [node name="MusicSprite" type="AnimatedSprite2D" parent="Panel2/ColorRect/VBoxContainer/BackgroundMusic"]
 unique_name_in_owner = true
 position = Vector2(86, 6)
-scale = Vector2(0.00415002, 0.00253268)
 sprite_frames = SubResource("SpriteFrames_fmg52")
 animation = &"unmuted"
 
 [node name="MusicButton" type="Button" parent="Panel2/ColorRect/VBoxContainer/BackgroundMusic/MusicSprite"]
-offset_left = -1927.7
-offset_top = -2763.87
-offset_right = -1918.7
-offset_bottom = -2736.87
-scale = Vector2(454.01, 206.315)
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 10.0
+offset_bottom = 10.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_c0ulu")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_lwglk")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_jds6h")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_lv5fu")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_2xg0g")
-metadata/_edit_lock_ = true
 
 [node name="MusicSlider" type="HSlider" parent="Panel2/ColorRect/VBoxContainer"]
 unique_name_in_owner = true
@@ -146,16 +143,15 @@ horizontal_alignment = 1
 [node name="SFXSprite" type="AnimatedSprite2D" parent="Panel2/ColorRect/VBoxContainer/SFX"]
 unique_name_in_owner = true
 position = Vector2(57, 6)
-scale = Vector2(0.00415002, 0.00253268)
+scale = Vector2(1.333, 1)
 sprite_frames = SubResource("SpriteFrames_fmg52")
 animation = &"unmuted"
 
 [node name="SFXButton" type="Button" parent="Panel2/ColorRect/VBoxContainer/SFX/SFXSprite"]
-offset_left = -1927.7
-offset_top = -2763.87
-offset_right = -1918.7
-offset_bottom = -2736.87
-scale = Vector2(454.01, 206.315)
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 10.0
+offset_bottom = 10.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_c0ulu")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_lwglk")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_jds6h")

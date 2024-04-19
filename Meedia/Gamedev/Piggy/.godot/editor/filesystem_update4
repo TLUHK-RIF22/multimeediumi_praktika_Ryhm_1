@@ -16,3 +16,5 @@ res://Levels/Spikes/Spikes.tscn
 res://Charecters/Siga/Scenes/player_spikes.gd
 res://Levels/Spikes/Spikes.gd
 res://LevelHoping/Entrance.tscn
+res://UI/MainMenu/Settings/Settings.tscn
+res://UI/PausMenu/paus_menu.tscn
