@@ -1,22 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://dxlhg88jqsjou"]
+[gd_scene load_steps=3 format=3 uid="uid://c0siug1wu6irr"]
 
-[ext_resource type="Texture2D" uid="uid://2e0wdnflvsko" path="res://Tiles/Tileset2.0.png" id="1_1ajan"]
+[ext_resource type="Texture2D" uid="uid://2e0wdnflvsko" path="res://Tiles/Tileset2.0.png" id="1_hterl"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wr0ow"]
-radius = 5.0
+radius = 2.0
+height = 12.0
 
-[node name="TreeB" type="Node2D"]
+[node name="RockB" type="Node2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="Tileset2_0" type="Sprite2D" parent="StaticBody2D"]
-position = Vector2(0, -17)
-texture = ExtResource("1_1ajan")
+position = Vector2(-1, -5)
+texture = ExtResource("1_hterl")
 region_enabled = true
-region_rect = Rect2(832, 256, 64, 64)
+region_rect = Rect2(832, 32, 32, 32)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-visible = false
-position = Vector2(0, 3)
+position = Vector2(-8, 4)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_wr0ow")

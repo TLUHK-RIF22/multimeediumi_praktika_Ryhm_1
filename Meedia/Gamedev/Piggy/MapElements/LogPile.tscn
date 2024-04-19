@@ -1,0 +1,173 @@
+[gd_scene load_steps=3 format=3 uid="uid://nva3b0laym5d"]
+
+[ext_resource type="Texture2D" uid="uid://2e0wdnflvsko" path="res://Tiles/Tileset2.0.png" id="1_nfcm1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iuoek"]
+size = Vector2(28, 95)
+
+[node name="LogPile" type="Node2D"]
+position = Vector2(-40, 30)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Tileset2_0" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(0, -17)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_1" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(12, -17)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_2" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(24, -17)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_3" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(36, -17)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_4" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(48, -17)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_5" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(60, -17)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_6" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(71, -17)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_7" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(83, -17)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_8" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(6, -27)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_9" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(18, -27)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_10" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(30, -27)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_11" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(42, -27)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_12" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(54, -27)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_13" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(65, -27)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_14" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(77, -27)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_15" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(12, -37)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_16" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(24, -37)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_17" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(36, -37)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_18" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(48, -37)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_19" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(59, -37)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_20" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(71, -37)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_21" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(18, -47)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_22" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(30, -47)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_23" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(42, -47)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_24" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(53, -47)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="Tileset2_25" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(65, -47)
+texture = ExtResource("1_nfcm1")
+region_enabled = true
+region_rect = Rect2(832, 0, 32, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+visible = false
+position = Vector2(41, -16)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_iuoek")
