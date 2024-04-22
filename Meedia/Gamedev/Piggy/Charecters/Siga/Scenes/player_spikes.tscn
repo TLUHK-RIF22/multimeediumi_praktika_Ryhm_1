@@ -279,8 +279,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o1lpi"]
-radius = 6.5
-height = 19.0
+radius = 9.0
+height = 27.0
 
 [sub_resource type="Animation" id="Animation_nbacc"]
 length = 0.001
@@ -689,7 +689,7 @@ sprite_frames = SubResource("SpriteFrames_3kbif")
 animation = &"Idle_Up"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, 12.5)
+position = Vector2(-1, 10)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_o1lpi")
 
@@ -711,7 +711,6 @@ parameters/walk/blend_position = Vector2(-0.0889077, 0.00547254)
 unique_name_in_owner = true
 visible = false
 script = ExtResource("10_2xrfo")
-fadeInTimer = 1
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
 offset_left = -114.0

@@ -9,6 +9,7 @@
 [ext_resource type="Script" path="res://Audio/AudioStreamPlayer.gd" id="6_wherr"]
 
 [node name="Spikes" type="Node2D"]
+y_sort_enabled = true
 script = ExtResource("1_1eoqm")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -18,7 +19,7 @@ position = Vector2(240, 135)
 position = Vector2(0, 1)
 
 [node name="player_spikes" parent="." instance=ExtResource("5_xp57m")]
-position = Vector2(242, 242)
+position = Vector2(251, 240)
 collision_layer = 3
 collision_mask = 3
 

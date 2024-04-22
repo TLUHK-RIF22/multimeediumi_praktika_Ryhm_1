@@ -4,3 +4,8 @@ res://Items/apple.tres
 res://Items/KeyBig.tres
 res://MapElements/Laut.tscn
 res://MapElements/ancestral_flame.tscn
+res://MapElements/ancestral_flame_v2.tscn
+res://Levels/LevelC2.tscn
+res://Levels/Spikes/Ground.tscn
+res://Levels/Spikes/Spikes.tscn
+res://Charecters/Siga/Scenes/player_spikes.tscn

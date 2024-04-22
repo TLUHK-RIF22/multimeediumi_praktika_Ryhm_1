@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://ch8wnk4slan78"]
+[gd_scene load_steps=23 format=3 uid="uid://ch8wnk4slan78"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_jhued"]
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="2_1cl0b"]
@@ -22,7 +22,6 @@
 [ext_resource type="PackedScene" uid="uid://nva3b0laym5d" path="res://MapElements/LogPile.tscn" id="20_qiou5"]
 [ext_resource type="PackedScene" uid="uid://c5h6i1vrldhsx" path="res://Pickup/pickup.tscn" id="21_is6f1"]
 [ext_resource type="Resource" uid="uid://dsm7vwogkxt38" path="res://Items/KeyBig.tres" id="22_wvyri"]
-[ext_resource type="PackedScene" uid="uid://kcwsrvq1ga1g" path="res://MapElements/ancestral_flame.tscn" id="23_pxtxh"]
 
 [node name="LevelB2" type="Node2D"]
 process_mode = 1
@@ -97,6 +96,7 @@ offset_left = -31.0
 offset_top = -53.0
 offset_right = 9.0
 offset_bottom = -13.0
+metadata/_edit_use_anchors_ = true
 
 [node name="TreeB" parent="Trees" instance=ExtResource("13_ems0t")]
 position = Vector2(285, 666)
@@ -308,6 +308,7 @@ offset_left = -31.0
 offset_top = -53.0
 offset_right = 9.0
 offset_bottom = -13.0
+metadata/_edit_use_anchors_ = true
 
 [node name="RockB" parent="Rocks" instance=ExtResource("18_02ch6")]
 position = Vector2(950, 826)
@@ -432,6 +433,3 @@ position = Vector2(861, 672)
 
 [node name="LogPile" parent="." instance=ExtResource("20_qiou5")]
 position = Vector2(657, 385)
-
-[node name="ancestral_flame" parent="." instance=ExtResource("23_pxtxh")]
-position = Vector2(841, 411)
