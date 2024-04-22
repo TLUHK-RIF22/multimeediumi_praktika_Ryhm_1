@@ -109,15 +109,14 @@ y_sort_enabled = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D"]
+[node name="Flame" type="AnimatedSprite2D" parent="StaticBody2D"]
 modulate = Color(1, 1, 1, 0.870588)
 position = Vector2(1, -25)
 sprite_frames = SubResource("SpriteFrames_qdbe4")
 animation = &"Flame"
 autoplay = "Flame"
 
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="StaticBody2D"]
-modulate = Color(1, 1, 1, 0.870588)
+[node name="Bottom" type="AnimatedSprite2D" parent="StaticBody2D"]
 position = Vector2(1, -25)
 sprite_frames = SubResource("SpriteFrames_qdbe4")
 animation = &"Bottot"
