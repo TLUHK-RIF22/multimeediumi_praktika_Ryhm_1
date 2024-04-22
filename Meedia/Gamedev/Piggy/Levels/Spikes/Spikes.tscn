@@ -29,6 +29,7 @@ visible = false
 unique_name_in_owner = true
 stream = ExtResource("5_gcccy")
 autoplay = true
+bus = &"Music"
 script = ExtResource("6_wherr")
 
 [node name="LevelB2" parent="." instance=ExtResource("6_eq840")]
