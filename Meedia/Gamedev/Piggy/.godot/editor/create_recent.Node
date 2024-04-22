@@ -1,3 +1,5 @@
+Sprite2D
+AnimatedSprite2D
 Control
 Timer
 ColorRect
@@ -9,6 +11,5 @@ CollisionShape2D
 Area2D
 Player
 TileMap
-AnimatedSprite2D
 HBoxContainer
 Button

@@ -1,0 +1,70 @@
+[gd_scene load_steps=10 format=3 uid="uid://kcwsrvq1ga1g"]
+
+[ext_resource type="Texture2D" uid="uid://5n04kkg4w360" path="res://Sprites/ancestral_flame_3_48x64.png" id="1_2rfh8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ah5g"]
+atlas = ExtResource("1_2rfh8")
+region = Rect2(0, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ps01e"]
+atlas = ExtResource("1_2rfh8")
+region = Rect2(48, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lj2mk"]
+atlas = ExtResource("1_2rfh8")
+region = Rect2(96, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5fq3b"]
+atlas = ExtResource("1_2rfh8")
+region = Rect2(144, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bexeq"]
+atlas = ExtResource("1_2rfh8")
+region = Rect2(192, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r3doj"]
+atlas = ExtResource("1_2rfh8")
+region = Rect2(240, 0, 48, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qdbe4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ah5g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ps01e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lj2mk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5fq3b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bexeq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r3doj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_brulw"]
+size = Vector2(28, 12)
+
+[node name="ancestral_flame" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D"]
+position = Vector2(1, -25)
+sprite_frames = SubResource("SpriteFrames_qdbe4")
+autoplay = "default"
+frame_progress = 0.953632
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_brulw")
