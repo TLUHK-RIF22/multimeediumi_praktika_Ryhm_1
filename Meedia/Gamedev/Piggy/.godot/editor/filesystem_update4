@@ -4,3 +4,4 @@ res://Items/apple.tres
 res://Items/KeyBig.tres
 res://UI/MainMenu/Settings/Settings.tscn
 res://Levels/LevelB2.tscn
+res://MapElements/LogPile.tscn
