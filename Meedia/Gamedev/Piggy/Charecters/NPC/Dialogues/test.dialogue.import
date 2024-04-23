@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://d1b5467daqi20"
+path="res://.godot/imported/test.dialogue-5cac0671783975f4d1ad03a03bae7eb9.tres"
+
+[deps]
+
+source_file="res://Charecters/NPC/Dialogues/test.dialogue"
+dest_files=["res://.godot/imported/test.dialogue-5cac0671783975f4d1ad03a03bae7eb9.tres"]
+
+[params]
+
+defaults=true

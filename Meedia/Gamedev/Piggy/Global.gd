@@ -18,3 +18,8 @@ var fadeToBlack: bool = true
 var appearMoveInstructions: bool = false
 var appearPickupItemInstructions: bool = false
 var timesInteracted: int = 0
+
+#Rufus Interact
+var RufusTimesInteracted: int = 0
+var RufusWellMentioned: int = 0
+var GoDownWell: int = 0

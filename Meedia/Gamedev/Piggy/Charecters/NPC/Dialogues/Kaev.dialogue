@@ -1,20 +1,19 @@
-~ start
+~ WellMentioned0
 
-Well: Well well well
-- Hi
-- Not now => END
-
-Well: Well well
-do timesInteracted = 1
-
-
+Piggy: This is a well for getting drinking water. As it isn't covered, leaves, pigs and other debris may fall in occasionally.
 => END
 
-~ Second
-Well: Well, Well, well well
+~ WellMentioned1NoRope
 
-~ HasRope
+Piggy: This is a well for getting drinking water. If you had a rope, you could get down there and find the sunglasses.
+=> END
 
-Well: Nice rope
 
+~ WellMentioned1HasRope
+
+Piggy: This is a well for getting drinking water.
+- Use your rope to lower yourself into the well
+- Leave. => END
+
+do Global.GoDownWell = 1
 => END

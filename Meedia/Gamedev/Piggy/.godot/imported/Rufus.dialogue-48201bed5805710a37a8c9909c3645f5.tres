@@ -6,44 +6,78 @@
 script = ExtResource("1_opml2")
 using_states = PackedStringArray()
 titles = {
-"Second": "14",
-"start": "3"
+"PlanToLeaveTheIsland": "3",
+"Second": "18"
 }
-character_names = PackedStringArray("Rufus")
+character_names = PackedStringArray("Rufus", "Piggy")
 first_title = "3"
 lines = {
 "1": {
 "id": "1",
 "next_id": "3",
-"text": "start",
+"text": "PlanToLeaveTheIsland",
 "type": "title"
 },
 "11": {
 "id": "11",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "RufusTimesInteracted"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "12",
+"type": "mutation"
+},
+"12": {
+"id": "12",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "RufusWellMentioned"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "15",
+"type": "mutation"
+},
+"15": {
+"id": "15",
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
 },
-"13": {
-"id": "13",
-"next_id": "14",
+"17": {
+"id": "17",
+"next_id": "18",
 "text": "Second",
 "type": "title"
 },
-"14": {
+"18": {
 "character": "Rufus",
 "character_replacements": Array[Dictionary]([]),
-"id": "14",
-"next_id": "16",
+"id": "18",
+"next_id": "20",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "U again",
+"text": "[[Sunglasses are the best|Nice day|Hi there]]",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "U again",
+"translation_key": "[[Sunglasses are the best|Nice day|Hi there]]",
 "type": "dialogue"
 },
-"16": {
-"id": "16",
+"20": {
+"id": "20",
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
@@ -55,30 +89,41 @@ lines = {
 "next_id": "4",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "Hello world!",
+"text": "If you plan to leave the island with a stolen boat, you should have a pair of cool sunglasses to match your energy.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Hello world!",
+"translation_key": "If you plan to leave the island with a stolen boat, you should have a pair of cool sunglasses to match your energy.",
 "type": "dialogue"
 },
 "4": {
-"character": "",
+"character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
 "id": "4",
-"next_id": "7",
+"next_id": "4.2",
 "next_id_after": "7",
 "notes": "",
 "responses": PackedStringArray("4", "5"),
 "tags": PackedStringArray(),
-"text": "Hi",
+"text": "I'm sure they'd help against the sun and spray, too.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Hi",
+"translation_key": "I'm sure they'd help against the sun and spray, too.",
 "type": "response"
 },
+"4.2": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "7",
+"next_id_after": "7",
+"tags": PackedStringArray(),
+"text": "I'm sure they'd help against the sun and spray, too.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I'm sure they'd help against the sun and spray, too.",
+"type": "dialogue"
+},
 "5": {
-"character": "",
+"character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
 "id": "5",
-"next_id": "end",
+"next_id": "5.2",
 "next_id_after": "7",
 "notes": "",
 "tags": PackedStringArray(),
@@ -87,6 +132,17 @@ lines = {
 "translation_key": "Not now",
 "type": "response"
 },
+"5.2": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "end",
+"next_id_after": "7",
+"tags": PackedStringArray(),
+"text": "Not now",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Not now",
+"type": "dialogue"
+},
 "7": {
 "character": "Rufus",
 "character_replacements": Array[Dictionary]([]),
@@ -94,43 +150,55 @@ lines = {
 "next_id": "8",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "Hi",
+"text": "Exactly. Unfortunately mine dropped to the bottom of that well over there. They're yours if you can find them.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Hi",
+"translation_key": "Exactly. Unfortunately mine dropped to the bottom of that well over there. They're yours if you can find them.",
 "type": "dialogue"
 },
 "8": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
 "id": "8",
-"mutation": {
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "timesInteracted"
-}, {
-"type": "assignment",
-"value": "="
-}, {
-"type": "number",
-"value": 1
-}])
+"next_id": "8.2",
+"next_id_after": "11",
+"notes": "",
+"responses": PackedStringArray("8"),
+"tags": PackedStringArray(),
+"text": "That doesn't seem promising",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "That doesn't seem promising",
+"type": "response"
 },
+"8.2": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
 "next_id": "11",
-"type": "mutation"
+"next_id_after": "11",
+"tags": PackedStringArray(),
+"text": "That doesn't seem promising",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "That doesn't seem promising",
+"type": "dialogue"
 }
 }
-raw_text = "~ start
+raw_text = "~ PlanToLeaveTheIsland
 
-Rufus: Hello world!
-- Hi
-- Not now => END
+Rufus: If you plan to leave the island with a stolen boat, you should have a pair of cool sunglasses to match your energy. 
+- Piggy: I'm sure they'd help against the sun and spray, too.
+- Piggy: Not now => END
 
-Rufus: Hi
-do timesInteracted = 1
+Rufus: Exactly. Unfortunately mine dropped to the bottom of that well over there. They're yours if you can find them.
+- Piggy: That doesn't seem promising
+
+
+do RufusTimesInteracted = 1
+do RufusWellMentioned = 1
 
 
 => END
 
 ~ Second
-Rufus: U again
+Rufus: [[Sunglasses are the best|Nice day|Hi there]]
 
 => END"
 metadata/dialogue_manager_version = "2.36.0"

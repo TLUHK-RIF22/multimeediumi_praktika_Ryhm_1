@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://ch8wnk4slan78"]
+[gd_scene load_steps=27 format=3 uid="uid://ch8wnk4slan78"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_jhued"]
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="2_1cl0b"]
@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://c5h6i1vrldhsx" path="res://Pickup/pickup.tscn" id="21_is6f1"]
 [ext_resource type="Resource" uid="uid://dsm7vwogkxt38" path="res://Items/KeyBig.tres" id="22_wvyri"]
 [ext_resource type="PackedScene" uid="uid://b1xwm34tdrlmy" path="res://Charecters/NPC/Scenes/Rufus.tscn" id="23_2los2"]
+[ext_resource type="Script" path="res://Charecters/NPC/Rufus.gd" id="23_c283o"]
 [ext_resource type="Resource" uid="uid://cj85dk8ggd5pr" path="res://Items/sunglasses.tres" id="24_f744a"]
 [ext_resource type="Resource" uid="uid://0xjdhtesk0w6" path="res://Items/rope.tres" id="25_sgqr8"]
 [ext_resource type="PackedScene" uid="uid://bcb4no7y4tj4u" path="res://Charecters/NPC/Scenes/Kaev_A.tscn" id="27_qmovh"]
@@ -436,6 +437,7 @@ position = Vector2(657, 385)
 
 [node name="Rufus" parent="." instance=ExtResource("23_2los2")]
 position = Vector2(778, 539)
+script = ExtResource("23_c283o")
 
 [node name="Sunglasses" parent="." instance=ExtResource("21_is6f1")]
 position = Vector2(869, 459)
@@ -447,3 +449,7 @@ item = ExtResource("25_sgqr8")
 
 [node name="Kaev_A" parent="." instance=ExtResource("27_qmovh")]
 position = Vector2(657, 429)
+
+[node name="LevelWellPos" type="Marker2D" parent="."]
+position = Vector2(563, 431)
+scale = Vector2(4, 4)

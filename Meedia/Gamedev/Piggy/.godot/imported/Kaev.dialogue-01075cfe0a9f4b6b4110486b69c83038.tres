@@ -6,124 +6,75 @@
 script = ExtResource("1_cbsw0")
 using_states = PackedStringArray()
 titles = {
-"HasRope": "18",
-"Second": "14",
-"start": "3"
+"WellMentioned0": "3",
+"WellMentioned1HasRope": "14",
+"WellMentioned1NoRope": "8"
 }
-character_names = PackedStringArray("Well")
+character_names = PackedStringArray("Piggy")
 first_title = "3"
 lines = {
 "1": {
 "id": "1",
 "next_id": "3",
-"text": "start",
+"text": "WellMentioned0",
 "type": "title"
 },
-"11": {
-"id": "11",
-"is_snippet": false,
-"next_id": "end",
-"type": "goto"
-},
-"13": {
-"id": "13",
+"12": {
+"id": "12",
 "next_id": "14",
-"text": "Second",
+"text": "WellMentioned1HasRope",
 "type": "title"
 },
 "14": {
-"character": "Well",
+"character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
 "id": "14",
-"next_id": "18",
+"next_id": "15",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "Well, Well, well well",
+"text": "This is a well for getting drinking water.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Well, Well, well well",
+"translation_key": "This is a well for getting drinking water.",
 "type": "dialogue"
+},
+"15": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "15",
+"next_id": "18",
+"next_id_after": "18",
+"notes": "",
+"responses": PackedStringArray("15", "16"),
+"tags": PackedStringArray(),
+"text": "Use your rope to lower yourself into the well",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Use your rope to lower yourself into the well",
+"type": "response"
 },
 "16": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
 "id": "16",
-"next_id": "18",
-"text": "HasRope",
-"type": "title"
+"next_id": "end",
+"next_id_after": "18",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Leave.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Leave.",
+"type": "response"
 },
 "18": {
-"character": "Well",
-"character_replacements": Array[Dictionary]([]),
 "id": "18",
-"next_id": "20",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "Nice rope",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Nice rope",
-"type": "dialogue"
-},
-"20": {
-"id": "20",
-"is_snippet": false,
-"next_id": "end",
-"type": "goto"
-},
-"3": {
-"character": "Well",
-"character_replacements": Array[Dictionary]([]),
-"id": "3",
-"next_id": "4",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "Well well well",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Well well well",
-"type": "dialogue"
-},
-"4": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
-"id": "4",
-"next_id": "7",
-"next_id_after": "7",
-"notes": "",
-"responses": PackedStringArray("4", "5"),
-"tags": PackedStringArray(),
-"text": "Hi",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Hi",
-"type": "response"
-},
-"5": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
-"id": "5",
-"next_id": "end",
-"next_id_after": "7",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "Not now",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Not now",
-"type": "response"
-},
-"7": {
-"character": "Well",
-"character_replacements": Array[Dictionary]([]),
-"id": "7",
-"next_id": "8",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "Well well",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Well well",
-"type": "dialogue"
-},
-"8": {
-"id": "8",
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
-"value": "timesInteracted"
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "GoDownWell"
 }, {
 "type": "assignment",
 "value": "="
@@ -132,28 +83,75 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "11",
+"next_id": "19",
 "type": "mutation"
+},
+"19": {
+"id": "19",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"3": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "This is a well for getting drinking water. As it isn't covered, leaves, pigs and other debris may fall in occasionally.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "This is a well for getting drinking water. As it isn't covered, leaves, pigs and other debris may fall in occasionally.",
+"type": "dialogue"
+},
+"4": {
+"id": "4",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"6": {
+"id": "6",
+"next_id": "8",
+"text": "WellMentioned1NoRope",
+"type": "title"
+},
+"8": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "8",
+"next_id": "9",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "This is a well for getting drinking water. If you had a rope, you could get down there and find the sunglasses.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "This is a well for getting drinking water. If you had a rope, you could get down there and find the sunglasses.",
+"type": "dialogue"
+},
+"9": {
+"id": "9",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
 }
 }
-raw_text = "~ start
+raw_text = "~ WellMentioned0
 
-Well: Well well well
-- Hi
-- Not now => END
-
-Well: Well well
-do timesInteracted = 1
-
-
+Piggy: This is a well for getting drinking water. As it isn't covered, leaves, pigs and other debris may fall in occasionally.
 => END
 
-~ Second
-Well: Well, Well, well well
+~ WellMentioned1NoRope
 
-~ HasRope
+Piggy: This is a well for getting drinking water. If you had a rope, you could get down there and find the sunglasses.
+=> END
 
-Well: Nice rope
 
+~ WellMentioned1HasRope
+
+Piggy: This is a well for getting drinking water.
+- Use your rope to lower yourself into the well
+- Leave. => END
+
+do Global.GoDownWell = 1
 => END"
 metadata/dialogue_manager_version = "2.36.0"

@@ -1,16 +1,20 @@
-~ start
+~ PlanToLeaveTheIsland
 
-Rufus: Hello world!
-- Hi
-- Not now => END
+Rufus: If you plan to leave the island with a stolen boat, you should have a pair of cool sunglasses to match your energy. 
+- Piggy: I'm sure they'd help against the sun and spray, too.
+- Piggy: Not now => END
 
-Rufus: Hi
-do timesInteracted = 1
+Rufus: Exactly. Unfortunately mine dropped to the bottom of that well over there. They're yours if you can find them.
+- Piggy: That doesn't seem promising
+
+
+do RufusTimesInteracted = 1
+do RufusWellMentioned = 1
 
 
 => END
 
 ~ Second
-Rufus: U again
+Rufus: [[Sunglasses are the best|Nice day|Hi there]]
 
 => END

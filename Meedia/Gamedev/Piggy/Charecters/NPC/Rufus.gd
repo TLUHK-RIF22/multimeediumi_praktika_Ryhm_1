@@ -13,16 +13,12 @@ func _unhandled_input(_event):
 		
 	if player_in_range && Global.canMove:
 		
-		if Input.is_action_just_pressed("Interact") && Global.timesInteracted == 0:
+		if Input.is_action_just_pressed("Interact") && Global.RufusTimesInteracted == 0:
 			Global.canMove = false
-			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "start")
-		elif Input.is_action_just_pressed("Interact") && Global.timesInteracted == 1 && !item in inventory:
+			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "PlanToLeaveTheIsland")
+		elif Input.is_action_just_pressed("Interact") && Global.RufusTimesInteracted == 1:
 			Global.canMove = false
 			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "Second")
-		elif Input.is_action_just_pressed("Interact") && Global.timesInteracted == 1 && item in inventory:
-			Global.canMove = false
-			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "HasApple")
-			inventory.erase(item)
 	else:
 		Global.canMove = true
 		

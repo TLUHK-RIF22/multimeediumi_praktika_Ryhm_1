@@ -1,10 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://b1xwm34tdrlmy"]
+[gd_scene load_steps=8 format=3 uid="uid://b1xwm34tdrlmy"]
 
-[ext_resource type="Script" path="res://Charecters/NPC/Rufus.gd" id="1_2nhxh"]
 [ext_resource type="PackedScene" uid="uid://2qtpgse6674" path="res://UI/PopUpInfo/PopupInfo.tscn" id="1_vmwyo"]
 [ext_resource type="Texture2D" uid="uid://kgyrh4ady834" path="res://Charecters/NPC/Idle_NPC_Pig_Brown_Down-Sheet.png" id="2_p45ap"]
-[ext_resource type="Resource" uid="uid://dl5a0noklpt8w" path="res://Items/apple.tres" id="2_y4hhn"]
-[ext_resource type="Resource" uid="uid://dslpnltmr7vso" path="res://Charecters/NPC/Dialogues/Rufus.dialogue" id="3_xb5ua"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y7nsm"]
 atlas = ExtResource("2_p45ap")
@@ -37,9 +34,6 @@ radius = 32.0156
 
 [node name="Rufus" type="CharacterBody2D"]
 y_sort_enabled = true
-script = ExtResource("1_2nhxh")
-item = ExtResource("2_y4hhn")
-Speech = ExtResource("3_xb5ua")
 
 [node name="PopupInfo" parent="." instance=ExtResource("1_vmwyo")]
 labelText = " E "

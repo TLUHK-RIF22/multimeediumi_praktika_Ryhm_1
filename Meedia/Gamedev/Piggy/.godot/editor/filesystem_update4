@@ -22,3 +22,4 @@ res://Charecters/NPC/Kaev.gd
 res://Charecters/NPC/Scenes/Kaev_A.tscn
 res://Levels/LevelWell.tscn
 res://tile_map.tscn
+res://Global.gd
