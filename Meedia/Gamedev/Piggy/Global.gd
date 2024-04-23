@@ -11,7 +11,7 @@ var itemGivenToNPC: Array = []
 
 var isMutedMusic = false
 var isMutedSFX = false
-var canMove = true
+var canMove: bool
 var fadeToBlack: bool = true
 
 #Tutorial level

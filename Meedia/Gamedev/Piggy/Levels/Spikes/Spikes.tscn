@@ -5,8 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://UI/Game_manager/game_manager.tscn" id="4_ddl8f"]
 [ext_resource type="AudioStream" uid="uid://e8gdro5q81mg" path="res://Audio/müstiline taust cduurpuukuur.mp3" id="5_gcccy"]
 [ext_resource type="PackedScene" uid="uid://bnpy81qqv4kht" path="res://Charecters/Siga/Scenes/player_spikes.tscn" id="5_xp57m"]
-[ext_resource type="PackedScene" uid="uid://b15owbn0t1vak" path="res://LevelHoping/Gate2.tscn" id="6_eq840"]
 [ext_resource type="Script" path="res://Audio/AudioStreamPlayer.gd" id="6_wherr"]
+[ext_resource type="PackedScene" uid="uid://ctaolhdvrgb82" path="res://LevelHoping/Gate_levelSwap.tscn" id="7_hyj5g"]
 
 [node name="Spikes" type="Node2D"]
 y_sort_enabled = true
@@ -33,8 +33,7 @@ autoplay = true
 bus = &"Music"
 script = ExtResource("6_wherr")
 
-[node name="LevelB2" parent="." instance=ExtResource("6_eq840")]
-position = Vector2(240, 295)
-collision_layer = 2
-collision_mask = 2
-fadeOutTimer = 3
+[node name="Exit" parent="." instance=ExtResource("7_hyj5g")]
+position = Vector2(235, 328)
+scale = Vector2(13.6279, 1.64434)
+level = "LevelB2"

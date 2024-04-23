@@ -1,6 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://cxp54qdqfuvlm"]
+[gd_scene load_steps=7 format=3 uid="uid://ctaolhdvrgb82"]
 
-[ext_resource type="Script" path="res://LevelHoping/Gate.gd" id="1_ojspy"]
+[ext_resource type="Script" path="res://LevelHoping/Gate_levelSwap.gd" id="1_iahe0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bqfll"]
 size = Vector2(33, 31)
@@ -59,10 +59,10 @@ _data = {
 "fade_out": SubResource("Animation_bmy1v")
 }
 
-[node name="Gate" type="Area2D"]
+[node name="Gate_LevelSwap" type="Area2D"]
 collision_layer = 2
 collision_mask = 2
-script = ExtResource("1_ojspy")
+script = ExtResource("1_iahe0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -1.5)

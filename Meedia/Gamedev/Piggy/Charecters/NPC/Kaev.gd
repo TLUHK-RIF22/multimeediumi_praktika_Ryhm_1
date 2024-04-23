@@ -4,6 +4,7 @@ extends CharacterBody2D
 var player_in_range = false
 
 @export var item:Item
+@export var level: Resource
 
 @export var Speech: DialogueResource
 var inventory = Global._content
@@ -30,7 +31,7 @@ func _unhandled_input(_event):
 		Global.GoDownWell = 2
 	if player_in_range && Global.GoDownWell == 2:
 		Global.from_level = get_parent().name
-		get_tree().change_scene_to_file("res://Levels/LevelWell.tscn")
+		get_tree().change_scene_to_file(level.resource_path)
 
 			
 func _on_area_2d_body_entered(body):

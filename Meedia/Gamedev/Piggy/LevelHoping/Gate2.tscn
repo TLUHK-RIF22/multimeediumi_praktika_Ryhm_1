@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://b15owbn0t1vak"]
 
-[ext_resource type="Script" path="res://LevelHoping/Gate.gd" id="1_ae32h"]
+[ext_resource type="Script" path="res://LevelHoping/Gate_levelSwap.gd" id="1_jacji"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bqfll"]
 size = Vector2(480, 32)
@@ -60,8 +60,7 @@ _data = {
 }
 
 [node name="Area2D" type="Area2D"]
-script = ExtResource("1_ae32h")
-fadeOutTimer = 1
+script = ExtResource("1_jacji")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_bqfll")

@@ -26,7 +26,7 @@ func _physics_process(_delta):
 		#update veleocity
 		velocity = velocity.normalized()
 		velocity = input_direction * move_speed
-	if !Global.canMove:
+	if Global.canMove == false:
 		velocity = input_direction * 0
 	
 	# Move and Slide 
