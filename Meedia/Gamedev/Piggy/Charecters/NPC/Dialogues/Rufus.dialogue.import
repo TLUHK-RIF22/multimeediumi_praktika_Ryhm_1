@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://dslpnltmr7vso"
+path="res://.godot/imported/Rufus.dialogue-48201bed5805710a37a8c9909c3645f5.tres"
+
+[deps]
+
+source_file="res://Charecters/NPC/Dialogues/Rufus.dialogue"
+dest_files=["res://.godot/imported/Rufus.dialogue-48201bed5805710a37a8c9909c3645f5.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://0xjdhtesk0w6"]
+
+[ext_resource type="Texture2D" uid="uid://blpnmyvhjhxoe" path="res://Sprites/Rope.png" id="1_g1mmv"]
+[ext_resource type="PackedScene" uid="uid://ckqt5fol64j7j" path="res://Items/Scene/rope.tscn" id="2_fxdpr"]
+[ext_resource type="Script" path="res://Pickup/item.gd" id="3_pstxb"]
+
+[resource]
+script = ExtResource("3_pstxb")
+name = "rope"
+scene = ExtResource("2_fxdpr")
+icon = ExtResource("1_g1mmv")

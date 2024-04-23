@@ -1,0 +1,20 @@
+~ start
+
+Well: Well well well
+- Hi
+- Not now => END
+
+Well: Well well
+do timesInteracted = 1
+
+
+=> END
+
+~ Second
+Well: Well, Well, well well
+
+~ HasRope
+
+Well: Nice rope
+
+=> END

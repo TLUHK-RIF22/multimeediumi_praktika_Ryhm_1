@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://cgcxej2wnqt3m"]
+[gd_scene load_steps=3 format=3 uid="uid://cgcxej2wnqt3m"]
 
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="1_othm2"]
-[ext_resource type="PackedScene" uid="uid://05hp6b10etca" path="res://MapElements/ancestral_flame_v2.tscn" id="3_mmvaa"]
 [ext_resource type="PackedScene" uid="uid://b15owbn0t1vak" path="res://LevelHoping/Gate2.tscn" id="4_b6q8p"]
 
 [node name="Ground" type="Node2D"]
@@ -15,42 +14,3 @@ position = Vector2(389, -1007)
 scale = Vector2(0.255826, -2.7253)
 collision_layer = 2
 collision_mask = 2
-
-[node name="ancestral_flame_v2" parent="." instance=ExtResource("3_mmvaa")]
-position = Vector2(55, 80)
-
-[node name="ancestral_flame_v14" parent="." instance=ExtResource("3_mmvaa")]
-position = Vector2(219, 35)
-
-[node name="ancestral_flame_v3" parent="." instance=ExtResource("3_mmvaa")]
-position = Vector2(433, 80)
-
-[node name="ancestral_flame_v4" parent="." instance=ExtResource("3_mmvaa")]
-position = Vector2(56, -139)
-
-[node name="ancestral_flame_v5" parent="." instance=ExtResource("3_mmvaa")]
-position = Vector2(434, -139)
-
-[node name="ancestral_flame_v6" parent="." instance=ExtResource("3_mmvaa")]
-position = Vector2(55, -353)
-
-[node name="ancestral_flame_v7" parent="." instance=ExtResource("3_mmvaa")]
-position = Vector2(433, -353)
-
-[node name="ancestral_flame_v8" parent="." instance=ExtResource("3_mmvaa")]
-position = Vector2(64, -537)
-
-[node name="ancestral_flame_v9" parent="." instance=ExtResource("3_mmvaa")]
-position = Vector2(442, -537)
-
-[node name="ancestral_flame_v10" parent="." instance=ExtResource("3_mmvaa")]
-position = Vector2(57, -737)
-
-[node name="ancestral_flame_v11" parent="." instance=ExtResource("3_mmvaa")]
-position = Vector2(435, -737)
-
-[node name="ancestral_flame_v12" parent="." instance=ExtResource("3_mmvaa")]
-position = Vector2(59, -852)
-
-[node name="ancestral_flame_v13" parent="." instance=ExtResource("3_mmvaa")]
-position = Vector2(437, -852)

@@ -1,0 +1,41 @@
+[gd_scene load_steps=8 format=3 uid="uid://bcb4no7y4tj4u"]
+
+[ext_resource type="Script" path="res://Charecters/NPC/Kaev.gd" id="1_m7l3g"]
+[ext_resource type="Resource" uid="uid://0xjdhtesk0w6" path="res://Items/rope.tres" id="2_jkk51"]
+[ext_resource type="Resource" uid="uid://dm7gne4kklbyu" path="res://Charecters/NPC/Dialogues/Kaev.dialogue" id="3_3i5oe"]
+[ext_resource type="PackedScene" uid="uid://2qtpgse6674" path="res://UI/PopUpInfo/PopupInfo.tscn" id="4_dy1fk"]
+[ext_resource type="Texture2D" uid="uid://c0xn35iu7jouj" path="res://Sprites/Kaevukatsetus.png" id="5_v7clt"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yuoak"]
+radius = 7.0
+height = 44.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qpq4t"]
+radius = 32.0156
+
+[node name="Kaev_A" type="CharacterBody2D"]
+y_sort_enabled = true
+script = ExtResource("1_m7l3g")
+item = ExtResource("2_jkk51")
+Speech = ExtResource("3_3i5oe")
+
+[node name="PopupInfo" parent="." instance=ExtResource("4_dy1fk")]
+labelText = " E "
+
+[node name="Kaevukatsetus" type="Sprite2D" parent="."]
+position = Vector2(-7, -21)
+texture = ExtResource("5_v7clt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, 1)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_yuoak")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_qpq4t")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

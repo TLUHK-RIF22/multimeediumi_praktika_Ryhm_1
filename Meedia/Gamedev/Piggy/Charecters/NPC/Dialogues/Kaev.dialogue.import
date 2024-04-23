@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://dm7gne4kklbyu"
+path="res://.godot/imported/Kaev.dialogue-01075cfe0a9f4b6b4110486b69c83038.tres"
+
+[deps]
+
+source_file="res://Charecters/NPC/Dialogues/Kaev.dialogue"
+dest_files=["res://.godot/imported/Kaev.dialogue-01075cfe0a9f4b6b4110486b69c83038.tres"]
+
+[params]
+
+defaults=true

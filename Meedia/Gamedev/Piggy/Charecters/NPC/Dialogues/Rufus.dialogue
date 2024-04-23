@@ -1,0 +1,16 @@
+~ start
+
+Rufus: Hello world!
+- Hi
+- Not now => END
+
+Rufus: Hi
+do timesInteracted = 1
+
+
+=> END
+
+~ Second
+Rufus: U again
+
+=> END

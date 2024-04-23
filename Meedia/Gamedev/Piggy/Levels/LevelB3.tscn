@@ -12,7 +12,6 @@
 [ext_resource type="Script" path="res://Charecters/NPC/SurvivalInstinct.gd" id="17_npyo5"]
 [ext_resource type="Resource" uid="uid://c23jhiv6h82dm" path="res://Charecters/NPC/Dialogues/SurvivalInstinct.dialogue" id="18_w5bc6"]
 
-
 [node name="LevelB3" type="Node2D"]
 process_mode = 1
 y_sort_enabled = true

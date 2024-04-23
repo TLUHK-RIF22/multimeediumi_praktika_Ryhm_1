@@ -4,9 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="2_gnxt3"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/player.tscn" id="2_taw7f"]
 [ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://UI/Game_manager/game_manager.tscn" id="6_esnfp"]
-[ext_resource type="PackedScene" uid="uid://05hp6b10etca" path="res://MapElements/ancestral_flame_v2.tscn" id="7_jb8mp"]
 [ext_resource type="AudioStream" uid="uid://cu8l14cttsk3s" path="res://Audio/menüü põhi.mp3" id="7_uv07r"]
 [ext_resource type="PackedScene" uid="uid://cxp54qdqfuvlm" path="res://LevelHoping/Gate.tscn" id="8_27bmt"]
+[ext_resource type="PackedScene" uid="uid://kcwsrvq1ga1g" path="res://MapElements/ancestral_flame.tscn" id="8_yjq4c"]
 
 [node name="LevelC2" type="Node2D"]
 process_mode = 1
@@ -68,5 +68,11 @@ offset_right = 9.0
 offset_bottom = -13.0
 metadata/_edit_use_anchors_ = true
 
-[node name="ancestral_flame_v2" parent="." instance=ExtResource("7_jb8mp")]
-position = Vector2(256, 333)
+[node name="ancestral_flame" parent="." instance=ExtResource("8_yjq4c")]
+position = Vector2(208, 333)
+
+[node name="ancestral_flame2" parent="." instance=ExtResource("8_yjq4c")]
+position = Vector2(329, 367)
+
+[node name="ancestral_flame3" parent="." instance=ExtResource("8_yjq4c")]
+position = Vector2(281, 304)
