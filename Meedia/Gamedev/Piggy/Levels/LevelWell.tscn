@@ -45,7 +45,7 @@ offset_bottom = -13.0
 metadata/_edit_use_anchors_ = true
 
 [node name="LevelB2Pos" type="Marker2D" parent="."]
-position = Vector2(765, 708)
+position = Vector2(708, 779)
 scale = Vector2(4, 4)
 
 [node name="LevelB2" parent="." instance=ExtResource("5_k105q")]

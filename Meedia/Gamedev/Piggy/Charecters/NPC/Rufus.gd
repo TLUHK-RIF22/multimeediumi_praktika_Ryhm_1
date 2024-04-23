@@ -3,11 +3,10 @@ extends CharacterBody2D
 
 var player_in_range = false
 
-@export var item:Item
+
 
 @export var Speech: DialogueResource
-var inventory = Global._content
-var itemGivenToNPC = Global.itemGivenToNPC
+
 
 func _unhandled_input(_event):
 		
@@ -32,12 +31,4 @@ func _on_area_2d_body_exited(body):
 	if body.has_method("Player"):
 		player_in_range = false
 		
-# Give item to NPC
-func give_item(itemVar):
-	inventory.erase(itemVar)
 
-
-func check_if_got_item(itemVar):
-	if itemVar in inventory :
-		itemGivenToNPC.append(self.name+itemVar.name)
-		give_item(itemVar)
