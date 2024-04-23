@@ -4,8 +4,8 @@
 [ext_resource type="AudioStream" uid="uid://cu8l14cttsk3s" path="res://Audio/menüü põhi.mp3" id="2_30hip"]
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="3_3cqu8"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/player.tscn" id="4_ct6pb"]
-[ext_resource type="PackedScene" uid="uid://cxp54qdqfuvlm" path="res://LevelHoping/Gate.tscn" id="5_k105q"]
 [ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://UI/Game_manager/game_manager.tscn" id="7_uind4"]
+[ext_resource type="PackedScene" uid="uid://ctaolhdvrgb82" path="res://LevelHoping/Gate_levelSwap.tscn" id="8_onxx3"]
 [ext_resource type="PackedScene" uid="uid://c5h6i1vrldhsx" path="res://Pickup/pickup.tscn" id="19_8mp1t"]
 [ext_resource type="Resource" uid="uid://cj85dk8ggd5pr" path="res://Items/sunglasses.tres" id="23_j1fls"]
 
@@ -44,14 +44,14 @@ offset_right = 9.0
 offset_bottom = -13.0
 metadata/_edit_use_anchors_ = true
 
-[node name="LevelB2Pos" type="Marker2D" parent="."]
+[node name="LevelB2Kaev_A" type="Marker2D" parent="."]
 position = Vector2(708, 779)
 scale = Vector2(4, 4)
-
-[node name="LevelB2" parent="." instance=ExtResource("5_k105q")]
-position = Vector2(881, 814)
-scale = Vector2(1.4795, -1.87061)
 
 [node name="Sunglasses" parent="." instance=ExtResource("19_8mp1t")]
 position = Vector2(905, 655)
 item = ExtResource("23_j1fls")
+
+[node name="Exit" parent="." instance=ExtResource("8_onxx3")]
+position = Vector2(880, 817)
+level = "LevelB2"

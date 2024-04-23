@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://ch8wnk4slan78"]
+[gd_scene load_steps=32 format=3 uid="uid://ch8wnk4slan78"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_jhued"]
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="2_1cl0b"]
@@ -28,7 +28,6 @@
 [ext_resource type="Script" path="res://Charecters/NPC/Kaev.gd" id="27_fdaqs"]
 [ext_resource type="PackedScene" uid="uid://bcb4no7y4tj4u" path="res://Charecters/NPC/Scenes/Kaev_A.tscn" id="27_qmovh"]
 [ext_resource type="Resource" uid="uid://dm7gne4kklbyu" path="res://Charecters/NPC/Dialogues/Kaev.dialogue" id="28_gsbhh"]
-[ext_resource type="PackedScene" uid="uid://cco4kg1r16cw" path="res://Levels/LevelWell.tscn" id="29_vuipn"]
 [ext_resource type="PackedScene" uid="uid://babkdciiqwt6o" path="res://MapElements/bonfire.tscn" id="30_e4kvj"]
 [ext_resource type="PackedScene" uid="uid://tlwcj8vprsdq" path="res://MapElements/flame.tscn" id="31_72wwf"]
 [ext_resource type="PackedScene" uid="uid://ctaolhdvrgb82" path="res://LevelHoping/Gate_levelSwap.tscn" id="33_5fkyu"]
@@ -446,10 +445,10 @@ item = ExtResource("25_sgqr8")
 position = Vector2(657, 429)
 script = ExtResource("27_fdaqs")
 item = ExtResource("25_sgqr8")
-level = ExtResource("29_vuipn")
+level = "LevelWell"
 Speech = ExtResource("28_gsbhh")
 
-[node name="LevelWellPos" type="Marker2D" parent="."]
+[node name="LevelWellExit" type="Marker2D" parent="."]
 position = Vector2(563, 431)
 scale = Vector2(4, 4)
 

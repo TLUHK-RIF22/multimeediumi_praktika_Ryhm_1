@@ -4,23 +4,23 @@ extends CharacterBody2D
 var player_in_range = false
 
 @export var item:Item
-@export var level: Resource
+@export var level: String
 
 @export var Speech: DialogueResource
 var inventory = Global._content
 var itemGivenToNPC = Global.itemGivenToNPC
-#@export var NewLevel: PackedScene
+
 func _unhandled_input(_event):
 		
 	if player_in_range && Global.canMove:
 		
-		if Input.is_action_just_pressed("Interact") && Global.RufusWellMentioned == 0:
+		if Input.is_action_just_pressed("ui_accept") && Global.RufusWellMentioned == 0:
 			Global.canMove = false
 			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "WellMentioned0")
-		elif Input.is_action_just_pressed("Interact") && Global.RufusWellMentioned == 1 && !item in inventory:
+		elif Input.is_action_just_pressed("ui_accept") && Global.RufusWellMentioned == 1 && !item in inventory:
 			Global.canMove = false
 			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "WellMentioned1NoRope")
-		elif Input.is_action_just_pressed("Interact") && Global.RufusWellMentioned == 1 && item in inventory:
+		elif Input.is_action_just_pressed("ui_accept") && Global.RufusWellMentioned == 1 && item in inventory:
 			Global.canMove = false
 			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "WellMentioned1HasRope")
 	else:
@@ -29,9 +29,11 @@ func _unhandled_input(_event):
 	if player_in_range && Global.GoDownWell == 1:
 		inventory.erase(item)
 		Global.GoDownWell = 2
-	if player_in_range && Global.GoDownWell == 2:
-		Global.from_level = get_parent().name
-		get_tree().change_scene_to_file(level.resource_path)
+		Global.from_level = get_parent().name + self.name
+		get_tree().change_scene_to_file("res://Levels/"+level+".tscn")
+	if Input.is_action_just_pressed("ui_accept") && player_in_range && Global.GoDownWell == 2:
+		Global.from_level = get_parent().name + self.name
+		get_tree().change_scene_to_file("res://Levels/"+level+".tscn")
 
 			
 func _on_area_2d_body_entered(body):

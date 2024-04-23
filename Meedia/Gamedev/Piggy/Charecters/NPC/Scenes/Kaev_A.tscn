@@ -14,7 +14,7 @@ radius = 32.0156
 y_sort_enabled = true
 
 [node name="PopupInfo" parent="." instance=ExtResource("4_dy1fk")]
-labelText = " E "
+labelText = " Enter "
 
 [node name="Kaevukatsetus" type="Sprite2D" parent="."]
 position = Vector2(-7, -21)
