@@ -1,0 +1,72 @@
+[gd_scene load_steps=10 format=3 uid="uid://babkdciiqwt6o"]
+
+[ext_resource type="Texture2D" uid="uid://d0urn34vlnl1u" path="res://Sprites/bonfire.png" id="1_kxh3a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v5m8g"]
+atlas = ExtResource("1_kxh3a")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_airht"]
+atlas = ExtResource("1_kxh3a")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wyi14"]
+atlas = ExtResource("1_kxh3a")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uq8t8"]
+atlas = ExtResource("1_kxh3a")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2cn8j"]
+atlas = ExtResource("1_kxh3a")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8sg2g"]
+atlas = ExtResource("1_kxh3a")
+region = Rect2(240, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qdbe4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v5m8g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_airht")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wyi14")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uq8t8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2cn8j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8sg2g")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vqwo1"]
+radius = 8.0
+height = 46.0
+
+[node name="bonfire" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D"]
+position = Vector2(0, -1)
+sprite_frames = SubResource("SpriteFrames_qdbe4")
+autoplay = "default"
+frame_progress = 0.381454
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1, 5)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_vqwo1")

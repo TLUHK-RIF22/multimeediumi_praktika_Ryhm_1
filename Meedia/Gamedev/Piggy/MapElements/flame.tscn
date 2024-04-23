@@ -1,0 +1,70 @@
+[gd_scene load_steps=10 format=3 uid="uid://tlwcj8vprsdq"]
+
+[ext_resource type="Texture2D" uid="uid://ckp6svlrxlje4" path="res://Sprites/flame_1.png" id="1_7iv87"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fkro3"]
+atlas = ExtResource("1_7iv87")
+region = Rect2(0, 0, 48, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bdt8y"]
+atlas = ExtResource("1_7iv87")
+region = Rect2(48, 0, 48, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cyt8b"]
+atlas = ExtResource("1_7iv87")
+region = Rect2(96, 0, 48, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_glwdq"]
+atlas = ExtResource("1_7iv87")
+region = Rect2(144, 0, 48, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cjuox"]
+atlas = ExtResource("1_7iv87")
+region = Rect2(192, 0, 48, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6pelq"]
+atlas = ExtResource("1_7iv87")
+region = Rect2(240, 0, 48, 31)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qdbe4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fkro3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bdt8y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cyt8b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_glwdq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cjuox")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6pelq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_brulw"]
+size = Vector2(30, 8)
+
+[node name="flame" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D"]
+position = Vector2(0, -9)
+sprite_frames = SubResource("SpriteFrames_qdbe4")
+autoplay = "default"
+frame_progress = 0.953632
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_brulw")
