@@ -34,7 +34,7 @@ func update_animation_parameters(move_input : Vector2):
 # Choose state based on what is happening wiht the player
 
 func pick_new_state():
-	if(velocity != Vector2.ZERO):
+	#if(velocity != Vector2.ZERO):
 		state_machine.travel("walk")
-	else:
-		state_machine.travel("idle")
+	#else:
+	#	state_machine.travel("idle")
