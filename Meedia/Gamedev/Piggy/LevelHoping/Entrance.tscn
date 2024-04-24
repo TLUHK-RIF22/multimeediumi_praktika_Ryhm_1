@@ -59,7 +59,7 @@ _data = {
 "fade_out": SubResource("Animation_bmy1v")
 }
 
-[node name="Area2D" type="Area2D"]
+[node name="Entrance" type="Area2D"]
 collision_layer = 2
 collision_mask = 2
 script = ExtResource("1_w8l0w")

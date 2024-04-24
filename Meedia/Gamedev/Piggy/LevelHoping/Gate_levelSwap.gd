@@ -11,7 +11,6 @@ signal StopMoving
 func _on_body_entered(_body):
 	emit_signal("StopMoving")
 	entered = true
-	Global.canMove = false
 	canvas_layer.visible = true
 	animation_player.play("fade_out")
 	await(get_tree().create_timer(fadeOutTimer).timeout)

@@ -14,3 +14,6 @@ res://LevelHoping/Gate_levelSwap.gd
 res://LevelHoping/Gate_levelSwap.tscn
 res://Levels/LevelB3.tscn
 res://Levels/LevelC3.tscn
+res://LevelHoping/Entrance.tscn
+res://LevelHoping/Entrance.gd
+res://Levels/Spikes.tscn
