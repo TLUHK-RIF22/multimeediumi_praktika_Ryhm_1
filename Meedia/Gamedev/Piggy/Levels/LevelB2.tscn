@@ -63,6 +63,7 @@ scale = Vector2(16, 16)
 
 [node name="Spikes" parent="." instance=ExtResource("9_hl140")]
 position = Vector2(912, 403)
+level = "Spikes"
 
 [node name="GameManager" parent="." instance=ExtResource("6_88mpu")]
 position = Vector2(857, 276)
@@ -474,10 +475,6 @@ level = "LevelB3"
 position = Vector2(1492, 400)
 scale = Vector2(4, 4)
 
-[node name="West_House" parent="." instance=ExtResource("33_5fkyu")]
-position = Vector2(819, 335)
-level = "LevelB2"
-
 [node name="LevelB2West_House" type="Marker2D" parent="."]
 position = Vector2(622, 331)
 scale = Vector2(4, 4)
@@ -489,3 +486,7 @@ scale = Vector2(4, 4)
 [node name="LevelB3B2_W" type="Marker2D" parent="."]
 position = Vector2(751, 903)
 scale = Vector2(4, 4)
+
+[node name="West_House" parent="." instance=ExtResource("9_hl140")]
+position = Vector2(816, 321)
+level = "LevelB2"

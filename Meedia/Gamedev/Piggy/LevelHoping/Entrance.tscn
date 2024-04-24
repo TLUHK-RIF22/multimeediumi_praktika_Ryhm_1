@@ -1,9 +1,63 @@
-[gd_scene load_steps=4 format=3 uid="uid://dscndc5iq3qrs"]
+[gd_scene load_steps=8 format=3 uid="uid://dscndc5iq3qrs"]
 
 [ext_resource type="Script" path="res://LevelHoping/Entrance.gd" id="1_w8l0w"]
 [ext_resource type="PackedScene" uid="uid://2qtpgse6674" path="res://UI/PopUpInfo/PopupInfo.tscn" id="2_y5ai1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_d6ej1"]
+
+[sub_resource type="Animation" id="Animation_ibnu1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_vopp2"]
+resource_name = "fade_in"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1, 2.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_bmy1v"]
+resource_name = "fade_out"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_atdk1"]
+_data = {
+"RESET": SubResource("Animation_ibnu1"),
+"fade_in": SubResource("Animation_vopp2"),
+"fade_out": SubResource("Animation_bmy1v")
+}
 
 [node name="Area2D" type="Area2D"]
 collision_layer = 2
@@ -15,6 +69,23 @@ scale = Vector2(3.24, 3.16)
 shape = SubResource("CircleShape2D_d6ej1")
 
 [node name="PopupInfo" parent="." instance=ExtResource("2_y5ai1")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+unique_name_in_owner = true
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_left = -114.0
+offset_top = -35.0
+offset_right = 584.0
+offset_bottom = 294.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/ColorRect"]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_atdk1")
+}
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

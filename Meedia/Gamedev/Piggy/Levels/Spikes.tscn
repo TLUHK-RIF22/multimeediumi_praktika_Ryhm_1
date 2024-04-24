@@ -1,0 +1,39 @@
+[gd_scene load_steps=8 format=3 uid="uid://cmhq455db5pq8"]
+
+[ext_resource type="Script" path="res://Levels/Spikes/Spikes.gd" id="1_p5ni7"]
+[ext_resource type="PackedScene" uid="uid://cgcxej2wnqt3m" path="res://Levels/Spikes/Ground.tscn" id="2_4osht"]
+[ext_resource type="PackedScene" uid="uid://bnpy81qqv4kht" path="res://Charecters/Siga/Scenes/player_spikes.tscn" id="3_v1u3r"]
+[ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://UI/Game_manager/game_manager.tscn" id="4_awvn3"]
+[ext_resource type="AudioStream" uid="uid://e8gdro5q81mg" path="res://Audio/müstiline taust cduurpuukuur.mp3" id="5_y37vm"]
+[ext_resource type="Script" path="res://Audio/AudioStreamPlayer.gd" id="6_dgpgp"]
+[ext_resource type="PackedScene" uid="uid://ctaolhdvrgb82" path="res://LevelHoping/Gate_levelSwap.tscn" id="7_1oefq"]
+
+[node name="Spikes" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_p5ni7")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(240, 135)
+
+[node name="Ground" parent="." instance=ExtResource("2_4osht")]
+position = Vector2(0, 1)
+
+[node name="player_spikes" parent="." instance=ExtResource("3_v1u3r")]
+position = Vector2(251, 240)
+collision_layer = 3
+collision_mask = 3
+
+[node name="GameManager" parent="." instance=ExtResource("4_awvn3")]
+visible = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("5_y37vm")
+autoplay = true
+bus = &"Music"
+script = ExtResource("6_dgpgp")
+
+[node name="Exit" parent="." instance=ExtResource("7_1oefq")]
+position = Vector2(235, 328)
+scale = Vector2(13.6279, 1.64434)
+level = "LevelB2"
