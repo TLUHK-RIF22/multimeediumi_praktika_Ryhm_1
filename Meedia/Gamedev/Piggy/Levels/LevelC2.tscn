@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://pcf5mbd40567"]
+[gd_scene load_steps=9 format=3 uid="uid://pcf5mbd40567"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_h1u53"]
+[ext_resource type="Script" path="res://Levels/StopMoving.gd" id="2_8crnb"]
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="2_gnxt3"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/player.tscn" id="2_taw7f"]
 [ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://UI/Game_manager/game_manager.tscn" id="6_esnfp"]
@@ -14,12 +15,35 @@ y_sort_enabled = true
 position = Vector2(1, 0)
 script = ExtResource("1_h1u53")
 
+[node name="StopMoving" type="Node" parent="."]
+script = ExtResource("2_8crnb")
+
+[node name="Gate_LevelSwap" parent="StopMoving" instance=ExtResource("8_1sols")]
+position = Vector2(-80, 472)
+level = "LevelB2"
+GateName = "B2_N"
+
+[node name="Gate_LevelSwap2" parent="StopMoving" instance=ExtResource("8_1sols")]
+position = Vector2(-79, 555)
+level = "LevelB2"
+GateName = "B2_S"
+
+[node name="Gate_LevelSwap3" parent="StopMoving" instance=ExtResource("8_1sols")]
+position = Vector2(756, 1013)
+level = "LevelC3"
+GateName = "C3_E"
+
+[node name="Gate_LevelSwap4" parent="StopMoving" instance=ExtResource("8_1sols")]
+position = Vector2(451, 835)
+level = "LevelC3"
+GateName = "C3_E"
+
 [node name="LevelB2C2_N" type="Marker2D" parent="."]
-position = Vector2(105, 395)
+position = Vector2(21, 464)
 scale = Vector2(4, 4)
 
 [node name="LevelB2C2_S" type="Marker2D" parent="."]
-position = Vector2(85, 559)
+position = Vector2(14, 560)
 scale = Vector2(4, 4)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
@@ -69,28 +93,16 @@ position = Vector2(329, 367)
 [node name="ancestral_flame3" parent="." instance=ExtResource("8_yjq4c")]
 position = Vector2(281, 304)
 
-[node name="B2_N" parent="." instance=ExtResource("8_1sols")]
-position = Vector2(1, 488)
-scale = Vector2(0.924589, 2.72369)
-level = "LevelB2"
-
-[node name="B2_S" parent="." instance=ExtResource("8_1sols")]
-position = Vector2(5, 565)
-scale = Vector2(1.79495, 1.63986)
-level = "LevelB2"
-
 [node name="LevelC3C2_E" type="Marker2D" parent="."]
-position = Vector2(752, 977)
+position = Vector2(755, 952)
 scale = Vector2(4, 4)
-
-[node name="C3_W" parent="." instance=ExtResource("8_1sols")]
-position = Vector2(454, 835)
-level = "LevelC3"
 
 [node name="LevelC3C2_W" type="Marker2D" parent="."]
 position = Vector2(452, 784)
 scale = Vector2(4, 4)
 
-[node name="C3_E" parent="." instance=ExtResource("8_1sols")]
-position = Vector2(754, 1028)
-level = "LevelC3"
+[connection signal="StopMoving" from="StopMoving" to="Player" method="_on_stop_moving_stop_moving"]
+[connection signal="StopMoving" from="StopMoving/Gate_LevelSwap" to="StopMoving" method="_on_gate_level_swap_stop_moving"]
+[connection signal="StopMoving" from="StopMoving/Gate_LevelSwap2" to="StopMoving" method="_on_gate_level_swap_2_stop_moving"]
+[connection signal="StopMoving" from="StopMoving/Gate_LevelSwap3" to="StopMoving" method="_on_gate_level_swap_stop_moving"]
+[connection signal="StopMoving" from="StopMoving/Gate_LevelSwap4" to="StopMoving" method="_on_gate_level_swap_2_stop_moving"]

@@ -21,13 +21,13 @@ func _physics_process(_delta):
 		Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left"),
 		Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 	)
-	if Global.canMove:
-		update_animation_parameters(input_direction)
-		#update veleocity
-		velocity = velocity.normalized()
-		velocity = input_direction * move_speed
-	if Global.canMove == false:
-		velocity = input_direction * 0
+#if Global.canMove:
+	update_animation_parameters(input_direction)
+	#update veleocity
+	velocity = velocity.normalized()
+	velocity = input_direction * move_speed
+#if Global.canMove == false:
+	#velocity = input_direction * 0
 	
 	# Move and Slide 
 	move_and_slide()
@@ -70,3 +70,7 @@ var inventory:Inventory = Inventory.new()
 
 func _on_sleep_timer_timeout():
 	idleTimer = true
+
+
+func _on_stop_moving_stop_moving():
+	move_speed = 0

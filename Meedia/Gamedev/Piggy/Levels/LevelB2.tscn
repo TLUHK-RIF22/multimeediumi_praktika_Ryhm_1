@@ -1,8 +1,9 @@
-[gd_scene load_steps=32 format=3 uid="uid://ch8wnk4slan78"]
+[gd_scene load_steps=33 format=3 uid="uid://ch8wnk4slan78"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_jhued"]
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="2_1cl0b"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/player.tscn" id="2_fyam3"]
+[ext_resource type="Script" path="res://Levels/StopMoving.gd" id="2_o866t"]
 [ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://UI/Game_manager/game_manager.tscn" id="6_88mpu"]
 [ext_resource type="PackedScene" uid="uid://dscndc5iq3qrs" path="res://LevelHoping/Entrance.tscn" id="9_hl140"]
 [ext_resource type="PackedScene" uid="uid://dyumucr6nntlt" path="res://MapElements/TreeA.tscn" id="12_elb5v"]
@@ -37,6 +38,24 @@ process_mode = 1
 y_sort_enabled = true
 position = Vector2(1, 0)
 script = ExtResource("1_jhued")
+
+[node name="StopMoving" type="Node" parent="."]
+script = ExtResource("2_o866t")
+
+[node name="Gate_LevelSwap" parent="StopMoving" instance=ExtResource("33_5fkyu")]
+position = Vector2(1549, 400)
+level = "LevelC2"
+GateName = "C2_N"
+
+[node name="Gate_LevelSwap2" parent="StopMoving" instance=ExtResource("33_5fkyu")]
+position = Vector2(1548, 567)
+level = "LevelC2"
+GateName = "C2_S"
+
+[node name="Gate_LevelSwap3" parent="StopMoving" instance=ExtResource("33_5fkyu")]
+position = Vector2(752, 958)
+level = "LevelB3"
+GateName = "B3_W"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
@@ -459,18 +478,6 @@ position = Vector2(900, 499)
 [node name="flame" parent="." instance=ExtResource("31_72wwf")]
 position = Vector2(935, 464)
 
-[node name="C2_N" parent="." instance=ExtResource("33_5fkyu")]
-position = Vector2(1551, 400)
-level = "LevelC2"
-
-[node name="C2_S" parent="." instance=ExtResource("33_5fkyu")]
-position = Vector2(1554, 554)
-level = "LevelC2"
-
-[node name="B3_W" parent="." instance=ExtResource("33_5fkyu")]
-position = Vector2(751, 985)
-level = "LevelB3"
-
 [node name="LevelC2B2_N" type="Marker2D" parent="."]
 position = Vector2(1492, 400)
 scale = Vector2(4, 4)
@@ -490,3 +497,8 @@ scale = Vector2(4, 4)
 [node name="West_House" parent="." instance=ExtResource("9_hl140")]
 position = Vector2(816, 321)
 level = "LevelB2"
+
+[connection signal="StopMoving" from="StopMoving" to="Player" method="_on_stop_moving_stop_moving"]
+[connection signal="StopMoving" from="StopMoving/Gate_LevelSwap" to="StopMoving" method="_on_gate_level_swap_stop_moving"]
+[connection signal="StopMoving" from="StopMoving/Gate_LevelSwap2" to="StopMoving" method="_on_gate_level_swap_2_stop_moving"]
+[connection signal="StopMoving" from="StopMoving/Gate_LevelSwap3" to="StopMoving" method="_on_gate_level_swap_stop_moving"]
