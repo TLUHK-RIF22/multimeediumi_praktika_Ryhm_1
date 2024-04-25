@@ -15,3 +15,12 @@ res://Levels/StopMoving.gd
 res://Levels/LevelB3.tscn
 res://Charecters/NPC/SurvivalInstinct.gd
 res://Charecters/Siga/Scenes/player.gd
+res://Charecters/Siga/player.tscn
+res://MapElements/RockB.tscn
+res://MapElements/RockA.tscn
+res://MapElements/LogPile.tscn
+res://UI/PopUpInfo/PopupInfo.tscn
+res://MapElements/bonfire.tscn
+res://Charecters/NPC/Scenes/Rufus.tscn
+res://Charecters/NPC/Scenes/SurvivalInstinct.tscn
+res://MapElements/ancestral_flame.tscn

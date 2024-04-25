@@ -2,35 +2,39 @@ class_name Player
 extends CharacterBody2D
 
 @onready var playerWalkingAudioStream = %AudioStreamPlayer_Walking
-@export var move_speed : float = 80
+@export var default_speed: float = 80
+var move_speed : float = default_speed
 @export var starting_direction : Vector2 = Vector2(0,0)
 @onready var sleep_timer = %SleepTimer
 @export var idleTimer = false
-
+var input_direction: Vector2
 # parameters/idle/blend_position
 
 @onready var animation_tree = $AnimationTree
 @onready var state_machine = animation_tree.get("parameters/playback")
+
+var stopTurning = false
 
 func _ready():
 	update_animation_parameters(starting_direction)
 
 func _physics_process(_delta):
 	#get input direction
-	var input_direction = Vector2(
-		Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left"),
-		Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
-	)
-#if Global.canMove:
+	if !stopTurning:
+		input_direction = Vector2(
+			Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left"),
+			Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
+		)
+
 	update_animation_parameters(input_direction)
-	#update veleocity
+
 	velocity = velocity.normalized()
 	velocity = input_direction * move_speed
-#if Global.canMove == false:
-	#velocity = input_direction * 0
+
 	
 	# Move and Slide 
 	move_and_slide()
+	
 	pick_new_state()
 
 	
@@ -74,7 +78,8 @@ func _on_sleep_timer_timeout():
 
 func _on_stop_moving_stop_moving():
 	move_speed = 0
-
+	stopTurning = true
 
 func _on_stop_moving_can_move():
-	move_speed = 80
+	move_speed = default_speed
+	stopTurning = false

@@ -697,19 +697,20 @@ blend_mode = 1
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_kiyym"]
 
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_0e6ob"]
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_oqi0t"]
 advance_mode = 2
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_c6u87"]
 states/End/position = Vector2(903, 100)
-states/Start/position = Vector2(182, 212)
+states/Start/position = Vector2(168, 140)
 states/idle/node = SubResource("AnimationNodeBlendSpace2D_tj654")
 states/idle/position = Vector2(387, 109)
 states/sleep/node = SubResource("AnimationNodeBlendSpace2D_pn75m")
-states/sleep/position = Vector2(510, 190)
+states/sleep/position = Vector2(526, 226)
 states/walk/node = SubResource("AnimationNodeBlendSpace2D_g6v4f")
 states/walk/position = Vector2(592, 100)
-transitions = ["idle", "walk", SubResource("AnimationNodeStateMachineTransition_bxky4"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_mhfug"), "idle", "sleep", SubResource("AnimationNodeStateMachineTransition_6jk4b"), "sleep", "walk", SubResource("AnimationNodeStateMachineTransition_28tvs"), "walk", "sleep", SubResource("AnimationNodeStateMachineTransition_wpwuq"), "sleep", "idle", SubResource("AnimationNodeStateMachineTransition_kiyym"), "Start", "sleep", SubResource("AnimationNodeStateMachineTransition_0e6ob")]
+transitions = ["idle", "walk", SubResource("AnimationNodeStateMachineTransition_bxky4"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_mhfug"), "idle", "sleep", SubResource("AnimationNodeStateMachineTransition_6jk4b"), "sleep", "walk", SubResource("AnimationNodeStateMachineTransition_28tvs"), "walk", "sleep", SubResource("AnimationNodeStateMachineTransition_wpwuq"), "sleep", "idle", SubResource("AnimationNodeStateMachineTransition_kiyym"), "Start", "idle", SubResource("AnimationNodeStateMachineTransition_oqi0t")]
+graph_offset = Vector2(-28, 61)
 
 [sub_resource type="Animation" id="Animation_ibnu1"]
 length = 0.001
@@ -784,6 +785,7 @@ sprite_frames = SubResource("SpriteFrames_3kbif")
 animation = &"Idle_Up"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_0gpt2")
 

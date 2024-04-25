@@ -329,7 +329,7 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(950, 826)
 
 [node name="RockA" parent="Rocks" instance=ExtResource("19_4d4n4")]
-position = Vector2(898, 799)
+position = Vector2(871, 784)
 
 [node name="RockA2" parent="Rocks" instance=ExtResource("19_4d4n4")]
 position = Vector2(1138, 884)

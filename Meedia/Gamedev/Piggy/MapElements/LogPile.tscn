@@ -169,6 +169,7 @@ region_enabled = true
 region_rect = Rect2(832, 0, 32, 32)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+visible = false
 position = Vector2(1.5, -0.999998)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_iuoek")

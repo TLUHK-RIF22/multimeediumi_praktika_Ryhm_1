@@ -3,15 +3,15 @@
 [ext_resource type="Texture2D" uid="uid://2e0wdnflvsko" path="res://Tiles/Tileset2.0.png" id="1_l5ukp"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wr0ow"]
-radius = 5.0
-height = 16.0
+radius = 8.0
+height = 22.0
 
 [node name="RockA" type="Node2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="Tileset2_0" type="Sprite2D" parent="StaticBody2D"]
-position = Vector2(-1, -5)
+position = Vector2(-1, -7)
 texture = ExtResource("1_l5ukp")
 region_enabled = true
 region_rect = Rect2(832, 64, 32, 32)
