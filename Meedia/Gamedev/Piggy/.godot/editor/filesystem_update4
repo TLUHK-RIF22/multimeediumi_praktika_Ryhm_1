@@ -12,3 +12,6 @@ res://Charecters/NPC/Scenes/Kaev_A.tscn
 res://LevelHoping/Gate_levelSwap.tscn
 res://Charecters/NPC/Rufus.gd
 res://Levels/StopMoving.gd
+res://Levels/LevelB3.tscn
+res://Charecters/NPC/SurvivalInstinct.gd
+res://Charecters/Siga/Scenes/player.gd

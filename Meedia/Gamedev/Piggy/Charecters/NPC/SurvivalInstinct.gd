@@ -2,6 +2,8 @@ extends CharacterBody2D
 
 
 var player_in_range = false
+signal StopMoving
+signal CanMove
 
 @export var item:Item
 
@@ -23,23 +25,25 @@ func _unhandled_input(_event):
 		guide_1.visible = true
 		guide_2.visible = true
 		
-	if player_in_range && Global.canMove:
+	if player_in_range:
 		
 		if Global.timesInteracted == 0:
-			Global.canMove = false
+			emit_signal("StopMoving")
 			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "start")
 		elif Input.is_action_just_pressed("Interact") && Global.timesInteracted == 1 && !item in inventory:
-			Global.canMove = false
+			emit_signal("StopMoving")
 			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "DoesntHaveApple")
 		elif Input.is_action_just_pressed("Interact") && Global.timesInteracted == 1 && item in inventory:
-			Global.canMove = false
+			emit_signal("StopMoving")
 			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "HasApple")
 			inventory.erase(item)
+		else:
+			emit_signal("CanMove")
 	elif Global.timesInteracted == 2:
 		%SurvivalInstinct.queue_free()
-		Global.canMove = true
+		emit_signal("CanMove")
 	else:
-		Global.canMove = true
+		emit_signal("CanMove")
 		
 			
 func _on_area_2d_body_entered(body):
