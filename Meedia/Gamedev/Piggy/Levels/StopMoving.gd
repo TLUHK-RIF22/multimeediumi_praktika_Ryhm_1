@@ -33,3 +33,11 @@ func _on_kaev_a_stop_moving():
 
 func _on_kaev_a_can_move():
 	emit_signal("CanMove")
+
+
+func _on_rufus_can_move():
+	emit_signal("CanMove")
+
+
+func _on_rufus_stop_moving():
+	emit_signal("StopMoving")

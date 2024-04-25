@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://ch8wnk4slan78"]
+[gd_scene load_steps=29 format=3 uid="uid://ch8wnk4slan78"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_jhued"]
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="2_1cl0b"]
@@ -24,7 +24,6 @@
 [ext_resource type="PackedScene" uid="uid://b1xwm34tdrlmy" path="res://Charecters/NPC/Scenes/Rufus.tscn" id="23_2los2"]
 [ext_resource type="Script" path="res://Charecters/NPC/Rufus.gd" id="23_c283o"]
 [ext_resource type="Resource" uid="uid://dslpnltmr7vso" path="res://Charecters/NPC/Dialogues/Rufus.dialogue" id="24_6hpw3"]
-[ext_resource type="Resource" uid="uid://cj85dk8ggd5pr" path="res://Items/sunglasses.tres" id="24_f744a"]
 [ext_resource type="Resource" uid="uid://0xjdhtesk0w6" path="res://Items/rope.tres" id="25_sgqr8"]
 [ext_resource type="PackedScene" uid="uid://bcb4no7y4tj4u" path="res://Charecters/NPC/Scenes/Kaev_A.tscn" id="27_qmovh"]
 [ext_resource type="PackedScene" uid="uid://babkdciiqwt6o" path="res://MapElements/bonfire.tscn" id="30_e4kvj"]
@@ -455,10 +454,6 @@ position = Vector2(883, 509)
 script = ExtResource("23_c283o")
 Speech = ExtResource("24_6hpw3")
 
-[node name="Sunglasses" parent="." instance=ExtResource("21_is6f1")]
-position = Vector2(869, 459)
-item = ExtResource("24_f744a")
-
 [node name="Rope" parent="." instance=ExtResource("21_is6f1")]
 position = Vector2(818, 474)
 item = ExtResource("25_sgqr8")
@@ -496,5 +491,7 @@ position = Vector2(656, 423)
 [connection signal="StopMoving" from="StopMoving/Gate_LevelSwap3" to="StopMoving" method="_on_gate_level_swap_stop_moving"]
 [connection signal="StopMoving" from="StopMoving/Entrance" to="StopMoving" method="_on_entrance_stop_moving"]
 [connection signal="StopMoving" from="StopMoving/Entrance2" to="StopMoving" method="_on_entrance_2_stop_moving"]
+[connection signal="CanMove" from="Rufus" to="StopMoving" method="_on_rufus_can_move"]
+[connection signal="StopMoving" from="Rufus" to="StopMoving" method="_on_rufus_stop_moving"]
 [connection signal="CanMove" from="Kaev_A" to="StopMoving" method="_on_kaev_a_can_move"]
 [connection signal="StopMoving" from="Kaev_A" to="StopMoving" method="_on_kaev_a_stop_moving"]

@@ -10,3 +10,5 @@ res://Levels/LevelC2.tscn
 res://LevelHoping/Entrance.tscn
 res://Charecters/NPC/Scenes/Kaev_A.tscn
 res://LevelHoping/Gate_levelSwap.tscn
+res://Charecters/NPC/Rufus.gd
+res://Levels/StopMoving.gd
