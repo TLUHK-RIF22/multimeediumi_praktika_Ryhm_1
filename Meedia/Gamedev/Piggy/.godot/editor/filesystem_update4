@@ -9,3 +9,5 @@ res://Charecters/NPC/SurvivalInstinct.gd
 res://Charecters/NPC/RufusJourney.gd
 res://Levels/StopMoving.gd
 res://Global.gd
+res://Charecters/Siga/Scenes/player.gd
+res://Charecters/Siga/player.tscn

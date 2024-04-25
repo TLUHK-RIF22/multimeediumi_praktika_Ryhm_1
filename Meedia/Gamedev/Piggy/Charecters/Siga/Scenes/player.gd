@@ -79,7 +79,9 @@ func _on_sleep_timer_timeout():
 func _on_stop_moving_stop_moving():
 	move_speed = 0
 	stopTurning = true
+	sleep_timer.stop()
 
 func _on_stop_moving_can_move():
 	move_speed = default_speed
 	stopTurning = false
+	sleep_timer.start()
