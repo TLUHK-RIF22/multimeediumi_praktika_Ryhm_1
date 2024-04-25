@@ -47,6 +47,7 @@ scale = Vector2(4, 4)
 position = Vector2(411, 122)
 scale = Vector2(4, 4)
 
+[connection signal="CanMove" from="StopMoving" to="Player" method="_on_stop_moving_can_move"]
 [connection signal="StopMoving" from="StopMoving" to="Player" method="_on_stop_moving_stop_moving"]
 [connection signal="StopMoving" from="StopMoving/Gate_LevelSwap" to="StopMoving" method="_on_gate_level_swap_stop_moving"]
 [connection signal="StopMoving" from="StopMoving/Gate_LevelSwap2" to="StopMoving" method="_on_gate_level_swap_2_stop_moving"]

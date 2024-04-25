@@ -23,3 +23,6 @@ var timesInteracted: int = 0
 var RufusTimesInteracted: int = 0
 var RufusWellMentioned: int = 0
 var GoDownWell: int = 0
+
+#Spirit Journey
+var SpiritJourney:int = 0

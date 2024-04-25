@@ -37,6 +37,9 @@ func _unhandled_input(_event):
 			emit_signal("StopMoving")
 			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "HasApple")
 			inventory.erase(item)
+		elif Global.timesInteracted == 2:
+			%SurvivalInstinct.queue_free()
+			emit_signal("CanMove")
 		else:
 			emit_signal("CanMove")
 	elif Global.timesInteracted == 2:

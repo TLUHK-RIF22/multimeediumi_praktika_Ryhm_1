@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_b0vli"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_ivln1"]
 
 [resource]
-script = ExtResource("1_b0vli")
+script = ExtResource("1_ivln1")
 using_states = PackedStringArray()
 titles = {
-"DoesntHaveApple": "47",
-"HasApple": "56",
+"DoesntHaveApple": "43",
+"HasApple": "52",
 "start": "3"
 }
 character_names = PackedStringArray("Survival Instinct", "Piggy")
@@ -20,49 +20,36 @@ lines = {
 "type": "title"
 },
 "11": {
-"character": "Survival Instinct",
+"character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
 "id": "11",
-"next_id": "13",
+"next_id": "11.2",
+"next_id_after": "14",
 "notes": "",
-"tags": PackedStringArray(),
-"text": "Yeah I know that look. Unfortunately, being angry will not get you off this beach.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Yeah I know that look. Unfortunately, being angry will not get you off this beach.",
-"type": "dialogue"
-},
-"13": {
-"character": "Survival Instinct",
-"character_replacements": Array[Dictionary]([]),
-"id": "13",
-"next_id": "15",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "Look, I was out all day yesterday - what the hell happened? Where are we?",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Look, I was out all day yesterday - what the hell happened? Where are we?",
-"type": "dialogue"
-},
-"15": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
-"id": "15",
-"next_id": "18",
-"next_id_after": "18",
-"notes": "",
-"responses": PackedStringArray("15", "16"),
+"responses": PackedStringArray("11", "12"),
 "tags": PackedStringArray(),
 "text": "I feel like I am in Spain. The S is silent.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I feel like I am in Spain. The S is silent.",
 "type": "response"
 },
-"16": {
-"character": "",
+"11.2": {
+"character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
-"id": "16",
-"next_id": "18",
-"next_id_after": "18",
+"next_id": "14",
+"next_id_after": "14",
+"tags": PackedStringArray(),
+"text": "I feel like I am in Spain. The S is silent.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I feel like I am in Spain. The S is silent.",
+"type": "dialogue"
+},
+"12": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "12",
+"next_id": "12.2",
+"next_id_after": "14",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "I have no clue - do you?",
@@ -70,11 +57,22 @@ lines = {
 "translation_key": "I have no clue - do you?",
 "type": "response"
 },
-"18": {
+"12.2": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "14",
+"next_id_after": "14",
+"tags": PackedStringArray(),
+"text": "I have no clue - do you?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I have no clue - do you?",
+"type": "dialogue"
+},
+"14": {
 "character": "Survival Instinct",
 "character_replacements": Array[Dictionary]([]),
-"id": "18",
-"next_id": "20",
+"id": "14",
+"next_id": "16",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "So no clue, huh. Looks like a beach to me. There seems to be a farm up ahead.",
@@ -82,11 +80,11 @@ lines = {
 "translation_key": "So no clue, huh. Looks like a beach to me. There seems to be a farm up ahead.",
 "type": "dialogue"
 },
-"20": {
+"16": {
 "character": "Survival Instinct",
 "character_replacements": Array[Dictionary]([]),
-"id": "20",
-"next_id": "22",
+"id": "16",
+"next_id": "18",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "How do you feel?",
@@ -94,26 +92,37 @@ lines = {
 "translation_key": "How do you feel?",
 "type": "dialogue"
 },
-"22": {
-"character": "",
+"18": {
+"character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
-"id": "22",
-"next_id": "28",
-"next_id_after": "28",
+"id": "18",
+"next_id": "18.2",
+"next_id_after": "24",
 "notes": "",
-"responses": PackedStringArray("22", "24"),
+"responses": PackedStringArray("18", "20"),
 "tags": PackedStringArray(),
 "text": "There’s quite a bit of pain in my everywhere.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "There’s quite a bit of pain in my everywhere.",
 "type": "response"
 },
-"24": {
-"character": "",
+"18.2": {
+"character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
-"id": "24",
-"next_id": "25",
-"next_id_after": "28",
+"next_id": "24",
+"next_id_after": "24",
+"tags": PackedStringArray(),
+"text": "There’s quite a bit of pain in my everywhere.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "There’s quite a bit of pain in my everywhere.",
+"type": "dialogue"
+},
+"20": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "20",
+"next_id": "20.2",
+"next_id_after": "24",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Get lost, Survival Instinct, Let me be.",
@@ -121,8 +130,19 @@ lines = {
 "translation_key": "Get lost, Survival Instinct, Let me be.",
 "type": "response"
 },
-"25": {
-"id": "25",
+"20.2": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "21",
+"next_id_after": "24",
+"tags": PackedStringArray(),
+"text": "Get lost, Survival Instinct, Let me be.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Get lost, Survival Instinct, Let me be.",
+"type": "dialogue"
+},
+"21": {
+"id": "21",
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -135,27 +155,88 @@ lines = {
 "value": 2
 }])
 },
-"next_id": "26",
-"parent_id": "24",
+"next_id": "22",
+"parent_id": "20",
 "type": "mutation"
 },
-"26": {
-"id": "26",
+"22": {
+"id": "22",
 "is_snippet": false,
 "next_id": "end",
-"parent_id": "24",
+"parent_id": "20",
 "type": "goto"
 },
-"28": {
+"24": {
 "character": "Survival Instinct",
 "character_replacements": Array[Dictionary]([]),
-"id": "28",
-"next_id": "30",
+"id": "24",
+"next_id": "26",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Yeah, I thought as much. Can you move?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Yeah, I thought as much. Can you move?",
+"type": "dialogue"
+},
+"26": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "26",
+"next_id": "26.2",
+"next_id_after": "29",
+"notes": "",
+"responses": PackedStringArray("26", "27"),
+"tags": PackedStringArray(),
+"text": "I’m not sure I can. Or if I know how to?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I’m not sure I can. Or if I know how to?",
+"type": "response"
+},
+"26.2": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "29",
+"next_id_after": "29",
+"tags": PackedStringArray(),
+"text": "I’m not sure I can. Or if I know how to?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I’m not sure I can. Or if I know how to?",
+"type": "dialogue"
+},
+"27": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "27",
+"next_id": "27.2",
+"next_id_after": "29",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "I could if I knew which keys to press...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I could if I knew which keys to press...",
+"type": "response"
+},
+"27.2": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "29",
+"next_id_after": "29",
+"tags": PackedStringArray(),
+"text": "I could if I knew which keys to press...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I could if I knew which keys to press...",
+"type": "dialogue"
+},
+"29": {
+"character": "Survival Instinct",
+"character_replacements": Array[Dictionary]([]),
+"id": "29",
+"next_id": "30",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Once you’ve caught your breath, just use [wave amp=25 freq=5]WASD[/wave] or [wave amp=25 freq=5]arrow keys[/wave] to move around.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Once you’ve caught your breath, just use [wave amp=25 freq=5]WASD[/wave] or [wave amp=25 freq=5]arrow keys[/wave] to move around.",
 "type": "dialogue"
 },
 "3": {
@@ -171,46 +252,7 @@ lines = {
 "type": "dialogue"
 },
 "30": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
 "id": "30",
-"next_id": "33",
-"next_id_after": "33",
-"notes": "",
-"responses": PackedStringArray("30", "31"),
-"tags": PackedStringArray(),
-"text": "I’m not sure I can. Or if I know how to?",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "I’m not sure I can. Or if I know how to?",
-"type": "response"
-},
-"31": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
-"id": "31",
-"next_id": "33",
-"next_id_after": "33",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "I could if I knew which keys to press...",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "I could if I knew which keys to press...",
-"type": "response"
-},
-"33": {
-"character": "Survival Instinct",
-"character_replacements": Array[Dictionary]([]),
-"id": "33",
-"next_id": "34",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "Once you’ve caught your breath, just use [wave amp=25 freq=5]WASD[/wave] or [wave amp=25 freq=5]arrow keys[/wave] to move around.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Once you’ve caught your breath, just use [wave amp=25 freq=5]WASD[/wave] or [wave amp=25 freq=5]arrow keys[/wave] to move around.",
-"type": "dialogue"
-},
-"34": {
-"id": "34",
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -223,14 +265,14 @@ lines = {
 "value": "true"
 }])
 },
-"next_id": "36",
+"next_id": "32",
 "type": "mutation"
 },
-"36": {
+"32": {
 "character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
-"id": "36",
-"next_id": "37",
+"id": "32",
+"next_id": "33",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Splendid. Do I have any other superpowers?",
@@ -238,11 +280,11 @@ lines = {
 "translation_key": "Splendid. Do I have any other superpowers?",
 "type": "dialogue"
 },
-"37": {
+"33": {
 "character": "Survival Instinct",
 "character_replacements": Array[Dictionary]([]),
-"id": "37",
-"next_id": "38",
+"id": "33",
+"next_id": "34",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Indeed. You can interact with objects by pressing [wave amp=25 freq=5]E[/wave] and if you need to remember what things you have, just press [wave amp=25 freq=5]Tab[/wave].",
@@ -250,11 +292,11 @@ lines = {
 "translation_key": "Indeed. You can interact with objects by pressing [wave amp=25 freq=5]E[/wave] and if you need to remember what things you have, just press [wave amp=25 freq=5]Tab[/wave].",
 "type": "dialogue"
 },
-"38": {
+"34": {
 "character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
-"id": "38",
-"next_id": "39",
+"id": "34",
+"next_id": "35",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "[stare blankly]",
@@ -262,11 +304,11 @@ lines = {
 "translation_key": "[stare blankly]",
 "type": "dialogue"
 },
-"39": {
+"35": {
 "character": "Survival Instinct",
 "character_replacements": Array[Dictionary]([]),
-"id": "39",
-"next_id": "40",
+"id": "35",
+"next_id": "36",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Anywho, since I’m not entirely sure you got that, lets see if you can at least feed yourself.",
@@ -274,11 +316,11 @@ lines = {
 "translation_key": "Anywho, since I’m not entirely sure you got that, lets see if you can at least feed yourself.",
 "type": "dialogue"
 },
-"40": {
+"36": {
 "character": "Survival Instinct",
 "character_replacements": Array[Dictionary]([]),
-"id": "40",
-"next_id": "41",
+"id": "36",
+"next_id": "37",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Enter the shack to the east and bring me [wave amp=25 freq=5]an apple[/wave].",
@@ -286,8 +328,8 @@ lines = {
 "translation_key": "Enter the shack to the east and bring me [wave amp=25 freq=5]an apple[/wave].",
 "type": "dialogue"
 },
-"41": {
-"id": "41",
+"37": {
+"id": "37",
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -300,26 +342,26 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "43",
+"next_id": "39",
 "type": "mutation"
 },
-"43": {
-"id": "43",
+"39": {
+"id": "39",
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
 },
-"45": {
-"id": "45",
-"next_id": "47",
+"41": {
+"id": "41",
+"next_id": "43",
 "text": "DoesntHaveApple",
 "type": "title"
 },
-"47": {
+"43": {
 "character": "Survival Instinct",
 "character_replacements": Array[Dictionary]([]),
-"id": "47",
-"next_id": "48",
+"id": "43",
+"next_id": "44",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Enter the shack to the east and bring me [wave amp=25 freq=5]an apple[/wave]. I am waiting here.",
@@ -327,26 +369,37 @@ lines = {
 "translation_key": "Enter the shack to the east and bring me [wave amp=25 freq=5]an apple[/wave]. I am waiting here.",
 "type": "dialogue"
 },
-"48": {
-"character": "",
+"44": {
+"character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
-"id": "48",
-"next_id": "52",
-"next_id_after": "52",
+"id": "44",
+"next_id": "44.2",
+"next_id_after": "48",
 "notes": "",
-"responses": PackedStringArray("48", "49"),
+"responses": PackedStringArray("44", "45"),
 "tags": PackedStringArray(),
 "text": "I on it.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I on it.",
 "type": "response"
 },
-"49": {
-"character": "",
+"44.2": {
+"character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
-"id": "49",
-"next_id": "50",
-"next_id_after": "52",
+"next_id": "48",
+"next_id_after": "48",
+"tags": PackedStringArray(),
+"text": "I on it.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I on it.",
+"type": "dialogue"
+},
+"45": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "45",
+"next_id": "45.2",
+"next_id_after": "48",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Get lost, Survival Instinct, Let me be.",
@@ -354,11 +407,53 @@ lines = {
 "translation_key": "Get lost, Survival Instinct, Let me be.",
 "type": "response"
 },
+"45.2": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "46",
+"next_id_after": "48",
+"tags": PackedStringArray(),
+"text": "Get lost, Survival Instinct, Let me be.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Get lost, Survival Instinct, Let me be.",
+"type": "dialogue"
+},
+"46": {
+"id": "46",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "timesInteracted"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "number",
+"value": 2
+}])
+},
+"next_id": "47",
+"parent_id": "45",
+"type": "mutation"
+},
+"47": {
+"id": "47",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "45",
+"type": "goto"
+},
+"48": {
+"id": "48",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
 "5": {
 "character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
 "id": "5",
-"next_id": "6",
+"next_id": "7",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "[stare at the figure menacingly]",
@@ -368,40 +463,70 @@ lines = {
 },
 "50": {
 "id": "50",
-"mutation": {
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "timesInteracted"
-}, {
-"type": "assignment",
-"value": "="
-}, {
-"type": "number",
-"value": 2
-}])
-},
-"next_id": "51",
-"parent_id": "49",
-"type": "mutation"
-},
-"51": {
-"id": "51",
-"is_snippet": false,
-"next_id": "end",
-"parent_id": "49",
-"type": "goto"
-},
-"52": {
-"id": "52",
-"is_snippet": false,
-"next_id": "end",
-"type": "goto"
-},
-"54": {
-"id": "54",
-"next_id": "56",
+"next_id": "52",
 "text": "HasApple",
 "type": "title"
+},
+"52": {
+"character": "Survival Instinct",
+"character_replacements": Array[Dictionary]([]),
+"id": "52",
+"next_id": "53",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "You are back.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You are back.",
+"type": "dialogue"
+},
+"53": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "53",
+"next_id": "53.2",
+"next_id_after": "56",
+"notes": "",
+"responses": PackedStringArray("53", "54"),
+"tags": PackedStringArray(),
+"text": "Apple?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Apple?",
+"type": "response"
+},
+"53.2": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "56",
+"next_id_after": "56",
+"tags": PackedStringArray(),
+"text": "Apple?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Apple?",
+"type": "dialogue"
+},
+"54": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "54",
+"next_id": "54.2",
+"next_id_after": "56",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Here, I got the apple. Eating it seems to make me feel better.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Here, I got the apple. Eating it seems to make me feel better.",
+"type": "response"
+},
+"54.2": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "56",
+"next_id_after": "56",
+"tags": PackedStringArray(),
+"text": "Here, I got the apple. Eating it seems to make me feel better.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Here, I got the apple. Eating it seems to make me feel better.",
+"type": "dialogue"
 },
 "56": {
 "character": "Survival Instinct",
@@ -410,69 +535,16 @@ lines = {
 "next_id": "57",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "You are back.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "You are back.",
-"type": "dialogue"
-},
-"57": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
-"id": "57",
-"next_id": "60",
-"next_id_after": "60",
-"notes": "",
-"responses": PackedStringArray("57", "58"),
-"tags": PackedStringArray(),
-"text": "Apple?",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Apple?",
-"type": "response"
-},
-"58": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
-"id": "58",
-"next_id": "60",
-"next_id_after": "60",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "Here, I got the apple. Eating it seems to make me feel better.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Here, I got the apple. Eating it seems to make me feel better.",
-"type": "response"
-},
-"6": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
-"id": "6",
-"next_id": "11",
-"next_id_after": "11",
-"notes": "",
-"responses": PackedStringArray("6", "7"),
-"tags": PackedStringArray(),
-"text": "Say hello",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Say hello",
-"type": "response"
-},
-"60": {
-"character": "Survival Instinct",
-"character_replacements": Array[Dictionary]([]),
-"id": "60",
-"next_id": "61",
-"notes": "",
-"tags": PackedStringArray(),
 "text": "That’s great. Congratulations on remembering some basic survival skills.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "That’s great. Congratulations on remembering some basic survival skills.",
 "type": "dialogue"
 },
-"61": {
+"57": {
 "character": "Survival Instinct",
 "character_replacements": Array[Dictionary]([]),
-"id": "61",
-"next_id": "62",
+"id": "57",
+"next_id": "58",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Now. How about you head north for some shelter?",
@@ -480,11 +552,11 @@ lines = {
 "translation_key": "Now. How about you head north for some shelter?",
 "type": "dialogue"
 },
-"62": {
+"58": {
 "character": "Survival Instinct",
 "character_replacements": Array[Dictionary]([]),
-"id": "62",
-"next_id": "63",
+"id": "58",
+"next_id": "59",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "I even smell pig dung in the air. Perhaps you can make some friends?",
@@ -492,11 +564,11 @@ lines = {
 "translation_key": "I even smell pig dung in the air. Perhaps you can make some friends?",
 "type": "dialogue"
 },
-"63": {
+"59": {
 "character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
-"id": "63",
-"next_id": "64",
+"id": "59",
+"next_id": "60",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Well if you think that’s enough for me to survive.",
@@ -504,8 +576,8 @@ lines = {
 "translation_key": "Well if you think that’s enough for me to survive.",
 "type": "dialogue"
 },
-"64": {
-"id": "64",
+"60": {
+"id": "60",
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -518,52 +590,38 @@ lines = {
 "value": 2
 }])
 },
-"next_id": "65",
+"next_id": "61",
 "type": "mutation"
 },
-"65": {
-"id": "65",
+"61": {
+"id": "61",
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
 },
 "7": {
-"character": "",
+"character": "Survival Instinct",
 "character_replacements": Array[Dictionary]([]),
 "id": "7",
-"next_id": "8",
-"next_id_after": "11",
+"next_id": "9",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "Wake up",
+"text": "Yeah I know that look. Unfortunately, being angry will not get you off this beach.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Wake up",
-"type": "response"
-},
-"8": {
-"id": "8",
-"mutation": {
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "timesInteracted"
-}, {
-"type": "assignment",
-"value": "="
-}, {
-"type": "number",
-"value": 2
-}])
-},
-"next_id": "9",
-"parent_id": "7",
-"type": "mutation"
+"translation_key": "Yeah I know that look. Unfortunately, being angry will not get you off this beach.",
+"type": "dialogue"
 },
 "9": {
+"character": "Survival Instinct",
+"character_replacements": Array[Dictionary]([]),
 "id": "9",
-"is_snippet": false,
-"next_id": "end",
-"parent_id": "7",
-"type": "goto"
+"next_id": "11",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Look, I was out all day yesterday - what the hell happened? Where are we?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Look, I was out all day yesterday - what the hell happened? Where are we?",
+"type": "dialogue"
 }
 }
 raw_text = "~ start
@@ -571,32 +629,28 @@ raw_text = "~ start
 Survival Instinct: Hey, piggy-piggy! [shake rate=20 level=10]Wake up![/shake] This does not look like a safe place to be in.
 
 Piggy: [stare at the figure menacingly]
-- Say hello
-- Wake up
-	do timesInteracted = 2
-	=> END
 
 Survival Instinct: Yeah I know that look. Unfortunately, being angry will not get you off this beach.
 
 Survival Instinct: Look, I was out all day yesterday - what the hell happened? Where are we? 
 
-- I feel like I am in Spain. The S is silent.
-- I have no clue - do you?
+- Piggy: I feel like I am in Spain. The S is silent.
+- Piggy: I have no clue - do you?
 
 Survival Instinct: So no clue, huh. Looks like a beach to me. There seems to be a farm up ahead.
 
 Survival Instinct: How do you feel?
 
-- There’s quite a bit of pain in my everywhere.
+- Piggy: There’s quite a bit of pain in my everywhere.
 
-- Get lost, Survival Instinct, Let me be. 
+- Piggy: Get lost, Survival Instinct, Let me be. 
 	do timesInteracted = 2
 	=> END
 
 Survival Instinct: Yeah, I thought as much. Can you move?
 
-- I’m not sure I can. Or if I know how to?  
-- I could if I knew which keys to press...  
+- Piggy: I’m not sure I can. Or if I know how to?  
+- Piggy: I could if I knew which keys to press...  
 
 Survival Instinct: Once you’ve caught your breath, just use [wave amp=25 freq=5]WASD[/wave] or [wave amp=25 freq=5]arrow keys[/wave] to move around.
 do appearMoveInstructions = true
@@ -613,8 +667,8 @@ do timesInteracted = 1
 ~ DoesntHaveApple
 
 Survival Instinct: Enter the shack to the east and bring me [wave amp=25 freq=5]an apple[/wave]. I am waiting here. 
-- I on it.
-- Get lost, Survival Instinct, Let me be. 
+- Piggy: I on it.
+- Piggy: Get lost, Survival Instinct, Let me be. 
 	do timesInteracted = 2
 	=> END
 => END
@@ -622,8 +676,8 @@ Survival Instinct: Enter the shack to the east and bring me [wave amp=25 freq=5]
 ~ HasApple
 
 Survival Instinct: You are back.
-- Apple?
-- Here, I got the apple. Eating it seems to make me feel better.
+- Piggy: Apple?
+- Piggy: Here, I got the apple. Eating it seems to make me feel better.
 
 Survival Instinct: That’s great. Congratulations on remembering some basic survival skills.
 Survival Instinct: Now. How about you head north for some shelter? 

@@ -710,7 +710,7 @@ states/sleep/position = Vector2(526, 226)
 states/walk/node = SubResource("AnimationNodeBlendSpace2D_g6v4f")
 states/walk/position = Vector2(592, 100)
 transitions = ["idle", "walk", SubResource("AnimationNodeStateMachineTransition_bxky4"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_mhfug"), "idle", "sleep", SubResource("AnimationNodeStateMachineTransition_6jk4b"), "sleep", "walk", SubResource("AnimationNodeStateMachineTransition_28tvs"), "walk", "sleep", SubResource("AnimationNodeStateMachineTransition_wpwuq"), "sleep", "idle", SubResource("AnimationNodeStateMachineTransition_kiyym"), "Start", "idle", SubResource("AnimationNodeStateMachineTransition_oqi0t")]
-graph_offset = Vector2(-28, 61)
+graph_offset = Vector2(56, 40)
 
 [sub_resource type="Animation" id="Animation_ibnu1"]
 length = 0.001

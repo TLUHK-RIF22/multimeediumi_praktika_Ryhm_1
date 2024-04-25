@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://ceucgee4jdksq"
+path="res://.godot/imported/Journey.dialogue-b20a180aeb8740c8ac06394bb132089a.tres"
+
+[deps]
+
+source_file="res://Charecters/NPC/Dialogues/Journey.dialogue"
+dest_files=["res://.godot/imported/Journey.dialogue-b20a180aeb8740c8ac06394bb132089a.tres"]
+
+[params]
+
+defaults=true

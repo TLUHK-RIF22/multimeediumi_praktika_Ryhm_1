@@ -1,3 +1,4 @@
+res://Items
 res://Sprites
 res://UI/PausMenu
 res://Charecters/Siga/Scenes
@@ -7,7 +8,6 @@ res://Levels
 res://Charecters/Siga/Sprites
 res://Tiles
 res://Charecters/NPC
-res://Items
 res://UI/text_box
 res://UI/MainMenu
 res://Audio

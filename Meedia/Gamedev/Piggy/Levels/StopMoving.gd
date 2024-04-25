@@ -49,3 +49,11 @@ func _on_survival_instinct_can_move():
 
 func _on_survival_instinct_stop_moving():
 	emit_signal("StopMoving")
+
+
+func _on_rufus_journey_can_move():
+	emit_signal("CanMove")
+
+
+func _on_rufus_journey_stop_moving():
+	emit_signal("StopMoving")

@@ -3,32 +3,28 @@
 Survival Instinct: Hey, piggy-piggy! [shake rate=20 level=10]Wake up![/shake] This does not look like a safe place to be in.
 
 Piggy: [stare at the figure menacingly]
-- Say hello
-- Wake up
-	do timesInteracted = 2
-	=> END
 
 Survival Instinct: Yeah I know that look. Unfortunately, being angry will not get you off this beach.
 
 Survival Instinct: Look, I was out all day yesterday - what the hell happened? Where are we? 
 
-- I feel like I am in Spain. The S is silent.
-- I have no clue - do you?
+- Piggy: I feel like I am in Spain. The S is silent.
+- Piggy: I have no clue - do you?
 
 Survival Instinct: So no clue, huh. Looks like a beach to me. There seems to be a farm up ahead.
 
 Survival Instinct: How do you feel?
 
-- There’s quite a bit of pain in my everywhere.
+- Piggy: There’s quite a bit of pain in my everywhere.
 
-- Get lost, Survival Instinct, Let me be. 
+- Piggy: Get lost, Survival Instinct, Let me be. 
 	do timesInteracted = 2
 	=> END
 
 Survival Instinct: Yeah, I thought as much. Can you move?
 
-- I’m not sure I can. Or if I know how to?  
-- I could if I knew which keys to press...  
+- Piggy: I’m not sure I can. Or if I know how to?  
+- Piggy: I could if I knew which keys to press...  
 
 Survival Instinct: Once you’ve caught your breath, just use [wave amp=25 freq=5]WASD[/wave] or [wave amp=25 freq=5]arrow keys[/wave] to move around.
 do appearMoveInstructions = true
@@ -45,8 +41,8 @@ do timesInteracted = 1
 ~ DoesntHaveApple
 
 Survival Instinct: Enter the shack to the east and bring me [wave amp=25 freq=5]an apple[/wave]. I am waiting here. 
-- I on it.
-- Get lost, Survival Instinct, Let me be. 
+- Piggy: I on it.
+- Piggy: Get lost, Survival Instinct, Let me be. 
 	do timesInteracted = 2
 	=> END
 => END
@@ -54,8 +50,8 @@ Survival Instinct: Enter the shack to the east and bring me [wave amp=25 freq=5]
 ~ HasApple
 
 Survival Instinct: You are back.
-- Apple?
-- Here, I got the apple. Eating it seems to make me feel better.
+- Piggy: Apple?
+- Piggy: Here, I got the apple. Eating it seems to make me feel better.
 
 Survival Instinct: That’s great. Congratulations on remembering some basic survival skills.
 Survival Instinct: Now. How about you head north for some shelter? 

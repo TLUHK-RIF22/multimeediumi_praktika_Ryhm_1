@@ -1,0 +1,128 @@
+~ Start
+
+Rufus: Hey, I don’t recognise you... What are you doing here?
+- Piggy: [debug] I need to go on a spiritual journey. => Fork2
+- Piggy: I wish I knew, really. => Fork1
+- Piggy: [stare blankly] => Fork1
+
+~ Fork1
+Rufus: Uh. OK. Let me try again. Who are you?
+- Piggy: I seem to be a pig, a lot like you.
+	 Piggy: I also feel like I’ve been run over by a pack of horses.
+- Piggy: [stare even more blankly]
+Rufus: A-ha. So no clue who you are or why you’re here.
+Piggy: ...
+Rufus: That’s a shame, Young One. I’m Rufus. There’s one thing I can tell you - your brands tell me you were neither born or bred here.
+Piggy: ...
+Rufus: Other than that, I can’t tell much about you. Would you like to know anything about me?
+
+- Piggy: What is this place? => What_is_this_place
+- Piggy: Were you born here? => Were_you_born_here
+- Piggy: What do you do here? => What_do_you_do_here
+
+~ Three_W_s
+Piggy: ...
+Rufus: Is there anything else you would like to know?
+- Piggy: What is this place? => What_is_this_place
+- Piggy: Were you born here? => Were_you_born_here
+- Piggy: What do you do here? => What_do_you_do_here
+- Piggy: I’d really like to figure out who I am and how I got here. => W_continue
+
+
+
+~ What_is_this_place
+Rufus: The humans here call it something that vaguely sounds like ‘Worms’. We prefer to call it the Piggy Island.
+
+- Piggy: Sounds good. => Humans_are_in_control_here
+- Piggy: So Piggy Island, huh. Do you rule this place? 
+Rufus: If we do, nobody has told me yet.
+Piggy: ...
+=> Humans_are_in_control_here
+~ Humans_are_in_control_here
+Rufus: Humans are in control here. We can roam in most areas, but they’re quite keen about keeping us away from some places - such as the docks.
+- Piggy: And where are we now? => We_are_at_the_heart
+- Piggy: What happens at the docks?
+Rufus: Like I said, we can’t get near.
+Piggy: And where are we now? 
+=> We_are_at_the_heart
+
+~ We_are_at_the_heart
+Rufus: We’re at the heart of the island - our Great Pigsty is right behind me.
+
+=> Three_W_s
+
+
+~ Were_you_born_here
+Rufus: I was indeed born here - and I’ve lived here my entire life.
+
+=> Three_W_s
+
+
+~ What_do_you_do_here
+Rufus: I am the elder boar here.
+Piggy: ...
+Rufus: For the past two moons I have taken care of this pack. I want to help them the best I can.
+
+
+=> Three_W_s
+
+~ W_continue
+
+Rufus: That seems like a reasonable thing to want.
+Piggy: Could ... you help me with that?
+Rufus: I can think of one thing. 
+Rufus: When one of us is hurt or confused, we perform a sacred ritual to support their recovery.
+Piggy: And does it help?
+Rufus: It’s helped all of us in one way or another.
+Rufus: Unless you can think of another way to regain your memory, perhaps contacting our ancestors is your best bet.
+
+- Piggy: Well, I can’t think of any other way either.
+- Piggy: I can’t wait to meet them!
+=> Explain_ritual
+
+~ Explain_ritual
+Rufus: Do you want to know more before we proceed? 
+- Piggy: How do you know this will work? => How_do_you_know_this_will_work
+- Piggy: Will I be safe? => Will_I_be_safe
+- Piggy: Nope, let’s do it already! => Nope_lets_do_it_already
+
+~ How_do_you_know_this_will_work
+Rufus: There are no guarantees with things such as this.
+Piggy: ...
+Rufus: However, this is a powerful place, where many of us have found our answers.
+Piggy: ...
+Rufus: For centuries this land has been imbued with the essence of our ancestors - and thus with their wisdom.
+Piggy: So  when you say  ‘the essence of the ancestors’, do you mean manure?
+Rufus: Well... Yes and no.
+Rufus: What matters is that their vital forces are strong here, Young One.
+Piggy: ...
+=> Explain_ritual
+
+~ Will_I_be_safe
+Rufus: Physically, yes. The worst you can expect is feeling a bit sore.
+Piggy: ...
+Rufus: Mentally, however - it can cause some difficulties.
+- Piggy: Such as? => Such_as
+- Piggy: Okay - I hope these difficulties cancel out the ones I’m in now. => So_young_one
+
+~ Such_as
+Rufus: It usually causes some confusion or anxiety which clears quickly 
+Rufus: Legends say that a while back one of the hogs got the bright idea he’s a great leader called Napoleon.
+Piggy: ...
+Rufus: ... taught us to walk on our hind legs and took off after a while.
+Piggy: ...
+=> Explain_ritual
+
+~ So_young_one
+Rufus: So do I, Young One.
+Piggy: ...
+=> Explain_ritual
+
+~ Nope_lets_do_it_already
+Rufus: So be it. Let us assemble in the Great Pigsty for preparations!
+Piggy: ...
+do SpiritJourney = 1
+
+~ Fork2
+do SpiritJourney = 1
+=> END
