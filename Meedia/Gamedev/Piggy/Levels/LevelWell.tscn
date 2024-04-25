@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://cco4kg1r16cw"]
+[gd_scene load_steps=10 format=3 uid="uid://cco4kg1r16cw"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_j1wsr"]
 [ext_resource type="AudioStream" uid="uid://cu8l14cttsk3s" path="res://Audio/menüü põhi.mp3" id="2_30hip"]
+[ext_resource type="Script" path="res://Levels/StopMoving.gd" id="2_71hq2"]
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="3_3cqu8"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/player.tscn" id="4_ct6pb"]
 [ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://UI/Game_manager/game_manager.tscn" id="7_uind4"]
@@ -14,6 +15,14 @@ process_mode = 1
 y_sort_enabled = true
 position = Vector2(1, 0)
 script = ExtResource("1_j1wsr")
+
+[node name="StopMoving" type="Node" parent="."]
+script = ExtResource("2_71hq2")
+
+[node name="Gate_LevelSwap" parent="StopMoving" instance=ExtResource("8_onxx3")]
+position = Vector2(884, 816)
+level = "LevelB2"
+GateName = "Exit"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
@@ -44,7 +53,7 @@ offset_right = 9.0
 offset_bottom = -13.0
 metadata/_edit_use_anchors_ = true
 
-[node name="LevelB2Kaev_A" type="Marker2D" parent="."]
+[node name="LevelB2ToWell" type="Marker2D" parent="."]
 position = Vector2(708, 779)
 scale = Vector2(4, 4)
 
@@ -52,6 +61,5 @@ scale = Vector2(4, 4)
 position = Vector2(905, 655)
 item = ExtResource("23_j1fls")
 
-[node name="Exit" parent="." instance=ExtResource("8_onxx3")]
-position = Vector2(880, 817)
-level = "LevelB2"
+[connection signal="StopMoving" from="StopMoving" to="Player" method="_on_stop_moving_stop_moving"]
+[connection signal="StopMoving" from="StopMoving/Gate_LevelSwap" to="StopMoving" method="_on_gate_level_swap_stop_moving"]

@@ -74,3 +74,7 @@ func _on_sleep_timer_timeout():
 
 func _on_stop_moving_stop_moving():
 	move_speed = 0
+
+
+func _on_stop_moving_can_move():
+	move_speed = 80
