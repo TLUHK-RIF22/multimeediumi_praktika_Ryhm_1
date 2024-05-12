@@ -1,13 +1,8 @@
-res://Levels/LevelB2.tscn
+res://Levels/LevelB3.tscn
 res://Pickup/pickup.gd
 res://Items/apple.tres
 res://Items/KeyBig.tres
 res://Items/rope.tres
-res://Levels/LevelB3.tscn
-res://Charecters/NPC/Scenes/Rufus.tscn
-res://Charecters/NPC/SurvivalInstinct.gd
-res://Charecters/NPC/RufusJourney.gd
-res://Levels/StopMoving.gd
-res://Global.gd
-res://Charecters/Siga/Scenes/player.gd
-res://Charecters/Siga/player.tscn
+res://Levels/LevelB2.tscn
+res://Levels/LevelC2.tscn
+res://Charecters/NPC/Scenes/SurvivalInstinct.tscn
