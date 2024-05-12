@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6ltjhvkbwb83"]
+
+[ext_resource type="Texture2D" uid="uid://dv4blau6riwdv" path="res://Sprites/Kast.png" id="1_uonkt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k3xbs"]
+
+[node name="Kast" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="EsmaneMaja" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(0, -5)
+texture = ExtResource("1_uonkt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_k3xbs")

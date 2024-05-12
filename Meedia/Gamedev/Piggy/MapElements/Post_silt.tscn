@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://3l37461xugaw"]
+
+[ext_resource type="Texture2D" uid="uid://t63sm2i1fquo" path="res://Sprites/Post_Silt.png" id="1_nub87"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4j2ro"]
+radius = 7.0
+
+[node name="Post_silt" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="EsmaneMaja" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(0, -5)
+texture = ExtResource("1_nub87")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 3)
+shape = SubResource("CircleShape2D_4j2ro")

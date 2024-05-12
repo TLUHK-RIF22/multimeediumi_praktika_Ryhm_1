@@ -457,7 +457,7 @@ script = ExtResource("23_c283o")
 Speech = ExtResource("24_6hpw3")
 
 [node name="RufusJourney" parent="." instance=ExtResource("23_2los2")]
-position = Vector2(803, 619)
+position = Vector2(768, 712)
 script = ExtResource("26_6pjc1")
 Speech = ExtResource("27_wprba")
 

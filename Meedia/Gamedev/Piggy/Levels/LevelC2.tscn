@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://pcf5mbd40567"]
+[gd_scene load_steps=12 format=3 uid="uid://pcf5mbd40567"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_h1u53"]
 [ext_resource type="Script" path="res://Levels/StopMoving.gd" id="2_8crnb"]
@@ -8,6 +8,9 @@
 [ext_resource type="AudioStream" uid="uid://cu8l14cttsk3s" path="res://Audio/menüü põhi.mp3" id="7_uv07r"]
 [ext_resource type="PackedScene" uid="uid://ctaolhdvrgb82" path="res://LevelHoping/Gate_levelSwap.tscn" id="8_1sols"]
 [ext_resource type="PackedScene" uid="uid://kcwsrvq1ga1g" path="res://MapElements/ancestral_flame.tscn" id="8_yjq4c"]
+[ext_resource type="PackedScene" uid="uid://3l37461xugaw" path="res://MapElements/Post_silt.tscn" id="9_pb5b5"]
+[ext_resource type="PackedScene" uid="uid://c6ltjhvkbwb83" path="res://MapElements/Kast.tscn" id="10_mlaol"]
+[ext_resource type="PackedScene" uid="uid://rtdsgwh3ma0t" path="res://MapElements/Barrel.tscn" id="11_l3hke"]
 
 [node name="LevelC2" type="Node2D"]
 process_mode = 1
@@ -100,6 +103,15 @@ scale = Vector2(4, 4)
 [node name="LevelC3C2_W" type="Marker2D" parent="."]
 position = Vector2(452, 784)
 scale = Vector2(4, 4)
+
+[node name="Post_silt" parent="." instance=ExtResource("9_pb5b5")]
+position = Vector2(220, 485)
+
+[node name="Kast" parent="." instance=ExtResource("10_mlaol")]
+position = Vector2(304, 505)
+
+[node name="Maja" parent="." instance=ExtResource("11_l3hke")]
+position = Vector2(236, 539)
 
 [connection signal="CanMove" from="StopMoving" to="Player" method="_on_stop_moving_can_move"]
 [connection signal="StopMoving" from="StopMoving" to="Player" method="_on_stop_moving_stop_moving"]
