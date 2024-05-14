@@ -1,7 +1,30 @@
-[gd_scene load_steps=6 format=3 uid="uid://cbtnjo02acke5"]
+[gd_scene load_steps=8 format=3 uid="uid://cbtnjo02acke5"]
 
+[ext_resource type="Texture2D" uid="uid://du1xa2vkttucr" path="res://Sprites/Aed.png" id="1_c6663"]
 [ext_resource type="Texture2D" uid="uid://2e0wdnflvsko" path="res://Tiles/Tileset2.0.png" id="2_774bl"]
 [ext_resource type="Texture2D" uid="uid://rgncvyhamgoy" path="res://Tiles/dungeon-tileset-karl-v1.png" id="2_qpx7p"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wg3ww"]
+texture = ExtResource("1_c6663")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0 = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+2:1/0 = 0
+2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:1/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gpdxu"]
 texture = ExtResource("2_774bl")
@@ -930,6 +953,7 @@ tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_gpdxu")
 sources/2 = SubResource("TileSetAtlasSource_2a3yv")
+sources/0 = SubResource("TileSetAtlasSource_wg3ww")
 
 [node name="TileMap" type="TileMap"]
 y_sort_enabled = true

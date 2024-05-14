@@ -18,7 +18,9 @@ func _ready():
 		SFXButton.play("muted")
 	else:
 		SFXButton.play("unmuted")
-		
+	
+	%MusicSlider.set_value(Global.audioLevelMusic)
+	%SFXSlider.set_value(Global.audioLevelSXF)	
 		
 func _on_back_button_pressed():
 	get_tree().change_scene_to_file("res://UI/MainMenu/main.tscn")

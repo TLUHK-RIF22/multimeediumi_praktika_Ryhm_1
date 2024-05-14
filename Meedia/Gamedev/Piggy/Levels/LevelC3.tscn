@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://c1ijyn8kofq5r"]
+[gd_scene load_steps=9 format=3 uid="uid://c1ijyn8kofq5r"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_rgf5i"]
 [ext_resource type="Script" path="res://Levels/StopMoving.gd" id="2_dadqi"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/player.tscn" id="2_gr6ix"]
+[ext_resource type="Texture2D" uid="uid://coxnve85ur32p" path="res://Sprites/Door.png" id="4_xixdi"]
 [ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://UI/Game_manager/game_manager.tscn" id="6_2n315"]
 [ext_resource type="PackedScene" uid="uid://ctaolhdvrgb82" path="res://LevelHoping/Gate_levelSwap.tscn" id="6_3xy1d"]
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="7_edkbf"]
@@ -26,6 +27,25 @@ position = Vector2(674, 62)
 level = "LevelC2"
 GateName = "C2_E"
 
+[node name="Gate_LevelSwap3" parent="StopMoving" instance=ExtResource("6_3xy1d")]
+position = Vector2(535, 220)
+level = "LevelC3"
+GateName = "Auk_A"
+
+[node name="Door" type="Sprite2D" parent="StopMoving/Gate_LevelSwap3"]
+position = Vector2(1, -1)
+texture = ExtResource("4_xixdi")
+
+[node name="Gate_LevelSwap4" parent="StopMoving" instance=ExtResource("6_3xy1d")]
+position = Vector2(525, 394)
+level = "LevelC3"
+GateName = "Auk_B"
+
+[node name="Door" type="Sprite2D" parent="StopMoving/Gate_LevelSwap4"]
+position = Vector2(-0.5, -4)
+scale = Vector2(0.96875, 1)
+texture = ExtResource("4_xixdi")
+
 [node name="Player" parent="." instance=ExtResource("2_gr6ix")]
 top_level = true
 position = Vector2(624, 180)
@@ -44,10 +64,20 @@ position = Vector2(673, 124)
 scale = Vector2(4, 4)
 
 [node name="LevelC2C3_W" type="Marker2D" parent="."]
-position = Vector2(411, 122)
+position = Vector2(419, 121)
+scale = Vector2(4, 4)
+
+[node name="LevelC3Auk_B" type="Marker2D" parent="."]
+position = Vector2(536, 261)
+scale = Vector2(4, 4)
+
+[node name="LevelC3Auk_A" type="Marker2D" parent="."]
+position = Vector2(522, 441)
 scale = Vector2(4, 4)
 
 [connection signal="CanMove" from="StopMoving" to="Player" method="_on_stop_moving_can_move"]
 [connection signal="StopMoving" from="StopMoving" to="Player" method="_on_stop_moving_stop_moving"]
 [connection signal="StopMoving" from="StopMoving/Gate_LevelSwap" to="StopMoving" method="_on_gate_level_swap_stop_moving"]
 [connection signal="StopMoving" from="StopMoving/Gate_LevelSwap2" to="StopMoving" method="_on_gate_level_swap_2_stop_moving"]
+[connection signal="StopMoving" from="StopMoving/Gate_LevelSwap3" to="StopMoving" method="_on_gate_level_swap_stop_moving"]
+[connection signal="StopMoving" from="StopMoving/Gate_LevelSwap4" to="StopMoving" method="_on_gate_level_swap_stop_moving"]
