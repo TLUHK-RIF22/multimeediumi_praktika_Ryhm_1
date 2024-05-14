@@ -1,3 +1,7 @@
 res://Levels/LevelC2.tscn
 res://Pickup/pickup.gd
-res://Items/apple.tres
+res://MapElements/Barrel.tscn
+res://MapElements/Auk_in.tscn
+res://MapElements/Auk_out.tscn
+res://MapElements/maja_vb.tscn
+res://LevelHoping/Gate_levelSwap.tscn

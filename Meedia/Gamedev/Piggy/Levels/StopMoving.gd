@@ -7,17 +7,56 @@ signal CanMove
 func _on_gate_level_swap_stop_moving():
 	emit_signal("StopMoving")
 
-
 func _on_gate_level_swap_2_stop_moving():
 	emit_signal("StopMoving")
 
 func _on_gate_level_swap_3_stop_moving():
 	emit_signal("StopMoving")
 
-
 func _on_gate_level_swap_4_stop_moving():
 	emit_signal("StopMoving")
 
+func _on_gate_level_swap_5_stop_moving():
+	emit_signal("StopMoving")
+
+func _on_gate_level_swap_6_stop_moving():
+	emit_signal("StopMoving")
+
+func _on_gate_level_swap_7_stop_moving():
+	emit_signal("StopMoving")
+
+func _on_gate_level_swap_8_stop_moving():
+	emit_signal("StopMoving")
+
+func _on_gate_level_swap_9_stop_moving():
+	emit_signal("StopMoving")
+
+func _on_gate_level_swap_10_stop_moving():
+	emit_signal("StopMoving")
+
+func _on_gate_level_swap_11_stop_moving():
+	emit_signal("StopMoving")
+
+func _on_gate_level_swap_12_stop_moving():
+	emit_signal("StopMoving")
+
+func _on_gate_level_swap_13_stop_moving():
+	emit_signal("StopMoving")
+
+func _on_gate_level_swap_14_stop_moving():
+	emit_signal("StopMoving")
+
+func _on_gate_level_swap_15_stop_moving():
+	emit_signal("StopMoving")
+
+func _on_gate_level_swap_16_stop_moving():
+	emit_signal("StopMoving")
+
+func _on_gate_level_swap_17_stop_moving():
+	emit_signal("StopMoving")
+
+func _on_gate_level_swap_18_stop_moving():
+	emit_signal("StopMoving")
 
 func _on_entrance_stop_moving():
 	emit_signal("StopMoving")

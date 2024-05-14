@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://beohv04uvm5wr"]
+
+[ext_resource type="Texture2D" uid="uid://buxi3oms2xypd" path="res://Sprites/auk-in.png" id="1_frsih"]
+
+[node name="Auk_in" type="Node2D"]
+
+[node name="EsmaneMaja" type="Sprite2D" parent="."]
+position = Vector2(0, 32)
+texture = ExtResource("1_frsih")
