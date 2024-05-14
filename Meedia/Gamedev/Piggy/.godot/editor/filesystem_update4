@@ -1,13 +1,3 @@
-res://tile_map.tscn
+res://Levels/LevelC2.tscn
 res://Pickup/pickup.gd
 res://Items/apple.tres
-res://Items/KeyBig.tres
-res://Items/rope.tres
-res://Levels/LevelB2.tscn
-res://Levels/LevelC2.tscn
-res://Levels/LevelC3.tscn
-res://addons/dialogue_manager/views/settings_view.tscn
-res://UI/MainMenu/Settings/Settings.tscn
-res://UI/MainMenu/Settings/Settings.gd
-res://UI/PausMenu/paus_menu.tscn
-res://UI/PausMenu/paus_menu.gd

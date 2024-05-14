@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_mutfw"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_r13wp"]
 
 [resource]
-script = ExtResource("1_mutfw")
+script = ExtResource("1_r13wp")
 using_states = PackedStringArray()
 titles = {
 "DoesntHaveApple": "43",
