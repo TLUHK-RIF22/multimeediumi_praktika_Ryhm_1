@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <script src="capture.js"></script>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+
+      #gwd-document {
+        border: none;
+        width: 100%;
+        height: 100%;
+      }
+
+      #paint-completion-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Iframe hosting the captured document. -->
+    <iframe id="gwd-document"></iframe>
+
+    <!-- Canvas used to detect when Chromium has finished painting individual frames. -->
+    <canvas id="paint-completion-overlay"></canvas>
+  </body>
+</html>
