@@ -24,7 +24,7 @@ offset_right = 474.0
 offset_bottom = 262.0
 horizontal_alignment = 2
 script = ExtResource("3_0644p")
-MainMenu = ExtResource("2_dmqkk")
+Level = ExtResource("2_dmqkk")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_1durv")

@@ -92,7 +92,7 @@ offset_bottom = 262.0
 label_settings = SubResource("LabelSettings_6hpf6")
 horizontal_alignment = 2
 script = ExtResource("3_w25s8")
-MainMenu = ExtResource("4_amj6c")
+Level = ExtResource("4_amj6c")
 
 [node name="Timer" type="Timer" parent="."]
 unique_name_in_owner = true

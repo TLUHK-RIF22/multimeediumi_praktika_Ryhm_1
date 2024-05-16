@@ -1,6 +1,6 @@
 extends Label
 
-@export var MainMenu:PackedScene
+@export var Level:PackedScene
 var skip_count = 0
 
 func _physics_process(_delta):
@@ -12,7 +12,7 @@ func _physics_process(_delta):
 			set_text("Press Enter to Skip")
 			%Timer.start()
 		elif skip_count == 2:
-			get_tree().change_scene_to_packed(MainMenu)
+			get_tree().change_scene_to_packed(Level)
 
 
 func _on_timer_timeout():

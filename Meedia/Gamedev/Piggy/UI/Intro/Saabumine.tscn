@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://7tul3yh37nmu"]
+
+[ext_resource type="Script" path="res://UI/Intro/Saabumine.gd" id="1_48qwp"]
+[ext_resource type="PackedScene" uid="uid://mcobavk7ibdf" path="res://Levels/LevelB3.tscn" id="2_b1oif"]
+[ext_resource type="VideoStream" path="res://UI/Intro/Saabumine.ogv" id="3_3v450"]
+[ext_resource type="Script" path="res://UI/Intro/Label.gd" id="4_d2gr7"]
+[ext_resource type="AudioStream" uid="uid://b4lallqfh85vl" path="res://Audio/Piggy intro sample.mp3" id="5_dodrl"]
+
+[node name="Saabumine" type="Node2D"]
+script = ExtResource("1_48qwp")
+Level = ExtResource("2_b1oif")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+offset_right = 1920.0
+offset_bottom = 1088.0
+stream = ExtResource("3_3v450")
+autoplay = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 266.0
+offset_top = 237.0
+offset_right = 474.0
+offset_bottom = 262.0
+horizontal_alignment = 2
+script = ExtResource("4_d2gr7")
+Level = ExtResource("2_b1oif")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_dodrl")
+
+[node name="Timer" type="Timer" parent="AudioStreamPlayer"]
+unique_name_in_owner = true
+process_callback = 0
+wait_time = 3.0
+
+[connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]
+[connection signal="timeout" from="AudioStreamPlayer/Timer" to="Label" method="_on_timer_timeout"]
