@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b1xwm34tdrlmy"]
+[gd_scene load_steps=12 format=3 uid="uid://b1xwm34tdrlmy"]
 
 [ext_resource type="PackedScene" uid="uid://2qtpgse6674" path="res://UI/PopUpInfo/PopupInfo.tscn" id="1_vmwyo"]
 [ext_resource type="Texture2D" uid="uid://kgyrh4ady834" path="res://Charecters/NPC/Idle_NPC_Pig_Brown_Down-Sheet.png" id="2_p45ap"]
@@ -32,6 +32,60 @@ height = 20.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_qpq4t"]
 radius = 32.0156
 
+[sub_resource type="Animation" id="Animation_ibnu1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_vopp2"]
+resource_name = "fade_in"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1, 2.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_bmy1v"]
+resource_name = "fade_out"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_atdk1"]
+_data = {
+"RESET": SubResource("Animation_ibnu1"),
+"fade_in": SubResource("Animation_vopp2"),
+"fade_out": SubResource("Animation_bmy1v")
+}
+
 [node name="Rufus" type="CharacterBody2D"]
 y_sort_enabled = true
 
@@ -57,6 +111,23 @@ shape = SubResource("CapsuleShape2D_ouao7")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 visible = false
 shape = SubResource("CircleShape2D_qpq4t")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+unique_name_in_owner = true
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_left = -114.0
+offset_top = -35.0
+offset_right = 584.0
+offset_bottom = 294.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/ColorRect"]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_atdk1")
+}
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

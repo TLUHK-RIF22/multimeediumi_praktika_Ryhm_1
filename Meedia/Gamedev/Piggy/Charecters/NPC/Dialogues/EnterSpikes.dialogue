@@ -1,0 +1,23 @@
+~ Start
+
+Rufus: Alright, Young One. Close your eyes, take a deep breath and count to ten.
+Piggy: One. Two. Three. Foûr. F̴̤̕ḯ̵̮v̸̨͒ȩ̷̚...
+set Global.SpiritJourney = 1
+=> END
+
+~ Failed
+
+Rufus: There-there, Young One. It’s alright. How are you feeling?
+Piggy: Your ancestors spoke to me, but I didn’t quite understand them. Can I go ‘round again?
+Rufus: Just relax and try again.
+Piggy: Let’s do it!
+=> Start
+
+~ Success
+
+Rufus: There-there, Young One. How are you feeling?
+Piggy: I am terrified and I need to get out of here!
+Rufus: Ahh, of course you do, Young One. Just rest for now.
+set Global.SpiritJourney = 4
+
+=> END

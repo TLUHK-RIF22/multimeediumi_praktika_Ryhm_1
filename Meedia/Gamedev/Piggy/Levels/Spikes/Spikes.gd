@@ -6,7 +6,8 @@ var scroll = 0
 var scroll_speed = 0.8
 var piggy_speed = 0.2
 
-
+func _ready():
+	Global.SpiritJourney = 2
 	
 func _process(_delta):
 	scroll += scroll_speed

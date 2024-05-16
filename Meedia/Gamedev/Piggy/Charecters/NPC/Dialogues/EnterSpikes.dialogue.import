@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://du6716yl6364o"
+path="res://.godot/imported/EnterSpikes.dialogue-69bd2f161d41f3dd8cacf178b77e3681.tres"
+
+[deps]
+
+source_file="res://Charecters/NPC/Dialogues/EnterSpikes.dialogue"
+dest_files=["res://.godot/imported/EnterSpikes.dialogue-69bd2f161d41f3dd8cacf178b77e3681.tres"]
+
+[params]
+
+defaults=true

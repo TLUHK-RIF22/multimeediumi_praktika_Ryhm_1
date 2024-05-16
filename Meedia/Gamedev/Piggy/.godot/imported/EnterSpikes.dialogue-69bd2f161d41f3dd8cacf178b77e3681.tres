@@ -1,0 +1,228 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_dljku"]
+
+[resource]
+script = ExtResource("1_dljku")
+using_states = PackedStringArray()
+titles = {
+"Failed": "10",
+"Start": "3",
+"Success": "18"
+}
+character_names = PackedStringArray("Rufus", "Piggy")
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "3",
+"text": "Start",
+"type": "title"
+},
+"10": {
+"character": "Rufus",
+"character_replacements": Array[Dictionary]([]),
+"id": "10",
+"next_id": "11",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "There-there, Young One. It’s alright. How are you feeling?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "There-there, Young One. It’s alright. How are you feeling?",
+"type": "dialogue"
+},
+"11": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "11",
+"next_id": "12",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Your ancestors spoke to me, but I didn’t quite understand them. Can I go ‘round again?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Your ancestors spoke to me, but I didn’t quite understand them. Can I go ‘round again?",
+"type": "dialogue"
+},
+"12": {
+"character": "Rufus",
+"character_replacements": Array[Dictionary]([]),
+"id": "12",
+"next_id": "13",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Just relax and try again.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Just relax and try again.",
+"type": "dialogue"
+},
+"13": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "13",
+"next_id": "14",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Let’s do it!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Let’s do it!",
+"type": "dialogue"
+},
+"14": {
+"id": "14",
+"is_snippet": false,
+"next_id": "3",
+"type": "goto"
+},
+"16": {
+"id": "16",
+"next_id": "18",
+"text": "Success",
+"type": "title"
+},
+"18": {
+"character": "Rufus",
+"character_replacements": Array[Dictionary]([]),
+"id": "18",
+"next_id": "19",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "There-there, Young One. How are you feeling?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "There-there, Young One. How are you feeling?",
+"type": "dialogue"
+},
+"19": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "19",
+"next_id": "20",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "I am terrified and I need to get out of here!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I am terrified and I need to get out of here!",
+"type": "dialogue"
+},
+"20": {
+"character": "Rufus",
+"character_replacements": Array[Dictionary]([]),
+"id": "20",
+"next_id": "21",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Ahh, of course you do, Young One. Just rest for now.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Ahh, of course you do, Young One. Just rest for now.",
+"type": "dialogue"
+},
+"21": {
+"id": "21",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "SpiritJourney"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "number",
+"value": 4
+}])
+},
+"next_id": "23",
+"type": "mutation"
+},
+"23": {
+"id": "23",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"3": {
+"character": "Rufus",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Alright, Young One. Close your eyes, take a deep breath and count to ten.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Alright, Young One. Close your eyes, take a deep breath and count to ten.",
+"type": "dialogue"
+},
+"4": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "One. Two. Three. Foûr. F̴̤̕ḯ̵̮v̸̨͒ȩ̷̚...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "One. Two. Three. Foûr. F̴̤̕ḯ̵̮v̸̨͒ȩ̷̚...",
+"type": "dialogue"
+},
+"5": {
+"id": "5",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "SpiritJourney"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "6",
+"type": "mutation"
+},
+"6": {
+"id": "6",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"8": {
+"id": "8",
+"next_id": "10",
+"text": "Failed",
+"type": "title"
+}
+}
+raw_text = "~ Start
+
+Rufus: Alright, Young One. Close your eyes, take a deep breath and count to ten.
+Piggy: One. Two. Three. Foûr. F̴̤̕ḯ̵̮v̸̨͒ȩ̷̚...
+set Global.SpiritJourney = 1
+=> END
+
+~ Failed
+
+Rufus: There-there, Young One. It’s alright. How are you feeling?
+Piggy: Your ancestors spoke to me, but I didn’t quite understand them. Can I go ‘round again?
+Rufus: Just relax and try again.
+Piggy: Let’s do it!
+=> Start
+
+~ Success
+
+Rufus: There-there, Young One. How are you feeling?
+Piggy: I am terrified and I need to get out of here!
+Rufus: Ahh, of course you do, Young One. Just rest for now.
+set Global.SpiritJourney = 4
+
+=> END"
+metadata/dialogue_manager_version = "2.36.0"
