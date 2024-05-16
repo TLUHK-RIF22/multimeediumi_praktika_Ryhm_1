@@ -334,7 +334,7 @@ lines = {
 "value": "="
 }, {
 "type": "number",
-"value": 1
+"value": 5
 }])
 },
 "next_id": "127",
@@ -357,7 +357,7 @@ lines = {
 "value": "="
 }, {
 "type": "number",
-"value": 1
+"value": 5
 }])
 },
 "next_id": "128",
@@ -1502,9 +1502,9 @@ Piggy: ...
 ~ Nope_lets_do_it_already
 Rufus: So be it. Let us assemble in the Great Pigsty for preparations!
 Piggy: ...
-do SpiritJourney = 1
+do SpiritJourney = 5
 
 ~ Fork2
-do SpiritJourney = 1
+do SpiritJourney = 5
 => END"
 metadata/dialogue_manager_version = "2.36.0"

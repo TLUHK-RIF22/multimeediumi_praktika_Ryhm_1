@@ -70,6 +70,10 @@ scale = Vector2(16, 16)
 position = Vector2(388, 688)
 scale = Vector2(16, 16)
 
+[node name="LevelB2Enter" type="Marker2D" parent="."]
+position = Vector2(388, 688)
+scale = Vector2(16, 16)
+
 [node name="GameManager" parent="." instance=ExtResource("8_yyaod")]
 position = Vector2(857, 276)
 
