@@ -1,11 +1,10 @@
-[gd_scene load_steps=31 format=3 uid="uid://ch8wnk4slan78"]
+[gd_scene load_steps=30 format=3 uid="uid://ch8wnk4slan78"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_jhued"]
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="2_1cl0b"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/player.tscn" id="2_fyam3"]
 [ext_resource type="Script" path="res://Levels/StopMoving.gd" id="2_o866t"]
 [ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://UI/Game_manager/game_manager.tscn" id="6_88mpu"]
-[ext_resource type="PackedScene" uid="uid://dscndc5iq3qrs" path="res://LevelHoping/Entrance.tscn" id="9_hl140"]
 [ext_resource type="PackedScene" uid="uid://dyumucr6nntlt" path="res://MapElements/TreeA.tscn" id="12_elb5v"]
 [ext_resource type="PackedScene" uid="uid://eoacvlw581i0" path="res://MapElements/maja_vb.tscn" id="12_w3box"]
 [ext_resource type="PackedScene" uid="uid://dxlhg88jqsjou" path="res://MapElements/TreeB.tscn" id="13_ems0t"]
@@ -55,15 +54,6 @@ position = Vector2(752, 958)
 level = "LevelB3"
 GateName = "B3_W"
 
-[node name="Entrance" parent="StopMoving" instance=ExtResource("9_hl140")]
-position = Vector2(819, 330)
-level = "LevelB2"
-GateName = "West_House"
-
-[node name="Entrance2" parent="StopMoving" instance=ExtResource("9_hl140")]
-position = Vector2(911, 399)
-level = "Spikes"
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
 stream = ExtResource("18_v35w4")
@@ -78,6 +68,8 @@ layer_0/tile_data = PackedInt32Array(1769474, 1769473, 0, 1835010, 1769473, 1, 1
 
 [node name="Player" parent="." instance=ExtResource("2_fyam3")]
 position = Vector2(838, 597)
+default_speed = null
+idleTimer = null
 
 [node name="SpikesExit" type="Marker2D" parent="."]
 position = Vector2(909, 442)
@@ -242,27 +234,6 @@ position = Vector2(1369, 128)
 [node name="TreeC2" parent="Trees" instance=ExtResource("14_grhey")]
 position = Vector2(769, 366)
 
-[node name="TreeC5" parent="Trees" instance=ExtResource("14_grhey")]
-position = Vector2(734, 637)
-
-[node name="TreeC6" parent="Trees" instance=ExtResource("14_grhey")]
-position = Vector2(736, 672)
-
-[node name="TreeC7" parent="Trees" instance=ExtResource("14_grhey")]
-position = Vector2(735, 712)
-
-[node name="TreeC8" parent="Trees" instance=ExtResource("14_grhey")]
-position = Vector2(737, 747)
-
-[node name="TreeC9" parent="Trees" instance=ExtResource("14_grhey")]
-position = Vector2(737, 783)
-
-[node name="TreeC10" parent="Trees" instance=ExtResource("14_grhey")]
-position = Vector2(739, 818)
-
-[node name="TreeC11" parent="Trees" instance=ExtResource("14_grhey")]
-position = Vector2(737, 851)
-
 [node name="TreeD2" parent="Trees" instance=ExtResource("15_vu80l")]
 position = Vector2(1093, 526)
 
@@ -277,9 +248,6 @@ position = Vector2(1182, 533)
 
 [node name="TreeD6" parent="Trees" instance=ExtResource("15_vu80l")]
 position = Vector2(1060, 526)
-
-[node name="TreeC12" parent="Trees" instance=ExtResource("14_grhey")]
-position = Vector2(739, 886)
 
 [node name="TreeA2" parent="Trees" instance=ExtResource("12_elb5v")]
 position = Vector2(733, 497)
@@ -482,10 +450,6 @@ position = Vector2(882, 515)
 position = Vector2(1602, 400)
 scale = Vector2(4, 4)
 
-[node name="LevelB2West_House" type="Marker2D" parent="."]
-position = Vector2(622, 331)
-scale = Vector2(4, 4)
-
 [node name="LevelC2B2_S" type="Marker2D" parent="."]
 position = Vector2(1601, 563)
 scale = Vector2(4, 4)
@@ -502,8 +466,6 @@ position = Vector2(656, 423)
 [connection signal="StopMoving" from="StopMoving/Gate_LevelSwap" to="StopMoving" method="_on_gate_level_swap_stop_moving"]
 [connection signal="StopMoving" from="StopMoving/Gate_LevelSwap2" to="StopMoving" method="_on_gate_level_swap_2_stop_moving"]
 [connection signal="StopMoving" from="StopMoving/Gate_LevelSwap3" to="StopMoving" method="_on_gate_level_swap_stop_moving"]
-[connection signal="StopMoving" from="StopMoving/Entrance" to="StopMoving" method="_on_entrance_stop_moving"]
-[connection signal="StopMoving" from="StopMoving/Entrance2" to="StopMoving" method="_on_entrance_2_stop_moving"]
 [connection signal="CanMove" from="Rufus" to="StopMoving" method="_on_rufus_can_move"]
 [connection signal="StopMoving" from="Rufus" to="StopMoving" method="_on_rufus_stop_moving"]
 [connection signal="CanMove" from="RufusJourney" to="StopMoving" method="_on_rufus_journey_can_move"]

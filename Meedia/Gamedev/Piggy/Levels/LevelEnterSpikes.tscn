@@ -61,6 +61,8 @@ layer_0/tile_data = PackedInt32Array(1769474, 1769473, 0, 1835010, 1769473, 1, 1
 
 [node name="Player" parent="." instance=ExtResource("7_866ui")]
 position = Vector2(395, 682)
+default_speed = null
+idleTimer = null
 
 [node name="SpikesExit" type="Marker2D" parent="."]
 position = Vector2(389, 688)
