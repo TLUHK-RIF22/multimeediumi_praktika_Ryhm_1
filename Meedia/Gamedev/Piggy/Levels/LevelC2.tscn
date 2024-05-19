@@ -129,8 +129,6 @@ layer_0/tile_data = PackedInt32Array(0, 1835009, 1, 65536, 1835009, 1, 131072, 1
 
 [node name="Player" parent="." instance=ExtResource("2_taw7f")]
 position = Vector2(1761, 392)
-default_speed = 80.0
-idleTimer = false
 
 [node name="GameManager" parent="." instance=ExtResource("6_esnfp")]
 position = Vector2(857, 276)
@@ -197,7 +195,7 @@ position = Vector2(1827, 400)
 scale = Vector2(4, 4)
 
 [node name="Post_silt" parent="." instance=ExtResource("9_pb5b5")]
-position = Vector2(220, 485)
+position = Vector2(199, 474)
 
 [node name="Kast" parent="." instance=ExtResource("10_mlaol")]
 position = Vector2(304, 505)

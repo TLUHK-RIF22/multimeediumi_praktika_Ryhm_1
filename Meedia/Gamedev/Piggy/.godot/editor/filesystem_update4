@@ -14,3 +14,5 @@ res://MapElements/Plane_on_fire.tscn
 res://Levels/Spikes/Ground.tscn
 res://Levels/LevelWell.tscn
 res://Items/sunglasses.tres
+res://MapElements/Post_silt.tscn
+res://Levels/LevelC2.tscn

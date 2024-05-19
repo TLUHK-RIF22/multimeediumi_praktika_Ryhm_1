@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://ch8wnk4slan78"]
+[gd_scene load_steps=31 format=3 uid="uid://ch8wnk4slan78"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_jhued"]
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="2_1cl0b"]
@@ -28,6 +28,7 @@
 [ext_resource type="PackedScene" uid="uid://bcb4no7y4tj4u" path="res://Charecters/NPC/Scenes/Kaev_A.tscn" id="27_qmovh"]
 [ext_resource type="Resource" uid="uid://ceucgee4jdksq" path="res://Charecters/NPC/Dialogues/Journey.dialogue" id="27_wprba"]
 [ext_resource type="PackedScene" uid="uid://babkdciiqwt6o" path="res://MapElements/bonfire.tscn" id="30_e4kvj"]
+[ext_resource type="PackedScene" uid="uid://3l37461xugaw" path="res://MapElements/Post_silt.tscn" id="30_r1wyp"]
 [ext_resource type="PackedScene" uid="uid://ctaolhdvrgb82" path="res://LevelHoping/Gate_levelSwap.tscn" id="33_5fkyu"]
 
 [node name="LevelB2" type="Node2D"]
@@ -458,6 +459,9 @@ scale = Vector2(4, 4)
 
 [node name="Kaev_A" parent="." instance=ExtResource("27_qmovh")]
 position = Vector2(656, 423)
+
+[node name="Post_silt" parent="." instance=ExtResource("30_r1wyp")]
+position = Vector2(852, 394)
 
 [connection signal="CanMove" from="StopMoving" to="Player" method="_on_stop_moving_can_move"]
 [connection signal="StopMoving" from="StopMoving" to="Player" method="_on_stop_moving_stop_moving"]
