@@ -49,8 +49,6 @@ texture = ExtResource("4_xixdi")
 [node name="Player" parent="." instance=ExtResource("2_gr6ix")]
 top_level = true
 position = Vector2(624, 180)
-default_speed = null
-idleTimer = null
 
 [node name="GameManager" parent="." instance=ExtResource("6_2n315")]
 visible = false

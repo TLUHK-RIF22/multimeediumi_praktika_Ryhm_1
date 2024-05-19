@@ -1,8 +1,7 @@
-[gd_scene load_steps=25 format=3 uid="uid://bbx8o31k16gc7"]
+[gd_scene load_steps=24 format=3 uid="uid://bbx8o31k16gc7"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_fjw25"]
 [ext_resource type="Script" path="res://Levels/StopMoving.gd" id="2_x7sds"]
-[ext_resource type="PackedScene" uid="uid://ctaolhdvrgb82" path="res://LevelHoping/Gate_levelSwap.tscn" id="3_ildla"]
 [ext_resource type="AudioStream" uid="uid://cu8l14cttsk3s" path="res://Audio/menüü põhi.mp3" id="5_8jgab"]
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="6_wwqjk"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/player.tscn" id="7_866ui"]
@@ -34,11 +33,6 @@ script = ExtResource("1_fjw25")
 [node name="StopMoving" type="Node" parent="."]
 script = ExtResource("2_x7sds")
 
-[node name="Gate_LevelSwap3" parent="StopMoving" instance=ExtResource("3_ildla")]
-position = Vector2(752, 958)
-level = "LevelB3"
-GateName = "B3_W"
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
 stream = ExtResource("5_8jgab")
@@ -61,8 +55,6 @@ layer_0/tile_data = PackedInt32Array(1769474, 1769473, 0, 1835010, 1769473, 1, 1
 
 [node name="Player" parent="." instance=ExtResource("7_866ui")]
 position = Vector2(395, 682)
-default_speed = null
-idleTimer = null
 
 [node name="SpikesExit" type="Marker2D" parent="."]
 position = Vector2(389, 688)
@@ -220,20 +212,8 @@ position = Vector2(871, 784)
 [node name="LogPile" parent="." instance=ExtResource("22_ruj1p")]
 position = Vector2(657, 385)
 
-[node name="LevelWellExit" type="Marker2D" parent="."]
-position = Vector2(563, 431)
-scale = Vector2(4, 4)
-
 [node name="bonfire" parent="." instance=ExtResource("29_56oc2")]
 position = Vector2(882, 515)
-
-[node name="LevelB2West_House" type="Marker2D" parent="."]
-position = Vector2(622, 331)
-scale = Vector2(4, 4)
-
-[node name="LevelB3B2_W" type="Marker2D" parent="."]
-position = Vector2(751, 903)
-scale = Vector2(4, 4)
 
 [node name="Kaev_A" parent="." instance=ExtResource("30_sp34e")]
 position = Vector2(656, 423)
@@ -246,7 +226,6 @@ position = Vector2(428, 645)
 
 [connection signal="CanMove" from="StopMoving" to="Player" method="_on_stop_moving_can_move"]
 [connection signal="StopMoving" from="StopMoving" to="Player" method="_on_stop_moving_stop_moving"]
-[connection signal="StopMoving" from="StopMoving/Gate_LevelSwap3" to="StopMoving" method="_on_gate_level_swap_stop_moving"]
 [connection signal="CanMove" from="RufusJourney" to="StopMoving" method="_on_rufus_journey_can_move"]
 [connection signal="StopMoving" from="RufusJourney" to="StopMoving" method="_on_rufus_journey_stop_moving"]
 [connection signal="CanMove" from="Kaev_A" to="StopMoving" method="_on_kaev_a_can_move"]
