@@ -26,3 +26,7 @@ var GoDownWell: int = 0
 
 #Spirit Journey
 var SpiritJourney:int = 0
+
+#Boat Escape
+
+var BoatTrigger:int = 0

@@ -1,0 +1,73 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_14vc1"]
+
+[resource]
+script = ExtResource("1_14vc1")
+using_states = PackedStringArray()
+titles = {
+"BoatFirstSeen": "3",
+"NoKey": "8"
+}
+character_names = PackedStringArray("Piggy")
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "3",
+"text": "BoatFirstSeen",
+"type": "title"
+},
+"3": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Cool boat. I wish I could ride it one day!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Cool boat. I wish I could ride it one day!",
+"type": "dialogue"
+},
+"4": {
+"id": "4",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"6": {
+"id": "6",
+"next_id": "8",
+"text": "NoKey",
+"type": "title"
+},
+"8": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "8",
+"next_id": "9",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Seems I need a key to get this thing moving.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Seems I need a key to get this thing moving.",
+"type": "dialogue"
+},
+"9": {
+"id": "9",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+}
+}
+raw_text = "~ BoatFirstSeen
+
+Piggy: Cool boat. I wish I could ride it one day!
+=> END
+
+~ NoKey
+
+Piggy: Seems I need a key to get this thing moving.
+=> END"
+metadata/dialogue_manager_version = "2.36.0"

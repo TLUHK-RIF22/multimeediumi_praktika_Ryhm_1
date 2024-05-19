@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://bul6jvrp3o0rn"
+path="res://.godot/imported/Boat.dialogue-d576e7b45058e1d0ad65ed7260e3ccc6.tres"
+
+[deps]
+
+source_file="res://Charecters/NPC/Dialogues/Boat.dialogue"
+dest_files=["res://.godot/imported/Boat.dialogue-d576e7b45058e1d0ad65ed7260e3ccc6.tres"]
+
+[params]
+
+defaults=true

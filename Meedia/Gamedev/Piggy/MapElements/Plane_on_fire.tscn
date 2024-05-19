@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0m88bwxjinls"]
+
+[ext_resource type="Texture2D" uid="uid://ccfak5wi33jdk" path="res://Sprites/Lennuk.png" id="1_p5v30"]
+[ext_resource type="PackedScene" uid="uid://tlwcj8vprsdq" path="res://MapElements/flame.tscn" id="2_572al"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_brulw"]
+size = Vector2(83, 30)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bfa5x"]
+radius = 19.0
+height = 38.0
+
+[node name="Plane_on_fire" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-3.5, -11)
+shape = SubResource("RectangleShape2D_brulw")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-26, 4)
+shape = SubResource("CapsuleShape2D_bfa5x")
+
+[node name="Lennuk" type="Sprite2D" parent="."]
+position = Vector2(-6, -11)
+texture = ExtResource("1_p5v30")
+
+[node name="flame" parent="." instance=ExtResource("2_572al")]
+position = Vector2(-30, -15)
+
+[node name="flame2" parent="." instance=ExtResource("2_572al")]
+position = Vector2(13, -12)
