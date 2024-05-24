@@ -324,3 +324,123 @@ https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/63
 - Lennuk teeb taevas palju müra
 - Kõik loomad teevad igast asju, mida meie teeme ?
 - Heliredeli radadel   
+
+## 10.04 - koosolek - 3h
+- erinevad sprited
+- tempo ja senine progress
+- lõputegevused
+- Arutasime Release sisu ja kommenteerisime tegevusi:
+- uuendatud tileset
+- Audio bus - heli on helieffektid ja muusika on eraldi audio buside peale jaotatud, et kontrollida erinevalt tugevusi. Kahe helitüübi lahku löömine.
+- Idletimer- kui siga jääb minutiks seisma, siis jääb magama ehk animatsioon muutub.
+- Walking audio- kõndides heli
+- Heli käsitlemine sai uuendatud
+- Dialoogi edasiarendamine tegelaste vahel
+- Tutorial level sai alustatud, mängu veel ei ole jõudnud.
+- Tekkisid päris dialoogid, dialoog 1 põssa vestlus oma ellujäämisinstinktiga
+- dialoog 2 põssa vestlus külavanem Rufusega
+- Kaardid B2 ja B3 said uuesti joonistatud uute materjalidega
+- DIaloogide kohta süvitsi rohkem figmast. https://www.figma.com/file/kCFpK20cq8Enrzq7m4551Q/Dialoogid-Escape-from-Piggy-Island?type=whiteboard&node-id=0%3A1&t=9DJV8QdLjVrif1P0-1
+- Käivitatava faili bugi likvideerimine
+- Heliefektide loomine
+- Käru sprite
+- Kaevu sprite
+- TIleset 2.0
+- Lennuki sprite
+- Maja update sprite
+- võtmete erinevad sprited
+- Mute and unmute sprites
+- Järgmine koosolek 14.04, kellaaeg õhtul.
+
+## 12.04 -2h
+- Loeng, ettekanne ja rühma arutelu koolis
+
+## 21.04 - 2h
+- Üldine arutelu
+- Senise progressi arutelu
+- Mappide arutelu
+- Puude layerite järjekord ! ! !
+- Puudub olulise tegelase sprite - loll lehm !
+- Astraalsiga ning tema olek (pidades silmas loengus õppejõudude märkusi ! )
+- Köie sprite ? 
+- Uus koosolek 28.04, seni jätkame issuede lahendamisi.
+
+  ## 05.05 koosolek - 3h
+- Väga hästi paika pandud esimesed tasemed
+
+- Release arutelu:
+    - Ühest levelist teise liikumine sai ümber tehtud
+    - Sisse on skriptitud dialoog, kuidas Rufus räägib maailma asjadest
+    - Väga hästi paika pandud esimesed tasemed
+    - Olemas uued sprited kai, aiapostid, kapsas, köis, paat jt. 
+
+To do
+- Davel on esimestest tasemest puudu mõned sprited
+- Martin peab helisid tegema
+- Plakat jt vormistuslikud ülesanded jaotame hiljem
+- Peetril on vaja asjad sisse pookida
+- Rännaku level lõpuks valmis joonistada
+
+## Koosolek 12.05 - 2h
+- Teisipäev 14.05 19.00 koostegemine
+- Issuede arutelu ja läbi vaatamine
+- Karl teeb kaevuleveli lõpuni
+- Kaevurõnga lõhkumine? Võti kapsa sisse peidetud?
+- Kõik mida pole githubis pole olemas ! - Kuhu kadus astraalsea sprite?
+- Veel üks pusle- mis on mehhaanikad?
+- Pusle Kapsas Issues 
+- Metsa pussle issues
+- Save game otsustasime hetkel mitte teha, võibolla tulevikus
+- Plakat- Karl-Erik soovib väga seda ise teha, issue - olemas.
+- Lõpustatistika otsustasime hetkel mitte teha, võibolla tulevikus, kui on rohkem leveleid.
+- Intro cutscene?
+- Intro taevas ja maja sprite? Issue luua.
+- Käru sprite koormakattega, vajalik, Dave juba tegeleb.
+- Taseme issue lõpetamiseks on vaja veel kapsaid (kapsaaed ja sigala) ja sinna veidi actionit.
+- Tutorial on valmis.
+- Spikes arutelu
+- Dialoogide arutelu
+- Issue dialoogide ja esimeste missioonide kirjeldamiseks luua @Karlile
+- Helieffekte on juurde vaja.
+- Normaalset kõndimise heli on vaja.
+- Ukse heli
+- Interaktsioon elutu / elus
+- Leveli vahetuse heli? jah? ei?
+- Leveli vahetuseks mingi värav?
+- Leveli vahetuseks mingi poolpunane kiht, kust välja saab?
+- Sihtgrupp - Täiskasvanud ja naiivsed lapsed.
+- Issue - Ninni nänni maailma.
+- Tutoriali sidumine ülejäänud mapiga - Puudega level ja vana rohtunud tee.- Teisipäevane teema
+- Loodame, et äkki saame valikpraktika käigus alustatud mängu jätkata- arutame järgmine kord õppejõududega võimalusi, kui kohtume.
+- Järgmine kohtumine 19.05 - 18:00
+
+
+### Karli märkused:
+- Kokku panna kaevu level
+- Kokku panna rännaku level sh joonistada selle assetid
+- Põhjalikult välja mõelda, kuidas hakkab toimima väljasõidu missioon ja kuidas selles Dave joonistatud asjad kasutusele võtta
+- Küljendan plakati
+- Kaks uut dialoogi
+
+- Minimaalne FX
+-- sammud
+-- Interaktioon - elutu
+-- Interaktioon - elus
+-- Levelivahetuse FX
+-- Lõkkeheli
+-- Mutiaukude pusle? Juhuslik kas jõuad sihtkohta- nt ideena supermario augud.
+
+## 24.05 - 1h
+- Esitlus
+### Tagasiside:
+- Mängu graafika on okei aga alguse asjad ja menüü .. ?
+- Pusle tasand tekitas segadust, mis toimub seal? Kivide arv?
+- Kui kaevuäärde läksid, siis esimene kord ütles ja võiks kaevus rohkem sodi olla, läheks looga paremini kokku. Katkisi ämbreid? Emotsiooni juurde.
+-  Üleminekud hoomamatud , ei saa aru miks keskkond muutub, võiks olla ikkagi ka midagi visuaalset, rohkem.
+- Äkki auk, värelus üleminekul? Kammiks hetkel läbi ruut haaval kogu mängu, mis annaks märku, et see üleminek võiks toimuda.
+- Lennuki animatsioon oli tore, graafika on lahe!
+- Saab inventory ette, kas võiks inventory eest ära  võtta escape klahviga?
+- Kas peab olema sama siga või on erinevad sead keda kohtab?
+- Kui sama siga, siis võiks ta tulla kusagilt või seda näidata kohtumisena- animatsioon stseeni?
+- Varasem kogemus asjade korjega ja kas seda mujal veel rakendada?
+- Kasutajakogemus.
