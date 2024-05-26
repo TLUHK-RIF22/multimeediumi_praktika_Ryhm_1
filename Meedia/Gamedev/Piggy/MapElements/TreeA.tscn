@@ -1,22 +1,27 @@
 [gd_scene load_steps=3 format=3 uid="uid://dyumucr6nntlt"]
 
-[ext_resource type="Texture2D" uid="uid://2e0wdnflvsko" path="res://Tiles/Tileset2.0.png" id="1_15i3s"]
+[ext_resource type="Texture2D" uid="uid://b4s5sgdn4mjiu" path="res://Sprites/Vegas.png" id="1_rosxu"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wr0ow"]
-radius = 5.0
+radius = 24.0
+height = 416.0
 
-[node name="TreeA" type="Node2D"]
+[node name="Vegas" type="Node2D"]
+top_level = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
-[node name="Tileset2_0" type="Sprite2D" parent="StaticBody2D"]
-position = Vector2(0, -17)
-texture = ExtResource("1_15i3s")
-region_enabled = true
-region_rect = Rect2(896, 192, 64, 64)
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-visible = false
-position = Vector2(0, 3)
-rotation = 1.5708
+position = Vector2(-127, -2)
 shape = SubResource("CapsuleShape2D_wr0ow")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-22, -3)
+shape = SubResource("CapsuleShape2D_wr0ow")
+
+[node name="Tileset2_0" type="Sprite2D" parent="StaticBody2D"]
+z_index = -620
+z_as_relative = false
+position = Vector2(0, -17)
+texture = ExtResource("1_rosxu")
+region_rect = Rect2(896, 192, 64, 64)
