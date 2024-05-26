@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctaxw4f8aqco8"]
+
+[ext_resource type="Texture2D" uid="uid://b4s5sgdn4mjiu" path="res://Sprites/Vegas.png" id="1_l7on7"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wr0ow"]
+radius = 21.0033
+height = 368.0
+
+[node name="Vegas2" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(64, -222)
+
+[node name="Tileset2_0" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(0, -2)
+texture = ExtResource("1_l7on7")
+region_rect = Rect2(832, 256, 64, 64)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-125, 52)
+rotation = 0.00343895
+shape = SubResource("CapsuleShape2D_wr0ow")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-21, 54)
+rotation = 0.00343895
+shape = SubResource("CapsuleShape2D_wr0ow")

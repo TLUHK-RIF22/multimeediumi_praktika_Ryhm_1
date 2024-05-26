@@ -8,20 +8,22 @@ height = 416.0
 
 [node name="Vegas" type="Node2D"]
 top_level = true
+position = Vector2(0, -7)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-23, 287)
 
 [node name="Tileset2_0" type="Sprite2D" parent="StaticBody2D"]
 z_index = -620
 z_as_relative = false
-position = Vector2(0, -17)
+position = Vector2(1, -235)
 texture = ExtResource("1_8v8kj")
 region_rect = Rect2(896, 192, 64, 64)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-22, -3)
+position = Vector2(-20, -215)
 shape = SubResource("CapsuleShape2D_wr0ow")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-127, -2)
+position = Vector2(-125, -216)
 shape = SubResource("CapsuleShape2D_wr0ow")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=3 uid="uid://bnpy81qqv4kht"]
+[gd_scene load_steps=74 format=3 uid="uid://bnpy81qqv4kht"]
 
 [ext_resource type="Script" path="res://Charecters/Siga/Scenes/player_spikes.gd" id="1_ivyru"]
 [ext_resource type="Texture2D" uid="uid://dtn1x5dcomjku" path="res://Charecters/Siga/Sprites/Idle_Siga_Down-Sheet.png" id="2_sviq6"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bf2slacelv3q4" path="res://Charecters/Siga/Sprites/Walking_Siga_Right.png" id="8_ct0qd"]
 [ext_resource type="Texture2D" uid="uid://cyg4i5fo3f7vc" path="res://Charecters/Siga/Sprites/Walking_Siga_Up.png" id="9_p0q2r"]
 [ext_resource type="Script" path="res://Charecters/Siga/Scenes/fadeToBlack.gd" id="10_2xrfo"]
+[ext_resource type="AudioStream" uid="uid://gq713ng78b06" path="res://Audio/Walking_sound.mp3" id="11_eue58"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7p3e6"]
 atlas = ExtResource("2_sviq6")
@@ -724,3 +725,9 @@ unique_name_in_owner = true
 libraries = {
 "": SubResource("AnimationLibrary_atdk1")
 }
+
+[node name="AudioStreamPlayer_Walking" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("11_eue58")
+autoplay = true
+bus = &"SFX"

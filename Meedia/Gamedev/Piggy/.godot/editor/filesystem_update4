@@ -1,11 +1,14 @@
-res://MapElements/TreeA.tscn
+res://Levels/Spikes.tscn
 res://Pickup/pickup.gd
 res://Items/apple.tres
 res://Items/rope.tres
-res://Levels/Spikes/Ground.tscn
 res://Items/KeyBig.tres
 res://Levels/LevelB2.tscn
-res://Levels/Spikes.tscn
+res://Levels/Spikes/Ground.tscn
 res://Levels/LevelC2.tscn
 res://Levels/LevelEnterSpikes.tscn
 res://MapElements/Vegas.tscn
+res://Levels/Spikes/Spikes.gd
+res://Charecters/Siga/Scenes/player_spikes.tscn
+res://Charecters/Siga/player.tscn
+res://MapElements/Vegas2.tscn
