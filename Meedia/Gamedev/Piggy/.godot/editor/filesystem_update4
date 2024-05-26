@@ -12,3 +12,4 @@ res://Levels/Spikes/Spikes.gd
 res://Charecters/Siga/Scenes/player_spikes.tscn
 res://Charecters/Siga/player.tscn
 res://MapElements/Vegas2.tscn
+res://tile_map.tscn
