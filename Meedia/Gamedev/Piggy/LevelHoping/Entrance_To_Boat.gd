@@ -5,7 +5,7 @@ extends Area2D
 var entered = false
 @onready var animation_player = %AnimationPlayer
 @export var level: String
-
+@export var GateName: String
 @export var item:Item
 
 var inventory = Global._content
@@ -41,7 +41,7 @@ func _unhandled_input(_event):
 		animation_player.play("fade_out")
 		await(get_tree().create_timer(fadeOutTimer).timeout)
 		entered = false
-		
+		Global.from_level = get_parent().get_parent().name + GateName
 		get_tree().change_scene_to_file("res://Levels/"+level+".tscn")
 		
 	elif entered:

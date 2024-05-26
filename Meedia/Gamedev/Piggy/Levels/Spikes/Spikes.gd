@@ -17,4 +17,5 @@ func _process(_delta):
 	$player_spikes.position.y -= piggy_speed
 	#if $player_spikes.position.y > screen_size:
 	#	$player_spikes.position.y = screen_size 
-	
+	if $player_spikes.position.y <= screen_size / 2:
+		$player_spikes.position.y = screen_size / 2
