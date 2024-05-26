@@ -9,3 +9,6 @@ res://Levels/Spikes.tscn
 res://Levels/LevelC2.tscn
 res://Levels/LevelEnterSpikes.tscn
 res://MapElements/Vegas.tscn
+res://MapElements/RockA.tscn
+res://Items/sunglasses.tres
+res://Levels/LevelWell.tscn

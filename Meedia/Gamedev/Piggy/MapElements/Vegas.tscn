@@ -14,7 +14,7 @@ top_level = true
 [node name="Tileset2_0" type="Sprite2D" parent="StaticBody2D"]
 z_index = -620
 z_as_relative = false
-position = Vector2(0, -17)
+position = Vector2(8, -22)
 texture = ExtResource("1_8v8kj")
 region_rect = Rect2(896, 192, 64, 64)
 
