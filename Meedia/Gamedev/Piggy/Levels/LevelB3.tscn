@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://eoacvlw581i0" path="res://MapElements/maja_vb.tscn" id="11_rx886"]
 [ext_resource type="Texture2D" uid="uid://cko33yttif4wr" path="res://Sprites/Paat.png" id="14_sp1sm"]
 [ext_resource type="PackedScene" uid="uid://bxm4ov0afauwc" path="res://Charecters/NPC/Scenes/SurvivalInstinct.tscn" id="16_kdrcx"]
-[ext_resource type="PackedScene" uid="uid://dyumucr6nntlt" path="res://MapElements/TreeA.tscn" id="16_mbmr7"]
+[ext_resource type="PackedScene" uid="uid://dyumucr6nntlt" path="res://MapElements/Vegas.tscn" id="16_mbmr7"]
 [ext_resource type="PackedScene" uid="uid://b0m88bwxjinls" path="res://MapElements/Plane_on_fire.tscn" id="16_rs8nr"]
 [ext_resource type="Script" path="res://Charecters/NPC/SurvivalInstinct.gd" id="17_npyo5"]
 [ext_resource type="Resource" uid="uid://c23jhiv6h82dm" path="res://Charecters/NPC/Dialogues/SurvivalInstinct.dialogue" id="18_w5bc6"]

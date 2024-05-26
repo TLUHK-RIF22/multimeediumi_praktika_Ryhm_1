@@ -1,11 +1,10 @@
-[gd_scene load_steps=31 format=3 uid="uid://ch8wnk4slan78"]
+[gd_scene load_steps=30 format=3 uid="uid://ch8wnk4slan78"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_jhued"]
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="2_1cl0b"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/player.tscn" id="2_fyam3"]
 [ext_resource type="Script" path="res://Levels/StopMoving.gd" id="2_o866t"]
 [ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://UI/Game_manager/game_manager.tscn" id="6_88mpu"]
-[ext_resource type="PackedScene" uid="uid://dyumucr6nntlt" path="res://MapElements/TreeA.tscn" id="12_elb5v"]
 [ext_resource type="PackedScene" uid="uid://eoacvlw581i0" path="res://MapElements/maja_vb.tscn" id="12_w3box"]
 [ext_resource type="PackedScene" uid="uid://dxlhg88jqsjou" path="res://MapElements/TreeB.tscn" id="13_ems0t"]
 [ext_resource type="PackedScene" uid="uid://unwk55hw3ogw" path="res://MapElements/TreeC.tscn" id="14_grhey"]
@@ -248,14 +247,8 @@ position = Vector2(1182, 533)
 [node name="TreeD6" parent="Trees" instance=ExtResource("15_vu80l")]
 position = Vector2(1060, 526)
 
-[node name="TreeA2" parent="Trees" instance=ExtResource("12_elb5v")]
-position = Vector2(733, 497)
-
 [node name="TreeB2" parent="Trees" instance=ExtResource("13_ems0t")]
 position = Vector2(754, 426)
-
-[node name="TreeA3" parent="Trees" instance=ExtResource("12_elb5v")]
-position = Vector2(641, 499)
 
 [node name="Puuring" type="Control" parent="Trees"]
 y_sort_enabled = true
@@ -538,6 +531,9 @@ position = Vector2(656, 423)
 [node name="Post_silt" parent="." instance=ExtResource("30_r1wyp")]
 position = Vector2(852, 394)
 labelText = "If only I could read..."
+
+[node name="TreeB2" parent="." instance=ExtResource("13_ems0t")]
+position = Vector2(712, 437)
 
 [connection signal="CanMove" from="StopMoving" to="Player" method="_on_stop_moving_can_move"]
 [connection signal="StopMoving" from="StopMoving" to="Player" method="_on_stop_moving_stop_moving"]

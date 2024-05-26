@@ -14,7 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://bxurlx37r4xvh" path="res://MapElements/TreeD.tscn" id="14_t0itc"]
 [ext_resource type="Resource" uid="uid://du6716yl6364o" path="res://Charecters/NPC/Dialogues/EnterSpikes.dialogue" id="15_fb5l6"]
 [ext_resource type="PackedScene" uid="uid://conad5o532k7b" path="res://MapElements/TreeE.tscn" id="15_yc64o"]
-[ext_resource type="PackedScene" uid="uid://dyumucr6nntlt" path="res://MapElements/TreeA.tscn" id="17_4u75t"]
+[ext_resource type="PackedScene" uid="uid://dyumucr6nntlt" path="res://MapElements/Vegas.tscn" id="17_4u75t"]
 [ext_resource type="PackedScene" uid="uid://c0siug1wu6irr" path="res://MapElements/RockB.tscn" id="18_1nkut"]
 [ext_resource type="PackedScene" uid="uid://cu5e7cxcnsaax" path="res://MapElements/RockA.tscn" id="19_7eujn"]
 [ext_resource type="Script" path="res://Charecters/NPC/RufusEnterSpikes.gd" id="21_8j84h"]

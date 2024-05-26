@@ -3,3 +3,9 @@ res://Pickup/pickup.gd
 res://Items/apple.tres
 res://Items/rope.tres
 res://Levels/Spikes/Ground.tscn
+res://Items/KeyBig.tres
+res://Levels/LevelB2.tscn
+res://Levels/Spikes.tscn
+res://Levels/LevelC2.tscn
+res://Levels/LevelEnterSpikes.tscn
+res://MapElements/Vegas.tscn
