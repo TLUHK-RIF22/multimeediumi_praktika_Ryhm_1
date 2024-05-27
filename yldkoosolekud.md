@@ -444,3 +444,6 @@ To do
 - Kui sama siga, siis võiks ta tulla kusagilt või seda näidata kohtumisena- animatsioon stseeni?
 - Varasem kogemus asjade korjega ja kas seda mujal veel rakendada?
 - Kasutajakogemus.
+
+## 27.05 - 1h
+- https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/118
