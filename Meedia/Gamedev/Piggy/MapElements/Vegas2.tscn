@@ -12,16 +12,17 @@ height = 368.0
 position = Vector2(64, -222)
 
 [node name="Tileset2_0" type="Sprite2D" parent="StaticBody2D"]
-position = Vector2(0, -2)
+position = Vector2(-55.5666, 43.25)
+scale = Vector2(0.795711, 0.795711)
 texture = ExtResource("1_l7on7")
 region_rect = Rect2(832, 256, 64, 64)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-125, 52)
+position = Vector2(-163, 39)
 rotation = 0.00343895
 shape = SubResource("CapsuleShape2D_wr0ow")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-21, 54)
+position = Vector2(-67, 42)
 rotation = 0.00343895
 shape = SubResource("CapsuleShape2D_wr0ow")
