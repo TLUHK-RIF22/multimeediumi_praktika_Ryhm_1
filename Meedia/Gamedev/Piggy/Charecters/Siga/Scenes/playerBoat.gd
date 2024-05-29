@@ -13,8 +13,7 @@ var input_direction: Vector2
 func _physics_process(_delta):
 
 	input_direction = Vector2(
-		0
-		#Input.get_action_strength("ui_right") #- Input.get_action_strength("ui_left")
+		Input.get_action_strength("ui_right") #- Input.get_action_strength("ui_left")
 		,
 		Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 	)
@@ -24,15 +23,15 @@ func _physics_process(_delta):
 	velocity = input_direction * move_speed
 
 
-#	pick_new_state()
+	pick_new_state()
 	
 	# Move and Slide 
 	move_and_slide()
 
-#func pick_new_state():
-#	if(velocity != Vector2.ZERO):
-#
-#		if !playerWalkingAudioStream.playing:
-#			playerWalkingAudioStream.play()
-#	else:
-#		playerWalkingAudioStream.stop()
+func pick_new_state():
+	if(velocity != Vector2.ZERO):
+
+		if !playerWalkingAudioStream.playing:
+			playerWalkingAudioStream.play()
+	else:
+		playerWalkingAudioStream.stop()
