@@ -1,7 +1,8 @@
+CharacterBody2D
+Node2D
 CanvasLayer
 CollisionShape2D
 TileMap
-CharacterBody2D
 RigidBody2D
 StaticBody2D
 Node
@@ -11,4 +12,3 @@ AnimatedSprite2D
 Timer
 ColorRect
 PanelContainer
-Panel

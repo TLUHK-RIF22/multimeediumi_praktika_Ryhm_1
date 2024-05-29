@@ -4,10 +4,6 @@ res://Items/KeyBig.tres
 res://Items/sunglasses.tres
 res://Items/GasCan.tres
 res://Items/apple.tres
-res://Items/Scene/KeyBig.tscn
-res://Items/Scene/GasCan.tscn
-res://Items/Scene/sunglasses.tscn
-res://MapElements/maja_vb.tscn
-res://MapElements/telk.tscn
-res://Global.gd
-res://LevelHoping/Entrance_To_Boat.gd
+res://Levels/LevelSea.tscn
+res://Levels/TheEnd.tscn
+res://Levels/LevelSea.gd

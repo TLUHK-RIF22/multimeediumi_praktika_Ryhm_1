@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cb7dl5myrlmf1"]
+
+[node name="TheEnd" type="Node2D"]
+process_mode = 1
+y_sort_enabled = true
+position = Vector2(1, 0)
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "The End"
