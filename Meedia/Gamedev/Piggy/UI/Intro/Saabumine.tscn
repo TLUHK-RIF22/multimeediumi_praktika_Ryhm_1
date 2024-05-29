@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://7tul3yh37nmu"]
+[gd_scene load_steps=7 format=3 uid="uid://7tul3yh37nmu"]
 
 [ext_resource type="Script" path="res://UI/Intro/Saabumine.gd" id="1_48qwp"]
 [ext_resource type="PackedScene" uid="uid://mcobavk7ibdf" path="res://Levels/LevelB3.tscn" id="2_b1oif"]
 [ext_resource type="VideoStream" path="res://UI/Intro/Saabumine.ogv" id="3_3v450"]
 [ext_resource type="Script" path="res://UI/Intro/Label.gd" id="4_d2gr7"]
+[ext_resource type="Theme" uid="uid://d15h12ovw1nfc" path="res://Ganon16px.tres" id="4_poyi8"]
 [ext_resource type="AudioStream" uid="uid://b4lallqfh85vl" path="res://Audio/Piggy intro sample.mp3" id="5_dodrl"]
 
 [node name="Saabumine" type="Node2D"]
@@ -21,6 +22,7 @@ offset_left = 266.0
 offset_top = 237.0
 offset_right = 474.0
 offset_bottom = 262.0
+theme = ExtResource("4_poyi8")
 horizontal_alignment = 2
 script = ExtResource("4_d2gr7")
 Level = ExtResource("2_b1oif")

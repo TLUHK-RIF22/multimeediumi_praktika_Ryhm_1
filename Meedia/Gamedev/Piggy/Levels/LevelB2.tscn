@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://ch8wnk4slan78"]
+[gd_scene load_steps=31 format=3 uid="uid://ch8wnk4slan78"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_jhued"]
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="2_1cl0b"]
@@ -11,7 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://bxurlx37r4xvh" path="res://MapElements/TreeD.tscn" id="15_vu80l"]
 [ext_resource type="PackedScene" uid="uid://conad5o532k7b" path="res://MapElements/TreeE.tscn" id="16_8ukrc"]
 [ext_resource type="PackedScene" uid="uid://c1kt6oxih286t" path="res://MapElements/Käru.tscn" id="16_woy6m"]
-[ext_resource type="PackedScene" uid="uid://cwvbnxaknwle4" path="res://MapElements/Laut.tscn" id="17_2m4l8"]
 [ext_resource type="PackedScene" uid="uid://bu142qf82b4g1" path="res://MapElements/TreeF.tscn" id="17_qh1cs"]
 [ext_resource type="Texture2D" uid="uid://deqy2ywnglmke" path="res://Sprites/Kapsas.png" id="17_skdou"]
 [ext_resource type="PackedScene" uid="uid://c0siug1wu6irr" path="res://MapElements/RockB.tscn" id="18_02ch6"]
@@ -26,6 +25,8 @@
 [ext_resource type="Script" path="res://Charecters/NPC/RufusJourney.gd" id="26_6pjc1"]
 [ext_resource type="PackedScene" uid="uid://bcb4no7y4tj4u" path="res://Charecters/NPC/Scenes/Kaev_A.tscn" id="27_qmovh"]
 [ext_resource type="Resource" uid="uid://ceucgee4jdksq" path="res://Charecters/NPC/Dialogues/Journey.dialogue" id="27_wprba"]
+[ext_resource type="PackedScene" uid="uid://sbx2cldx1m8a" path="res://MapElements/Laut_suur.tscn" id="30_c37pc"]
+[ext_resource type="Resource" uid="uid://dsm7vwogkxt38" path="res://Items/KeyBig.tres" id="30_dd3f1"]
 [ext_resource type="PackedScene" uid="uid://babkdciiqwt6o" path="res://MapElements/bonfire.tscn" id="30_e4kvj"]
 [ext_resource type="PackedScene" uid="uid://3l37461xugaw" path="res://MapElements/Post_silt.tscn" id="30_r1wyp"]
 [ext_resource type="PackedScene" uid="uid://ctaolhdvrgb82" path="res://LevelHoping/Gate_levelSwap.tscn" id="33_5fkyu"]
@@ -92,12 +93,6 @@ position = Vector2(834, 293)
 
 [node name="Käru" parent="." instance=ExtResource("16_woy6m")]
 position = Vector2(510, 422)
-
-[node name="Laut" parent="." instance=ExtResource("17_2m4l8")]
-position = Vector2(212, 416)
-
-[node name="Laut2" parent="." instance=ExtResource("17_2m4l8")]
-position = Vector2(338, 416)
 
 [node name="Trees" type="Control" parent="."]
 y_sort_enabled = true
@@ -534,6 +529,13 @@ labelText = "If only I could read..."
 
 [node name="TreeB2" parent="." instance=ExtResource("13_ems0t")]
 position = Vector2(712, 437)
+
+[node name="Node2D" parent="." instance=ExtResource("21_is6f1")]
+position = Vector2(214, 193)
+item = ExtResource("30_dd3f1")
+
+[node name="Laut_suur" parent="." instance=ExtResource("30_c37pc")]
+position = Vector2(297, 426)
 
 [connection signal="CanMove" from="StopMoving" to="Player" method="_on_stop_moving_can_move"]
 [connection signal="StopMoving" from="StopMoving" to="Player" method="_on_stop_moving_stop_moving"]

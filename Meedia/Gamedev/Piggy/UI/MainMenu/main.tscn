@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://pqoidl1vn4w5"]
+[gd_scene load_steps=8 format=3 uid="uid://pqoidl1vn4w5"]
 
 [ext_resource type="Script" path="res://UI/MainMenu/main.gd" id="1_qwy1y"]
 [ext_resource type="PackedScene" uid="uid://7tul3yh37nmu" path="res://UI/Intro/Saabumine.tscn" id="2_858vs"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dtlc4uhxxugn7" path="res://UI/MainMenu/Settings/Settings.tscn" id="3_jt0f4"]
 [ext_resource type="PackedScene" uid="uid://brb13itbq0yo1" path="res://UI/MainMenu/BG.tscn" id="4_1iuup"]
 [ext_resource type="Script" path="res://UI/MainMenu/Button.gd" id="4_ylxuc"]
+[ext_resource type="Theme" uid="uid://d15h12ovw1nfc" path="res://Ganon16px.tres" id="5_xe7jx"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_qwy1y")
@@ -30,17 +31,20 @@ layout_mode = 2
 [node name="PlayButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 tooltip_text = "Press to enter the GAME"
+theme = ExtResource("5_xe7jx")
 text = "Play"
 script = ExtResource("4_ylxuc")
 
 [node name="SettingsButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 tooltip_text = "Press to change the Settings"
+theme = ExtResource("5_xe7jx")
 text = "Settings"
 
 [node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 tooltip_text = "Leaving already?"
+theme = ExtResource("5_xe7jx")
 text = "Quit"
 
 [node name="BG" parent="." instance=ExtResource("4_1iuup")]

@@ -41,11 +41,9 @@ func _unhandled_input(_event):
 		emit_signal("StopMoving")
 		DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "BoatFirstSeen")
 		Global.BoatTrigger = 1
-	elif entered && Input.is_action_just_pressed("ui_accept") && Global.BoatTrigger == 1 && !key in inventory:
-		emit_signal("StopMoving")
-		DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "NoKey")
+
 		
-	elif entered && Input.is_action_just_pressed("ui_accept") && Global.BoatTrigger == 1 && key in inventory:
+	elif entered && Input.is_action_just_pressed("ui_accept") && Global.BoatTrigger == 1 && key in inventory && sunglasses in inventory && gas_can in inventory:
 		emit_signal("StopMoving")
 		canvas_layer.visible = true
 		animation_player.play("fade_out")
@@ -53,6 +51,10 @@ func _unhandled_input(_event):
 		entered = false
 		Global.from_level = get_parent().get_parent().name + GateName
 		get_tree().change_scene_to_file("res://Levels/"+level+".tscn")
+	
+	elif entered && Input.is_action_just_pressed("ui_accept") && Global.BoatTrigger == 1 :
+		emit_signal("StopMoving")
+		DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "NoKey")
 		
 	elif entered:
 			emit_signal("CanMove")

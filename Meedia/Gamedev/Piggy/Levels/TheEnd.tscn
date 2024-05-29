@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://cb7dl5myrlmf1"]
+[gd_scene load_steps=2 format=3 uid="uid://cb7dl5myrlmf1"]
+
+[ext_resource type="Theme" uid="uid://d15h12ovw1nfc" path="res://Ganon16px.tres" id="1_ylwjv"]
 
 [node name="TheEnd" type="Node2D"]
 process_mode = 1
@@ -8,4 +10,5 @@ position = Vector2(1, 0)
 [node name="Label" type="Label" parent="."]
 offset_right = 40.0
 offset_bottom = 23.0
+theme = ExtResource("1_ylwjv")
 text = "The End"

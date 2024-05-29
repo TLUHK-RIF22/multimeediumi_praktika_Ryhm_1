@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://cj85dk8ggd5pr"]
 
-[ext_resource type="Texture2D" uid="uid://d1eqgdn8vigo2" path="res://Sprites/sunglasses.png" id="1_ckj1l"]
+[ext_resource type="Texture2D" uid="uid://bcxwh8gkr5mxa" path="res://Sprites/Prillid.png" id="1_styjt"]
 [ext_resource type="PackedScene" uid="uid://dhr8t75o24d0e" path="res://Items/Scene/sunglasses.tscn" id="2_wdm0y"]
 [ext_resource type="Script" path="res://Pickup/item.gd" id="3_ioasv"]
 
@@ -8,4 +8,4 @@
 script = ExtResource("3_ioasv")
 name = "sunglasses"
 scene = ExtResource("2_wdm0y")
-icon = ExtResource("1_ckj1l")
+icon = ExtResource("1_styjt")

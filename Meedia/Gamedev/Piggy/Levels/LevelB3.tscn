@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://mcobavk7ibdf"]
+[gd_scene load_steps=21 format=3 uid="uid://mcobavk7ibdf"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_pxv05"]
 [ext_resource type="Script" path="res://Levels/StopMoving.gd" id="2_6cg2f"]
@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://ctaolhdvrgb82" path="res://LevelHoping/Gate_levelSwap.tscn" id="11_lxfrn"]
 [ext_resource type="Texture2D" uid="uid://cko33yttif4wr" path="res://Sprites/Paat.png" id="14_sp1sm"]
 [ext_resource type="PackedScene" uid="uid://cg5xfwrgkb8ht" path="res://MapElements/telk.tscn" id="16_52dnd"]
+[ext_resource type="Theme" uid="uid://d15h12ovw1nfc" path="res://Ganon16px.tres" id="16_5635t"]
 [ext_resource type="PackedScene" uid="uid://bxm4ov0afauwc" path="res://Charecters/NPC/Scenes/SurvivalInstinct.tscn" id="16_kdrcx"]
 [ext_resource type="PackedScene" uid="uid://b0m88bwxjinls" path="res://MapElements/Plane_on_fire.tscn" id="16_rs8nr"]
 [ext_resource type="PackedScene" uid="uid://dyumucr6nntlt" path="res://MapElements/TreeA.tscn" id="16_twhg8"]
@@ -82,6 +83,7 @@ offset_left = 401.0
 offset_top = 538.0
 offset_right = 591.0
 offset_bottom = 587.0
+theme = ExtResource("16_5635t")
 text = "Use arrow keys or WASD
 to move"
 
@@ -93,6 +95,7 @@ offset_left = 538.0
 offset_top = 607.0
 offset_right = 692.0
 offset_bottom = 656.0
+theme = ExtResource("16_5635t")
 text = "Walk over the apple
 to pick it up"
 
@@ -119,15 +122,15 @@ position = Vector2(948, 120)
 position = Vector2(1026, 378)
 
 [node name="Node2D" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(931, 454)
+position = Vector2(846, 473)
 item = ExtResource("5_jwhar")
 
 [node name="Node2D2" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(911, 472)
+position = Vector2(826, 491)
 item = ExtResource("7_h0yd0")
 
 [node name="Node2D3" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(881, 487)
+position = Vector2(796, 506)
 item = ExtResource("6_n5mls")
 
 [connection signal="CanMove" from="StopMoving" to="Player" method="_on_stop_moving_can_move"]

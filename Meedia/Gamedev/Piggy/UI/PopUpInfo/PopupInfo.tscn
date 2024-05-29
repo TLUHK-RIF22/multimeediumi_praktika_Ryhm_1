@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://2qtpgse6674"]
+[gd_scene load_steps=4 format=3 uid="uid://2qtpgse6674"]
 
 [ext_resource type="Script" path="res://UI/PopUpInfo/PopupInfo.gd" id="1_fvwan"]
+[ext_resource type="Theme" uid="uid://d15h12ovw1nfc" path="res://Ganon16px.tres" id="2_0cg5r"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tpmhm"]
 radius = 32.0
@@ -36,6 +37,7 @@ grow_vertical = 0
 [node name="Label" type="Label" parent="Area2D/PanelContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+theme = ExtResource("2_0cg5r")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

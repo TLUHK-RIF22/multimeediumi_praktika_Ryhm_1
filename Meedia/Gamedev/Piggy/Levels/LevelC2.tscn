@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://bldpg4qqxtfo3" path="res://MapElements/Auk_out.tscn" id="11_xh8ed"]
 [ext_resource type="PackedScene" uid="uid://c5h6i1vrldhsx" path="res://Pickup/pickup.tscn" id="12_nbea6"]
 [ext_resource type="PackedScene" uid="uid://beohv04uvm5wr" path="res://MapElements/Auk_in.tscn" id="12_obo73"]
-[ext_resource type="Resource" uid="uid://dsm7vwogkxt38" path="res://Items/KeyBig.tres" id="13_w6wff"]
+[ext_resource type="Resource" uid="uid://f5eocg24sgj" path="res://Items/GasCan.tres" id="13_1ihd7"]
 
 [node name="LevelC2" type="Node2D"]
 process_mode = 1
@@ -254,7 +254,7 @@ position = Vector2(802, -166)
 
 [node name="Node2D" parent="." instance=ExtResource("12_nbea6")]
 position = Vector2(756, -87)
-item = ExtResource("13_w6wff")
+item = ExtResource("13_1ihd7")
 
 [connection signal="CanMove" from="StopMoving" to="Player" method="_on_stop_moving_can_move"]
 [connection signal="StopMoving" from="StopMoving" to="Player" method="_on_stop_moving_stop_moving"]

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://sbx2cldx1m8a"]
+
+[ext_resource type="Texture2D" uid="uid://dakosrbrd15mv" path="res://Sprites/Suur, laut.png" id="1_yix31"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_brulw"]
+size = Vector2(263, 131)
+
+[node name="Laut_suur" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Laut" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(0, -69)
+texture = ExtResource("1_yix31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+visible = false
+position = Vector2(-3.5, -39.5)
+shape = SubResource("RectangleShape2D_brulw")

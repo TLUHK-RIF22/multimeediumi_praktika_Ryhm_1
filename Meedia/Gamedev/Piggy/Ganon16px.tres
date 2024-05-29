@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://d15h12ovw1nfc"]
+
+[ext_resource type="FontFile" uid="uid://g5wemyod7ar2" path="res://edit-undo/editundo.ttf" id="1_aos80"]
+
+[resource]
+default_font = ExtResource("1_aos80")
+default_font_size = 16
