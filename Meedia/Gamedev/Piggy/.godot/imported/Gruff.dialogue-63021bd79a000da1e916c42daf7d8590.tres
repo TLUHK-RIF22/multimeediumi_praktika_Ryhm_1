@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_aax57"]
+
+[resource]
+script = ExtResource("1_aax57")
+using_states = PackedStringArray()
+titles = {
+"Gruff": "3"
+}
+character_names = PackedStringArray("Gruff", "Piggy")
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "3",
+"text": "Gruff",
+"type": "title"
+},
+"3": {
+"character": "Gruff",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Mhmhmh?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Mhmhmh?",
+"type": "dialogue"
+},
+"4": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "4.2",
+"next_id_after": "6",
+"notes": "",
+"responses": PackedStringArray("4", "5"),
+"tags": PackedStringArray(),
+"text": "Hi, I’m Cornfed.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hi, I’m Cornfed.",
+"type": "response"
+},
+"4.2": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "6",
+"next_id_after": "6",
+"tags": PackedStringArray(),
+"text": "Hi, I’m Cornfed.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hi, I’m Cornfed.",
+"type": "dialogue"
+},
+"5": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "5.2",
+"next_id_after": "6",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Hi, could you help me with something?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hi, could you help me with something?",
+"type": "response"
+},
+"5.2": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "6",
+"next_id_after": "6",
+"tags": PackedStringArray(),
+"text": "Hi, could you help me with something?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hi, could you help me with something?",
+"type": "dialogue"
+},
+"6": {
+"character": "Gruff",
+"character_replacements": Array[Dictionary]([]),
+"id": "6",
+"next_id": "8",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "You are not food so I am not interested. Begone!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You are not food so I am not interested. Begone!",
+"type": "dialogue"
+},
+"8": {
+"id": "8",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+}
+}
+raw_text = "~ Gruff
+
+Gruff: Mhmhmh?
+- Piggy: Hi, I’m Cornfed.
+- Piggy: Hi, could you help me with something?
+Gruff: You are not food so I am not interested. Begone!
+
+=> END"
+metadata/dialogue_manager_version = "2.36.0"

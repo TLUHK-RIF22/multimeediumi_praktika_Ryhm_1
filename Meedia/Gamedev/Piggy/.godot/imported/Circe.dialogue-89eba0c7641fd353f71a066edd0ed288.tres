@@ -1,0 +1,466 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_r6yt2"]
+
+[resource]
+script = ExtResource("1_r6yt2")
+using_states = PackedStringArray()
+titles = {
+"PostBoatItems": "42",
+"Postboat": "16",
+"Preboat": "3",
+"opt1": "24",
+"opt2": "32"
+}
+character_names = PackedStringArray("Circe", "Piggy")
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "3",
+"text": "Preboat",
+"type": "title"
+},
+"10": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "10",
+"next_id": "12",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Alright, thanks!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Alright, thanks!",
+"type": "dialogue"
+},
+"12": {
+"id": "12",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"14": {
+"id": "14",
+"next_id": "16",
+"text": "Postboat",
+"type": "title"
+},
+"16": {
+"character": "Circe",
+"character_replacements": Array[Dictionary]([]),
+"id": "16",
+"next_id": "17",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Hello again, Cornfed!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hello again, Cornfed!",
+"type": "dialogue"
+},
+"17": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "17",
+"next_id": "18",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "I found myself a boat to get off the island - the thing is I need a few things to get it running.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I found myself a boat to get off the island - the thing is I need a few things to get it running.",
+"type": "dialogue"
+},
+"18": {
+"character": "Circe",
+"character_replacements": Array[Dictionary]([]),
+"id": "18",
+"next_id": "19",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "How can I help?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "How can I help?",
+"type": "dialogue"
+},
+"19": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "19",
+"next_id": "19.2",
+"next_id_after": "24",
+"notes": "",
+"responses": PackedStringArray("19", "20"),
+"tags": PackedStringArray(),
+"text": "I need a key to start it. Is it here somewhere?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I need a key to start it. Is it here somewhere?",
+"type": "response"
+},
+"19.2": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "24",
+"next_id_after": "24",
+"tags": PackedStringArray(),
+"text": "I need a key to start it. Is it here somewhere?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I need a key to start it. Is it here somewhere?",
+"type": "dialogue"
+},
+"20": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "20",
+"next_id": "20.2",
+"next_id_after": "24",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Any idea where I could find some fuel for the boat?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Any idea where I could find some fuel for the boat?",
+"type": "response"
+},
+"20.2": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "32",
+"next_id_after": "24",
+"tags": PackedStringArray(),
+"text": "Any idea where I could find some fuel for the boat?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Any idea where I could find some fuel for the boat?",
+"type": "dialogue"
+},
+"22": {
+"id": "22",
+"next_id": "24",
+"text": "opt1",
+"type": "title"
+},
+"24": {
+"character": "Circe",
+"character_replacements": Array[Dictionary]([]),
+"id": "24",
+"next_id": "25",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "The boat belongs to the old farmer whe tends to us.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "The boat belongs to the old farmer whe tends to us.",
+"type": "dialogue"
+},
+"25": {
+"character": "Circe",
+"character_replacements": Array[Dictionary]([]),
+"id": "25",
+"next_id": "26",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Luckily for you, he often misplaces the key and spends ages looking for it.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Luckily for you, he often misplaces the key and spends ages looking for it.",
+"type": "dialogue"
+},
+"26": {
+"character": "Circe",
+"character_replacements": Array[Dictionary]([]),
+"id": "26",
+"next_id": "27",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Take a look around - it might be in the pigsty, in the cabbage patch or anywhere else he has spent more than ten seconds.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Take a look around - it might be in the pigsty, in the cabbage patch or anywhere else he has spent more than ten seconds.",
+"type": "dialogue"
+},
+"27": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "27",
+"next_id": "27.2",
+"next_id_after": "32",
+"notes": "",
+"responses": PackedStringArray("27", "28"),
+"tags": PackedStringArray(),
+"text": "Thanks, I’ll be on my way!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Thanks, I’ll be on my way!",
+"type": "response"
+},
+"27.2": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "end",
+"next_id_after": "32",
+"tags": PackedStringArray(),
+"text": "Thanks, I’ll be on my way!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Thanks, I’ll be on my way!",
+"type": "dialogue"
+},
+"28": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "28",
+"next_id": "28.2",
+"next_id_after": "32",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Any idea where I could find some fuel for the boat?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Any idea where I could find some fuel for the boat?",
+"type": "response"
+},
+"28.2": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "32",
+"next_id_after": "32",
+"tags": PackedStringArray(),
+"text": "Any idea where I could find some fuel for the boat?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Any idea where I could find some fuel for the boat?",
+"type": "dialogue"
+},
+"3": {
+"character": "Circe",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Glad you’re up again.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Glad you’re up again.",
+"type": "dialogue"
+},
+"30": {
+"id": "30",
+"next_id": "32",
+"text": "opt2",
+"type": "title"
+},
+"32": {
+"character": "Circe",
+"character_replacements": Array[Dictionary]([]),
+"id": "32",
+"next_id": "33",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "There are usually a few canisters scattered around, but I haven’t seen any recently.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "There are usually a few canisters scattered around, but I haven’t seen any recently.",
+"type": "dialogue"
+},
+"33": {
+"character": "Circe",
+"character_replacements": Array[Dictionary]([]),
+"id": "33",
+"next_id": "34",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "The mole people to the east of here probably have some fuel.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "The mole people to the east of here probably have some fuel.",
+"type": "dialogue"
+},
+"34": {
+"character": "Circe",
+"character_replacements": Array[Dictionary]([]),
+"id": "34",
+"next_id": "35",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "I’m not sure what use it is to them but they like to come at night and steal it.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I’m not sure what use it is to them but they like to come at night and steal it.",
+"type": "dialogue"
+},
+"35": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "35",
+"next_id": "35.2",
+"next_id_after": "38",
+"notes": "",
+"responses": PackedStringArray("35", "36"),
+"tags": PackedStringArray(),
+"text": "Thanks, I’ll be on my way!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Thanks, I’ll be on my way!",
+"type": "response"
+},
+"35.2": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "end",
+"next_id_after": "38",
+"tags": PackedStringArray(),
+"text": "Thanks, I’ll be on my way!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Thanks, I’ll be on my way!",
+"type": "dialogue"
+},
+"36": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "36",
+"next_id": "36.2",
+"next_id_after": "38",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "I need a key to start it. Is it here somewhere?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I need a key to start it. Is it here somewhere?",
+"type": "response"
+},
+"36.2": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "24",
+"next_id_after": "38",
+"tags": PackedStringArray(),
+"text": "I need a key to start it. Is it here somewhere?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I need a key to start it. Is it here somewhere?",
+"type": "dialogue"
+},
+"38": {
+"id": "38",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"4": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "...",
+"type": "dialogue"
+},
+"40": {
+"id": "40",
+"next_id": "42",
+"text": "PostBoatItems",
+"type": "title"
+},
+"42": {
+"character": "Circe",
+"character_replacements": Array[Dictionary]([]),
+"id": "42",
+"next_id": "end",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "[[Good luck, Cornfed!|With any luck, you’ll make it by sunset.]]",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[[Good luck, Cornfed!|With any luck, you’ll make it by sunset.]]",
+"type": "dialogue"
+},
+"5": {
+"character": "Circe",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "6",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "I’m Circe, by the way. Seems our ancestors liked you.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I’m Circe, by the way. Seems our ancestors liked you.",
+"type": "dialogue"
+},
+"6": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "6",
+"next_id": "7",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "I’m Cornfed. Pleasure meeting you. I can’t stay here long though.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I’m Cornfed. Pleasure meeting you. I can’t stay here long though.",
+"type": "dialogue"
+},
+"7": {
+"character": "Circe",
+"character_replacements": Array[Dictionary]([]),
+"id": "7",
+"next_id": "8",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "That’s a shame. You do you, though.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "That’s a shame. You do you, though.",
+"type": "dialogue"
+},
+"8": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "8",
+"next_id": "9",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Do you know how I could get back to the mainland?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Do you know how I could get back to the mainland?",
+"type": "dialogue"
+},
+"9": {
+"character": "Circe",
+"character_replacements": Array[Dictionary]([]),
+"id": "9",
+"next_id": "10",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "I haven’t really thought about that, but Rufus might know.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I haven’t really thought about that, but Rufus might know.",
+"type": "dialogue"
+}
+}
+raw_text = "~ Preboat
+
+Circe: Glad you’re up again.
+Piggy: ...
+Circe: I’m Circe, by the way. Seems our ancestors liked you.
+Piggy: I’m Cornfed. Pleasure meeting you. I can’t stay here long though.
+Circe: That’s a shame. You do you, though.
+Piggy: Do you know how I could get back to the mainland?
+Circe: I haven’t really thought about that, but Rufus might know.
+Piggy: Alright, thanks!
+
+=> END
+
+~ Postboat
+
+Circe: Hello again, Cornfed!
+Piggy: I found myself a boat to get off the island - the thing is I need a few things to get it running.
+Circe: How can I help?
+- Piggy: I need a key to start it. Is it here somewhere? => opt1
+- Piggy: Any idea where I could find some fuel for the boat? => opt2
+
+~ opt1
+
+Circe: The boat belongs to the old farmer whe tends to us.
+Circe: Luckily for you, he often misplaces the key and spends ages looking for it.
+Circe: Take a look around - it might be in the pigsty, in the cabbage patch or anywhere else he has spent more than ten seconds.
+- Piggy: Thanks, I’ll be on my way! => END
+- Piggy: Any idea where I could find some fuel for the boat? => opt2
+
+~ opt2
+
+Circe: There are usually a few canisters scattered around, but I haven’t seen any recently.
+Circe: The mole people to the east of here probably have some fuel.
+Circe: I’m not sure what use it is to them but they like to come at night and steal it.
+- Piggy: Thanks, I’ll be on my way! => END
+- Piggy: I need a key to start it. Is it here somewhere? => opt1
+
+=> END
+
+~ PostBoatItems
+
+Circe: [[Good luck, Cornfed!|With any luck, you’ll make it by sunset.]]"
+metadata/dialogue_manager_version = "2.36.0"

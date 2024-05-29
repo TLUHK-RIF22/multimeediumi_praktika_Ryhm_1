@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://d317n7l77ny3o"
+path="res://.godot/imported/Circe.dialogue-89eba0c7641fd353f71a066edd0ed288.tres"
+
+[deps]
+
+source_file="res://Charecters/NPC/Dialogues/Circe.dialogue"
+dest_files=["res://.godot/imported/Circe.dialogue-89eba0c7641fd353f71a066edd0ed288.tres"]
+
+[params]
+
+defaults=true

@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_qfn0v"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_kpr6h"]
 
 [resource]
-script = ExtResource("1_qfn0v")
+script = ExtResource("1_kpr6h")
 using_states = PackedStringArray()
 titles = {
 "BoatFirstSeen": "3",
-"NoKey": "8"
+"NoKey": "9"
 }
 character_names = PackedStringArray("Piggy")
 first_title = "3"
@@ -18,6 +18,123 @@ lines = {
 "text": "BoatFirstSeen",
 "type": "title"
 },
+"10": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "group",
+"value": Array[Dictionary]([{
+"type": "variable",
+"value": "key"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 0
+}])
+}, {
+"type": "colon"
+}])
+},
+"id": "10",
+"next_conditional_id": "12",
+"next_id": "11",
+"next_id_after": "12",
+"type": "condition"
+},
+"11": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "11",
+"next_id": "12",
+"notes": "",
+"parent_id": "10",
+"tags": PackedStringArray(),
+"text": "I need a key.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I need a key.",
+"type": "dialogue"
+},
+"12": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "group",
+"value": Array[Dictionary]([{
+"type": "variable",
+"value": "gas_can"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 0
+}])
+}, {
+"type": "colon"
+}])
+},
+"id": "12",
+"next_conditional_id": "14",
+"next_id": "13",
+"next_id_after": "14",
+"type": "condition"
+},
+"13": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "13",
+"next_id": "14",
+"notes": "",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "The fuel tank also looks empty ...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "The fuel tank also looks empty ...",
+"type": "dialogue"
+},
+"14": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "group",
+"value": Array[Dictionary]([{
+"type": "variable",
+"value": "sunglasses"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 0
+}])
+}, {
+"type": "colon"
+}])
+},
+"id": "14",
+"next_conditional_id": "17",
+"next_id": "15",
+"next_id_after": "17",
+"type": "condition"
+},
+"15": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "15",
+"next_id": "17",
+"notes": "",
+"parent_id": "14",
+"tags": PackedStringArray(),
+"text": "And going boating without sunglasses is just plain uncool ...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "And going boating without sunglasses is just plain uncool ...",
+"type": "dialogue"
+},
+"17": {
+"id": "17",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
 "3": {
 "character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
@@ -25,9 +142,9 @@ lines = {
 "next_id": "4",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "Cool boat. I wish I could ride it one day!",
+"text": "Nice boat. I wish I could ride it one day.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Cool boat. I wish I could ride it one day!",
+"translation_key": "Nice boat. I wish I could ride it one day.",
 "type": "dialogue"
 },
 "4": {
@@ -36,38 +153,40 @@ lines = {
 "next_id": "end",
 "type": "goto"
 },
-"6": {
-"id": "6",
-"next_id": "8",
+"7": {
+"id": "7",
+"next_id": "9",
 "text": "NoKey",
 "type": "title"
 },
-"8": {
+"9": {
 "character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
-"id": "8",
-"next_id": "9",
+"id": "9",
+"next_id": "10",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "Seems I need a key to get this thing moving.",
+"text": "I think this boat could take me to the mainland.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Seems I need a key to get this thing moving.",
+"translation_key": "I think this boat could take me to the mainland.",
 "type": "dialogue"
-},
-"9": {
-"id": "9",
-"is_snippet": false,
-"next_id": "end",
-"type": "goto"
 }
 }
 raw_text = "~ BoatFirstSeen
 
-Piggy: Cool boat. I wish I could ride it one day!
+Piggy: Nice boat. I wish I could ride it one day.
 => END
+
 
 ~ NoKey
 
-Piggy: Seems I need a key to get this thing moving.
+Piggy: I think this boat could take me to the mainland.
+if (key == 0):
+	Piggy: I need a key.
+if (gas_can == 0):
+	Piggy: The fuel tank also looks empty ...
+if (sunglasses == 0):
+	Piggy: And going boating without sunglasses is just plain uncool ...
+
 => END"
 metadata/dialogue_manager_version = "2.36.0"

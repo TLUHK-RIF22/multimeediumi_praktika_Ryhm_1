@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_yisad"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_myh3i"]
 
 [resource]
-script = ExtResource("1_yisad")
+script = ExtResource("1_myh3i")
 using_states = PackedStringArray()
 titles = {
 "PlanToLeaveTheIsland": "3",
@@ -71,9 +71,9 @@ lines = {
 "next_id": "20",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "[[Sunglasses are the best|Nice day|Hi there]]",
+"text": "[[Nice day!|Hi there!]]",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "[[Sunglasses are the best|Nice day|Hi there]]",
+"translation_key": "[[Nice day!|Hi there!]]",
 "type": "dialogue"
 },
 "20": {
@@ -127,9 +127,9 @@ lines = {
 "next_id_after": "7",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "Not now",
+"text": "Not now.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Not now",
+"translation_key": "Not now.",
 "type": "response"
 },
 "5.2": {
@@ -138,9 +138,9 @@ lines = {
 "next_id": "end",
 "next_id_after": "7",
 "tags": PackedStringArray(),
-"text": "Not now",
+"text": "Not now.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Not now",
+"translation_key": "Not now.",
 "type": "dialogue"
 },
 "7": {
@@ -164,9 +164,9 @@ lines = {
 "notes": "",
 "responses": PackedStringArray("8"),
 "tags": PackedStringArray(),
-"text": "That doesn't seem promising",
+"text": "That doesn't seem promising.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "That doesn't seem promising",
+"translation_key": "That doesn't seem promising.",
 "type": "response"
 },
 "8.2": {
@@ -175,9 +175,9 @@ lines = {
 "next_id": "11",
 "next_id_after": "11",
 "tags": PackedStringArray(),
-"text": "That doesn't seem promising",
+"text": "That doesn't seem promising.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "That doesn't seem promising",
+"translation_key": "That doesn't seem promising.",
 "type": "dialogue"
 }
 }
@@ -185,10 +185,10 @@ raw_text = "~ PlanToLeaveTheIsland
 
 Rufus: If you plan to leave the island with a stolen boat, you should have a pair of cool sunglasses to match your energy. 
 - Piggy: I'm sure they'd help against the sun and spray, too.
-- Piggy: Not now => END
+- Piggy: Not now. => END
 
 Rufus: Exactly. Unfortunately mine dropped to the bottom of that well over there. They're yours if you can find them.
-- Piggy: That doesn't seem promising
+- Piggy: That doesn't seem promising.
 
 
 do RufusTimesInteracted = 1
@@ -198,7 +198,7 @@ do RufusWellMentioned = 1
 => END
 
 ~ Second
-Rufus: [[Sunglasses are the best|Nice day|Hi there]]
+Rufus: [[Nice day!|Hi there!]]
 
 => END"
 metadata/dialogue_manager_version = "2.36.0"

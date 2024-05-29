@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://dq0chs5b1w1h7"
+path="res://.godot/imported/Gruff.dialogue-63021bd79a000da1e916c42daf7d8590.tres"
+
+[deps]
+
+source_file="res://Charecters/NPC/Dialogues/Gruff.dialogue"
+dest_files=["res://.godot/imported/Gruff.dialogue-63021bd79a000da1e916c42daf7d8590.tres"]
+
+[params]
+
+defaults=true

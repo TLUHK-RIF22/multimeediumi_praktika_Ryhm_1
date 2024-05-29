@@ -30,3 +30,6 @@ var SpiritJourney:int = 0
 #Boat Escape
 
 var BoatTrigger:int = 0
+var key = 0
+var gas_can = 0
+var sunglasses = 0

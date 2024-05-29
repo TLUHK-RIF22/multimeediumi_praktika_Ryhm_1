@@ -1,9 +1,17 @@
 ~ BoatFirstSeen
 
-Piggy: Cool boat. I wish I could ride it one day!
+Piggy: Nice boat. I wish I could ride it one day.
 => END
+
 
 ~ NoKey
 
-Piggy: Seems I need a key to get this thing moving.
+Piggy: I think this boat could take me to the mainland.
+if (key == 0):
+	Piggy: I need a key.
+if (gas_can == 0):
+	Piggy: The fuel tank also looks empty ...
+if (sunglasses == 0):
+	Piggy: And going boating without sunglasses is just plain uncool ...
+
 => END

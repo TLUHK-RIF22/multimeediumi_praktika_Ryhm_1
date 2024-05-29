@@ -30,6 +30,13 @@ func _on_body_exited(_body):
 	entered = false
 	
 func _unhandled_input(_event):
+	if key in inventory:
+		Global.key = 1
+	if sunglasses in inventory:
+		Global.sunglasses = 1
+	if gas_can in inventory:
+		Global.gas_can = 1
+	
 	if entered && Input.is_action_just_pressed("ui_accept") && Global.BoatTrigger == 0:
 		emit_signal("StopMoving")
 		DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "BoatFirstSeen")

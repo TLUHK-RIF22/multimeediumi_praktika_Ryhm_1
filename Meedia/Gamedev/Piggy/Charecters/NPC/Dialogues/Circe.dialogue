@@ -1,0 +1,42 @@
+~ Preboat
+
+Circe: Glad you’re up again.
+Piggy: ...
+Circe: I’m Circe, by the way. Seems our ancestors liked you.
+Piggy: I’m Cornfed. Pleasure meeting you. I can’t stay here long though.
+Circe: That’s a shame. You do you, though.
+Piggy: Do you know how I could get back to the mainland?
+Circe: I haven’t really thought about that, but Rufus might know.
+Piggy: Alright, thanks!
+
+=> END
+
+~ Postboat
+
+Circe: Hello again, Cornfed!
+Piggy: I found myself a boat to get off the island - the thing is I need a few things to get it running.
+Circe: How can I help?
+- Piggy: I need a key to start it. Is it here somewhere? => opt1
+- Piggy: Any idea where I could find some fuel for the boat? => opt2
+
+~ opt1
+
+Circe: The boat belongs to the old farmer whe tends to us.
+Circe: Luckily for you, he often misplaces the key and spends ages looking for it.
+Circe: Take a look around - it might be in the pigsty, in the cabbage patch or anywhere else he has spent more than ten seconds.
+- Piggy: Thanks, I’ll be on my way! => END
+- Piggy: Any idea where I could find some fuel for the boat? => opt2
+
+~ opt2
+
+Circe: There are usually a few canisters scattered around, but I haven’t seen any recently.
+Circe: The mole people to the east of here probably have some fuel.
+Circe: I’m not sure what use it is to them but they like to come at night and steal it.
+- Piggy: Thanks, I’ll be on my way! => END
+- Piggy: I need a key to start it. Is it here somewhere? => opt1
+
+=> END
+
+~ PostBoatItems
+
+Circe: [[Good luck, Cornfed!|With any luck, you’ll make it by sunset.]]
