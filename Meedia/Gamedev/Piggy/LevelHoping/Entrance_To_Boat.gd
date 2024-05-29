@@ -6,7 +6,10 @@ var entered = false
 @onready var animation_player = %AnimationPlayer
 @export var level: String
 @export var GateName: String
-@export var item:Item
+@export var key:Item
+@export var sunglasses:Item
+@export var gas_can:Item
+
 
 var inventory = Global._content
 var itemGivenToNPC = Global.itemGivenToNPC
@@ -31,11 +34,11 @@ func _unhandled_input(_event):
 		emit_signal("StopMoving")
 		DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "BoatFirstSeen")
 		Global.BoatTrigger = 1
-	elif entered && Input.is_action_just_pressed("ui_accept") && Global.BoatTrigger == 1 && !item in inventory:
+	elif entered && Input.is_action_just_pressed("ui_accept") && Global.BoatTrigger == 1 && !key in inventory:
 		emit_signal("StopMoving")
 		DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "NoKey")
 		
-	elif entered && Input.is_action_just_pressed("ui_accept") && Global.BoatTrigger == 1 && item in inventory:
+	elif entered && Input.is_action_just_pressed("ui_accept") && Global.BoatTrigger == 1 && key in inventory:
 		emit_signal("StopMoving")
 		canvas_layer.visible = true
 		animation_player.play("fade_out")

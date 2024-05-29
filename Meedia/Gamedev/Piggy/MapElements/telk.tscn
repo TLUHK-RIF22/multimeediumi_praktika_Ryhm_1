@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cg5xfwrgkb8ht"]
+
+[ext_resource type="Texture2D" uid="uid://ts4akal0jf20" path="res://Sprites/Telk.png" id="1_vixri"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_brulw"]
+size = Vector2(84, 34)
+
+[node name="Telk" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Telk" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(1, -7)
+texture = ExtResource("1_vixri")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-3, -2)
+shape = SubResource("RectangleShape2D_brulw")

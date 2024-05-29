@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://dhr8t75o24d0e"]
 
-[ext_resource type="Texture2D" uid="uid://d1eqgdn8vigo2" path="res://Sprites/sunglasses.png" id="1_0dr68"]
+[ext_resource type="Texture2D" uid="uid://bcxwh8gkr5mxa" path="res://Sprites/Prillid.png" id="1_brkbu"]
 
 [node name="Sunglasses" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_0dr68")
+texture = ExtResource("1_brkbu")
