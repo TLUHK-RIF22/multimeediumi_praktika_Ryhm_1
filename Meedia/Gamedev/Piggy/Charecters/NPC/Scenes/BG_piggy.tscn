@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://v51o3q0ngs4c"]
+
+[ext_resource type="Texture2D" uid="uid://dtn1x5dcomjku" path="res://Charecters/Siga/Sprites/Idle_Siga_Down-Sheet.png" id="2_f1ama"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0qys1"]
+atlas = ExtResource("2_f1ama")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_io0am"]
+atlas = ExtResource("2_f1ama")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3kbif"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0qys1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_io0am")
+}],
+"loop": true,
+"name": &"Idle_Down",
+"speed": 2.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ouao7"]
+radius = 3.5
+height = 20.0
+
+[node name="BG_piggy" type="CharacterBody2D"]
+y_sort_enabled = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -10)
+sprite_frames = SubResource("SpriteFrames_3kbif")
+animation = &"Idle_Down"
+autoplay = "Idle_Down"
+frame_progress = 0.849276
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_ouao7")

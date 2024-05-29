@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cuaucfl34f8y3" path="res://Sprites/BG/red_barn.png" id="2_8vlq4"]
 [ext_resource type="Texture2D" uid="uid://cb0dpypltnu5t" path="res://Sprites/BG/Sky.png" id="2_fujt5"]
 [ext_resource type="Texture2D" uid="uid://bpvsgq4jthhox" path="res://Sprites/BG/grass.png" id="3_88ind"]
-[ext_resource type="Texture2D" uid="uid://c1wd1jf5cjjsy" path="res://Sprites/BG/Piggy.png" id="5_hmq4b"]
+[ext_resource type="PackedScene" uid="uid://v51o3q0ngs4c" path="res://Charecters/NPC/Scenes/BG_piggy.tscn" id="5_8s7wy"]
 
 [node name="BG" type="ParallaxBackground"]
 scroll_offset = Vector2(437.209, 167.308)
@@ -37,6 +37,6 @@ motion_mirroring = Vector2(600, 0)
 position = Vector2(483, 145)
 texture = ExtResource("2_8vlq4")
 
-[node name="Piggy" type="Sprite2D" parent="."]
-position = Vector2(488, 163)
-texture = ExtResource("5_hmq4b")
+[node name="BG_piggy" parent="." instance=ExtResource("5_8s7wy")]
+position = Vector2(101, 254)
+scale = Vector2(8, 8)
