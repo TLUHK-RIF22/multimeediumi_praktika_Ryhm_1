@@ -93,7 +93,6 @@ y_sort_enabled = true
 labelText = " E "
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-modulate = Color(0.941176, 0.729412, 0.74902, 1)
 position = Vector2(0, -10)
 sprite_frames = SubResource("SpriteFrames_3kbif")
 animation = &"Idle_Down"

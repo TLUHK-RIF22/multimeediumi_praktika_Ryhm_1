@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://pcf5mbd40567"]
+[gd_scene load_steps=15 format=3 uid="uid://pcf5mbd40567"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_h1u53"]
 [ext_resource type="Script" path="res://Levels/StopMoving.gd" id="2_8crnb"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://c5h6i1vrldhsx" path="res://Pickup/pickup.tscn" id="12_nbea6"]
 [ext_resource type="PackedScene" uid="uid://beohv04uvm5wr" path="res://MapElements/Auk_in.tscn" id="12_obo73"]
 [ext_resource type="Resource" uid="uid://f5eocg24sgj" path="res://Items/GasCan.tres" id="13_1ihd7"]
+[ext_resource type="PackedScene" uid="uid://ditc4smtd1gyu" path="res://MapElements/krabi.tscn" id="14_qi1gk"]
 
 [node name="LevelC2" type="Node2D"]
 process_mode = 1
@@ -255,6 +256,12 @@ position = Vector2(802, -166)
 [node name="Node2D" parent="." instance=ExtResource("12_nbea6")]
 position = Vector2(756, -87)
 item = ExtResource("13_1ihd7")
+
+[node name="krabi" parent="." instance=ExtResource("14_qi1gk")]
+position = Vector2(320, 646)
+
+[node name="krabi2" parent="." instance=ExtResource("14_qi1gk")]
+position = Vector2(336, 450)
 
 [connection signal="CanMove" from="StopMoving" to="Player" method="_on_stop_moving_can_move"]
 [connection signal="StopMoving" from="StopMoving" to="Player" method="_on_stop_moving_stop_moving"]

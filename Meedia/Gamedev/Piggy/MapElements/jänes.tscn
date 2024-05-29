@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://gl8vb455t5nu"]
+
+[ext_resource type="Texture2D" uid="uid://bcysqr3wh2ryj" path="res://Charecters/NPC/Janes.png" id="1_8by6h"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h5lr8"]
+radius = 9.0
+
+[node name="jänes" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="EsmaneMaja" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(-1, -10)
+texture = ExtResource("1_8by6h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_h5lr8")

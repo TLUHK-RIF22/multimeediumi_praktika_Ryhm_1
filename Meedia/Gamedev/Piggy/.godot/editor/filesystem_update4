@@ -27,3 +27,7 @@ res://LevelHoping/Entrance_To_Boat.gd
 res://Items/Scene/sunglasses.tscn
 res://Charecters/NPC/Scenes/Circe.tscn
 res://Charecters/NPC/Scenes/Gruff.tscn
+res://MapElements/kass.tscn
+res://MapElements/krabi.tscn
+res://MapElements/kana.tscn
+res://MapElements/jänes.tscn

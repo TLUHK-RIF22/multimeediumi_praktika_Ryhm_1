@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://ch8wnk4slan78"]
+[gd_scene load_steps=33 format=3 uid="uid://ch8wnk4slan78"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_jhued"]
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="2_1cl0b"]
@@ -29,6 +29,8 @@
 [ext_resource type="Resource" uid="uid://dsm7vwogkxt38" path="res://Items/KeyBig.tres" id="30_dd3f1"]
 [ext_resource type="PackedScene" uid="uid://babkdciiqwt6o" path="res://MapElements/bonfire.tscn" id="30_e4kvj"]
 [ext_resource type="PackedScene" uid="uid://3l37461xugaw" path="res://MapElements/Post_silt.tscn" id="30_r1wyp"]
+[ext_resource type="PackedScene" uid="uid://de3tfvurwgqw5" path="res://Charecters/NPC/Scenes/Circe.tscn" id="31_j4w41"]
+[ext_resource type="PackedScene" uid="uid://ca8dcuqtsupab" path="res://Charecters/NPC/Scenes/Gruff.tscn" id="32_y3edo"]
 [ext_resource type="PackedScene" uid="uid://ctaolhdvrgb82" path="res://LevelHoping/Gate_levelSwap.tscn" id="33_5fkyu"]
 
 [node name="LevelB2" type="Node2D"]
@@ -536,6 +538,12 @@ item = ExtResource("30_dd3f1")
 
 [node name="Laut_suur" parent="." instance=ExtResource("30_c37pc")]
 position = Vector2(297, 426)
+
+[node name="Circe" parent="." instance=ExtResource("31_j4w41")]
+position = Vector2(474, 590)
+
+[node name="Gruff" parent="." instance=ExtResource("32_y3edo")]
+position = Vector2(428, 256)
 
 [connection signal="CanMove" from="StopMoving" to="Player" method="_on_stop_moving_can_move"]
 [connection signal="StopMoving" from="StopMoving" to="Player" method="_on_stop_moving_stop_moving"]

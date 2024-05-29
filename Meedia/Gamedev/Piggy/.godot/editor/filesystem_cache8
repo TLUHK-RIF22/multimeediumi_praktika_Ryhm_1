@@ -1,11 +1,12 @@
 3acdcc5cb6df755358dde907981ccea8
-::res://::1717006821
+::res://::1717008880
 default_bus_layout.tres::AudioBusLayout::6312041001893839027::1713894657::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1715193672::0::1::::<><>::
 Ganon16px.tres::Theme::9046576208623127088::1717004621::0::1::::<><>::uid://g5wemyod7ar2::::res://edit-undo/editundo.ttf
 Global.gd::GDScript::-1::1717002584::0::1::::<>Node2D<>::
 Global.tscn::PackedScene::4778465871963767127::1711970926::0::1::::<><>::res://Global.gd
 icon.svg::CompressedTexture2D::6247225626636162537::1709567024::1716548893::1::::<><>::
+Krabi.png::CompressedTexture2D::444902095490895637::1716548519::1717008880::1::::<><>::
 tile_map.tscn::PackedScene::4883059556576337534::1716801649::0::1::::<><>::uid://du1xa2vkttucr::::res://Sprites/Aed.png<>uid://2e0wdnflvsko::::res://Tiles/Tileset2.0.png<>uid://rgncvyhamgoy::::res://Tiles/dungeon-tileset-karl-v1.png<>uid://bxwsorfwyvniy::::res://Tiles/dungeontexts.png
 ::res://addons/::1710959064
 ::res://addons/dialogue_manager/::1713718507
@@ -88,7 +89,7 @@ vaimne beta ajuhägu, loputiitrid, mingi level.mp3::AudioStreamMP3::970767331405
 vihmatorm heli kaevu.mp3::AudioStreamMP3::1652784154761866762::1717002584::1717002788::1::::<><>::
 Walking_sound.mp3::AudioStreamMP3::456153971356140669::1711963956::1711967771::1::::<><>::
 ::res://Charecters/::1710434221
-::res://Charecters/NPC/::1717008403
+::res://Charecters/NPC/::1717008879
 Apple_eater.dialogue::Resource::8007420126231406867::1713718507::1717002675::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 Circe-2frames.png::CompressedTexture2D::5797688190815882699::1717002584::1717008403::1::::<><>::
 Circe.png::CompressedTexture2D::8433382920600394019::1717002584::1717008403::1::::<><>::
@@ -102,7 +103,6 @@ Janes.png::CompressedTexture2D::2577465852800366597::1716548519::1717008403::1::
 Kaev.gd::GDScript::-1::1714927514::0::1::::<>CharacterBody2D<>::
 Kana.png::CompressedTexture2D::8853703645796497285::1716548519::1717008403::1::::<><>::
 Kass.png::CompressedTexture2D::1739267180312914417::1716548519::1717008403::1::::<><>::
-Krabi.png::CompressedTexture2D::444902095490895637::1716548519::1717008403::1::::<><>::
 Kummitus.png::CompressedTexture2D::1968730258003840275::1715703452::1715703452::1::::<><>::
 NPC_GiveItem.gd::GDScript::-1::1713718507::0::1::::<>CharacterBody2D<>::
 NPC_Move.gd::GDScript::-1::1710959063::0::1::::<>Node2D<>::
@@ -120,11 +120,11 @@ Kaev.dialogue::Resource::8067976035503847616::1713906398::1717002675::1::::<><>:
 Rufus.dialogue::Resource::8446303969748165142::1717002802::1717002802::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 SurvivalInstinct.dialogue::Resource::6726302130265857398::1715704407::1717002675::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 test.dialogue::Resource::8988111339022981935::1713889732::1717002675::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
-::res://Charecters/NPC/Scenes/::1717008421
-Circe.tscn::PackedScene::7498983689265691770::1717008481::0::1::::<><>::uid://2qtpgse6674::::res://UI/PopUpInfo/PopupInfo.tscn<>uid://coupcvsdcxihf::::res://Charecters/NPC/Circe-2frames.png
+::res://Charecters/NPC/Scenes/::1717008687
+Circe.tscn::PackedScene::7498983689265691770::1717008687::0::1::::<><>::uid://2qtpgse6674::::res://UI/PopUpInfo/PopupInfo.tscn<>uid://coupcvsdcxihf::::res://Charecters/NPC/Circe-2frames.png
+Gruff.tscn::PackedScene::4841152631908287965::1717008672::0::1::::<><>::uid://2qtpgse6674::::res://UI/PopUpInfo/PopupInfo.tscn<>uid://bqou4wjr2chfw::::res://Charecters/NPC/gruff-2frames.png
 Kaev_A.tscn::PackedScene::2530647542724822138::1714927514::0::1::::<><>::res://Charecters/NPC/Kaev.gd<>uid://0xjdhtesk0w6::::res://Items/rope.tres<>uid://dm7gne4kklbyu::::res://Charecters/NPC/Dialogues/Kaev.dialogue<>uid://2qtpgse6674::::res://UI/PopUpInfo/PopupInfo.tscn<>uid://c0xn35iu7jouj::::res://Sprites/Kaevukatsetus.png
 NPC_Pig_Brown.tscn::PackedScene::1630289682796964383::1713718507::0::1::::<><>::res://Charecters/NPC/NPC_GiveItem.gd<>uid://kgyrh4ady834::::res://Charecters/NPC/Idle_NPC_Pig_Brown_Down-Sheet.png<>uid://2qtpgse6674::::res://UI/PopUpInfo/PopupInfo.tscn
-Gruff.tscn::PackedScene::4841152631908287965::1717008489::0::1::::<><>::uid://2qtpgse6674::::res://UI/PopUpInfo/PopupInfo.tscn<>uid://coupcvsdcxihf::::res://Charecters/NPC/Circe-2frames.png
 Rufus.tscn::PackedScene::4260170026314134324::1715886358::0::1::::<><>::uid://2qtpgse6674::::res://UI/PopUpInfo/PopupInfo.tscn<>uid://kgyrh4ady834::::res://Charecters/NPC/Idle_NPC_Pig_Brown_Down-Sheet.png
 SurvivalInstinct.tscn::PackedScene::4027323555938628174::1715703452::0::1::::<><>::uid://2qtpgse6674::::res://UI/PopUpInfo/PopupInfo.tscn<>uid://3bwx14tk31ed::::res://Charecters/NPC/Kummitus.png
 ::res://Charecters/Siga/::1717002584
@@ -208,7 +208,7 @@ TheEnd.tscn::PackedScene::4909293689217172188::1717003839::0::1::::<><>::uid://d
 Ground.tscn::PackedScene::5199507334169238240::1716925483::0::1::::<><>::uid://ctaxw4f8aqco8::::res://MapElements/Vegas2.tscn<>uid://cbtnjo02acke5::::res://tile_map.tscn<>uid://ctaolhdvrgb82::::res://LevelHoping/Gate_levelSwap.tscn<>res://LevelHoping/Ground_exit.gd<>uid://chjvotninnjrv::::res://Items/Scene/Totem.tscn
 SeaGround.tscn::PackedScene::6474717742600321277::1717008322::0::1::::<><>::uid://2e0wdnflvsko::::res://Tiles/Tileset2.0.png
 Spikes.gd::GDScript::-1::1716801649::0::1::::<>Node2D<>::
-::res://MapElements/::1717008322
+::res://MapElements/::1717008919
 ancestral_flame.tscn::PackedScene::707386036119387146::1714927514::0::1::::<><>::uid://5n04kkg4w360::::res://Sprites/ancestral_flame_3_48x64.png
 ancestral_flame_v2.tscn::PackedScene::1817105860414109120::1713885557::0::1::::<><>::uid://psa7w7uqnumw::::res://Sprites/ancestral_flame_top_48x64.png<>uid://dey0dfqkyn8xt::::res://Sprites/ancestral_flame_bottom_48x64.png
 Auk_in.tscn::PackedScene::2696541226243795813::1715712511::0::1::::<><>::uid://buxi3oms2xypd::::res://Sprites/auk-in.png
@@ -217,7 +217,10 @@ Barrel.tscn::PackedScene::1232648163924009701::1715712511::0::1::::<><>::uid://q
 bonfire.tscn::PackedScene::2389097706547428264::1714927514::0::1::::<><>::uid://d0urn34vlnl1u::::res://Sprites/bonfire.png
 flame.tscn::PackedScene::1357636054509519894::1713899596::0::1::::<><>::uid://ckp6svlrxlje4::::res://Sprites/flame_1.png
 kaev.tscn::PackedScene::6843572182715643908::1713887878::0::1::::<><>::uid://c0xn35iu7jouj::::res://Sprites/Kaevukatsetus.png<>uid://2qtpgse6674::::res://UI/PopUpInfo/PopupInfo.tscn
+kana.tscn::PackedScene::7554907962149315631::1717008934::0::1::::<><>::uid://dye2g8temlep6::::res://Charecters/NPC/Kana.png
+kass.tscn::PackedScene::8428948090491860531::1717008839::0::1::::<><>::uid://y1rqgwpf2cgv::::res://Charecters/NPC/Kass.png
 Kast.tscn::PackedScene::6972573771028471746::1715703452::0::1::::<><>::uid://dv4blau6riwdv::::res://Sprites/Kast.png
+krabi.tscn::PackedScene::7760170164345740220::1717008901::0::1::::<><>::uid://glrqchuoua7v::::res://Krabi.png
 Käru.tscn::PackedScene::6619604833220598205::1715891063::0::1::::<><>::uid://70r0q7l1g8as::::res://Sprites/Käru.png
 Laut.tscn::PackedScene::6360433001081357457::1717008322::0::1::::<><>::uid://kqmvqfv43oc8::::res://Sprites/Laut.png
 Laut_suur.tscn::PackedScene::1266908392715331314::1717008322::0::1::::<><>::uid://dakosrbrd15mv::::res://Sprites/Suur, laut.png
@@ -226,6 +229,7 @@ maja_vb.tscn::PackedScene::309661355720974585::1715712511::0::1::::<><>::uid://c
 Plane_on_fire.tscn::PackedScene::4167976987219201772::1716548519::0::1::::<><>::uid://ccfak5wi33jdk::::res://Sprites/Lennuk.png<>uid://tlwcj8vprsdq::::res://MapElements/flame.tscn
 Post_silt.gd::GDScript::-1::1716548519::0::1::::<>Node2D<>::
 Post_silt.tscn::PackedScene::1989754570640922814::1717006712::0::1::::<><>::uid://t63sm2i1fquo::::res://Sprites/Post_Silt.png<>res://MapElements/Post_silt.gd<>uid://d15h12ovw1nfc::::res://Ganon16px.tres
+jänes.tscn::PackedScene::445882478282760894::1717008944::0::1::::<><>::uid://dye2g8temlep6::::res://Charecters/NPC/Kana.png
 RockA.tscn::PackedScene::6238849726830818167::1714927514::0::1::::<><>::uid://2e0wdnflvsko::::res://Tiles/Tileset2.0.png
 RockB.tscn::PackedScene::6565243066062867307::1714927514::0::1::::<><>::uid://2e0wdnflvsko::::res://Tiles/Tileset2.0.png
 telk.tscn::PackedScene::5257312363700774701::1717002584::0::1::::<><>::uid://ts4akal0jf20::::res://Sprites/Telk.png

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfvwh3jx8geux"]
+
+[ext_resource type="Texture2D" uid="uid://dye2g8temlep6" path="res://Charecters/NPC/Kana.png" id="1_huna5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h5lr8"]
+
+[node name="kana" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="EsmaneMaja" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(-1, -10)
+texture = ExtResource("1_huna5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_h5lr8")

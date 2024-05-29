@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://ditc4smtd1gyu"]
+
+[ext_resource type="Texture2D" uid="uid://glrqchuoua7v" path="res://Krabi.png" id="1_6tmkw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h5lr8"]
+
+[node name="krabi" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="EsmaneMaja" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(-1, -10)
+texture = ExtResource("1_6tmkw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_h5lr8")
