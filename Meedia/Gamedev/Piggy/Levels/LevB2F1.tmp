@@ -84,10 +84,10 @@ autoplay = true
 
 [node name="Player" parent="." instance=ExtResource("6_wr4uw")]
 unique_name_in_owner = true
-position = Vector2(54, 127)
+position = Vector2(134, 192)
 
 [node name="LevelB3Boat" type="Marker2D" parent="."]
-position = Vector2(46, 139)
+position = Vector2(73, 156)
 scale = Vector2(4, 4)
 
 [node name="Camera2D" type="Camera2D" parent="."]

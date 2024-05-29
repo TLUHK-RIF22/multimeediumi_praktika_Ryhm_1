@@ -92,8 +92,6 @@ collision_layer = 3
 collision_mask = 3
 script = ExtResource("1_i8ejw")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(1.04105, 0.761523)
 hframes = 2
@@ -113,6 +111,7 @@ shape = SubResource("CapsuleShape2D_0gpt2")
 [node name="AudioStreamPlayer_Walking" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
 stream = ExtResource("3_l38rw")
+autoplay = true
 bus = &"SFX"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]

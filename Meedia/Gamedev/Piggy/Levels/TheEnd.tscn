@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cb7dl5myrlmf1"]
+
+[ext_resource type="Script" path="res://Levels/Levels.gd" id="1_wmjey"]
+
+[node name="TheEnd" type="Node2D"]
+process_mode = 1
+y_sort_enabled = true
+position = Vector2(1, 0)
+script = ExtResource("1_wmjey")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "The End"

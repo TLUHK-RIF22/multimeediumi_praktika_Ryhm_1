@@ -15,3 +15,8 @@ res://Charecters/Siga/player.tscn
 res://Charecters/Siga/Scenes/player_spikes.tscn
 res://Charecters/Siga/playerBoat.tscn
 res://Charecters/Siga/Scenes/playerBoat.gd
+res://Levels/LevelSea.gd
+res://Levels/SeaGround.tscn
+res://Levels/Spikes/SeaGround.tscn
+res://Levels/TheEnd.tscn
+res://Levels/LevelB2.tscn
