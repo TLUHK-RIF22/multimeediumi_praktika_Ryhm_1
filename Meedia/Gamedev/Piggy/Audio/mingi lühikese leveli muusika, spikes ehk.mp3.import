@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c56ux76tb3b0q"
+path="res://.godot/imported/mingi lühikese leveli muusika, spikes ehk.mp3-179dc5d154a87e78be823f9d17e27b5b.mp3str"
+
+[deps]
+
+source_file="res://Audio/mingi lühikese leveli muusika, spikes ehk.mp3"
+dest_files=["res://.godot/imported/mingi lühikese leveli muusika, spikes ehk.mp3-179dc5d154a87e78be823f9d17e27b5b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

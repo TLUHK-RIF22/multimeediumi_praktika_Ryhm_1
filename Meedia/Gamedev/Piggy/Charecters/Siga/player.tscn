@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://bf2slacelv3q4" path="res://Charecters/Siga/Sprites/Walking_Siga_Right.png" id="8_fdh0j"]
 [ext_resource type="Script" path="res://Inventory/UIRoot.gd" id="10_kic7j"]
 [ext_resource type="PackedScene" uid="uid://biliroadbxnp6" path="res://Inventory/Inventory.tscn" id="11_0jv23"]
-[ext_resource type="AudioStream" uid="uid://gq713ng78b06" path="res://Audio/Walking_sound.mp3" id="13_vj2gy"]
+[ext_resource type="AudioStream" uid="uid://cfv51v6wbmvfj" path="res://Audio/kõndimise_heli.mp3" id="13_etwn1"]
 [ext_resource type="Script" path="res://Charecters/Siga/Scenes/fadeToBlack.gd" id="14_7haux"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7p3e6"]
@@ -829,7 +829,7 @@ autostart = true
 
 [node name="AudioStreamPlayer_Walking" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
-stream = ExtResource("13_vj2gy")
+stream = ExtResource("13_etwn1")
 bus = &"SFX"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://jlmvikpvwjrw"
+path="res://.godot/imported/lennukimüra taevas.mp3-305451a808c927d5bec681f2a626d70a.mp3str"
+
+[deps]
+
+source_file="res://Audio/lennukimüra taevas.mp3"
+dest_files=["res://.godot/imported/lennukimüra taevas.mp3-305451a808c927d5bec681f2a626d70a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

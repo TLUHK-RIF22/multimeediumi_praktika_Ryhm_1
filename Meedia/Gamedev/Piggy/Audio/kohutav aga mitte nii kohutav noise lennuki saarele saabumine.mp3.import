@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dy8a53rrvy7lk"
+path="res://.godot/imported/kohutav aga mitte nii kohutav noise lennuki saarele saabumine.mp3-300b3edfa2c2a0efe8d5ea58368b15d9.mp3str"
+
+[deps]
+
+source_file="res://Audio/kohutav aga mitte nii kohutav noise lennuki saarele saabumine.mp3"
+dest_files=["res://.godot/imported/kohutav aga mitte nii kohutav noise lennuki saarele saabumine.mp3-300b3edfa2c2a0efe8d5ea58368b15d9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

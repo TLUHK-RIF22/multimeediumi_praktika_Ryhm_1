@@ -1,8 +1,8 @@
 [gd_scene load_steps=14 format=3 uid="uid://b31wy8b8vfw1o"]
 
 [ext_resource type="Script" path="res://Charecters/Siga/Scenes/playerBoat.gd" id="1_i8ejw"]
+[ext_resource type="AudioStream" uid="uid://djsdnkotevh88" path="res://Audio/mootorpaat.mp3" id="3_l38rw"]
 [ext_resource type="Texture2D" uid="uid://bxxjbtw3nm2ie" path="res://Charecters/Siga/Sprites/Idle_Siga_Right-Sheet.png" id="4_cuki8"]
-[ext_resource type="AudioStream" uid="uid://gq713ng78b06" path="res://Audio/Walking_sound.mp3" id="13_jfvmq"]
 [ext_resource type="Script" path="res://Charecters/Siga/Scenes/fadeToBlack.gd" id="14_5wx3j"]
 [ext_resource type="Texture2D" uid="uid://cko33yttif4wr" path="res://Sprites/Paat.png" id="15_m3q8q"]
 
@@ -112,7 +112,7 @@ shape = SubResource("CapsuleShape2D_0gpt2")
 
 [node name="AudioStreamPlayer_Walking" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
-stream = ExtResource("13_jfvmq")
+stream = ExtResource("3_l38rw")
 bus = &"SFX"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]

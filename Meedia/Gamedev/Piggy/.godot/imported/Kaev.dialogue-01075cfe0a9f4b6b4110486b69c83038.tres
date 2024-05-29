@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_ll6l2"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_osyqg"]
 
 [resource]
-script = ExtResource("1_ll6l2")
+script = ExtResource("1_osyqg")
 using_states = PackedStringArray()
 titles = {
 "WellMentioned0": "3",

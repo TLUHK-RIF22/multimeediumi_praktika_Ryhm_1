@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cwrs84u7q0c8s"
+path="res://.godot/imported/kohutav noise.mp3-5719dd37b9c81343387ef9f12676b533.mp3str"
+
+[deps]
+
+source_file="res://Audio/kohutav noise.mp3"
+dest_files=["res://.godot/imported/kohutav noise.mp3-5719dd37b9c81343387ef9f12676b533.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
