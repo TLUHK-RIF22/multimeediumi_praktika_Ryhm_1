@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://cco4kg1r16cw"]
+[gd_scene load_steps=11 format=3 uid="uid://cco4kg1r16cw"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_j1wsr"]
 [ext_resource type="AudioStream" uid="uid://cu8l14cttsk3s" path="res://Audio/menüü põhi.mp3" id="2_30hip"]
 [ext_resource type="Script" path="res://Levels/StopMoving.gd" id="2_71hq2"]
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="3_3cqu8"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/player.tscn" id="4_ct6pb"]
+[ext_resource type="AudioStream" uid="uid://xsvd4jeqsjtq" path="res://Audio/vihmatorm heli kaevu.mp3" id="5_4qmsp"]
 [ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://UI/Game_manager/game_manager.tscn" id="7_uind4"]
 [ext_resource type="PackedScene" uid="uid://dscndc5iq3qrs" path="res://LevelHoping/Entrance.tscn" id="9_q1lpn"]
 [ext_resource type="PackedScene" uid="uid://c5h6i1vrldhsx" path="res://Pickup/pickup.tscn" id="19_8mp1t"]
@@ -29,6 +30,12 @@ unique_name_in_owner = true
 stream = ExtResource("2_30hip")
 autoplay = true
 bus = &"Music"
+
+[node name="AudioStreamPlayer_vihm" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("5_4qmsp")
+autoplay = true
+bus = &"SFX"
 
 [node name="TileMap" parent="." instance=ExtResource("3_3cqu8")]
 modulate = Color(0.384314, 0.458824, 0.458824, 1)
