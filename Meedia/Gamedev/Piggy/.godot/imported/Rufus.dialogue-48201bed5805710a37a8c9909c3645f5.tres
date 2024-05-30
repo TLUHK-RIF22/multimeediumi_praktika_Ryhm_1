@@ -7,7 +7,8 @@ script = ExtResource("1_lqc7e")
 using_states = PackedStringArray()
 titles = {
 "PlanToLeaveTheIsland": "3",
-"Second": "18"
+"Second": "18",
+"postJourney": "24"
 }
 character_names = PackedStringArray("Rufus", "Piggy")
 first_title = "3"
@@ -82,6 +83,84 @@ lines = {
 "next_id": "end",
 "type": "goto"
 },
+"22": {
+"id": "22",
+"next_id": "24",
+"text": "postJourney",
+"type": "title"
+},
+"24": {
+"character": "Rufus",
+"character_replacements": Array[Dictionary]([]),
+"id": "24",
+"next_id": "25",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Hey, you’re up again. Feeling better?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hey, you’re up again. Feeling better?",
+"type": "dialogue"
+},
+"25": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "25",
+"next_id": "26",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "My head is screwed on a little better, thank you.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "My head is screwed on a little better, thank you.",
+"type": "dialogue"
+},
+"26": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "26",
+"next_id": "27",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "My name is Cornfed, by the way.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "My name is Cornfed, by the way.",
+"type": "dialogue"
+},
+"27": {
+"character": "Rufus",
+"character_replacements": Array[Dictionary]([]),
+"id": "27",
+"next_id": "28",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Happy to hear that. You’re welcome, Cornfed.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Happy to hear that. You’re welcome, Cornfed.",
+"type": "dialogue"
+},
+"28": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "28",
+"next_id": "29",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "I also realised I need to get to the mainland as soon as I can",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I also realised I need to get to the mainland as soon as I can",
+"type": "dialogue"
+},
+"29": {
+"character": "Rufus",
+"character_replacements": Array[Dictionary]([]),
+"id": "29",
+"next_id": "30",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "We would gladly welcome you here, but... Since you have the brands of another farm, someone might eventually come for you.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "We would gladly welcome you here, but... Since you have the brands of another farm, someone might eventually come for you.",
+"type": "dialogue"
+},
 "3": {
 "character": "Rufus",
 "character_replacements": Array[Dictionary]([]),
@@ -93,6 +172,101 @@ lines = {
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "If you plan to leave the island with a stolen boat, you should have a pair of cool sunglasses to match your energy.",
 "type": "dialogue"
+},
+"30": {
+"character": "Rufus",
+"character_replacements": Array[Dictionary]([]),
+"id": "30",
+"next_id": "31",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "There’s a boat near your wrecked airplane.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "There’s a boat near your wrecked airplane.",
+"type": "dialogue"
+},
+"31": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "31",
+"next_id": "32",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Does the boat work?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Does the boat work?",
+"type": "dialogue"
+},
+"32": {
+"character": "Rufus",
+"character_replacements": Array[Dictionary]([]),
+"id": "32",
+"next_id": "33",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "I’ve seen it work before. Look it over - maybe you can get it running.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I’ve seen it work before. Look it over - maybe you can get it running.",
+"type": "dialogue"
+},
+"33": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "33",
+"next_id": "34",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "I’m not much of a mechanic. Is there any other way to get off this island?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I’m not much of a mechanic. Is there any other way to get off this island?",
+"type": "dialogue"
+},
+"34": {
+"character": "Rufus",
+"character_replacements": Array[Dictionary]([]),
+"id": "34",
+"next_id": "35",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "You could swim I suppose, but I would recommend the boat.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You could swim I suppose, but I would recommend the boat.",
+"type": "dialogue"
+},
+"35": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "35",
+"next_id": "36",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "I’ll see what I can do.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I’ll see what I can do.",
+"type": "dialogue"
+},
+"36": {
+"id": "36",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "BoatTrigger"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "38",
+"type": "mutation"
+},
+"38": {
+"id": "38",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
 },
 "4": {
 "character": "Piggy",
@@ -200,5 +374,23 @@ do RufusWellMentioned = 1
 ~ Second
 Rufus: [[Nice day!|Hi there!]]
 
+=> END
+
+~ postJourney
+
+Rufus: Hey, you’re up again. Feeling better?
+Piggy: My head is screwed on a little better, thank you.
+Piggy:  My name is Cornfed, by the way.
+Rufus: Happy to hear that. You’re welcome, Cornfed.
+Piggy: I also realised I need to get to the mainland as soon as I can
+Rufus: We would gladly welcome you here, but... Since you have the brands of another farm, someone might eventually come for you.
+Rufus: There’s a boat near your wrecked airplane.
+Piggy: Does the boat work?
+Rufus: I’ve seen it work before. Look it over - maybe you can get it running.
+Piggy: I’m not much of a mechanic. Is there any other way to get off this island?
+Rufus: You could swim I suppose, but I would recommend the boat.
+Piggy: I’ll see what I can do.
+set BoatTrigger = 1
+	
 => END"
 metadata/dialogue_manager_version = "2.36.0"

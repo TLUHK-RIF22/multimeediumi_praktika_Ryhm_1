@@ -19,6 +19,10 @@ func _unhandled_input(_event):
 		elif Input.is_action_just_pressed("Interact") && Global.RufusTimesInteracted == 1:
 			emit_signal("StopMoving")
 			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "Second")
+		elif Input.is_action_just_pressed("Interact") && Global.RufusTimesInteracted == 10:
+			emit_signal("StopMoving")
+			DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "postJourney")
+		
 		else:
 			emit_signal("CanMove")
 		

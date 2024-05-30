@@ -20,7 +20,7 @@ var appearPickupItemInstructions: bool = false
 var timesInteracted: int = 0
 
 #Rufus Interact
-var RufusTimesInteracted: int = 0
+var RufusTimesInteracted: int = 10
 var RufusWellMentioned: int = 0
 var GoDownWell: int = 0
 
@@ -34,3 +34,5 @@ var key = 0
 var gas_can = 0
 var sunglasses = 0
 
+
+var KeyFuelSunglassesMentioned = 0

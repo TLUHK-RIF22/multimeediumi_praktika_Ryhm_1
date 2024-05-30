@@ -18,3 +18,21 @@ do RufusWellMentioned = 1
 Rufus: [[Nice day!|Hi there!]]
 
 => END
+
+~ postJourney
+
+Rufus: Hey, you’re up again. Feeling better?
+Piggy: My head is screwed on a little better, thank you.
+Piggy:  My name is Cornfed, by the way.
+Rufus: Happy to hear that. You’re welcome, Cornfed.
+Piggy: I also realised I need to get to the mainland as soon as I can
+Rufus: We would gladly welcome you here, but... Since you have the brands of another farm, someone might eventually come for you.
+Rufus: There’s a boat near your wrecked airplane.
+Piggy: Does the boat work?
+Rufus: I’ve seen it work before. Look it over - maybe you can get it running.
+Piggy: I’m not much of a mechanic. Is there any other way to get off this island?
+Rufus: You could swim I suppose, but I would recommend the boat.
+Piggy: I’ll see what I can do.
+set BoatTrigger = 1
+	
+=> END

@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://ch8wnk4slan78"]
+[gd_scene load_steps=42 format=3 uid="uid://ch8wnk4slan78"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_jhued"]
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="2_1cl0b"]
@@ -36,7 +36,9 @@
 [ext_resource type="PackedScene" uid="uid://ctaolhdvrgb82" path="res://LevelHoping/Gate_levelSwap.tscn" id="33_5fkyu"]
 [ext_resource type="Resource" uid="uid://d317n7l77ny3o" path="res://Charecters/NPC/Dialogues/Circe.dialogue" id="33_o5mea"]
 [ext_resource type="Script" path="res://Charecters/NPC/Scenes/Gruff.gd" id="34_1glfn"]
+[ext_resource type="Resource" uid="uid://cj85dk8ggd5pr" path="res://Items/sunglasses.tres" id="35_1ten7"]
 [ext_resource type="Resource" uid="uid://dq0chs5b1w1h7" path="res://Charecters/NPC/Dialogues/Gruff.dialogue" id="35_hke2d"]
+[ext_resource type="Resource" uid="uid://f5eocg24sgj" path="res://Items/GasCan.tres" id="36_6yekx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ubf0f"]
 size = Vector2(134, 40.5)
@@ -569,6 +571,9 @@ position = Vector2(297, 426)
 position = Vector2(474, 590)
 script = ExtResource("32_rkcqs")
 Speech = ExtResource("33_o5mea")
+key = ExtResource("30_dd3f1")
+sunglasses = ExtResource("35_1ten7")
+gas_can = ExtResource("36_6yekx")
 
 [node name="Gruff" parent="." instance=ExtResource("32_y3edo")]
 position = Vector2(428, 256)

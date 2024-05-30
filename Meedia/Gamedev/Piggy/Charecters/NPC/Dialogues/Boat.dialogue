@@ -6,6 +6,9 @@ Piggy: Nice boat. I wish I could ride it one day.
 
 ~ NoKey
 
+set RufusTimesInteracted = 0
+set KeyFuelSunglassesMentioned = 1
+
 Piggy: I think this boat could take me to the mainland.
 if (key == 0):
 	Piggy: I need a key.
