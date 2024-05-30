@@ -447,3 +447,6 @@ To do
 
 ## 27.05 - 1h
 - https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/118
+
+## 30.05 - 4h
+- https://github.com/TLUHK-RIF22/multimeediumi_praktika_Ryhm_1/issues/119
