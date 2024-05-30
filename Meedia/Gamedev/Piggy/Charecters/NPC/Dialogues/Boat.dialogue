@@ -15,3 +15,12 @@ if (sunglasses == 0):
 	Piggy: And going boating without sunglasses is just plain uncool ...
 
 => END
+
+~ Escape
+
+Piggy: Everything is in place. Do you want to start the boat?
+- Piggy: Oink, oink! Onwards to FREEEEDOOOOM!
+	set BoatTrigger = 2
+- Piggy: I’ll just take one look around before I go.
+
+=> END

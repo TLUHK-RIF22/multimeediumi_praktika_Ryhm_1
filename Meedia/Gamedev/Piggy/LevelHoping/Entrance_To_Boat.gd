@@ -42,8 +42,11 @@ func _unhandled_input(_event):
 		DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "BoatFirstSeen")
 		Global.BoatTrigger = 1
 
-		
 	elif entered && Input.is_action_just_pressed("ui_accept") && Global.BoatTrigger == 1 && key in inventory && sunglasses in inventory && gas_can in inventory:
+		emit_signal("StopMoving")
+		DialogueManager.show_dialogue_balloon(load(Speech.resource_path), "Escape")
+			
+	elif entered && Global.BoatTrigger == 2 && key in inventory && sunglasses in inventory && gas_can in inventory:
 		emit_signal("StopMoving")
 		canvas_layer.visible = true
 		animation_player.play("fade_out")

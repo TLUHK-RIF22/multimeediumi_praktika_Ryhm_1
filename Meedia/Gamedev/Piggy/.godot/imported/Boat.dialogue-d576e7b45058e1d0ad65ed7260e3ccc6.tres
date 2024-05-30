@@ -7,6 +7,7 @@ script = ExtResource("1_3lp2b")
 using_states = PackedStringArray()
 titles = {
 "BoatFirstSeen": "3",
+"Escape": "21",
 "NoKey": "9"
 }
 character_names = PackedStringArray("Piggy")
@@ -135,6 +136,97 @@ lines = {
 "next_id": "end",
 "type": "goto"
 },
+"19": {
+"id": "19",
+"next_id": "21",
+"text": "Escape",
+"type": "title"
+},
+"21": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "21",
+"next_id": "22",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Everything is in place. Do you want to start the boat?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Everything is in place. Do you want to start the boat?",
+"type": "dialogue"
+},
+"22": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "22",
+"next_id": "22.2",
+"next_id_after": "26",
+"notes": "",
+"responses": PackedStringArray("22", "24"),
+"tags": PackedStringArray(),
+"text": "Oink, oink! Onwards to FREEEEDOOOOM!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Oink, oink! Onwards to FREEEEDOOOOM!",
+"type": "response"
+},
+"22.2": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "23",
+"next_id_after": "26",
+"tags": PackedStringArray(),
+"text": "Oink, oink! Onwards to FREEEEDOOOOM!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Oink, oink! Onwards to FREEEEDOOOOM!",
+"type": "dialogue"
+},
+"23": {
+"id": "23",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "BoatTrigger"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "number",
+"value": 2
+}])
+},
+"next_id": "26",
+"parent_id": "22",
+"type": "mutation"
+},
+"24": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"id": "24",
+"next_id": "24.2",
+"next_id_after": "26",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "I’ll just take one look around before I go.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I’ll just take one look around before I go.",
+"type": "response"
+},
+"24.2": {
+"character": "Piggy",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "26",
+"next_id_after": "26",
+"tags": PackedStringArray(),
+"text": "I’ll just take one look around before I go.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I’ll just take one look around before I go.",
+"type": "dialogue"
+},
+"26": {
+"id": "26",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
 "3": {
 "character": "Piggy",
 "character_replacements": Array[Dictionary]([]),
@@ -187,6 +279,15 @@ if (gas_can == 0):
 	Piggy: The fuel tank also looks empty ...
 if (sunglasses == 0):
 	Piggy: And going boating without sunglasses is just plain uncool ...
+
+=> END
+
+~ Escape
+
+Piggy: Everything is in place. Do you want to start the boat?
+- Piggy: Oink, oink! Onwards to FREEEEDOOOOM!
+	set BoatTrigger = 2
+- Piggy: I’ll just take one look around before I go.
 
 => END"
 metadata/dialogue_manager_version = "2.36.0"

@@ -41,6 +41,7 @@ GateName = "B2_W"
 
 [node name="Entrance_To_Boat" parent="StopMoving" instance=ExtResource("4_15430")]
 position = Vector2(1032, 453)
+scale = Vector2(1.00685, 1)
 GateName = "Boat"
 key = ExtResource("5_jwhar")
 sunglasses = ExtResource("6_n5mls")
@@ -66,6 +67,21 @@ idleTimer = true
 [node name="apple" parent="." instance=ExtResource("9_fh2ae")]
 unique_name_in_owner = true
 position = Vector2(954, 408)
+
+[node name="apple2" parent="." instance=ExtResource("9_fh2ae")]
+unique_name_in_owner = true
+position = Vector2(962, 451)
+item = ExtResource("6_n5mls")
+
+[node name="apple3" parent="." instance=ExtResource("9_fh2ae")]
+unique_name_in_owner = true
+position = Vector2(941, 443)
+item = ExtResource("5_jwhar")
+
+[node name="apple4" parent="." instance=ExtResource("9_fh2ae")]
+unique_name_in_owner = true
+position = Vector2(917, 435)
+item = ExtResource("7_h0yd0")
 
 [node name="Tutorial" type="Control" parent="."]
 y_sort_enabled = true

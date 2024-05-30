@@ -25,3 +25,6 @@ res://tile_map.tscn
 res://UI/Intro/Intro.tscn
 res://Inventory/Inventory.tscn
 res://Inventory/InventoryDialog.gd
+res://Global.tscn
+res://Global.gd
+res://LevelHoping/Entrance_To_Boat.gd
