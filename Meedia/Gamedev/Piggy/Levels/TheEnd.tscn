@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Levels/TheEnd.gd" id="1_fqgnn"]
 [ext_resource type="Theme" uid="uid://d15h12ovw1nfc" path="res://Ganon16px.tres" id="1_ylwjv"]
 [ext_resource type="PackedScene" uid="uid://pqoidl1vn4w5" path="res://UI/MainMenu/main.tscn" id="2_x8bds"]
-[ext_resource type="VideoStream" path="res://UI/Credits.ogv" id="3_on6uy"]
+[ext_resource type="VideoStream" path="res://UI/lopp.ogv" id="3_g2ygy"]
 [ext_resource type="Script" path="res://UI/Intro/Label.gd" id="5_3tjir"]
 [ext_resource type="AudioStream" uid="uid://cnnneys351w1j" path="res://Audio/loputiitri_heli.mp3" id="6_ip8ys"]
 
@@ -18,7 +18,7 @@ MainMenu = ExtResource("2_x8bds")
 offset_right = 1920.0
 offset_bottom = 1088.0
 scale = Vector2(0.25, 0.25)
-stream = ExtResource("3_on6uy")
+stream = ExtResource("3_g2ygy")
 volume_db = -80.0
 autoplay = true
 bus = &"Music"
