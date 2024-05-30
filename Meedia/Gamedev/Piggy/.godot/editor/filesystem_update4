@@ -19,3 +19,7 @@ res://Levels/StopMoving.gd
 res://Charecters/NPC/Scenes/Circe.gd
 res://Charecters/NPC/Scenes/Gruff.gd
 res://Charecters/NPC/Scenes/Circe.tscn
+res://Levels/Spikes/Spikes.gd
+res://Levels/LevelC3.tscn
+res://tile_map.tscn
+res://UI/Intro/Intro.tscn

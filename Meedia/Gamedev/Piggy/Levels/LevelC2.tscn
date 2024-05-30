@@ -1,9 +1,10 @@
-[gd_scene load_steps=15 format=3 uid="uid://pcf5mbd40567"]
+[gd_scene load_steps=17 format=3 uid="uid://pcf5mbd40567"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_h1u53"]
 [ext_resource type="Script" path="res://Levels/StopMoving.gd" id="2_8crnb"]
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="2_gnxt3"]
 [ext_resource type="PackedScene" uid="uid://cy8nl6guub54d" path="res://Charecters/Siga/player.tscn" id="2_taw7f"]
+[ext_resource type="PackedScene" uid="uid://dscndc5iq3qrs" path="res://LevelHoping/Entrance.tscn" id="4_oaclf"]
 [ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://UI/Game_manager/game_manager.tscn" id="6_esnfp"]
 [ext_resource type="AudioStream" uid="uid://cu8l14cttsk3s" path="res://Audio/menüü põhi.mp3" id="7_uv07r"]
 [ext_resource type="PackedScene" uid="uid://ctaolhdvrgb82" path="res://LevelHoping/Gate_levelSwap.tscn" id="8_1sols"]
@@ -15,6 +16,9 @@
 [ext_resource type="Resource" uid="uid://f5eocg24sgj" path="res://Items/GasCan.tres" id="13_1ihd7"]
 [ext_resource type="PackedScene" uid="uid://ditc4smtd1gyu" path="res://MapElements/krabi.tscn" id="14_qi1gk"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vese1"]
+size = Vector2(49, 366)
+
 [node name="LevelC2" type="Node2D"]
 process_mode = 1
 y_sort_enabled = true
@@ -25,12 +29,12 @@ script = ExtResource("1_h1u53")
 script = ExtResource("2_8crnb")
 
 [node name="Gate_LevelSwap" parent="StopMoving" instance=ExtResource("8_1sols")]
-position = Vector2(-80, 472)
+position = Vector2(-173, 468)
 level = "LevelB2"
 GateName = "B2_N"
 
 [node name="Gate_LevelSwap2" parent="StopMoving" instance=ExtResource("8_1sols")]
-position = Vector2(-82, 595)
+position = Vector2(-178, 595)
 level = "LevelB2"
 GateName = "B2_S"
 
@@ -109,12 +113,22 @@ position = Vector2(805, -143)
 level = "LevelC2"
 GateName = "Auk_TsoonA"
 
+[node name="Entrance" parent="StopMoving" instance=ExtResource("4_oaclf")]
+position = Vector2(-58, 464)
+level = "LevelB2"
+GateName = "B2_N"
+
+[node name="Entrance2" parent="StopMoving" instance=ExtResource("4_oaclf")]
+position = Vector2(-61, 597)
+level = "LevelB2"
+GateName = "B2_S"
+
 [node name="LevelB2C2_N" type="Marker2D" parent="."]
-position = Vector2(21, 464)
+position = Vector2(-3, 465)
 scale = Vector2(4, 4)
 
 [node name="LevelB2C2_S" type="Marker2D" parent="."]
-position = Vector2(7, 591)
+position = Vector2(-12, 597)
 scale = Vector2(4, 4)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
@@ -263,6 +277,14 @@ position = Vector2(320, 646)
 [node name="krabi2" parent="." instance=ExtResource("14_qi1gk")]
 position = Vector2(336, 450)
 
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(-107, 434)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(-1, 111)
+shape = SubResource("RectangleShape2D_vese1")
+metadata/_edit_lock_ = true
+
 [connection signal="CanMove" from="StopMoving" to="Player" method="_on_stop_moving_can_move"]
 [connection signal="StopMoving" from="StopMoving" to="Player" method="_on_stop_moving_stop_moving"]
 [connection signal="StopMoving" from="StopMoving/Gate_LevelSwap" to="StopMoving" method="_on_gate_level_swap_stop_moving"]
@@ -282,3 +304,5 @@ position = Vector2(336, 450)
 [connection signal="StopMoving" from="StopMoving/Gate_LevelSwap17" to="StopMoving" method="_on_gate_level_swap_stop_moving"]
 [connection signal="StopMoving" from="StopMoving/Gate_LevelSwap16" to="StopMoving" method="_on_gate_level_swap_stop_moving"]
 [connection signal="StopMoving" from="StopMoving/Gate_LevelSwap18" to="StopMoving" method="_on_gate_level_swap_stop_moving"]
+[connection signal="StopMoving" from="StopMoving/Entrance" to="StopMoving" method="_on_entrance_stop_moving"]
+[connection signal="StopMoving" from="StopMoving/Entrance2" to="StopMoving" method="_on_entrance_2_stop_moving"]

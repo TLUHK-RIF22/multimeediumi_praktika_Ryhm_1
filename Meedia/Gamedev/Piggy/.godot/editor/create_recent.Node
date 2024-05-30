@@ -1,15 +1,14 @@
+CollisionShape2D
+StaticBody2D
 HBoxContainer
 CharacterBody2D
 Node2D
 CanvasLayer
-CollisionShape2D
 TileMap
 RigidBody2D
-StaticBody2D
 Node
 Control
 Sprite2D
 AnimatedSprite2D
 Timer
 ColorRect
-PanelContainer

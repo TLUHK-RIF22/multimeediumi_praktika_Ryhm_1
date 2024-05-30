@@ -120,3 +120,7 @@ func _on_gruff_can_move():
 
 func _on_gruff_stop_moving():
 	emit_signal("StopMoving")
+
+
+func _on_entrance_3_stop_moving():
+	emit_signal("StopMoving")
