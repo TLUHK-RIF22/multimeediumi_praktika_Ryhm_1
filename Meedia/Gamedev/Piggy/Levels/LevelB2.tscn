@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://ch8wnk4slan78"]
+[gd_scene load_steps=43 format=3 uid="uid://ch8wnk4slan78"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_jhued"]
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="2_1cl0b"]
@@ -39,6 +39,7 @@
 [ext_resource type="Resource" uid="uid://cj85dk8ggd5pr" path="res://Items/sunglasses.tres" id="35_1ten7"]
 [ext_resource type="Resource" uid="uid://dq0chs5b1w1h7" path="res://Charecters/NPC/Dialogues/Gruff.dialogue" id="35_hke2d"]
 [ext_resource type="Resource" uid="uid://f5eocg24sgj" path="res://Items/GasCan.tres" id="36_6yekx"]
+[ext_resource type="PackedScene" uid="uid://c7w0abjgcapta" path="res://MapElements/koonus.tscn" id="40_o4f4a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ubf0f"]
 size = Vector2(134, 40.5)
@@ -593,6 +594,30 @@ position = Vector2(1681, 389)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
 position = Vector2(-1, 111)
 shape = SubResource("RectangleShape2D_bvuei")
+
+[node name="koonus" parent="." instance=ExtResource("40_o4f4a")]
+position = Vector2(1667, 548)
+
+[node name="koonus2" parent="." instance=ExtResource("40_o4f4a")]
+position = Vector2(1678, 387)
+
+[node name="koonus3" parent="." instance=ExtResource("40_o4f4a")]
+position = Vector2(1677, 400)
+
+[node name="koonus4" parent="." instance=ExtResource("40_o4f4a")]
+position = Vector2(1675, 414)
+
+[node name="koonus5" parent="." instance=ExtResource("40_o4f4a")]
+position = Vector2(1667, 559)
+
+[node name="koonus6" parent="." instance=ExtResource("40_o4f4a")]
+position = Vector2(1665, 572)
+
+[node name="koonus7" parent="." instance=ExtResource("40_o4f4a")]
+position = Vector2(743, 1000)
+
+[node name="koonus8" parent="." instance=ExtResource("40_o4f4a")]
+position = Vector2(761, 999)
 
 [connection signal="CanMove" from="StopMoving" to="Player" method="_on_stop_moving_can_move"]
 [connection signal="StopMoving" from="StopMoving" to="Player" method="_on_stop_moving_stop_moving"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://mcobavk7ibdf"]
+[gd_scene load_steps=24 format=3 uid="uid://mcobavk7ibdf"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_pxv05"]
 [ext_resource type="Script" path="res://Levels/StopMoving.gd" id="2_6cg2f"]
@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://dyumucr6nntlt" path="res://MapElements/TreeA.tscn" id="16_twhg8"]
 [ext_resource type="Script" path="res://Charecters/NPC/SurvivalInstinct.gd" id="17_npyo5"]
 [ext_resource type="Resource" uid="uid://c23jhiv6h82dm" path="res://Charecters/NPC/Dialogues/SurvivalInstinct.dialogue" id="18_w5bc6"]
+[ext_resource type="PackedScene" uid="uid://c7w0abjgcapta" path="res://MapElements/koonus.tscn" id="22_hrhmp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xp7ij"]
 size = Vector2(134, 40.5)
@@ -137,6 +138,12 @@ position = Vector2(730, 273)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
 position = Vector2(72, -43.25)
 shape = SubResource("RectangleShape2D_xp7ij")
+
+[node name="koonus7" parent="." instance=ExtResource("22_hrhmp")]
+position = Vector2(793, 243)
+
+[node name="koonus8" parent="." instance=ExtResource("22_hrhmp")]
+position = Vector2(811, 242)
 
 [connection signal="CanMove" from="StopMoving" to="Player" method="_on_stop_moving_can_move"]
 [connection signal="StopMoving" from="StopMoving" to="Player" method="_on_stop_moving_stop_moving"]

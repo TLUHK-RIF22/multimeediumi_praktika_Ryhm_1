@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cco4kg1r16cw"]
+[gd_scene load_steps=20 format=3 uid="uid://cco4kg1r16cw"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_j1wsr"]
 [ext_resource type="AudioStream" uid="uid://cu8l14cttsk3s" path="res://Audio/menüü põhi.mp3" id="2_30hip"]
@@ -8,7 +8,16 @@
 [ext_resource type="AudioStream" uid="uid://xsvd4jeqsjtq" path="res://Audio/vihmatorm heli kaevu.mp3" id="5_4qmsp"]
 [ext_resource type="PackedScene" uid="uid://ctiyr321gw14l" path="res://UI/Game_manager/game_manager.tscn" id="7_uind4"]
 [ext_resource type="PackedScene" uid="uid://dscndc5iq3qrs" path="res://LevelHoping/Entrance.tscn" id="9_q1lpn"]
+[ext_resource type="PackedScene" uid="uid://ditc4smtd1gyu" path="res://MapElements/krabi.tscn" id="11_ee2u5"]
+[ext_resource type="PackedScene" uid="uid://cg5xfwrgkb8ht" path="res://MapElements/telk.tscn" id="12_dvos8"]
+[ext_resource type="PackedScene" uid="uid://cu5e7cxcnsaax" path="res://MapElements/RockA.tscn" id="14_gt2oo"]
+[ext_resource type="PackedScene" uid="uid://c1kt6oxih286t" path="res://MapElements/Käru.tscn" id="15_he6nw"]
+[ext_resource type="PackedScene" uid="uid://dsdbsqmkm24g2" path="res://MapElements/kass.tscn" id="16_o3qf0"]
+[ext_resource type="PackedScene" uid="uid://dfvwh3jx8geux" path="res://MapElements/kana.tscn" id="17_bhmap"]
+[ext_resource type="PackedScene" uid="uid://gl8vb455t5nu" path="res://MapElements/jänes.tscn" id="18_5nyyw"]
+[ext_resource type="PackedScene" uid="uid://rtdsgwh3ma0t" path="res://MapElements/Barrel.tscn" id="19_4xahh"]
 [ext_resource type="PackedScene" uid="uid://c5h6i1vrldhsx" path="res://Pickup/pickup.tscn" id="19_8mp1t"]
+[ext_resource type="PackedScene" uid="uid://c7w0abjgcapta" path="res://MapElements/koonus.tscn" id="20_k746q"]
 [ext_resource type="Resource" uid="uid://cj85dk8ggd5pr" path="res://Items/sunglasses.tres" id="23_j1fls"]
 
 [node name="LevelWell" type="Node2D"]
@@ -28,7 +37,6 @@ GateName = "Exit"
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
 stream = ExtResource("2_30hip")
-autoplay = true
 bus = &"Music"
 
 [node name="AudioStreamPlayer_vihm" type="AudioStreamPlayer" parent="."]
@@ -67,5 +75,46 @@ scale = Vector2(4, 4)
 [node name="Sunglasses" parent="." instance=ExtResource("19_8mp1t")]
 position = Vector2(793, 644)
 item = ExtResource("23_j1fls")
+
+[node name="krabi" parent="." instance=ExtResource("11_ee2u5")]
+position = Vector2(806, 706)
+
+[node name="krabi2" parent="." instance=ExtResource("11_ee2u5")]
+position = Vector2(893, 642)
+
+[node name="Telk" parent="." instance=ExtResource("12_dvos8")]
+position = Vector2(803, 614)
+
+[node name="RockA" parent="." instance=ExtResource("14_gt2oo")]
+position = Vector2(768, 683)
+
+[node name="Käru" parent="." instance=ExtResource("15_he6nw")]
+position = Vector2(890, 730)
+rotation = 0.798288
+
+[node name="kass" parent="." instance=ExtResource("16_o3qf0")]
+position = Vector2(871, 612)
+
+[node name="kana" parent="." instance=ExtResource("17_bhmap")]
+position = Vector2(772, 780)
+rotation = -0.278532
+
+[node name="jänes" parent="." instance=ExtResource("18_5nyyw")]
+position = Vector2(893, 800)
+
+[node name="Barrel" parent="." instance=ExtResource("19_4xahh")]
+position = Vector2(771, 743)
+rotation = 0.501695
+
+[node name="Barrel2" parent="." instance=ExtResource("19_4xahh")]
+position = Vector2(881, 679)
+rotation = -0.478892
+
+[node name="koonus" parent="." instance=ExtResource("20_k746q")]
+position = Vector2(767, 642)
+
+[node name="koonus2" parent="." instance=ExtResource("20_k746q")]
+position = Vector2(838, 641)
+rotation = 0.576651
 
 [connection signal="StopMoving" from="StopMoving" to="Player" method="_on_stop_moving_stop_moving"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://pcf5mbd40567"]
+[gd_scene load_steps=18 format=3 uid="uid://pcf5mbd40567"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_h1u53"]
 [ext_resource type="Script" path="res://Levels/StopMoving.gd" id="2_8crnb"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://beohv04uvm5wr" path="res://MapElements/Auk_in.tscn" id="12_obo73"]
 [ext_resource type="Resource" uid="uid://f5eocg24sgj" path="res://Items/GasCan.tres" id="13_1ihd7"]
 [ext_resource type="PackedScene" uid="uid://ditc4smtd1gyu" path="res://MapElements/krabi.tscn" id="14_qi1gk"]
+[ext_resource type="PackedScene" uid="uid://c7w0abjgcapta" path="res://MapElements/koonus.tscn" id="16_ojo3q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vese1"]
 size = Vector2(49, 366)
@@ -284,6 +285,24 @@ position = Vector2(-107, 434)
 position = Vector2(-1, 111)
 shape = SubResource("RectangleShape2D_vese1")
 metadata/_edit_lock_ = true
+
+[node name="koonus" parent="." instance=ExtResource("16_ojo3q")]
+position = Vector2(-93, 453)
+
+[node name="koonus5" parent="." instance=ExtResource("16_ojo3q")]
+position = Vector2(-93, 464)
+
+[node name="koonus6" parent="." instance=ExtResource("16_ojo3q")]
+position = Vector2(-95, 477)
+
+[node name="koonus2" parent="." instance=ExtResource("16_ojo3q")]
+position = Vector2(-94, 583)
+
+[node name="koonus7" parent="." instance=ExtResource("16_ojo3q")]
+position = Vector2(-94, 594)
+
+[node name="koonus8" parent="." instance=ExtResource("16_ojo3q")]
+position = Vector2(-96, 607)
 
 [connection signal="CanMove" from="StopMoving" to="Player" method="_on_stop_moving_can_move"]
 [connection signal="StopMoving" from="StopMoving" to="Player" method="_on_stop_moving_stop_moving"]

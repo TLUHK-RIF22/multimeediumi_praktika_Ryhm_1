@@ -13,3 +13,6 @@ res://Levels/TheEnd.tscn
 res://UI/Intro/IntroVideo.tscn
 res://UI/Game_manager/game_manager.tscn
 res://Inventory/Inventory.tscn
+res://MapElements/koonus.tscn
+res://Levels/LevelWell.tscn
+res://MapElements/jänes.tscn

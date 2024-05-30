@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7w0abjgcapta"]
+
+[ext_resource type="Texture2D" uid="uid://d3j1s2o3bq0be" path="res://Sprites/Koonus.png" id="1_3qyjr"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h5lr8"]
+radius = 9.0
+
+[node name="koonus" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="EsmaneMaja" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(-2, -4)
+texture = ExtResource("1_3qyjr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_h5lr8")
