@@ -23,3 +23,5 @@ res://Levels/Spikes/Spikes.gd
 res://Levels/LevelC3.tscn
 res://tile_map.tscn
 res://UI/Intro/Intro.tscn
+res://Inventory/Inventory.tscn
+res://Inventory/InventoryDialog.gd
