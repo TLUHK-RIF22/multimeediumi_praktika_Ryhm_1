@@ -10,3 +10,8 @@ res://Levels/LevelB2.tscn
 res://Levels/LevelC2.tscn
 res://UI/MainMenu/BG.tscn
 res://Charecters/NPC/Scenes/BG_piggy.tscn
+res://Levels/TheEnd.tscn
+res://Levels/TheEnd.gd
+res://UI/Intro/IntroVideo.tscn
+res://UI/Intro/Label.gd
+res://Levels/LevelSea.tscn

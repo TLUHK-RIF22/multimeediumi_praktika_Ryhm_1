@@ -1,14 +1,45 @@
-[gd_scene load_steps=2 format=3 uid="uid://cb7dl5myrlmf1"]
+[gd_scene load_steps=7 format=3 uid="uid://cb7dl5myrlmf1"]
 
+[ext_resource type="Script" path="res://Levels/TheEnd.gd" id="1_fqgnn"]
 [ext_resource type="Theme" uid="uid://d15h12ovw1nfc" path="res://Ganon16px.tres" id="1_ylwjv"]
+[ext_resource type="PackedScene" uid="uid://pqoidl1vn4w5" path="res://UI/MainMenu/main.tscn" id="2_x8bds"]
+[ext_resource type="VideoStream" path="res://UI/Credits.ogv" id="3_on6uy"]
+[ext_resource type="Script" path="res://UI/Intro/Label.gd" id="5_3tjir"]
+[ext_resource type="AudioStream" uid="uid://b4lallqfh85vl" path="res://Audio/Piggy intro sample.mp3" id="6_aa6vq"]
 
 [node name="TheEnd" type="Node2D"]
 process_mode = 1
 y_sort_enabled = true
 position = Vector2(1, 0)
+script = ExtResource("1_fqgnn")
+MainMenu = ExtResource("2_x8bds")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+offset_right = 1920.0
+offset_bottom = 1088.0
+scale = Vector2(0.25, 0.25)
+stream = ExtResource("3_on6uy")
+autoplay = true
+bus = &"Music"
 
 [node name="Label" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 266.0
+offset_top = 237.0
+offset_right = 474.0
+offset_bottom = 262.0
 theme = ExtResource("1_ylwjv")
-text = "The End"
+horizontal_alignment = 2
+script = ExtResource("5_3tjir")
+Level = ExtResource("2_x8bds")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_aa6vq")
+autoplay = true
+
+[node name="Timer" type="Timer" parent="AudioStreamPlayer"]
+unique_name_in_owner = true
+process_callback = 0
+wait_time = 3.0
+
+[connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]
+[connection signal="timeout" from="AudioStreamPlayer/Timer" to="Label" method="_on_timer_timeout"]
