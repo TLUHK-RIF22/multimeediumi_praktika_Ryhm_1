@@ -1,10 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://73jm5qjy52vq"]
+[gd_scene load_steps=10 format=3 uid="uid://73jm5qjy52vq"]
 
 [ext_resource type="Script" path="res://UI/balloon.gd" id="1_36de5"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
-[ext_resource type="Theme" uid="uid://d15h12ovw1nfc" path="res://Ganon16px.tres" id="2_f53jc"]
 [ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="3_72ixx"]
-[ext_resource type="Theme" uid="uid://kqoqphpsnpbo" path="res://UI/MainMenu/game_theme.tres" id="4_bh64f"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 bg_color = Color(0, 0, 0, 1)
@@ -65,7 +63,7 @@ MarginContainer/constants/margin_right = 30
 MarginContainer/constants/margin_top = 15
 Panel/styles/panel = SubResource("StyleBoxFlat_uy0d5")
 
-[sub_resource type="Theme" id="Theme_sxna5"]
+[sub_resource type="Theme" id="Theme_y0fhc"]
 
 [node name="ExampleBalloon" type="CanvasLayer"]
 process_mode = 1
@@ -107,15 +105,15 @@ grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Balloon/Panel/Dialogue"]
 layout_mode = 2
-theme = ExtResource("2_f53jc")
 
 [node name="CharacterLabel" type="RichTextLabel" parent="Balloon/Panel/Dialogue/VBoxContainer"]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.501961)
 layout_mode = 2
 mouse_filter = 1
-theme = SubResource("Theme_sxna5")
+theme = SubResource("Theme_y0fhc")
 theme_override_colors/default_color = Color(0.721569, 0.964706, 0.921569, 1)
+theme_override_font_sizes/normal_font_size = 16
 bbcode_enabled = true
 text = "Character"
 fit_content = true
@@ -125,7 +123,6 @@ scroll_active = false
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
-theme = ExtResource("4_bh64f")
 text = "Dialogue..."
 
 [node name="Responses" type="MarginContainer" parent="Balloon"]
@@ -152,7 +149,7 @@ response_template = NodePath("ResponseExample")
 
 [node name="ResponseExample" type="Button" parent="Balloon/Responses/ResponsesMenu"]
 layout_mode = 2
-theme = ExtResource("4_bh64f")
+theme_override_font_sizes/font_size = 12
 text = "Response example"
 
 [node name="Panel2" type="Panel" parent="Balloon"]
@@ -185,7 +182,7 @@ layout_mode = 2
 modulate = Color(1, 1, 1, 0.501961)
 layout_mode = 2
 mouse_filter = 1
-theme = ExtResource("4_bh64f")
+theme = SubResource("Theme_y0fhc")
 theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/normal_font_size = 16
 bbcode_enabled = true

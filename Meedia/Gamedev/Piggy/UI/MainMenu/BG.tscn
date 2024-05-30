@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://brb13itbq0yo1"]
+[gd_scene load_steps=7 format=3 uid="uid://brb13itbq0yo1"]
 
 [ext_resource type="Script" path="res://UI/MainMenu/BG.gd" id="1_6xkuv"]
 [ext_resource type="Texture2D" uid="uid://cuaucfl34f8y3" path="res://Sprites/BG/red_barn.png" id="2_8vlq4"]
 [ext_resource type="Texture2D" uid="uid://cb0dpypltnu5t" path="res://Sprites/BG/Sky.png" id="2_fujt5"]
 [ext_resource type="Texture2D" uid="uid://bpvsgq4jthhox" path="res://Sprites/BG/grass.png" id="3_88ind"]
+[ext_resource type="Texture2D" uid="uid://2e0wdnflvsko" path="res://Tiles/Tileset2.0.png" id="5_2ag8f"]
 [ext_resource type="PackedScene" uid="uid://v51o3q0ngs4c" path="res://Charecters/NPC/Scenes/BG_piggy.tscn" id="5_8s7wy"]
 
 [node name="BG" type="ParallaxBackground"]
@@ -36,6 +37,36 @@ motion_mirroring = Vector2(600, 0)
 [node name="RedBarn" type="Sprite2D" parent="ParallaxLayer2"]
 position = Vector2(483, 145)
 texture = ExtResource("2_8vlq4")
+
+[node name="Tree" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(658, 165)
+texture = ExtResource("5_2ag8f")
+region_enabled = true
+region_rect = Rect2(896, 192, 64, 64)
+
+[node name="Tree3" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(743, 170)
+texture = ExtResource("5_2ag8f")
+region_enabled = true
+region_rect = Rect2(896, 192, 64, 64)
+
+[node name="Tree2" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(313, 165)
+texture = ExtResource("5_2ag8f")
+region_enabled = true
+region_rect = Rect2(896, 256, 64, 64)
+
+[node name="Tree5" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(184, 186)
+texture = ExtResource("5_2ag8f")
+region_enabled = true
+region_rect = Rect2(832, 256, 64, 64)
+
+[node name="Tree4" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(233, 174)
+texture = ExtResource("5_2ag8f")
+region_enabled = true
+region_rect = Rect2(896, 256, 64, 64)
 
 [node name="BG_piggy" parent="." instance=ExtResource("5_8s7wy")]
 position = Vector2(101, 254)

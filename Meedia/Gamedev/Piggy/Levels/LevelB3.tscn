@@ -121,18 +121,6 @@ position = Vector2(948, 120)
 [node name="Telk" parent="." instance=ExtResource("16_52dnd")]
 position = Vector2(1026, 378)
 
-[node name="Node2D" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(846, 473)
-item = ExtResource("5_jwhar")
-
-[node name="Node2D2" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(826, 491)
-item = ExtResource("7_h0yd0")
-
-[node name="Node2D3" parent="." instance=ExtResource("9_fh2ae")]
-position = Vector2(796, 506)
-item = ExtResource("6_n5mls")
-
 [connection signal="CanMove" from="StopMoving" to="Player" method="_on_stop_moving_can_move"]
 [connection signal="StopMoving" from="StopMoving" to="Player" method="_on_stop_moving_stop_moving"]
 [connection signal="StopMoving" from="StopMoving/Gate_LevelSwap" to="StopMoving" method="_on_gate_level_swap_stop_moving"]
