@@ -104,3 +104,19 @@ func _on_entrance_to_boat_stop_moving():
 
 func _on_entrance_to_boat_can_move():
 	emit_signal("CanMove")
+
+
+func _on_circe_can_move():
+	emit_signal("CanMove")
+
+
+func _on_circe_stop_moving():
+	emit_signal("StopMoving")
+
+
+func _on_gruff_can_move():
+	emit_signal("CanMove")
+
+
+func _on_gruff_stop_moving():
+	emit_signal("StopMoving")

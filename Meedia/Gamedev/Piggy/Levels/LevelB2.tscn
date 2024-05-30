@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://ch8wnk4slan78"]
+[gd_scene load_steps=37 format=3 uid="uid://ch8wnk4slan78"]
 
 [ext_resource type="Script" path="res://Levels/Levels.gd" id="1_jhued"]
 [ext_resource type="PackedScene" uid="uid://cbtnjo02acke5" path="res://tile_map.tscn" id="2_1cl0b"]
@@ -30,8 +30,12 @@
 [ext_resource type="PackedScene" uid="uid://babkdciiqwt6o" path="res://MapElements/bonfire.tscn" id="30_e4kvj"]
 [ext_resource type="PackedScene" uid="uid://3l37461xugaw" path="res://MapElements/Post_silt.tscn" id="30_r1wyp"]
 [ext_resource type="PackedScene" uid="uid://de3tfvurwgqw5" path="res://Charecters/NPC/Scenes/Circe.tscn" id="31_j4w41"]
+[ext_resource type="Script" path="res://Charecters/NPC/Scenes/Circe.gd" id="32_rkcqs"]
 [ext_resource type="PackedScene" uid="uid://ca8dcuqtsupab" path="res://Charecters/NPC/Scenes/Gruff.tscn" id="32_y3edo"]
 [ext_resource type="PackedScene" uid="uid://ctaolhdvrgb82" path="res://LevelHoping/Gate_levelSwap.tscn" id="33_5fkyu"]
+[ext_resource type="Resource" uid="uid://d317n7l77ny3o" path="res://Charecters/NPC/Dialogues/Circe.dialogue" id="33_o5mea"]
+[ext_resource type="Script" path="res://Charecters/NPC/Scenes/Gruff.gd" id="34_1glfn"]
+[ext_resource type="Resource" uid="uid://dq0chs5b1w1h7" path="res://Charecters/NPC/Dialogues/Gruff.dialogue" id="35_hke2d"]
 
 [node name="LevelB2" type="Node2D"]
 process_mode = 1
@@ -541,9 +545,13 @@ position = Vector2(297, 426)
 
 [node name="Circe" parent="." instance=ExtResource("31_j4w41")]
 position = Vector2(474, 590)
+script = ExtResource("32_rkcqs")
+Speech = ExtResource("33_o5mea")
 
 [node name="Gruff" parent="." instance=ExtResource("32_y3edo")]
 position = Vector2(428, 256)
+script = ExtResource("34_1glfn")
+Speech = ExtResource("35_hke2d")
 
 [connection signal="CanMove" from="StopMoving" to="Player" method="_on_stop_moving_can_move"]
 [connection signal="StopMoving" from="StopMoving" to="Player" method="_on_stop_moving_stop_moving"]
@@ -556,3 +564,7 @@ position = Vector2(428, 256)
 [connection signal="StopMoving" from="RufusJourney" to="StopMoving" method="_on_rufus_journey_stop_moving"]
 [connection signal="CanMove" from="Kaev_A" to="StopMoving" method="_on_kaev_a_can_move"]
 [connection signal="StopMoving" from="Kaev_A" to="StopMoving" method="_on_kaev_a_stop_moving"]
+[connection signal="CanMove" from="Circe" to="StopMoving" method="_on_circe_can_move"]
+[connection signal="StopMoving" from="Circe" to="StopMoving" method="_on_circe_stop_moving"]
+[connection signal="CanMove" from="Gruff" to="StopMoving" method="_on_gruff_can_move"]
+[connection signal="StopMoving" from="Gruff" to="StopMoving" method="_on_gruff_stop_moving"]

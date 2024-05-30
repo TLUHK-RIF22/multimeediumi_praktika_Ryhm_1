@@ -15,3 +15,7 @@ res://Levels/TheEnd.gd
 res://UI/Intro/IntroVideo.tscn
 res://UI/Intro/Label.gd
 res://Levels/LevelSea.tscn
+res://Levels/StopMoving.gd
+res://Charecters/NPC/Scenes/Circe.gd
+res://Charecters/NPC/Scenes/Gruff.gd
+res://Charecters/NPC/Scenes/Circe.tscn
