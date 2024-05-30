@@ -40,7 +40,7 @@ level = "LevelB2"
 GateName = "B2_W"
 
 [node name="Entrance_To_Boat" parent="StopMoving" instance=ExtResource("4_15430")]
-position = Vector2(1032, 453)
+position = Vector2(1011, 463)
 scale = Vector2(1.00685, 1)
 GateName = "Boat"
 key = ExtResource("5_jwhar")

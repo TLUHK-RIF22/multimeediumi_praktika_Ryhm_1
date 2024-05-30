@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://biliroadbxnp6"]
+[gd_scene load_steps=4 format=3 uid="uid://biliroadbxnp6"]
 
 [ext_resource type="Script" path="res://Inventory/InventoryDialog.gd" id="1_hamc2"]
 [ext_resource type="PackedScene" uid="uid://c4qkfs4fh8is1" path="res://Inventory/item_slot/item_slot.tscn" id="2_kp216"]
+[ext_resource type="Theme" uid="uid://d15h12ovw1nfc" path="res://Ganon16px.tres" id="3_jispo"]
 
 [node name="InventoryDialog" type="PanelContainer"]
 anchors_preset = 15
@@ -21,6 +22,7 @@ layout_mode = 2
 [node name="TitleLabel" type="Label" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+theme = ExtResource("3_jispo")
 text = "Piggy Pack"
 horizontal_alignment = 1
 
