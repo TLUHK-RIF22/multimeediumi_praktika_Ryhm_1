@@ -101,7 +101,7 @@ alignment = 1
 [node name="Label" type="Label" parent="Panel/ColorRect/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("3_yhjkg")
-text = "= Pause ="
+text = "Pause"
 horizontal_alignment = 1
 
 [node name="ResumeButton" type="Button" parent="Panel/ColorRect/VBoxContainer"]

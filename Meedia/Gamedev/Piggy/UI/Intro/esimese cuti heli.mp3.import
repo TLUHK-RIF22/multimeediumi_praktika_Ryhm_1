@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://pb77wmvttpue"
+path="res://.godot/imported/esimese cuti heli.mp3-30d29fd3171e7db8f1e4db222bf5afa7.mp3str"
+
+[deps]
+
+source_file="res://UI/Intro/esimese cuti heli.mp3"
+dest_files=["res://.godot/imported/esimese cuti heli.mp3-30d29fd3171e7db8f1e4db222bf5afa7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

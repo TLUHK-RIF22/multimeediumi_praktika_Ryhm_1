@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=3 uid="uid://bexvo6j30c3ff"]
 
 [ext_resource type="Script" path="res://UI/Intro/IntroVideo.gd" id="1_cxdnc"]
-[ext_resource type="VideoStream" path="res://UI/Intro/PiggyIntro.ogv" id="1_lqrli"]
 [ext_resource type="PackedScene" uid="uid://pqoidl1vn4w5" path="res://UI/MainMenu/main.tscn" id="2_dmqkk"]
 [ext_resource type="Script" path="res://UI/Intro/Label.gd" id="3_0644p"]
+[ext_resource type="VideoStream" path="res://UI/Intro/Algustiiter.ogv" id="3_mw1ml"]
 [ext_resource type="Theme" uid="uid://d15h12ovw1nfc" path="res://Ganon16px.tres" id="4_pkq81"]
-[ext_resource type="AudioStream" uid="uid://b4lallqfh85vl" path="res://Audio/Piggy intro sample.mp3" id="5_1durv"]
+[ext_resource type="AudioStream" uid="uid://b2cfgiblk8v4r" path="res://Audio/3105 Algustiiter 1920x1080 audio MP3.mp3" id="6_nt1tk"]
 
 [node name="Introvideo" type="Node2D"]
 script = ExtResource("1_cxdnc")
@@ -14,9 +14,11 @@ MainMenu = ExtResource("2_dmqkk")
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
 offset_right = 1920.0
 offset_bottom = 1088.0
-stream = ExtResource("1_lqrli")
+scale = Vector2(0.25, 0.25)
+stream = ExtResource("3_mw1ml")
 volume_db = -80.0
 autoplay = true
+bus = &"Music"
 
 [node name="Label" type="Label" parent="."]
 offset_left = 266.0
@@ -29,8 +31,9 @@ script = ExtResource("3_0644p")
 Level = ExtResource("2_dmqkk")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_1durv")
+stream = ExtResource("6_nt1tk")
 autoplay = true
+bus = &"Music"
 
 [node name="Timer" type="Timer" parent="AudioStreamPlayer"]
 unique_name_in_owner = true

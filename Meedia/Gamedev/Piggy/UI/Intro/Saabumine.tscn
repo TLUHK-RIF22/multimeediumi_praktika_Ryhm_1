@@ -5,7 +5,7 @@
 [ext_resource type="VideoStream" path="res://UI/Intro/Saabumine.ogv" id="3_3v450"]
 [ext_resource type="Script" path="res://UI/Intro/Label.gd" id="4_d2gr7"]
 [ext_resource type="Theme" uid="uid://d15h12ovw1nfc" path="res://Ganon16px.tres" id="4_poyi8"]
-[ext_resource type="AudioStream" uid="uid://b4lallqfh85vl" path="res://Audio/Piggy intro sample.mp3" id="5_dodrl"]
+[ext_resource type="AudioStream" uid="uid://pb77wmvttpue" path="res://UI/Intro/esimese cuti heli.mp3" id="6_om248"]
 
 [node name="Saabumine" type="Node2D"]
 script = ExtResource("1_48qwp")
@@ -28,7 +28,9 @@ script = ExtResource("4_d2gr7")
 Level = ExtResource("2_b1oif")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_dodrl")
+stream = ExtResource("6_om248")
+autoplay = true
+bus = &"Music"
 
 [node name="Timer" type="Timer" parent="AudioStreamPlayer"]
 unique_name_in_owner = true

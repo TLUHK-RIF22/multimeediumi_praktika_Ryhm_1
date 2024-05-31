@@ -12,3 +12,5 @@ res://Levels/LevelWell.tscn
 res://MapElements/jänes.tscn
 res://UI/MainMenu/main.tscn
 res://UI/PausMenu/paus_menu.tscn
+res://UI/Intro/IntroVideo.tscn
+res://UI/Intro/Saabumine.tscn
