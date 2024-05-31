@@ -1,4 +1,4 @@
-res://Levels/LevelC2.tscn
+res://UI/MainMenu/Settings/Settings.tscn
 res://Pickup/pickup.gd
 res://Items/KeyBig.tres
 res://Items/sunglasses.tres
@@ -7,12 +7,8 @@ res://Items/apple.tres
 res://Items/rope.tres
 res://Levels/LevelB3.tscn
 res://Levels/LevelB2.tscn
-res://Levels/LevelSea.tscn
-res://UI/PausMenu/paus_menu.tscn
-res://Levels/TheEnd.tscn
-res://UI/Intro/IntroVideo.tscn
-res://UI/Game_manager/game_manager.tscn
-res://Inventory/Inventory.tscn
-res://MapElements/koonus.tscn
+res://Levels/LevelC2.tscn
 res://Levels/LevelWell.tscn
 res://MapElements/jänes.tscn
+res://UI/MainMenu/main.tscn
+res://UI/PausMenu/paus_menu.tscn

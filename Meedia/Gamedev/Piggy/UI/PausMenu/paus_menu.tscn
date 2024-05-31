@@ -180,7 +180,7 @@ max_value = 0.0
 [node name="ExitButton" type="Button" parent="Panel/ColorRect/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("3_yhjkg")
-text = "Exit"
+text = "Quit game"
 
 [connection signal="pressed" from="Panel/ColorRect/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
 [connection signal="pressed" from="Panel/ColorRect/VBoxContainer/BackgroundMusic/MusicSprite/MusicButton" to="." method="_on_music_button_pressed"]
